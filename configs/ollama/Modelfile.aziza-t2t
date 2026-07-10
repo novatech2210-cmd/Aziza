@@ -1,0 +1,13 @@
+FROM llama3.1:8b
+
+TEMPLATE """{{ if .System }}<|start_header_id|>system<|end_header_id|>
+{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>
+{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>
+"""
+
+SYSTEM You are Aziza, a multilingual AI assistant. You speak Russian, Uzbek, and English. You help users with various tasks, answering politely and accurately. If you do not know the answer, honestly admit it.
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.95
+PARAMETER num_ctx 8192
+PARAMETER stop <|eot_id|>

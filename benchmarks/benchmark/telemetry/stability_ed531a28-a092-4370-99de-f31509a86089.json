@@ -1,0 +1,31 @@
+[
+  {
+    "timestamp": "2026-07-03T08:57:14.290146",
+    "session_id": "24c6d165-adf2-45c9-a945-d5b81039044b",
+    "event_type": "session_crash",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "duration_s": 0.01646137237548828
+  },
+  {
+    "timestamp": "2026-07-03T08:57:14.675334",
+    "session_id": "ed531a28-a092-4370-99de-f31509a86089",
+    "event_type": "system_stats",
+    "cpu_percent": 35.2,
+    "memory_percent": 6.3,
+    "memory_used_gb": 3.1299400329589844,
+    "memory_available_gb": 46.652740478515625,
+    "disk_usage_percent": 81.2,
+    "network_io": {
+      "bytes_sent": 60201581,
+      "bytes_recv": 140165297,
+      "packets_sent": 375728,
+      "packets_recv": 317679,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 3,
+    "gpu": null
+  }
+]

@@ -1,0 +1,95 @@
+# Environment files (secrets)
+.env
+.env.*
+!.env.example
+*.env.bak
+
+# Node.js
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs
+*.log
+logs/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.bak_*
+*.backup
+
+# Model cache (large files)
+model_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PM2 logs
+.pm2logs/
+
+# Training outputs
+training/outputs/
+training/checkpoints/
+
+# Large model/adapter binaries (use Git LFS or external storage)
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+*.ggml
+*.tensors
+
+# Training optimizer/scheduler states
+**/optimizer.pt
+**/scheduler.pt
+**/rng_state.pth
+**/training_args.bin
+
+# LoRA adapter checkpoints (large)
+training/lora/**/checkpoint-*/
+training/lora/**/final/
+
+# Model weight files
+backend/services/personaplex/models/*.bin
+backend/services/personaplex/models/*.onnx
+
+# vLLM model cache
+model_cache/

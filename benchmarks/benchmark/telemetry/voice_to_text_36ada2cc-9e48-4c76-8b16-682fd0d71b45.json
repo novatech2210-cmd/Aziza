@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-03T08:59:38.566390",
+    "session_id": "21d7265e-b9be-422f-a399-f6251442aa69",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:38.721843",
+    "session_id": "0332ed63-a93a-46c9-8e64-ff0d489c9c8e",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:38.877167",
+    "session_id": "64201f0c-e44b-47a8-9c12-92cf562efdb6",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.032841",
+    "session_id": "8e8e2af9-fcb3-433a-b575-fc96474e18aa",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.187533",
+    "session_id": "c34f54f0-3e2b-4ed6-8656-531ec81f90a7",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.344284",
+    "session_id": "62757ab1-3dcc-4a70-873d-197cf4137be0",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.499186",
+    "session_id": "b930ca86-781f-4436-9f18-2f755bc74d65",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.654149",
+    "session_id": "747fea05-1ab8-4c3e-ba11-a58413207a0a",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.808721",
+    "session_id": "46ed5092-a2c6-40f2-8ceb-a8346c59bdc9",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:39.963668",
+    "session_id": "8fe6b2df-e979-429b-a0d9-9e95e2071b1f",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.118288",
+    "session_id": "d7209ea4-f827-425a-b120-16780ae7b2d9",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.273542",
+    "session_id": "c8e40f4f-d539-4b4c-b0f4-2231bd69fcd2",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.429646",
+    "session_id": "d0f65b66-ac0f-4aae-ab61-be98ac16deca",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.584396",
+    "session_id": "5b2c5a28-c709-44ae-ac6f-02229f0acf7e",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.739050",
+    "session_id": "ad93973d-460a-4a4a-9d52-705f241890a3",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:40.893785",
+    "session_id": "3dd174a5-45d6-4d2a-858a-4bde8a0aa0d8",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:41.048904",
+    "session_id": "b1e4ea5b-76ad-4714-a2c8-04285ac4bc1b",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:41.203617",
+    "session_id": "1ed24eaa-6d0e-4baa-8d81-91773bc46547",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:41.358215",
+    "session_id": "5fc92a13-8150-477e-b699-52f444ecf7c4",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:41.513345",
+    "session_id": "d9c4a566-24b2-46f2-a0b7-5d202c1ddacb",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  }
+]

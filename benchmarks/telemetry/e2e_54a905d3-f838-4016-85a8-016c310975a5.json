@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2026-07-03T14:10:18.991576+00:00",
+    "session_id": "27a8cf35-b3ff-4581-ac37-93edd184d098",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:10:49.515550+00:00",
+    "session_id": "878405ba-375b-4746-bb83-80856aed8277",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:11:20.042960+00:00",
+    "session_id": "d1d8bd9e-2c9a-42aa-afb8-5602d006a3ed",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:11:50.568363+00:00",
+    "session_id": "8a0a5f3a-3f66-48ef-b521-2716190ebb6c",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:12:21.095653+00:00",
+    "session_id": "dac9aa00-465d-49dc-8f14-bfa8c98b8638",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:12:51.623586+00:00",
+    "session_id": "fa5be092-7937-4c29-8341-76b971df7e96",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:13:22.151937+00:00",
+    "session_id": "8859bf20-f671-45c7-b893-aa69290fcb6d",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:13:52.683582+00:00",
+    "session_id": "6c48385b-07b1-4474-be2d-f202798d8fc4",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:14:23.215626+00:00",
+    "session_id": "35653a36-c012-493c-9f80-5c8db2889940",
+    "event_type": "websocket_timeout"
+  },
+  {
+    "timestamp": "2026-07-03T14:14:53.747220+00:00",
+    "session_id": "95e54676-2e92-4a07-87f5-ff8d67c52504",
+    "event_type": "websocket_timeout"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "timestamp": "2026-07-03T12:38:44.452414+00:00",
+    "session_id": "99e393ef-fbca-4a56-8d0b-8819db6847ac",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 23.839712142944336
+  },
+  {
+    "timestamp": "2026-07-03T12:38:44.453349+00:00",
+    "session_id": "99e393ef-fbca-4a56-8d0b-8819db6847ac",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9143352508544922,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:44.453657+00:00",
+    "session_id": "99e393ef-fbca-4a56-8d0b-8819db6847ac",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:45.462171+00:00",
+    "session_id": "ff34638d-8389-4f12-9d07-06de644a7a2f",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:45.965019+00:00",
+    "session_id": "b311fabc-9c90-4e70-b9ec-0dbb1e4116fe",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.8014907836914062
+  },
+  {
+    "timestamp": "2026-07-03T12:38:45.965947+00:00",
+    "session_id": "b311fabc-9c90-4e70-b9ec-0dbb1e4116fe",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9081363677978516,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:45.966186+00:00",
+    "session_id": "b311fabc-9c90-4e70-b9ec-0dbb1e4116fe",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:46.973656+00:00",
+    "session_id": "8790a604-0d39-41c6-802f-d4b5a25ea14f",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:47.476103+00:00",
+    "session_id": "9b65e086-ff4b-42e9-a099-3d0800b20f00",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4884471893310547
+  },
+  {
+    "timestamp": "2026-07-03T12:38:47.477121+00:00",
+    "session_id": "9b65e086-ff4b-42e9-a099-3d0800b20f00",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9992122650146484,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:47.477409+00:00",
+    "session_id": "9b65e086-ff4b-42e9-a099-3d0800b20f00",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:48.485334+00:00",
+    "session_id": "0dc0715d-4a0f-4d45-ab7c-4b7bb504b2a8",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:48.987980+00:00",
+    "session_id": "14fdfb06-4fe0-490e-b66e-5ecaa61a7cb0",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.3785362243652344
+  },
+  {
+    "timestamp": "2026-07-03T12:38:48.988787+00:00",
+    "session_id": "14fdfb06-4fe0-490e-b66e-5ecaa61a7cb0",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.7903575897216797,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:49.996673+00:00",
+    "session_id": "d4ccf137-e298-4f66-b5a4-402d60f2dcf3",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:50.499332+00:00",
+    "session_id": "6383ceb8-d075-40f5-8e74-321da3b60454",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4872550964355469
+  },
+  {
+    "timestamp": "2026-07-03T12:38:50.500230+00:00",
+    "session_id": "6383ceb8-d075-40f5-8e74-321da3b60454",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.8792877197265625,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:51.508419+00:00",
+    "session_id": "405c971b-4432-4d50-b726-6654d09329da",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:52.011092+00:00",
+    "session_id": "247ec0d3-3460-4e6f-87c2-ca36723aa433",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4803409576416016
+  },
+  {
+    "timestamp": "2026-07-03T12:38:52.012103+00:00",
+    "session_id": "247ec0d3-3460-4e6f-87c2-ca36723aa433",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9930133819580078,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:53.020609+00:00",
+    "session_id": "735b9426-1278-490f-b569-a674235618bb",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:53.523279+00:00",
+    "session_id": "ee5dadd1-e259-4204-aa13-b68a834ac0cd",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.5556812286376953
+  },
+  {
+    "timestamp": "2026-07-03T12:38:53.524402+00:00",
+    "session_id": "ee5dadd1-e259-4204-aa13-b68a834ac0cd",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.0902881622314453,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:53.524648+00:00",
+    "session_id": "ee5dadd1-e259-4204-aa13-b68a834ac0cd",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:54.533047+00:00",
+    "session_id": "a3458e40-5a6a-4dec-a529-049f5b50a4eb",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:55.036060+00:00",
+    "session_id": "97682ed5-638a-4cb3-beb0-5fd3babf5b4e",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.5277862548828125
+  },
+  {
+    "timestamp": "2026-07-03T12:38:55.037167+00:00",
+    "session_id": "97682ed5-638a-4cb3-beb0-5fd3babf5b4e",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.0902881622314453,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:55.037448+00:00",
+    "session_id": "97682ed5-638a-4cb3-beb0-5fd3babf5b4e",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:56.045762+00:00",
+    "session_id": "8c868726-241d-45a7-9727-b0c59263c55a",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:56.548221+00:00",
+    "session_id": "80289599-9973-44dc-ba6c-fc474be088f4",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4541149139404297
+  },
+  {
+    "timestamp": "2026-07-03T12:38:56.549237+00:00",
+    "session_id": "80289599-9973-44dc-ba6c-fc474be088f4",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9992122650146484,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:56.549525+00:00",
+    "session_id": "80289599-9973-44dc-ba6c-fc474be088f4",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:57.557242+00:00",
+    "session_id": "4ded3ab4-e476-40b9-bb7e-90721b7d329f",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T12:38:58.059766+00:00",
+    "session_id": "5bf40bac-95f7-429e-be9f-5facea7f2cb3",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4827251434326172
+  },
+  {
+    "timestamp": "2026-07-03T12:38:58.060786+00:00",
+    "session_id": "5bf40bac-95f7-429e-be9f-5facea7f2cb3",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.0027885437011719,
+    "response_length": 62
+  },
+  {
+    "timestamp": "2026-07-03T12:38:58.061036+00:00",
+    "session_id": "5bf40bac-95f7-429e-be9f-5facea7f2cb3",
+    "event_type": "websocket_error",
+    "error": "received 1005 (no status received [internal]); then sent 1005 (no status received [internal])"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:59.068898+00:00",
+    "session_id": "093ddd19-7b8f-4761-810f-966da2e984e6",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  }
+]

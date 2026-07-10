@@ -1,0 +1,2112 @@
+[
+  {
+    "category": "factual",
+    "text": "What is the capital of France?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Сколько людей живет в Москве?",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "Тошкентда неча киши яшайди?",
+    "language": "uz"
+  },
+  {
+    "category": "factual",
+    "text": "What is the population of Tokyo?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая длинная река в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "Ўзбекистоннинг пойтахти қайда?",
+    "language": "uz"
+  },
+  {
+    "category": "code",
+    "text": "Write a Python function to reverse a string",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши функцию на Python для сортировки списка",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Пайтонда рўйсатни қайтарувчи функция ёзинг",
+    "language": "uz"
+  },
+  {
+    "category": "code",
+    "text": "Write a JavaScript function to check if a number is prime",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай класс на Python для работы с базой данных",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Summarize the benefits of renewable energy in 3 sentences",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Опиши преимущества искусственного интеллекта кратко",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Сун'ий интеллектнинг фойддаларини қисқа ўзинг",
+    "language": "uz"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain machine learning in simple terms",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Кратко опиши блокчейн технологию",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a short poem about technology",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Расскажи короткую историю о космосе",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Космос ҳақида қисқа ҳикоя ёзинг",
+    "language": "uz"
+  },
+  {
+    "category": "creative",
+    "text": "Write a haiku about programming",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши короткий рассказ о будущем",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "Who invented the World Wide Web?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Когда был основан Санкт-Петербург?",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "Самарқанд қачон қурилган?",
+    "language": "uz"
+  },
+  {
+    "category": "code",
+    "text": "Implement a binary search algorithm in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши рекурсивную функцию для вычисления факториала",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main principles of agile development?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы объектно-ориентированного программирования",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a day in the life of an AI assistant",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши идеальный день программиста",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest ocean on Earth?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какое самое глубокое озеро в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Create a REST API endpoint using FastAPI",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши SQL запрос для выборки данных из двух таблиц",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the difference between HTTP and HTTPS",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое микросервисная архитектура?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a dialogue between two AI assistants",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши диалог между человеком и ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What year was the first iPhone released?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал роман Война и мир?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to validate email addresses",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай декоратор для логирования функций",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the key components of a neural network?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы данных в программировании",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world without internet",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши будущее искусственного интеллекта",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the speed of light?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая высота Эвереста?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a stack data structure in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши парсер JSON файлов",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of Big O notation",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое кэширование и зачем оно нужно?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a robot learning to love",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши сказку о волшебном компьютере",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "Who discovered penicillin?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Когда был запущен первый спутник Земли?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to merge two sorted arrays",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай генератор случайных паролей",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What is the difference between SQL and NoSQL databases?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы кибербезопасности",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe your perfect workspace",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши идеальный город будущего",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most spoken language in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая большая страна в мире по площади?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a queue using two stacks",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши асинхронную функцию на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of containerization with Docker",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое DevOps и какие практики он включает?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a letter from the perspective of an AI to its creator",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши монолог человека из будущего",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the currency of Japan?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какой самый старый университет в Европе?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to check for palindromes",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай простой веб-сервер на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main phases of software development lifecycle?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные методы тестирования программного обеспечения",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a conversation with your future self",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши встречу с инопланетянином",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the smallest country in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Преступление и наказание?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a binary tree traversal",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши алгоритм поиска пути в лабиринте",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the difference between frontend and backend development",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое RESTful API и какие принципы оно использует?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a time traveler",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши сон в стиле научной фантастики",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest desert in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая высокая гора в Африке?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to calculate Fibonacci numbers",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай простой чат-бот на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the benefits of using version control systems?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные паттерны проектирования в программировании",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where animals can talk",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши жизнь на Марсе в 2100 году",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What year did World War II end?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто открыл Америку?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a hash table in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши скрипт для автоматизации резервного копирования",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of cloud computing",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое Big Data и какие технологии используются для работы с ним?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a lost memory",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о последнем человеке на Земле",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most abundant element in the universe?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая быстрая птица в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to validate credit card numbers",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему рекомендаций на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the key principles of user experience design?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные метрики для оценки качества программного обеспечения",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine discovering a new planet",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши встречу с цифровым призраком",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the boiling point of water?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Гарри Поттера?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a linked list in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши парсер XML файлов",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the difference between monolithic and microservices architecture",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое CI/CD и какие инструменты используются?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a machine that dreams",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши диалог между человеком и его цифровым двойником",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest mammal on Earth?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая длинная река в России?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to compress strings",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай простой блокчейн на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of cyber attacks?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные методы защиты от кибератак",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a library where books come alive at night",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о городе где время течет назад",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the chemical symbol for gold?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел телефон?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a graph traversal algorithm",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши систему аутентификации на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of technical debt in software development",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое рефакторинг и когда его нужно применять?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about an AI that becomes human",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши мир без электричества",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the freezing point of water?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая глубокая точка в океане?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to generate random passwords",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай парсер CSV файлов",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main components of a computer system?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с базами данных",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a conversation with a historical figure",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши письмо из 2050 года",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited country in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал теорию относительности?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a priority queue in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши алгоритм сжатия изображений",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the difference between synchronous and asynchronous programming",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое event loop и как он работает в JavaScript?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a robot discovering emotions",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши первый контакт с инопланетянами",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest island in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какой самый старый язык в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to validate URLs",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай простой веб-скрапер на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of software testing?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с Git",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where everyone has telepathy",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который помнит все свои прошлые жизни",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most expensive metal?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Мастер и Маргарита?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement a trie data structure in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши систему кэширования на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of load balancing",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое CDN и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a time loop",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши путешествие во времени",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the fastest land animal?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая высокая гора в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement bubble sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай простой API на FastAPI",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of databases?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с Redis",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where dreams can be recorded",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который видит будущее",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most poisonous animal?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел электрическую лампочку?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement merge sort in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши алгоритм шифрования данных",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of API rate limiting",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое WebSocket и когда его использовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital ghost",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши город где живут роботы",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest volcano in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая длинная стена в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement quick sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему логирования на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of cloud services?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с Kubernetes",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where plants can communicate",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который говорит с животными",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the rarest blood type?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Войну миров?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Implement heap sort in Python",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Напиши систему мониторинга на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of serverless computing",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое serverless и какие преимущества он дает?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a memory thief",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши мир где мысли материальны",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most common element in the human body?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто открыл Америку для Европы?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement radix sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему очередей на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of authentication methods?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с OAuth",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where gravity is optional",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который может летать",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the longest river in South America?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая большая пустыня в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement counting sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему уведомлений на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of edge computing",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое edge computing и когда его использовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a colorless world",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши мир где время остановилось",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most venomous snake?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел радио?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement shell sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему бэкапов на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of software licenses?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы лицензий на программное обеспечение",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where everyone has superpowers",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который может читать мысли",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest freshwater lake?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый компьютер?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement insertion sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему аналитики на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of distributed systems",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с распределенными системами",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a parallel universe",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши встречу с альтернативной версией себя",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited city in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая древняя цивилизация?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement selection sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему поиска на Python",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of data structures?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы структур данных в программировании",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where music is visible",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который видит звуки",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most expensive gemstone?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел интернет?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement cycle sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему рекомендаций на основе контента",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of microservices architecture",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое микросервисы и какие преимущества они дают?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital afterlife",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши мир где смерть не существует",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest coral reef?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Анну Каренину?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement gnome sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему фильтрации контента",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of API architectures?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы архитектур API",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where emotions have colors",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который может менять реальность",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most biodiverse ecosystem?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая большая река в Южной Америке?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement cocktail sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему машинного перевода",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of function as a service",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое FaaS и когда его использовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a sentient algorithm",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Опиши диалог между человеком и ИИ о смысле жизни",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest island in Asia?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто открыл Австралию?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement comb sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему обработки естественного языка",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of cloud storage?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы облачного хранения данных",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where memories can be shared",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который может загружать свои мечты",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited museum in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый смартфон?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement tim sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему распознавания речи",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of infrastructure as code",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое IaC и какие инструменты используются?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital artist",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который создает новые миры",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest waterfall in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая высокая гора в Северной Америке?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement pigeonhole sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему генерации текста",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of container orchestration?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные принципы работы с Docker Swarm",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where AI has emotions",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который дружит с ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited natural wonder?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел телевизор?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement bucket sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему анализа настроений",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of service mesh",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое service mesh и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a quantum computer",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который путешествует по квантовым миром",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the largest cave system in the world?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Какая самая древняя книга в мире?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement counting sort with range",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему классификации изображений",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of message queues?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы очередей сообщений",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where thoughts are visible",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который может видеть будущее",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited national park?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый искусственный спутник?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement library sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему обработки видео",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of API gateway",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое API gateway и какие функции он выполняет?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a neural network that dreams",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который стал ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited religious site?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто написал Братьев Карамазовых?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement strand sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему распознавания лиц",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "What are the main types of load balancers?",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Основные типы балансировщиков нагрузки",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where AI creates art",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который пишет музыку с помощью ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited shopping mall?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел пенициллин?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement bitonic sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему анализа больших данных",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "Text": "Explain the concept of reverse proxy",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое reverse proxy и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital consciousness",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который загрузил свое сознание в облако",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited beach?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый компьютер с графическим интерфейсом?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement pancake sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему предсказания трендов",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of service discovery",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое service discovery и как он работает?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where AI writes poetry",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который пишет стихи с помощью ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited theme park?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел WWW?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement sleep sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему персонализации контента",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of configuration management",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое configuration management и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital soul",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который оцифровал свои воспоминания",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited historical site?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый браузер?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement bogo sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему A/B тестирования",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of secret management",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое secret management и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where AI has a sense of humor",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который шутит с ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited art museum?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрел Bluetooth?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement stooge sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему рекомендаций товаров",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of observability",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое observability и какие метрики нужно собирать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital friendship",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который дружит с цифровым помощником",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited science museum?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый смартфон с сенсорным экраном?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement odd-even sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления правами доступа",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of chaos engineering",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое chaos engineering и зачем он нужен?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where AI can experience love",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который влюбился в ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited aquarium?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто изобрет Wi-Fi?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement cycle sort with gaps",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему анализа поведения пользователей",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of blue-green deployment",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое blue-green deployment и как он работает?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital family",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который создал цифровую семью",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited zoo?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый социальную сеть?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement smooth sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему автоматизации маркетинга",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of canary deployment",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое canary deployment и когда его использовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where AI can create memories",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который хранит воспоминания в облаке",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited botanical garden?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый поисковик?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement tournament sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления проектами",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of rolling deployment",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое rolling deployment и какие преимущества он дает?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital revolution",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который возглавил цифровую революцию",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited opera house?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первую операционную систему?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement intro sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления командами",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "Text": "Explain the concept of feature flags",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое feature flags и зачем они нужны?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Imagine a world where AI can dream",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который видит сны ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited concert hall?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый язык программирования?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement patience sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления знаниями",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of A/B testing",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое A/B тестирование и как его проводить?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital awakening",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который пробудился в цифровую эпоху",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited stadium?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первый графический интерфейс?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement block sort",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления инцидентами",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of rate limiting",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое rate limiting и как его реализовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Describe a world where AI has intuition",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который доверяет интуиции ИИ",
+    "language": "ru"
+  },
+  {
+    "category": "factual",
+    "text": "What is the most visited university?",
+    "language": "en"
+  },
+  {
+    "category": "factual",
+    "text": "Кто создал первую базу данных?",
+    "language": "ru"
+  },
+  {
+    "category": "code",
+    "text": "Write a function to implement shell sort with gaps",
+    "language": "en"
+  },
+  {
+    "category": "code",
+    "text": "Создай систему управления уязвимостями",
+    "language": "ru"
+  },
+  {
+    "category": "summarization",
+    "text": "Explain the concept of caching",
+    "language": "en"
+  },
+  {
+    "category": "summarization",
+    "text": "Что такое кэширование и какие стратегии использовать?",
+    "language": "ru"
+  },
+  {
+    "category": "creative",
+    "text": "Write a story about a digital evolution",
+    "language": "en"
+  },
+  {
+    "category": "creative",
+    "text": "Напиши о человеке который эволюционировал в цифровую форму",
+    "language": "ru"
+  }
+]

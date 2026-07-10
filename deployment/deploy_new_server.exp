@@ -1,0 +1,41 @@
+#!/usr/bin/expect -f
+set timeout 60
+
+set ssh_host $env(AZIZA_SSH_HOST)
+set ssh_pass $env(AZIZA_SSH_PASS)
+
+spawn ssh -o StrictHostKeyChecking=no aziza@$ssh_host
+expect "password"
+send "$ssh_pass\r"
+
+expect {
+    "$ " {
+        send "sudo su -\r"
+        expect "password for aziza:"
+        send "$ssh_pass\r"
+        expect "# "
+    }
+    "# " {
+        # Already root (unlikely for aziza, but just in case)
+    }
+}
+
+send "cd /root/aziza-build\r"
+expect "# "
+
+# Kill any existing train_russian.py
+send "pkill -f train_russian.py\r"
+expect "# "
+
+# git pull the latest code
+send "git pull origin main\r"
+expect "# "
+
+# restart training
+send "nohup env HF_TOKEN=\$HF_TOKEN /root/aziza-venv/bin/python train_russian.py --dataset_path new_russian_pairs.jsonl > training.log 2>&1 &\r"
+expect "# "
+
+send "exit\r"
+expect "$ "
+send "exit\r"
+expect eof

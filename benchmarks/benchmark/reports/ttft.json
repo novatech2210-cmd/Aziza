@@ -1,0 +1,31 @@
+{
+  "test_name": "TTFT Benchmark",
+  "timestamp": "2026-07-03T12:38:15.623480+00:00",
+  "config": {
+    "enabled": true,
+    "iterations": 100,
+    "warmup_iterations": 5
+  },
+  "target_median_ms": 300,
+  "statistics": {
+    "median_ms": null,
+    "mean_ms": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "min_ms": null,
+    "max_ms": null,
+    "std_dev_ms": null,
+    "samples": 0
+  },
+  "status": "FAIL",
+  "summary": {
+    "samples": 0,
+    "median_ms": "N/A",
+    "mean_ms": "N/A",
+    "p95_ms": "N/A",
+    "p99_ms": "N/A",
+    "worst_case_ms": "N/A",
+    "target_met": null
+  }
+}

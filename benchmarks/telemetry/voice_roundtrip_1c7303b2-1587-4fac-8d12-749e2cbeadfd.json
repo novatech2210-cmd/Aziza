@@ -1,0 +1,1102 @@
+[
+  {
+    "timestamp": "2026-07-03T15:23:53.859947+00:00",
+    "session_id": "0535405c-ad84-4a68-86d0-be06544adfbf",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 15.202760696411133,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5138.673305511475
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:23:59.030170+00:00",
+    "session_id": "05780b53-27ce-4ed1-9b56-e15de8091ec1",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3158321380615234,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5116.578102111816
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:04.232957+00:00",
+    "session_id": "04b65749-eb9a-4c8a-b5b9-d6b0c1a619ab",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4412403106689453,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5150.017261505127
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:09.420067+00:00",
+    "session_id": "6efc276c-519f-4a73-aeeb-3fbe28955e5b",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 2.366781234741211,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.411241531372
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:14.611274+00:00",
+    "session_id": "3bfb243f-4524-424d-9e91-1e20762dcb0e",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0318756103515625,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5137.946605682373
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:19.779930+00:00",
+    "session_id": "ff9f0082-e253-4247-895e-0be04b699611",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0151863098144531,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5115.668535232544
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:24.973951+00:00",
+    "session_id": "deaaf8a6-ffac-4a20-9473-4127220403c7",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6689300537109375,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5140.942335128784
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:30.154196+00:00",
+    "session_id": "83a3e2a4-eb1b-485e-9a60-6e9627641d1c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1639595031738281,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5127.415180206299
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:35.333761+00:00",
+    "session_id": "a1780d56-6ac7-45b9-bdbe-cc403872e333",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1081695556640625,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5126.3744831085205
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:40.506628+00:00",
+    "session_id": "2c2025c5-cf6c-49f9-a83b-1daaa26fde1a",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.119852066040039,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5120.192289352417
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:45.714718+00:00",
+    "session_id": "f3a752b2-0048-40b4-bfda-92f438fc19f0",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.8523464202880859,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5155.340909957886
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:50.903557+00:00",
+    "session_id": "9f3d7c70-5603-4a3c-bbb1-5ca18aa4e8e8",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9908676147460938,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.9522342681885
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:24:56.091927+00:00",
+    "session_id": "227b0924-21b2-4469-97d9-38714e303fa2",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3380050659179688,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.29634475708
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:01.282752+00:00",
+    "session_id": "efe447e8-b18b-4a01-b917-7c8a3f4f264c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2521743774414062,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5138.591527938843
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:06.493394+00:00",
+    "session_id": "e201118b-601b-4035-8199-3a4c25a01e09",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0864734649658203,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5157.75990486145
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:11.698120+00:00",
+    "session_id": "f2474bec-7f64-45a5-96b8-16c7a9a8b514",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9539127349853516,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5151.710748672485
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:16.887981+00:00",
+    "session_id": "d41b68aa-d481-4c84-9c5b-cc740afc370a",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5704631805419922,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5137.174367904663
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:22.073660+00:00",
+    "session_id": "20700860-0f7d-4ddb-a4b1-c70cae40cb79",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5392303466796875,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.425308227539
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:27.267516+00:00",
+    "session_id": "e0ba29f9-318a-4ccb-a81d-17d3fd51f73c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.653909683227539,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5140.605926513672
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:32.463869+00:00",
+    "session_id": "1d3ea6cf-d375-4e50-a41b-a570740f5acb",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.590728759765625,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5142.810821533203
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:37.643281+00:00",
+    "session_id": "23ad4487-ef01-4376-a46f-0b03ea4f8ad8",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.9423961639404297,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5125.991344451904
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:42.845780+00:00",
+    "session_id": "0d3c51a1-35ab-413b-86d4-c09203e289d6",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4519691467285156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5149.75643157959
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:48.022960+00:00",
+    "session_id": "5f1147ff-48d4-4f77-87e6-4a4da9952396",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 2.2764205932617188,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5125.155210494995
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:53.213333+00:00",
+    "session_id": "96585699-a192-4fb6-b44a-80af4411cc42",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.9562244415283203,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.277271270752
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:25:58.392756+00:00",
+    "session_id": "34c20c99-9fb1-49f6-8731-e973b7623d7a",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9577274322509766,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5126.016616821289
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:03.589883+00:00",
+    "session_id": "04785a5d-b6ca-4ec4-9843-2d8913f80adf",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3325214385986328,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5144.446849822998
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:08.798907+00:00",
+    "session_id": "dd04a1d8-ed32-4645-9353-c1c2c244c9f6",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2040138244628906,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5156.497001647949
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:14.001356+00:00",
+    "session_id": "f6a40519-832a-4a95-900f-db117b9ac024",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.310586929321289,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5149.716138839722
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:19.189718+00:00",
+    "session_id": "967e84c5-c5cf-4d54-a098-00c995f356b7",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.7268657684326172,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.092258453369
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:24.366111+00:00",
+    "session_id": "282cb9a4-d0ac-4ae9-897c-443cec3a7523",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.7306804656982422,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5123.570680618286
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:29.568109+00:00",
+    "session_id": "402169bb-9ab0-4b02-b8ce-cafe633cdd82",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5053749084472656,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5149.777412414551
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:34.739452+00:00",
+    "session_id": "1c8a705f-0594-48ab-9efe-ee4430ce6821",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.8191337585449219,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5117.662668228149
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:39.917271+00:00",
+    "session_id": "0ccac9c9-8820-496c-9922-3d41d90252f6",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1827945709228516,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5125.305414199829
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:45.108513+00:00",
+    "session_id": "874eca73-ba27-4b7b-bf26-d6f5052ea56d",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6400814056396484,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5138.909816741943
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:50.299964+00:00",
+    "session_id": "52dcd977-aaab-43e4-83b3-6ec1debf3547",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2650489807128906,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5138.4313106536865
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:26:55.507242+00:00",
+    "session_id": "25ac82f4-b958-46e9-930f-32d3a17abb82",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3248920440673828,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5153.843402862549
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:00.703886+00:00",
+    "session_id": "0b47f18f-cb32-43f4-bd5c-30eeef640240",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1374950408935547,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5143.917560577393
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:05.910811+00:00",
+    "session_id": "ab9d714f-8461-4cb4-8e56-7063ed3e3727",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1146068572998047,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5153.862714767456
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:11.097337+00:00",
+    "session_id": "4675a76b-7d9d-4bf3-863f-6bff9cf0493c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2466907501220703,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5134.130477905273
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:16.279190+00:00",
+    "session_id": "dbf97a18-eae5-4eea-aa2e-c06da7bc8376",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.157522201538086,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5129.295110702515
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:21.474190+00:00",
+    "session_id": "e0354a39-f58a-4e28-94ac-f089cc8df919",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.7070770263671875,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5141.018629074097
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:26.659182+00:00",
+    "session_id": "13f0c039-78d0-4b9e-800d-4c1ff01d6822",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 2.0210742950439453,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.394552230835
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:31.866945+00:00",
+    "session_id": "76154383-4553-4189-87c4-68a045bd68ea",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2960433959960938,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5154.532194137573
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:37.041751+00:00",
+    "session_id": "65383941-9e81-4059-8de6-a8a7b2ecf4ae",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.369476318359375,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5122.137069702148
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:42.235700+00:00",
+    "session_id": "20915de0-d797-48a0-8efe-54b25622f238",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.451253890991211,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5141.700744628906
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:47.421645+00:00",
+    "session_id": "26015ceb-32c9-48b5-baac-7a224688cd5e",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0902881622314453,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.747650146484
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:52.620426+00:00",
+    "session_id": "d84b0e52-b670-4939-a7ea-8e250b56fa0d",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9949207305908203,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5146.072149276733
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:27:57.812303+00:00",
+    "session_id": "c8f854e2-e4c7-4704-8d33-1eed743055cc",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3661384582519531,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5139.221668243408
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:02.993105+00:00",
+    "session_id": "bd8c53d4-577a-4141-9e76-6475a31aaf41",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 2.4127960205078125,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5127.951145172119
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:08.175108+00:00",
+    "session_id": "a384d32e-b0e8-4e6e-888c-ae4a7114d583",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1849403381347656,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5128.964424133301
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:13.371509+00:00",
+    "session_id": "9af49566-f1d3-425a-8049-bc7d9576a413",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2536048889160156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5143.142461776733
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:18.578915+00:00",
+    "session_id": "4102ad7a-8723-4f82-a83f-29d9e4c8c58c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1436939239501953,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5153.701305389404
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:23.773267+00:00",
+    "session_id": "bf36906a-1f45-4959-a273-971de9f81711",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2578964233398438,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5141.072034835815
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:28.943461+00:00",
+    "session_id": "755d7578-9595-443d-bef4-cd23cb79d9a8",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0776519775390625,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5116.976976394653
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:34.116080+00:00",
+    "session_id": "7572c958-b497-495b-b12c-6a1430b44641",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3077259063720703,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5119.8225021362305
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:39.293385+00:00",
+    "session_id": "0c1864dd-5e9a-4885-b1cf-1b82c957c40c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.458883285522461,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5124.62592124939
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:44.490577+00:00",
+    "session_id": "500335f5-2b37-4e36-971a-45fda8fb3397",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0442733764648438,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5143.856763839722
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:49.660164+00:00",
+    "session_id": "ede238bd-f736-4d06-baf4-c4e42b39c2e1",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4774799346923828,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5117.292881011963
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:28:54.839229+00:00",
+    "session_id": "f8955f72-c103-4010-bb27-0728d8b9daff",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6524791717529297,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5125.361442565918
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:00.037696+00:00",
+    "session_id": "9d6a551f-b733-46e5-8083-c21f5917c20a",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2869834899902344,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5145.198822021484
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:05.239254+00:00",
+    "session_id": "b8d1c70c-20b3-4ba0-bda8-7568482e3bcd",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.8668899536132812,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5148.624420166016
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:10.427656+00:00",
+    "session_id": "a0ee3c82-141e-4c71-82a1-576bebb769f6",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5747547149658203,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.5860233306885
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:15.609130+00:00",
+    "session_id": "10e929d7-efba-47df-b9a1-07f899552a6c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2242794036865234,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5128.096342086792
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:20.786542+00:00",
+    "session_id": "4ae6f17d-d31d-4c38-8f56-0ce4e501b55c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.7523765563964844,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5124.7546672821045
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:25.961040+00:00",
+    "session_id": "d0f39277-7dff-4f72-ad92-088341a0fb5e",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.073598861694336,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5122.026443481445
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:31.132022+00:00",
+    "session_id": "c40a87ee-b1b5-40e1-ab2b-38a9eaf3b5bf",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.466512680053711,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5118.343353271484
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:36.312541+00:00",
+    "session_id": "e5411010-e8b6-4355-af9f-8dadb5ed48fd",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6436576843261719,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5128.028631210327
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:41.518711+00:00",
+    "session_id": "4ecf62e8-842d-4217-8704-df0a59694298",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2996196746826172,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5153.020143508911
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:46.714031+00:00",
+    "session_id": "01218273-eac7-4338-a1ee-a81c14975f0c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4824867248535156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5142.128467559814
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:51.909686+00:00",
+    "session_id": "4fe88a09-0b8b-47fd-a2f5-7fb9d26d7e61",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2044906616210938,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5142.271518707275
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:29:57.090668+00:00",
+    "session_id": "e2d4f3f1-db0e-43f3-9e4a-73cd5f60dc10",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.497507095336914,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5127.7806758880615
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:02.288116+00:00",
+    "session_id": "b12e2d58-73fe-4610-a239-f0b5b7aebaf3",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2900829315185547,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5144.4244384765625
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:07.478733+00:00",
+    "session_id": "474ee829-eea9-403b-a4e4-807da99aa148",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5010833740234375,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5137.794733047485
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:12.666761+00:00",
+    "session_id": "4ba3eb7f-d555-4b4b-b60d-0baa34409c47",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4004707336425781,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5135.194540023804
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:17.851895+00:00",
+    "session_id": "d94035e7-5365-4264-8ffa-ecb904a0499e",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.667022705078125,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.694244384766
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:23.062972+00:00",
+    "session_id": "7e52c102-6740-42a6-a9bb-089c7de05ffd",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1208057403564453,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5157.447814941406
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:28.235481+00:00",
+    "session_id": "7d016e92-777d-4991-b22d-3274aeecdbfe",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9589195251464844,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5119.606733322144
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:33.430683+00:00",
+    "session_id": "2a9f5d93-2539-43ed-a0ab-dbfe633c3e55",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2841224670410156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5141.772985458374
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:38.600967+00:00",
+    "session_id": "84889bae-a857-4c5c-a53f-bb47febddc0a",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.0132789611816406,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5116.937637329102
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:43.786120+00:00",
+    "session_id": "8f6a48f5-cd85-40d1-a0d1-569610287e7f",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1916160583496094,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5133.11243057251
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:48.986054+00:00",
+    "session_id": "2a0d0b03-2110-4b1d-879e-c9742b41b5f0",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4824867248535156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5147.190093994141
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:54.170499+00:00",
+    "session_id": "044a00a0-294d-4ad4-b270-db9886599ca7",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3427734375,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5132.012844085693
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:30:59.378211+00:00",
+    "session_id": "564081e5-635e-4a6f-b9d9-22818cd7835d",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.46484375,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5154.10304069519
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:04.572558+00:00",
+    "session_id": "693945d8-4169-4fd8-8348-f69c7b5afdf8",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.3885498046875,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5142.194509506226
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:09.747121+00:00",
+    "session_id": "670cde6c-6954-4c22-be9e-778bd971e0f9",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6503334045410156,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5121.465444564819
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:14.938418+00:00",
+    "session_id": "e59cc19f-ac40-4966-b496-5c0f2c88441e",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4798641204833984,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5138.411521911621
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:20.132308+00:00",
+    "session_id": "058288ee-231a-44a9-a24e-f351e1aa2b3b",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1801719665527344,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5140.948295593262
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:25.328773+00:00",
+    "session_id": "ceb4cfc7-a9e1-4d31-8a04-f74e621815b6",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.9806156158447266,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5143.325567245483
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:30.502670+00:00",
+    "session_id": "e8d95ba5-adc3-4f36-a80b-1bff265132b4",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1539459228515625,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5121.074438095093
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:35.680664+00:00",
+    "session_id": "ca16260a-12ae-41a1-ba80-310d6846d98f",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 0.8370876312255859,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5125.015497207642
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:40.881489+00:00",
+    "session_id": "1bb45ab8-e36c-4d9b-8363-8966082db2b8",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.1172294616699219,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5147.820472717285
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:46.062586+00:00",
+    "session_id": "f79cdec4-9200-4bd9-93cd-a3d4a7437593",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 2.2187232971191406,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5127.816438674927
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:51.272531+00:00",
+    "session_id": "5becd355-abd0-4529-bae8-004890084c31",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.300811767578125,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5157.568693161011
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:31:56.483167+00:00",
+    "session_id": "0bc59d90-c89a-458b-8a58-84407d664932",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.9369125366210938,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5158.157825469971
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:01.651903+00:00",
+    "session_id": "5e53a9d6-5aa4-4cc3-beff-fc21234c62fc",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.5537738800048828,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5115.74649810791
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:06.848026+00:00",
+    "session_id": "e63187f2-59ee-4f2f-aff7-f23a2ec0f6b5",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4874935150146484,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5143.415927886963
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:12.034650+00:00",
+    "session_id": "a5274110-5bd2-4260-be75-b6f6c501f060",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.15203857421875,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5133.928060531616
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:17.236765+00:00",
+    "session_id": "4b5b4c26-d633-4409-9f04-5fcbfdc443af",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.6176700592041016,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5149.4460105896
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:22.412269+00:00",
+    "session_id": "e36a4278-97e2-4ad2-82f9-5d999434435c",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.2638568878173828,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5122.6966381073
+    },
+    "audio_duration_ms": 2000
+  },
+  {
+    "timestamp": "2026-07-03T15:32:27.598224+00:00",
+    "session_id": "3dc07e54-d40c-482b-ab8a-738beaabd8aa",
+    "event_type": "voice_roundtrip",
+    "latencies": {
+      "audio_send_ms": 1.4295578002929688,
+      "processing_ms": null,
+      "total_roundtrip_ms": 5133.384466171265
+    },
+    "audio_duration_ms": 2000
+  }
+]

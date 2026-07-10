@@ -1,0 +1,37 @@
+#!/usr/bin/expect -f
+set timeout 120
+
+set ssh_host $env(AZIZA_SSH_HOST)
+set ssh_pass $env(AZIZA_SSH_PASS)
+
+spawn ssh -o StrictHostKeyChecking=no aziza@$ssh_host
+expect "password:"
+send "$ssh_pass\r"
+
+expect {
+    "$ " {
+        send "sudo su -\r"
+        expect "password for aziza:"
+        send "$ssh_pass\r"
+        expect "# "
+    }
+    "# " {
+    }
+}
+
+send "cd /root/aziza-build\r"
+expect "# "
+
+send "git pull origin main\r"
+expect "# "
+
+send "source /root/aziza-venv/bin/activate\r"
+expect "# "
+
+send "python3 eval_russian.py --adapter /root/aziza-build/training/lora/ru_colloquial\r"
+expect "# "
+
+send "exit\r"
+expect "$ "
+send "exit\r"
+expect eof

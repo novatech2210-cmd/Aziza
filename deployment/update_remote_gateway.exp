@@ -1,0 +1,31 @@
+#!/usr/bin/expect -f
+set timeout -1
+
+set ssh_host $env(AZIZA_SSH_HOST)
+set ssh_pass $env(AZIZA_SSH_PASS)
+
+spawn scp -o StrictHostKeyChecking=no /home/kali/Desktop/AZIZA-BUILD/backend/services/api-gateway/src/gateway/chat.gateway.ts aziza@$ssh_host:/tmp/chat.gateway.ts
+expect "password:"
+send "$ssh_pass\r"
+expect eof
+
+spawn ssh -o StrictHostKeyChecking=no aziza@$ssh_host
+expect "password:"
+send "$ssh_pass\r"
+expect "\\$"
+send "sudo su -\r"
+expect "password for aziza:"
+send "$ssh_pass\r"
+expect "#"
+send "cp /tmp/chat.gateway.ts /root/aziza-build/backend/services/api-gateway/src/gateway/chat.gateway.ts\r"
+expect "#"
+send "cd /root/aziza-build/backend/services/api-gateway\r"
+expect "#"
+send "npm run build\r"
+expect "#"
+send "pm2 restart aziza-gateway\r"
+expect "#"
+send "exit\r"
+expect "\\$"
+send "exit\r"
+expect eof

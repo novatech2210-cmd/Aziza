@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-03T15:10:26.223149+00:00",
+    "session_id": "e082062b-a743-49ea-9bef-03dbb61b649b",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:26.360213+00:00",
+    "session_id": "3976b9cc-31f3-443c-b63b-d6336cd594de",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:26.497241+00:00",
+    "session_id": "2ceb90fc-7aeb-4267-854d-7b6982e83d45",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:26.633985+00:00",
+    "session_id": "103baf66-53b9-4408-a365-4028d96bb589",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:26.771220+00:00",
+    "session_id": "49814968-768d-410a-b8c4-e592042bf72b",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:26.910557+00:00",
+    "session_id": "8d91cac1-7d4b-4c9d-95a0-cd7a7450db1b",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.046499+00:00",
+    "session_id": "52adde21-44d8-4260-a15c-6ae14826967e",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.182502+00:00",
+    "session_id": "f84b3f59-bdc7-4f4b-aee6-2e9fa5e648b8",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.320182+00:00",
+    "session_id": "7ef32827-833f-4cca-9ea2-611eddd71d97",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.455471+00:00",
+    "session_id": "0e448a80-e8e3-4e7c-8900-775d634b4b17",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.593511+00:00",
+    "session_id": "2b6f2bf7-9f0f-46de-8e77-7e75c464aaec",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.729626+00:00",
+    "session_id": "86eac634-75c8-44de-b397-aba659652751",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:27.866742+00:00",
+    "session_id": "dec59fa5-5eed-4a12-999d-bffa1210521b",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.004734+00:00",
+    "session_id": "1628c51e-9874-4969-9c2b-865ca934c500",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.140522+00:00",
+    "session_id": "f9bc1294-3a7c-4f47-bcbd-64dc454e3076",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.279791+00:00",
+    "session_id": "bba2c68c-81a0-4215-a3b6-504ed30bf6e0",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.416944+00:00",
+    "session_id": "0e9dd575-7253-446e-b506-3296db255a97",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.553129+00:00",
+    "session_id": "040a9fc1-4809-4636-8c19-b434ff6371c1",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.688965+00:00",
+    "session_id": "aa1379a5-5d72-4bff-8b31-39fa51a3493f",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:28.826138+00:00",
+    "session_id": "683b711f-36e2-498a-a62b-19ed69b09f22",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  }
+]

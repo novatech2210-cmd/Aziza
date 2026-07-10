@@ -1,0 +1,1202 @@
+[
+  {
+    "timestamp": "2026-07-03T11:40:24.002499",
+    "session_id": "74d94bc6-b80d-43af-b4bf-bd284b3065da",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078823.9782605,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.054238",
+    "session_id": "7298911b-df95-4c19-90ae-f2647775316f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.0528297,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.106020",
+    "session_id": "61d7c8fe-f77e-43be-9ff8-f649a99f81ea",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.104597,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.157523",
+    "session_id": "6101001d-cc58-4b72-8511-8284a7242e09",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.1563299,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.208877",
+    "session_id": "9a8a6abc-5698-4f6e-831a-294b5b5d8c15",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.2077959,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.260388",
+    "session_id": "b7265b45-3f34-451b-ae87-70fc46db202c",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.2592297,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.311945",
+    "session_id": "b9b79679-e8fc-4afb-a9ff-cdbac789d9d3",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.310816,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.363301",
+    "session_id": "e442a4f6-3794-40bc-aae1-579ae6192861",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.362216,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.414588",
+    "session_id": "de709bf4-ada7-4be0-912e-b883e62af504",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.413491,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.466133",
+    "session_id": "fbeeda5a-6160-404a-9bd9-673030f69b36",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.4650164,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.517732",
+    "session_id": "c57cb584-d617-4e00-80b0-26344e860f7f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.5164032,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.569205",
+    "session_id": "6aadf2c7-8445-436b-af34-4f90c722a2aa",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.568109,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.620661",
+    "session_id": "b1587806-cddc-488a-b7ad-d67a1356b431",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.619491,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.672144",
+    "session_id": "a09ffe48-1b41-45fa-8961-86af2c84b991",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.6709344,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.723589",
+    "session_id": "dcfd1147-7d91-4f3d-8c29-f6c5ce8f2f3c",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.7224195,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.774927",
+    "session_id": "ea9bfdcb-a27e-4033-b84a-ca950c856e12",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.773861,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.826392",
+    "session_id": "5b9296db-37d6-47e3-9f44-8636600f8134",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.8252034,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.877912",
+    "session_id": "12ab7cd9-821f-4f03-bb6f-ea7525dc81f9",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.876844,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.929197",
+    "session_id": "be98c6fa-128d-4bd7-a9ca-4111fc83575f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.928116,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:24.980715",
+    "session_id": "83b0f491-cfe8-4780-a68e-3519c4072d22",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078824.9793978,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.032212",
+    "session_id": "24dfe708-f266-4816-a1c6-4165e76eebf5",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.031026,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.083530",
+    "session_id": "78258a4d-7d4b-49ff-ace0-6f3deb142170",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.0824683,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.134860",
+    "session_id": "b9726ab9-fd8f-4102-8a19-ad429165c3e5",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.133809,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.186331",
+    "session_id": "276befce-df64-405c-bb71-7d28dfe4bc62",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.1852305,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.237655",
+    "session_id": "bddf2f20-908d-4c62-a9fc-ae65769e7a91",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.2365825,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.289073",
+    "session_id": "5737b575-2097-4963-9a09-c76609430523",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.2879221,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.340360",
+    "session_id": "40409fa3-ba2e-4fdd-86e2-07b05f3618db",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.3392947,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.391689",
+    "session_id": "934e7368-97cf-4a01-aac5-959970eb21d6",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.3906207,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.443340",
+    "session_id": "3dec7c4d-eab4-4580-a19b-308a955b7baa",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.4419518,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.494947",
+    "session_id": "eca3027b-d081-4be4-9b25-eed54d640bdb",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.4937184,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.546314",
+    "session_id": "705b815f-455d-4936-8309-9590fd75592d",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.5451972,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.597651",
+    "session_id": "c7896b4a-7f32-46ca-a286-fa2a098de726",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.5965967,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.649098",
+    "session_id": "774334ba-8e66-440e-bdf5-5f23d7d2bbc7",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.6479867,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.700361",
+    "session_id": "bb44b448-8338-4e79-94bf-2b92db9107b4",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.6993535,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.751718",
+    "session_id": "f72cc69b-1eeb-4210-af67-ac7dbf289549",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.7506163,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.803314",
+    "session_id": "b8d1fae8-d071-4241-9440-ec35e8c3ed8c",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.8020396,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.854647",
+    "session_id": "c28e9c3b-1f89-46b0-a9bb-e1e3231a3f91",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.8535676,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.905974",
+    "session_id": "bbbf3922-b78c-4b59-a7e3-575e9b6e8670",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.904899,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:25.957777",
+    "session_id": "aa7549b0-6fcf-4674-9dae-71c1bf42f603",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078825.956394,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.009115",
+    "session_id": "f424d698-8b16-4bb6-b489-0fb056d69c09",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.008039,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.060434",
+    "session_id": "b1c5093a-7d0a-45e4-b37a-d62854504c09",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.0593712,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.111886",
+    "session_id": "d3e1b1df-69ed-4e64-b11a-9d905a30950e",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.1107383,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.163231",
+    "session_id": "0a65d65d-d889-4e6a-97bd-e532f3ccabb3",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.16215,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.214597",
+    "session_id": "e572ff7c-201c-4f75-8ad6-8e90dd360183",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.2135212,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.266065",
+    "session_id": "7283fa62-f265-45ed-9d3e-6e31bac0ba52",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.264998,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.317323",
+    "session_id": "664c000a-dc4a-4fe0-9814-53b7717aed11",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.3162458,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.368695",
+    "session_id": "a647bf25-6c3d-474a-ba69-55040a0fa56e",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.3676112,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.420106",
+    "session_id": "03a13c9c-3258-4a2b-9ffb-0599e32abcc7",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.419053,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.471688",
+    "session_id": "056bad95-2289-4c1c-ad0a-2d3cf4538681",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.4703677,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.523310",
+    "session_id": "f7f49835-f704-48f6-894e-df00a487a4e2",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.5220735,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.574694",
+    "session_id": "9f00ec64-b61e-43a3-917e-1adb86c2c45f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.5736012,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.626040",
+    "session_id": "aabbc1e3-e8d7-4f90-a3b4-8736cf0c5ca2",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.624964,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.677514",
+    "session_id": "44181789-c3d0-4c05-b9c6-0e80fc8d1a65",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.6764321,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.729105",
+    "session_id": "a55a66f0-48e4-4913-964c-e781a2f07b99",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.7279406,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.780504",
+    "session_id": "73a324dc-09c1-49d0-b187-623d0803f98e",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.7793627,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.831854",
+    "session_id": "78f06a61-0742-4be4-a50d-52a2257af4d6",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.8307786,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.883193",
+    "session_id": "be37d58d-e296-4585-8af9-ef120606dc7d",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.88211,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.935594",
+    "session_id": "b920534a-7797-489c-9d51-09edc6185abc",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.9334557,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:26.987062",
+    "session_id": "5e053e66-89df-4397-855b-5ca6db6908c5",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078826.9859958,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.038679",
+    "session_id": "6895b8cb-a06b-4e8b-91b7-90d217af8459",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.0374951,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.089983",
+    "session_id": "5f21c2c2-d23e-4137-8a1d-7c7c3f7225f2",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.0888991,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.141293",
+    "session_id": "3e675e04-baa1-444b-8905-6762d2d03c30",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.140214,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.192706",
+    "session_id": "ddf14ed0-04ac-4c36-bc1f-3cd26ec8b1ed",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.1916454,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.243975",
+    "session_id": "5bad56f4-7081-4952-9572-f7d1ac25b848",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.2429552,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.295497",
+    "session_id": "42ac153a-efd8-46d8-be79-e4ef72946113",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.2943654,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.347050",
+    "session_id": "2d915767-538e-4765-91df-125d552bd8bb",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.345911,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.398432",
+    "session_id": "0f732869-c362-4407-b993-bb49f388679d",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.3973432,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.450110",
+    "session_id": "8ee045d6-db23-4ca9-9f29-c5529bc3f4c1",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.4487455,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.501439",
+    "session_id": "bc56e18f-d417-4a24-9f9f-97a78b1211da",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.500378,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.553139",
+    "session_id": "78e4f8b4-04bf-49e3-ab23-4acf4ca49131",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.5517447,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.604844",
+    "session_id": "8b56da8b-e963-47b7-a423-a7ee7502b69c",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.603467,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.656368",
+    "session_id": "c2032fdc-2afc-4577-ac99-2aee40d367a5",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.6550772,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.707828",
+    "session_id": "8d897faa-302e-4d1b-b164-46c5046c54a1",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.7066438,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.759421",
+    "session_id": "9148e977-0005-4aa6-85bd-360c2bbfd766",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.7581525,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.811100",
+    "session_id": "ac035561-de12-463a-9b77-e29e46966a11",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.809839,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.862488",
+    "session_id": "e402d5c0-4015-465a-8add-036c235bb080",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.8613381,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.914129",
+    "session_id": "80f0b532-c466-4659-ac32-c466fe3d9f3f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.9127996,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:27.966124",
+    "session_id": "77f65e04-3a1f-4e12-b7bd-387348aec81b",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078827.964544,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.017557",
+    "session_id": "cd92dfc4-6e1d-44a3-afca-912d86058368",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.016358,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.069054",
+    "session_id": "fd5e2eec-1f1b-4212-a733-b1c6a4931746",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.0678692,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.120353",
+    "session_id": "3c3bc07e-38a5-47bf-8edf-0a7fbef8ddd9",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.119248,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.171698",
+    "session_id": "4b5b59d9-8b8a-46de-9f4a-a6ed09363c9f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.1706133,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.223136",
+    "session_id": "29193825-d0b8-4a45-8311-881eada4edeb",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.2220166,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.274617",
+    "session_id": "4e75da8e-8d15-4bde-a2f4-3d2ccc1115ce",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.2734935,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.325938",
+    "session_id": "aca7d23f-7e15-4054-a254-5098e65f242c",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.3248894,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.377323",
+    "session_id": "6899ef7d-23e6-42ed-980a-82e291567152",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.3762033,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.428541",
+    "session_id": "edffe4cc-9ca6-4a49-b7b3-639cbaff05aa",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.4275281,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.480111",
+    "session_id": "3933955f-8648-4d64-b701-5d59443b769f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.478803,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.531754",
+    "session_id": "b20d187b-23ff-4aed-86d3-b8d7fef1faa5",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.5303752,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.583372",
+    "session_id": "cef0f3af-475f-430b-9043-153ea565bc1f",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.5820699,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.634790",
+    "session_id": "c269a528-4def-452b-b559-4a9ff897ab25",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.6336482,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.686108",
+    "session_id": "bbee4035-9254-4f46-8eb0-d60e104fb414",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.6850026,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.737563",
+    "session_id": "49e29568-b0f0-44b1-b15e-a95738b0a7cc",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.7363992,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.788884",
+    "session_id": "5b4ca171-20c0-40b8-8c8c-7f10dd1abf07",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.7877636,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.840153",
+    "session_id": "88ce583b-6809-4758-9d9e-ca3f3d364f1a",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.8390813,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.891559",
+    "session_id": "1b1c840a-f1cd-4bd7-b7ae-5ad3f53065ff",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.8904262,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.942824",
+    "session_id": "6487cd7b-6429-4e43-bc3a-3356603d9cd6",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.9417505,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:28.994455",
+    "session_id": "ae329d1e-65c0-49c4-bc4e-fb415030209e",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078828.9930694,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:29.045796",
+    "session_id": "bffb68c0-b152-45dd-88d2-c4dfcce82c21",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078829.0446544,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:29.097150",
+    "session_id": "c91ba65c-2daf-4c55-97c6-1efd54daceea",
+    "event_type": "roundtrip_error",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "mic_capture": 1783078829.0960572,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  }
+]

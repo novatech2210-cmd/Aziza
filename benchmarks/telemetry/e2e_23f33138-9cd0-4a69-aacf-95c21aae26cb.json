@@ -1,0 +1,272 @@
+[
+  {
+    "timestamp": "2026-07-04T11:38:07.694501+00:00",
+    "session_id": "8aaa517e-62fd-4a66-bcfd-2ee657d233b0",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 25.66218376159668
+  },
+  {
+    "timestamp": "2026-07-04T11:38:07.701612+00:00",
+    "session_id": "8aaa517e-62fd-4a66-bcfd-2ee657d233b0",
+    "event_type": "message_roundtrip",
+    "latency_ms": 7.086277008056641,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:08.513892+00:00",
+    "session_id": "11322f04-8f4b-4aa1-9ee1-63688830732a",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.1742839813232422,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:09.529446+00:00",
+    "session_id": "e51ca61b-56e9-4558-ade4-06aed0df0f11",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:10.037918+00:00",
+    "session_id": "21ad6c71-0754-4218-aa63-45857ec30ad0",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.5943050384521484
+  },
+  {
+    "timestamp": "2026-07-04T11:38:10.039191+00:00",
+    "session_id": "21ad6c71-0754-4218-aa63-45857ec30ad0",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.2526512145996094,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:10.849527+00:00",
+    "session_id": "a3f95669-de18-4766-9af6-2c4a35d4a925",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.1857280731201172,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:11.863182+00:00",
+    "session_id": "caf16208-6597-4b33-9fb9-c6f432e022ea",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:12.371515+00:00",
+    "session_id": "c8b01ee6-d618-48a8-95e8-8c47236e1694",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4238357543945312
+  },
+  {
+    "timestamp": "2026-07-04T11:38:12.373156+00:00",
+    "session_id": "c8b01ee6-d618-48a8-95e8-8c47236e1694",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.6231536865234375,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:13.184568+00:00",
+    "session_id": "d591c814-eab1-44cd-8ed6-481f430c735e",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.1938343048095703,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:14.199806+00:00",
+    "session_id": "813d0f0a-7ba5-452d-8aad-f4afcc155ae5",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:14.708291+00:00",
+    "session_id": "228a3841-a423-4d3e-b4df-1e8ec860d10e",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.6283988952636719
+  },
+  {
+    "timestamp": "2026-07-04T11:38:14.709564+00:00",
+    "session_id": "228a3841-a423-4d3e-b4df-1e8ec860d10e",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.2497901916503906,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:15.520604+00:00",
+    "session_id": "87e3cbbc-7a46-4092-85a3-fd421a50ae7b",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.1957416534423828,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:16.534340+00:00",
+    "session_id": "e5d1bb6e-7bea-4bd9-ad2b-4422ef349b17",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:17.042405+00:00",
+    "session_id": "c30c5b58-f3f1-4a91-b7d8-a736146304d6",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.2059211730957031
+  },
+  {
+    "timestamp": "2026-07-04T11:38:17.043567+00:00",
+    "session_id": "c30c5b58-f3f1-4a91-b7d8-a736146304d6",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.1436939239501953,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:17.853799+00:00",
+    "session_id": "d6d353a9-4de0-46ba-8de6-411cf33c7ad8",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.22649765014648438,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:18.866839+00:00",
+    "session_id": "0ef3b64c-f63f-4640-8063-957d771a9486",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:19.374561+00:00",
+    "session_id": "f789e0d9-7fcb-497c-b99f-f34b801058de",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.3363361358642578
+  },
+  {
+    "timestamp": "2026-07-04T11:38:19.375517+00:00",
+    "session_id": "f789e0d9-7fcb-497c-b99f-f34b801058de",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.93841552734375,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:20.185747+00:00",
+    "session_id": "d760d834-717c-4478-b1d1-36fd5fec6211",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.2040863037109375,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:21.198414+00:00",
+    "session_id": "06f63d3c-e9db-4525-b59a-3ceeef9d6c04",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:21.706366+00:00",
+    "session_id": "b84e0f46-c2d8-42fd-80b2-927c041d72b2",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.1467933654785156
+  },
+  {
+    "timestamp": "2026-07-04T11:38:21.707463+00:00",
+    "session_id": "b84e0f46-c2d8-42fd-80b2-927c041d72b2",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.0800361633300781,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:22.517577+00:00",
+    "session_id": "26174b45-54a5-438f-b604-5b7219ec468a",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.19311904907226562,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:23.529650+00:00",
+    "session_id": "8c5e84a4-e618-4380-9c5a-e34137113294",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:24.037247+00:00",
+    "session_id": "9f579e5f-3922-413b-88ab-50a028f84801",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.0952949523925781
+  },
+  {
+    "timestamp": "2026-07-04T11:38:24.038198+00:00",
+    "session_id": "9f579e5f-3922-413b-88ab-50a028f84801",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.9229183197021484,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:24.847918+00:00",
+    "session_id": "a3089a21-323a-49bf-9cad-c8469bc54d37",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.179290771484375,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:25.861993+00:00",
+    "session_id": "178e94c4-c50f-4143-8797-a59c8daedb50",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:26.369942+00:00",
+    "session_id": "f6f3016a-4276-4907-b929-4ee32aa10726",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.1982917785644531
+  },
+  {
+    "timestamp": "2026-07-04T11:38:26.370966+00:00",
+    "session_id": "f6f3016a-4276-4907-b929-4ee32aa10726",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.004934310913086,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:27.181037+00:00",
+    "session_id": "f0772cf7-163f-4546-8a11-fcc9d55edefc",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.17070770263671875,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:28.195285+00:00",
+    "session_id": "60468cd8-c419-42cd-99a8-7d34c7d99689",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-04T11:38:28.703539+00:00",
+    "session_id": "4d825250-c29f-4e07-82f7-522c191cc204",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.3616085052490234
+  },
+  {
+    "timestamp": "2026-07-04T11:38:28.704646+00:00",
+    "session_id": "4d825250-c29f-4e07-82f7-522c191cc204",
+    "event_type": "message_roundtrip",
+    "latency_ms": 1.0831356048583984,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-04T11:38:29.514551+00:00",
+    "session_id": "30f55a76-3bd9-413b-afc8-064e429f1cce",
+    "event_type": "persona_switch",
+    "switch_time_ms": 0.1735687255859375,
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:38:30.528239+00:00",
+    "session_id": "185dd32e-dc51-40e5-a6c3-5639f1193e83",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  }
+]

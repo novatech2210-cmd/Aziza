@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-07-04T11:38:57.189082+00:00",
+    "session_id": "b9d59300-618b-4eac-9742-2fe57335627e",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-04T11:39:12.262526+00:00",
+    "session_id": "8af1fb9e-c5f2-4af5-88e3-47d1f2d8adeb",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:39:27.330151+00:00",
+    "session_id": "5d4c7b37-0b76-4f59-9892-8603e14123d8",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:39:42.396882+00:00",
+    "session_id": "280d341a-5fbd-4e7f-91c3-5b38fcd9f116",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-04T11:39:57.470603+00:00",
+    "session_id": "3278d581-a664-4a9b-9af9-9001439e8515",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:40:12.540893+00:00",
+    "session_id": "1844bcc3-55d7-4321-a6db-d4550dfddc0e",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:40:27.616318+00:00",
+    "session_id": "a7aa6a7b-2a0a-4c04-8a01-b3f1bf51cc6d",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-04T11:40:42.688554+00:00",
+    "session_id": "2d6661ac-0262-4fbd-8057-71407d5ce0b0",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:40:57.760313+00:00",
+    "session_id": "fc8c3594-e499-4e8e-9295-02a4e7ef5c26",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:12.825075+00:00",
+    "session_id": "f8ce455f-95ae-4608-865c-7e0b3e0d6fd7",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  }
+]

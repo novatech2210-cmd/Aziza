@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-03T14:48:31.097969+00:00",
+    "session_id": "d14d6295-5469-4aa6-9083-837ef333c5dc",
+    "event_type": "session_started",
+    "persona": "aziza_ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:48:31.203820+00:00",
+    "session_id": "f813269b-0fe4-4e67-b810-80c62b33180b",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 32.4,
+    "memory_used_gb": 16.117538452148438,
+    "memory_available_gb": 33.66514587402344,
+    "disk_usage_percent": 91.7,
+    "network_io": {
+      "bytes_sent": 452592675,
+      "bytes_recv": 27858437658,
+      "packets_sent": 4588092,
+      "packets_recv": 7243208,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29508.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19168.0,
+      "temperature": 38.0
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:32.100717+00:00",
+    "session_id": "d14d6295-5469-4aa6-9083-837ef333c5dc",
+    "event_type": "session_crash",
+    "error": "received 1013 (try again later) No workers available; then sent 1013 (try again later) No workers available",
+    "duration_s": 1.016294002532959
+  }
+]

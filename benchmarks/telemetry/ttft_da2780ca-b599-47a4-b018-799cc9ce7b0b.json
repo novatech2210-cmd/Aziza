@@ -1,0 +1,1577 @@
+[
+  {
+    "timestamp": "2026-07-03T15:08:19.165124+00:00",
+    "session_id": "6bae2048-2403-440c-880e-4778b18b6916",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.1508086,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.266144+00:00",
+    "session_id": "11bfb2c3-0e51-48d7-be64-48b6c965d066",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.2655044,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.367292+00:00",
+    "session_id": "5532b4b4-03c5-4bae-949a-76f2357349c7",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.3666298,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.468233+00:00",
+    "session_id": "f2157ab8-74da-483e-9fa9-f44634cb51b2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.4676526,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.569143+00:00",
+    "session_id": "86c9d6a8-92ff-4267-af04-8300a7c4a285",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.56856,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.670149+00:00",
+    "session_id": "cd4f4fbf-3c07-47b7-9720-955b54612a4a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.6695538,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.771196+00:00",
+    "session_id": "4754f6ca-c3c8-4bbe-9111-13644e70f340",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.770533,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.872179+00:00",
+    "session_id": "0613eb77-1e9c-4a27-b185-4dbad73b0985",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.8716173,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:19.973039+00:00",
+    "session_id": "adbc5dfb-a034-4b02-bb2d-a3330aa2f269",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091299.9726186,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.074101+00:00",
+    "session_id": "a4730eaa-8c90-41e1-bb9c-a84e878d4964",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.07336,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.175017+00:00",
+    "session_id": "35e5afe2-649a-4a18-8708-856da8696a78",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.17451,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.276403+00:00",
+    "session_id": "2647b90d-34ff-4e9b-a5d3-21e5233f7b2c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.275438,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.382562+00:00",
+    "session_id": "3c25a8a8-263c-486a-afc7-7356f2d636b1",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.3770347,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.484082+00:00",
+    "session_id": "654288c7-40b7-4c5b-9c60-8a952e95b466",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.4831784,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.585024+00:00",
+    "session_id": "e4799ec3-fe42-4f24-8d37-72966f2a7f8c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.5845199,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.685916+00:00",
+    "session_id": "f4ba4c1b-e4d5-4009-99ea-8fd8ad60584d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.6853545,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.786839+00:00",
+    "session_id": "d517d585-1822-49bd-a360-817689f4db08",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.7862544,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.887663+00:00",
+    "session_id": "6cc8bd11-a5b5-4ff3-b10a-716a1539ea5a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.8871734,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:20.988426+00:00",
+    "session_id": "1d493a1f-91d1-445d-907e-f325eefc677c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091300.9880025,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.089279+00:00",
+    "session_id": "693b20d5-f1ff-4530-9201-7a1b4508aabb",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.0888264,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.190372+00:00",
+    "session_id": "6322221f-281c-4047-8ee0-434faad62522",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.189642,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.291066+00:00",
+    "session_id": "762db75a-495c-4b24-8c54-d9138ac4438d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.290746,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.392012+00:00",
+    "session_id": "2f39c06f-30b8-4df9-bfae-8e2d4bf71b58",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.3914857,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.492789+00:00",
+    "session_id": "f9d4c09f-b72b-4b93-8c93-bf9922a5d3ef",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.4923568,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.593992+00:00",
+    "session_id": "65be59a5-32ce-4fc9-85ff-32dbd5ff5a9a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.593249,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.694869+00:00",
+    "session_id": "bf66a648-0100-4621-bbff-2b39e346183c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.694372,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.795736+00:00",
+    "session_id": "e0c9c937-b17b-4644-be51-4e79995d0297",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.7951803,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.896443+00:00",
+    "session_id": "764ebd35-8662-4fa2-81b4-4bd4154fd8fc",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.8960996,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:21.997402+00:00",
+    "session_id": "6429453b-602d-44c2-a871-052e4e57215d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091301.9968271,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.098134+00:00",
+    "session_id": "c8614c42-6030-4bbe-983a-de9528889c19",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.0977333,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.198818+00:00",
+    "session_id": "7e77a82b-ddf9-42d3-8c08-6c4cdd4ca4be",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.1984763,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.299580+00:00",
+    "session_id": "c5d6094c-f0e3-4b33-bc12-568b2c36fdbf",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.299117,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.400348+00:00",
+    "session_id": "b10b6569-64f8-46c8-83a3-d218aa735bda",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.39984,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.501710+00:00",
+    "session_id": "3d6d3085-5e8d-4169-8a65-9507b707c024",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.5009825,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.602618+00:00",
+    "session_id": "e7081146-f79d-42e1-902f-20ae00ccc464",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.6020803,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.703737+00:00",
+    "session_id": "ec7a7e94-f402-4bbb-988c-9e68589ddb87",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.7031047,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.804462+00:00",
+    "session_id": "fc4dc607-272a-4d7a-b34a-69b19d74302e",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.8040495,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:22.905290+00:00",
+    "session_id": "631bddf9-ef40-4bdc-8cee-fdcccf180942",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091302.9048135,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.006064+00:00",
+    "session_id": "71618bcf-ec96-49da-b43b-f02e8c329ee1",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.0056293,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.107357+00:00",
+    "session_id": "35e398c4-06ac-4e65-82eb-bb3463ee30cf",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.1065483,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.208587+00:00",
+    "session_id": "b00c0165-0c5f-48f8-80bd-dec24afe1433",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.2077608,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.309487+00:00",
+    "session_id": "48c65094-8803-4b63-9d1c-3783174387bf",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.3089652,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.410431+00:00",
+    "session_id": "734598af-6f00-4e9b-9e5d-a6430000ad94",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.4099057,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.511186+00:00",
+    "session_id": "7ea98130-883f-4dbf-b9bc-2465497f0f9e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.5107703,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.612087+00:00",
+    "session_id": "cd5be504-6139-4f9a-bdb7-cfadf2e03cdc",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.6115656,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.713101+00:00",
+    "session_id": "7a9f189e-9a47-4f8e-8bea-8dba08fe11e2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.7125294,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.813974+00:00",
+    "session_id": "98b0e658-a04c-48d1-b1ce-8bea6ee35d2f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.8134556,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:23.915032+00:00",
+    "session_id": "9a44d8c0-e056-41e8-a013-2363f173a464",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091303.9143968,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.015955+00:00",
+    "session_id": "fe0f9820-9ece-47b8-9b00-efba245c2ea6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.0154817,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.116910+00:00",
+    "session_id": "e3045ab0-d8a7-411b-8561-aef8a63e2ef7",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.1164157,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.217776+00:00",
+    "session_id": "3ab3cfc0-e894-4b57-b52a-8c7d7d2903be",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.2172453,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.318629+00:00",
+    "session_id": "1c83fbe3-968e-466a-a9af-f1dc8f334692",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.3181808,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.419602+00:00",
+    "session_id": "173dbadd-1d01-4b34-9ff8-11649de6a01a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.4190407,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.520461+00:00",
+    "session_id": "a0275890-f349-4d5e-97a6-3cf736f6f880",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.519958,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.621455+00:00",
+    "session_id": "e9e12079-0f77-4201-93bb-248ea40faafa",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.6208837,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.722122+00:00",
+    "session_id": "27d64cd8-836d-432d-9d64-f099bffbf941",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.7218127,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.823079+00:00",
+    "session_id": "7ff53670-f1f2-48ec-b3c4-05fa91910ce2",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.8225753,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:24.924373+00:00",
+    "session_id": "d332b883-996e-4a95-8ec8-d7f80d844eab",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091304.923606,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.025501+00:00",
+    "session_id": "5f24c965-a2c8-445f-a46a-686aeb46c65d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.02489,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.126361+00:00",
+    "session_id": "dc49e1a7-90da-4074-9d4d-7264c7edd5de",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.125873,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.227350+00:00",
+    "session_id": "2e0c83d0-3992-455a-ba22-ff0d0292407a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.2267332,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.328283+00:00",
+    "session_id": "b8525353-ebc5-4933-aa78-cae2905b2c03",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.3277164,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.428948+00:00",
+    "session_id": "970ff4c5-d165-46e4-a8ad-e7201b37487d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.4286156,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.529854+00:00",
+    "session_id": "0a668623-446b-4d4b-b9f1-26b635eaaed5",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.5293167,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.630666+00:00",
+    "session_id": "80fa2620-fa23-4fa6-8e08-751df4c9f555",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.6301897,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.731569+00:00",
+    "session_id": "c78895c1-2113-42c1-8ea9-1d3eb4fedc93",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.731024,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.832180+00:00",
+    "session_id": "d04b0de5-f5a1-473a-849c-103cc08da1b9",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.831846,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:25.933021+00:00",
+    "session_id": "25306099-6347-401f-afbe-79ec72f58b7d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091305.9324834,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.033545+00:00",
+    "session_id": "396514fe-ee3c-4be3-8351-bf8ff3c34302",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.0332599,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.134547+00:00",
+    "session_id": "78aa3768-658c-4e92-8372-17343ac6f2cb",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.1340592,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.235296+00:00",
+    "session_id": "7178e6b6-cb36-4d17-90c3-a8378b6cca56",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.2348804,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.336298+00:00",
+    "session_id": "27ff5f04-4a85-4a4a-8cb8-7fde97c594f0",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.335698,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.437132+00:00",
+    "session_id": "8fe91364-4b23-4bc3-ac83-ca613ee6b4ff",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.4366658,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.538153+00:00",
+    "session_id": "ad07bddf-24a2-46a4-8ebc-f5cdfc521aae",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.537516,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.638911+00:00",
+    "session_id": "02c5ce3d-2c45-401e-a3e7-28658001c7f8",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.6385067,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.739797+00:00",
+    "session_id": "d0f474bf-1334-4ad4-9292-c8fa0cb7b561",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.739234,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.840446+00:00",
+    "session_id": "b514a211-58d3-40bf-bcfa-0ac86e6d8dc2",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.840114,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:26.941303+00:00",
+    "session_id": "5b1881eb-ab84-414b-80c4-293a5cbb6561",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091306.9407792,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.042228+00:00",
+    "session_id": "4c23477b-1a2b-4998-bc85-a1a70d18f38d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.0417545,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.143745+00:00",
+    "session_id": "0119504d-71d9-4cd7-912c-4216e0fd0227",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.1428342,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.245051+00:00",
+    "session_id": "eb8a8afa-9952-4b39-944e-a59a3139f4ca",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.2442913,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.345810+00:00",
+    "session_id": "7f028588-761f-498f-b3a4-fa4e7b2665d1",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.3453825,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.446688+00:00",
+    "session_id": "62b852e8-4315-44a2-9e41-b5f6fb809f2b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.446197,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.548061+00:00",
+    "session_id": "f246d938-d57f-4040-8677-70ee6aff16f9",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.5471966,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.648888+00:00",
+    "session_id": "e6f779c7-331e-44a8-aee3-ef2ce6f1d9fd",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.6484783,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.749841+00:00",
+    "session_id": "64da9e2c-5c51-48d1-ae0e-6160611391f7",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.7492485,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.851022+00:00",
+    "session_id": "bafab546-835b-4b3e-8b94-71d4c1d7bc76",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.8503869,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:27.951927+00:00",
+    "session_id": "aa40ba0b-39cc-4c1d-ac4a-88aa994b72ce",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091307.951454,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.053127+00:00",
+    "session_id": "f2427d7b-3fac-48a4-9cca-6eaae7176cd9",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.052387,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.154244+00:00",
+    "session_id": "24ef92d1-9aef-4473-94e9-32b085c0526b",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.1535928,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.255208+00:00",
+    "session_id": "b5fcbd9f-f3b1-4446-9bbc-f37b66c8500d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.2547026,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.356261+00:00",
+    "session_id": "759e7f4a-db63-47e4-851d-19b683aa042d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.3555608,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.457039+00:00",
+    "session_id": "c224a48b-8e28-4294-b249-869d95f10ac7",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.4565756,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.558050+00:00",
+    "session_id": "21c20452-eb09-4467-b67e-c75ea2740e79",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.557396,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.659380+00:00",
+    "session_id": "242ee569-9ba1-48bb-be55-2d9b77a02748",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.6586041,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.760557+00:00",
+    "session_id": "8f9cc04a-2071-4e16-8108-b8a1467332a2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.75987,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.861445+00:00",
+    "session_id": "644571b2-1259-450a-987d-078df3baaee6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.8608909,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:28.962178+00:00",
+    "session_id": "b6d5237c-6f3f-4f31-9bbb-f5deedcccebc",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091308.9617949,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.062957+00:00",
+    "session_id": "d5c83edd-e08d-4d4f-822e-5219d4d19065",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.062536,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.163707+00:00",
+    "session_id": "e6902c6b-3b23-499b-9a24-b516728e12f6",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.1633015,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.264412+00:00",
+    "session_id": "32abd853-ac40-4cd8-b30a-701dd62f0d53",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.263996,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.365321+00:00",
+    "session_id": "716710a1-ec02-4f22-b351-68a6a5acec1b",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.3647752,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.466486+00:00",
+    "session_id": "cd1e279a-e4c5-4db2-b45d-7384eb4ba88a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.4657981,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.567216+00:00",
+    "session_id": "6865352f-ae9f-41c9-8d58-efacce13185c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.5668864,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:08:29.668431+00:00",
+    "session_id": "c8beb40d-f69b-41fa-bd5d-00f8d391fdc4",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "request_start": 1783091309.6676693,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  }
+]

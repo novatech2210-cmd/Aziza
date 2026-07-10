@@ -1,0 +1,1577 @@
+[
+  {
+    "timestamp": "2026-07-03T11:40:04.597240",
+    "session_id": "dc5847e7-9272-4fd7-a373-c94ebe952d3d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078804.5735016,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:04.698947",
+    "session_id": "f9689a0e-f285-447d-8f19-ade28a1a801b",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078804.697564,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:04.800745",
+    "session_id": "f92b0a52-611a-413e-8a10-8e34ca70a412",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078804.799244,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:04.902185",
+    "session_id": "cc0d4cdc-7f31-45a6-9ae8-b1cf14c5f449",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078804.9010105,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.003600",
+    "session_id": "de1bdcca-95ce-4e33-8297-c354355c60b2",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.0024545,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.105038",
+    "session_id": "79f8cb69-6de4-4c85-8766-160001b61d04",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.1038609,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.206465",
+    "session_id": "eb111957-1443-483d-bc11-ae5afdb57644",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.2053144,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.307867",
+    "session_id": "5e7117be-1d59-4a6d-9cb6-feb6c4480e2a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.3067439,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.409246",
+    "session_id": "227fc222-0de3-428a-ac3e-16ac26b20f6c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.4081182,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.510972",
+    "session_id": "99fc2efd-0550-469b-b40c-d1117ba881a0",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.5096686,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.612601",
+    "session_id": "22c4362b-e027-4003-9d3f-5af3dce9551a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.6112974,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.714057",
+    "session_id": "630963cd-a984-4943-a6b2-49d90c2fdc08",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.7129118,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.815440",
+    "session_id": "04e116d3-379f-4de6-95ec-2e6e40527854",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.8143575,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:05.916849",
+    "session_id": "1a8bea9d-f791-43c8-a133-297901d73968",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078805.9157567,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.018465",
+    "session_id": "30e74215-614b-49dd-98cf-797f4f0a2cff",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.0172834,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.119953",
+    "session_id": "d8bb7e04-6981-4494-b89d-1a771d962fb8",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.1187901,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.221644",
+    "session_id": "e443190d-18bb-47a1-9026-a171a6613ffe",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.2204552,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.323226",
+    "session_id": "0a91dcf4-df67-4188-ad27-9661d54dff47",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.3219907,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.424797",
+    "session_id": "4f09fc42-6699-4555-808a-56682c6712a8",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.4235723,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.526617",
+    "session_id": "22193133-15b1-4106-895f-9a1eccf1ce7d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.5251317,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.628121",
+    "session_id": "b04de577-da18-4554-94f7-e9bcaa154f56",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.626948,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.729802",
+    "session_id": "05dc946d-399c-477d-87eb-0bb5640a1d31",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.7285411,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.831592",
+    "session_id": "4e876b12-74b0-40c7-8d3d-76a5a1b6c966",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.830324,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:06.933242",
+    "session_id": "6cc6902b-8450-4e23-aaab-5973f45f5db2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078806.9319406,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.035171",
+    "session_id": "7a6e47bc-c70c-4dd5-bddd-600ece09bdec",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.033796,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.136997",
+    "session_id": "9caf3fbc-9875-4e6d-82b1-d3bb89b2933c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.1356418,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.238611",
+    "session_id": "e52b9d2b-e917-4f8e-96ed-044acef9656b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.2373571,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.340439",
+    "session_id": "dd7d89dc-65ca-4388-9ac8-f8ee08d297a7",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.3389819,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.442528",
+    "session_id": "0e97c85c-e78e-469d-b428-6f4ec9d6a129",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.440817,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.544363",
+    "session_id": "0d4af548-3b6e-4ddc-a19d-3efd97246e47",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.543023,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.646099",
+    "session_id": "42a0cff3-24bf-42a6-afc5-f3d4ee208772",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.6448607,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.747802",
+    "session_id": "4b989d83-2ac4-45a3-8dba-edb3bd73eb98",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.7464726,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.849696",
+    "session_id": "27838e7a-f6ca-4415-8164-03e497333865",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.8483138,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:07.951335",
+    "session_id": "ab00c624-bf11-42fe-b197-38682817cf4d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078807.950049,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.053041",
+    "session_id": "f6157df7-0fcb-4958-8ed3-b1346953f59c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.0517128,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.154815",
+    "session_id": "fdb00371-5aaf-499e-a739-a556dad14691",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.1534562,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.256389",
+    "session_id": "e1a409a0-60a6-4c5a-bbfc-9cd896a1a89d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.2551239,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.357938",
+    "session_id": "f56e3373-d9ef-42e3-9ed0-0b6c8d0c6244",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.3566644,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.459974",
+    "session_id": "7ce999bc-8fe1-4aaf-bb1e-ec7d0b4e07e5",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.458325,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.561603",
+    "session_id": "61ae68ac-0165-48b3-ab35-0006636ec22b",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.5602915,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.663203",
+    "session_id": "c45dccc0-ccfa-441f-9b8e-25459f2c9d6f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.6618886,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.764759",
+    "session_id": "4e29d1f1-6e2c-495d-95e7-fbffdfa3e665",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.763513,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.866298",
+    "session_id": "17d998b2-a60f-4f88-b71f-e47c9520ed58",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.8650393,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:08.968134",
+    "session_id": "54aca1a1-84bb-4d7d-bd94-6f46982aca63",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078808.9667208,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.069762",
+    "session_id": "adf55ca6-f2a7-4d6b-8146-63b98710deb3",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.0684242,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.171472",
+    "session_id": "ec093040-8852-48a1-9a11-bc31b997c3c1",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.17017,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.273097",
+    "session_id": "c5b9098f-c0cc-42f6-80ec-4d0d50687a9b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.2718294,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.374687",
+    "session_id": "6e0af57c-257e-4ad9-92bd-19b59b86a91c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.3734381,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.476593",
+    "session_id": "9a3d24f7-f41b-4a43-a6f0-f3a92eb8ec37",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.4750557,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.578105",
+    "session_id": "69f5bad9-ea8e-4885-b10a-8ae707b0e2df",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.576942,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.679631",
+    "session_id": "aeeebb8a-245d-4053-8c9a-7e7ca8a67470",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.6784258,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.781344",
+    "session_id": "069ab7eb-4942-4a44-95c9-2d1bc51a57e5",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.7800677,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.882813",
+    "session_id": "0db3754f-330d-4e1b-8ee9-6ffe629b6f76",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.8816102,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:09.984349",
+    "session_id": "308f452d-22f6-4e68-85d5-0cdb76817f34",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078809.9831605,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.085944",
+    "session_id": "9e20ae7c-a85c-4c50-a550-ff634d2fe31f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.0846996,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.187567",
+    "session_id": "6cdcf87d-2f6a-4bde-a3a0-2c3ae776d4eb",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.186338,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.289362",
+    "session_id": "83f5dd0e-05ea-4e78-ac2d-42468bb048d3",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.2880218,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.391156",
+    "session_id": "2606753c-336b-406b-a9c0-1e933f26a379",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.3896873,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.492675",
+    "session_id": "9cc27bbd-db33-40df-b549-d8f4e8c9ec0a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.4915023,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.594156",
+    "session_id": "120b8506-2698-439e-aa47-e6b7f4f0700d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.5930011,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.695845",
+    "session_id": "30ea1f64-cc62-4f8b-a968-e6ced025c81b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.6946027,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.797488",
+    "session_id": "ac3856aa-6226-4ef7-a46a-10a523196774",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.7962875,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:10.899036",
+    "session_id": "c96fb11b-4f99-4e24-94a6-c776441aaa1a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.8978555,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.000892",
+    "session_id": "0726e133-8e7c-405e-b28d-27e20d7be279",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078810.9994657,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.102666",
+    "session_id": "272bee4e-f7fa-4b76-a341-e14ce3048bef",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.1013703,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.204301",
+    "session_id": "eb7e4877-2169-4528-b2b5-4e7f48dda330",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.2029598,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.305957",
+    "session_id": "4d9168c0-d724-482b-80ac-f339530e9acb",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.3046489,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.408680",
+    "session_id": "9bcee09e-bc7b-43f7-a430-288f36b5f380",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.406321,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.510329",
+    "session_id": "44f093df-1456-4396-b270-816bbed46ba5",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.5090415,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.612041",
+    "session_id": "d3d638ca-f0cb-439f-905d-ad9e030b93c9",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.6107464,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.713774",
+    "session_id": "be1ac1c5-e276-41a2-ac73-348c1682b930",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.712416,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.815396",
+    "session_id": "a3c13a6a-40c4-406d-9651-bd945ca32551",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.8140566,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:11.917052",
+    "session_id": "4e294ca7-c553-4426-bac7-7fc062245b0c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078811.9157693,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.018725",
+    "session_id": "5293fc9d-2c01-443e-b54e-ae622f27ceb0",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.0173938,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.120527",
+    "session_id": "b74d2520-7a9f-4ecd-b4a7-78b0131e6046",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.1192298,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.222244",
+    "session_id": "71f5bad9-5402-410b-adff-bb5cd64a7cb1",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.2208798,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.323900",
+    "session_id": "630b8135-af76-4d77-b5e3-be5578467091",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.322606,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.426111",
+    "session_id": "8cff9265-9a4c-4a37-91ea-05a22f45d053",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.4244437,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.527785",
+    "session_id": "550ab87a-10ac-405d-85f1-79c29a14f92b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.526447,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.629452",
+    "session_id": "fb64cd1d-838e-4aa1-aa75-81c62ed0071f",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.6281507,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.731197",
+    "session_id": "fb494778-0017-47aa-9218-278622bfc737",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.7298698,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.832903",
+    "session_id": "8a3fd159-2176-4f34-9487-23d7b762814a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.8315363,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:12.934573",
+    "session_id": "9c38e311-4048-42e3-8e9f-b4be53593663",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078812.933223,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.036414",
+    "session_id": "01557772-568d-4e24-8adf-8f06f04f3319",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.0349936,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.138065",
+    "session_id": "6c63ebf3-0124-4fdf-aee3-f14690c660c4",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.1367292,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.239782",
+    "session_id": "fe2aca28-7671-4bfe-b97d-eabbdd9ab28e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.2384448,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.341742",
+    "session_id": "c6de1e90-2e61-4180-9f0a-ab4f1f305fb3",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.3403242,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.443709",
+    "session_id": "1298b315-4813-49db-b538-9d670304c9d3",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.4420807,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.545433",
+    "session_id": "cd81f75f-8dd0-4584-91a1-b469bf02266e",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.544061,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.647211",
+    "session_id": "21054bc8-e547-4513-b03c-bebf8af42fed",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.6459148,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.748841",
+    "session_id": "b1850d8b-6354-49b0-83a5-595a8290621e",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.7475846,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.850654",
+    "session_id": "45a3e764-6640-4197-b237-b051a2faa6bf",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.8493333,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:13.952544",
+    "session_id": "e2c0993e-abc9-4a36-b794-e4d83b9f6449",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078813.9510868,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.054278",
+    "session_id": "983e95b4-4ac8-4388-934e-ecbb59cfc801",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.052907,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.155952",
+    "session_id": "341670e6-42af-4289-857e-d161f60fb79d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.15457,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.257827",
+    "session_id": "6a22fa22-632f-4a9b-99b4-ee86656c34e0",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.256461,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.359482",
+    "session_id": "04b2a49a-b42c-4b12-b9d1-aa2d8abf40ad",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.3581548,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.461419",
+    "session_id": "52a945ef-93d7-43de-9631-5d97e39ea681",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.4598355,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.563225",
+    "session_id": "089de86c-fb13-46b4-acdd-33a7ad861310",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.5618966,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.664889",
+    "session_id": "0317022d-b815-48c5-86d8-e1f46736185a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.663614,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.766721",
+    "session_id": "3cc4101f-d457-46a0-a85d-5032c4b5c4c0",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.7653925,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.868388",
+    "session_id": "158938d6-7cb3-4dcc-9ff5-54d3c8be888d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.8670819,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:14.970087",
+    "session_id": "b9570387-6343-4612-b8e4-3ca8d70e54c5",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078814.9687495,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:15.071682",
+    "session_id": "53fe146f-4b4d-432d-96a6-14521a157b53",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078815.0703783,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:40:15.173396",
+    "session_id": "adc90afd-c564-4199-8e27-2d0610126e78",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "timestamps": {
+      "request_start": 1783078815.1720366,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  }
+]

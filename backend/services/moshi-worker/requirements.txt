@@ -1,0 +1,10 @@
+moshi
+torch
+torchaudio
+numpy
+redis
+hiredis
+asyncio
+sentencepiece
+python-dotenv
+nvidia-ml-py

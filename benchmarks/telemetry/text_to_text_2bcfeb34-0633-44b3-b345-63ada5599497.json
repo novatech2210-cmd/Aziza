@@ -1,0 +1,902 @@
+[
+  {
+    "timestamp": "2026-07-03T17:47:07.524073+00:00",
+    "session_id": "3ede3349-d447-4bf8-88b5-9ad43648f0e9",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.11321353912353516,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T17:47:07.665178+00:00",
+    "session_id": "e8bb83b2-8815-42c2-9c13-744a39f542bb",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.084869384765625,
+    "prompt_length": 29
+  },
+  {
+    "timestamp": "2026-07-03T17:47:07.831425+00:00",
+    "session_id": "ac588a71-178f-4b49-83dc-c76183d673c2",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.11080598831176758,
+    "prompt_length": 27
+  },
+  {
+    "timestamp": "2026-07-03T17:47:07.975463+00:00",
+    "session_id": "9adaff07-956d-49f3-8165-9a32367f40c4",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.0889737606048584,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.128589+00:00",
+    "session_id": "7c153719-34a8-4b1c-b20c-11bcfd9198a3",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.09683847427368164,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.292476+00:00",
+    "session_id": "b4660350-999e-43e3-8ba9-49e38d45cfba",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.10907268524169922,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.464592+00:00",
+    "session_id": "2aa8b09a-1166-4283-b7e7-c44cdc3ba353",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.1160576343536377,
+    "prompt_length": 43
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.609552+00:00",
+    "session_id": "a1ddce68-cf0d-42f0-a673-2d9537a3b7d2",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.08937358856201172,
+    "prompt_length": 46
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.753846+00:00",
+    "session_id": "b70bcf1e-1cd1-429e-b934-27c28e49fee1",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "uz",
+    "latency_s": 0.08910918235778809,
+    "prompt_length": 42
+  },
+  {
+    "timestamp": "2026-07-03T17:47:08.928548+00:00",
+    "session_id": "8d8e4de9-3150-42d7-bbbb-6832de1841b7",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.11803960800170898,
+    "prompt_length": 57
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.092045+00:00",
+    "session_id": "47c7e9b9-9086-41c9-bbf3-18fad75a4279",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.10796546936035156,
+    "prompt_length": 48
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.248926+00:00",
+    "session_id": "d4a8f9c0-add0-49c7-8d11-ff397a2392db",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.1000523567199707,
+    "prompt_length": 57
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.400884+00:00",
+    "session_id": "8c493f9b-9862-435a-ae72-312df83c855a",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.09694480895996094,
+    "prompt_length": 51
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.559300+00:00",
+    "session_id": "b268a2ab-d4f0-4df2-9f94-e659964bf50a",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "uz",
+    "latency_s": 0.10307002067565918,
+    "prompt_length": 45
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.705283+00:00",
+    "session_id": "30baa436-94c3-491c-b9b6-5208913ba98d",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.0894007682800293,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:09.875285+00:00",
+    "session_id": "e2dd2f2f-7c25-41ce-bc55-ed12513ec84e",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.11390948295593262,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.016709+00:00",
+    "session_id": "c5803e5a-bd74-451e-98c0-235352e7c0d3",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.0852513313293457,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.172143+00:00",
+    "session_id": "43516f63-f392-4fc5-af13-e6136a41abfe",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.1002511978149414,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.341625+00:00",
+    "session_id": "be0ea7c7-6ffd-4415-847b-8f3550630d89",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "uz",
+    "latency_s": 0.11396646499633789,
+    "prompt_length": 31
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.503446+00:00",
+    "session_id": "273b6eec-a103-4992-a853-9580d87040dd",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.10306763648986816,
+    "prompt_length": 31
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.644257+00:00",
+    "session_id": "c9b72b1f-025c-480c-8af0-bb0de5abf1ad",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.08508467674255371,
+    "prompt_length": 33
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.786570+00:00",
+    "session_id": "92b37009-2b17-45e8-be5d-733eaf51866f",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.08600997924804688,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:10.952519+00:00",
+    "session_id": "0e4182de-1a70-43ad-b717-9ab39bb9f3c0",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.11075401306152344,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.094903+00:00",
+    "session_id": "7ccfc873-6131-48d6-ae4f-a8f3e66a55e6",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.08601713180541992,
+    "prompt_length": 25
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.244825+00:00",
+    "session_id": "ff40da65-f6ad-4260-b462-6e92560210ae",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.09415292739868164,
+    "prompt_length": 45
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.421879+00:00",
+    "session_id": "0b25d498-7fc5-4cc9-95dc-efd516eeb0e4",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.12127900123596191,
+    "prompt_length": 52
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.578535+00:00",
+    "session_id": "5c56943f-d33e-4ca1-9e54-6bbd70a244b0",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.10112786293029785,
+    "prompt_length": 50
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.717289+00:00",
+    "session_id": "60bfe2f7-643e-40ff-b54a-b54d7f99bc94",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.08375930786132812,
+    "prompt_length": 60
+  },
+  {
+    "timestamp": "2026-07-03T17:47:11.861951+00:00",
+    "session_id": "59983134-381d-47e8-80bc-eef5f9e208b0",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.08918309211730957,
+    "prompt_length": 45
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.024400+00:00",
+    "session_id": "a66c5f13-eba3-4ca2-b515-5202c31f1951",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.10694241523742676,
+    "prompt_length": 33
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.171587+00:00",
+    "session_id": "59e74d30-5539-4852-8a75-582291cf7090",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.09211206436157227,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.333941+00:00",
+    "session_id": "8ef9c14c-4543-484d-9180-a101d6305d9b",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.10600876808166504,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.496045+00:00",
+    "session_id": "94bc10d7-1d69-45ad-9c8c-80503cc29781",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.10621070861816406,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.665414+00:00",
+    "session_id": "631a2299-d57d-43e4-886b-e11d18968f11",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.11307144165039062,
+    "prompt_length": 51
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.842082+00:00",
+    "session_id": "26aa1a89-663c-43de-be0b-5b29781777b5",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.12099480628967285,
+    "prompt_length": 45
+  },
+  {
+    "timestamp": "2026-07-03T17:47:12.981415+00:00",
+    "session_id": "890eca06-81a4-4e14-9f55-7cd89bdcce59",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.08391809463500977,
+    "prompt_length": 37
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.157790+00:00",
+    "session_id": "f984d632-9b40-443b-87f4-a484aa5b1010",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.12091541290283203,
+    "prompt_length": 42
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.297780+00:00",
+    "session_id": "5888b8c6-9b1c-4f7e-bc14-e357195f9e95",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.0833594799041748,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.470150+00:00",
+    "session_id": "1605fc80-6315-488a-a0fc-ac3d3d7a44f1",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.11596941947937012,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.620608+00:00",
+    "session_id": "f2803082-c4bf-40e4-a328-2e62bde3a428",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.09532618522644043,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.764905+00:00",
+    "session_id": "efcf8b37-8e16-4071-b6f1-3d00ac08b2bd",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.08885526657104492,
+    "prompt_length": 44
+  },
+  {
+    "timestamp": "2026-07-03T17:47:13.925742+00:00",
+    "session_id": "fd380482-d1c4-4009-9627-360374f23d60",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.10605764389038086,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.064684+00:00",
+    "session_id": "85451630-8e9b-4e6e-9b86-4ff63b3e0fde",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.08390164375305176,
+    "prompt_length": 48
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.216010+00:00",
+    "session_id": "b1362b17-9f6a-4c6e-baef-7e6e97dfcc33",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.09595489501953125,
+    "prompt_length": 39
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.364336+00:00",
+    "session_id": "0c423c37-dfd9-41ae-87b5-a1b68118c432",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.09281706809997559,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.502071+00:00",
+    "session_id": "99ed4090-149a-4eb1-bebb-040ca585508e",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.08294844627380371,
+    "prompt_length": 39
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.666372+00:00",
+    "session_id": "00cb5e1d-cc72-48a3-8adb-287ee2b7c397",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.10948967933654785,
+    "prompt_length": 27
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.819480+00:00",
+    "session_id": "59751923-b869-4e95-ab24-6781bd5e8f20",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.09780478477478027,
+    "prompt_length": 22
+  },
+  {
+    "timestamp": "2026-07-03T17:47:14.971363+00:00",
+    "session_id": "6ea73c3e-129b-4b30-a778-f98695cc69eb",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.09615921974182129,
+    "prompt_length": 42
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.117437+00:00",
+    "session_id": "f00be4b3-8963-451c-b266-0c00de314845",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.09119772911071777,
+    "prompt_length": 25
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.287921+00:00",
+    "session_id": "f9c7ecf6-37a4-45b6-a885-0e73f31f8b15",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.11399435997009277,
+    "prompt_length": 37
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.432362+00:00",
+    "session_id": "536c5b10-19ba-44a3-8812-d5cb9295847d",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.0889136791229248,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.600549+00:00",
+    "session_id": "b25624b9-90f3-4728-80c0-06326370d540",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.11375093460083008,
+    "prompt_length": 44
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.749238+00:00",
+    "session_id": "6dfc1103-8c8b-4fb3-9366-e658ecdabbfe",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.09395074844360352,
+    "prompt_length": 36
+  },
+  {
+    "timestamp": "2026-07-03T17:47:15.888383+00:00",
+    "session_id": "768cb746-b3f7-4610-98bf-4ea55e7d9aa9",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.0838465690612793,
+    "prompt_length": 26
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.037872+00:00",
+    "session_id": "433755be-98ee-458a-a80f-3dd8518b056b",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.09374141693115234,
+    "prompt_length": 39
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.207577+00:00",
+    "session_id": "f9a175f1-f6db-4dbe-b4f1-31ed4c0fcf2c",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.1149740219116211,
+    "prompt_length": 43
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.364367+00:00",
+    "session_id": "ec0316e5-88d9-4a40-a97e-ff6dc1d923f0",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.10100173950195312,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.504457+00:00",
+    "session_id": "f5c3ee81-3c3e-4d0a-b917-6c70a3ef4eaa",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.08489227294921875,
+    "prompt_length": 55
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.669918+00:00",
+    "session_id": "3506f2f8-b1b4-4eca-9799-33217f29055b",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.11077070236206055,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.811200+00:00",
+    "session_id": "8354a869-7754-4203-8044-2eee23257876",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.08608222007751465,
+    "prompt_length": 31
+  },
+  {
+    "timestamp": "2026-07-03T17:47:16.968557+00:00",
+    "session_id": "acb8c388-56ed-4d69-ac58-083036b19378",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.1020498275756836,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.129266+00:00",
+    "session_id": "fb332200-13c2-425d-82f7-9fe5e5d72816",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.10574483871459961,
+    "prompt_length": 46
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.289234+00:00",
+    "session_id": "88be6ced-4e80-4180-b7e6-f66b41b53a61",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.1051487922668457,
+    "prompt_length": 45
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.455206+00:00",
+    "session_id": "3dfeb749-546f-4a42-9005-a76116089243",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.11069464683532715,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.608561+00:00",
+    "session_id": "39147cce-d11a-4ae6-8cf2-7c3b5d3861d2",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.09713149070739746,
+    "prompt_length": 36
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.756212+00:00",
+    "session_id": "e4dda5e3-4e37-468c-90f0-820e1f8886ae",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.09195208549499512,
+    "prompt_length": 51
+  },
+  {
+    "timestamp": "2026-07-03T17:47:17.900700+00:00",
+    "session_id": "bff3c67e-4947-4039-8bfc-7d8cc6c2ebe9",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.08890223503112793,
+    "prompt_length": 46
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.040220+00:00",
+    "session_id": "b4590215-add2-4bd1-b5f0-f4275dbeea46",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.0839681625366211,
+    "prompt_length": 59
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.189617+00:00",
+    "session_id": "ba824224-04af-4f7d-a53a-de36e5e957ba",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.0941019058227539,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.348170+00:00",
+    "session_id": "543f4c33-19a9-467d-bcaa-5c05cec0e165",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.10309076309204102,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.501847+00:00",
+    "session_id": "a7d70940-d736-434f-a27e-04de7ba564e0",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.0978691577911377,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.657726+00:00",
+    "session_id": "902c1c5a-557b-4580-9c57-3b910a118399",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.09911537170410156,
+    "prompt_length": 41
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.811052+00:00",
+    "session_id": "c8f62583-8e1f-435e-ab0b-11998b0b10fb",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.09804391860961914,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:18.982080+00:00",
+    "session_id": "419bfc8b-5ede-427f-ad84-0cf96d7a3e72",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.11516690254211426,
+    "prompt_length": 59
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.127519+00:00",
+    "session_id": "95877d71-d23c-4ca4-b501-ef627bf50aae",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.09082436561584473,
+    "prompt_length": 53
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.282411+00:00",
+    "session_id": "f6cfc9af-292b-4d86-9ce5-0191c25f023a",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.09907197952270508,
+    "prompt_length": 44
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.450786+00:00",
+    "session_id": "61c0e2d6-c549-4751-9eaf-7d63c0d93800",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.11329960823059082,
+    "prompt_length": 31
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.604746+00:00",
+    "session_id": "a5974fbb-4caf-4006-800b-ffc111ad4c88",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.09820914268493652,
+    "prompt_length": 42
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.775835+00:00",
+    "session_id": "14c9dc7c-1b6e-448a-b7bb-0fdef3d659c5",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.11608529090881348,
+    "prompt_length": 37
+  },
+  {
+    "timestamp": "2026-07-03T17:47:19.926234+00:00",
+    "session_id": "182a8453-2e06-4f4d-a7a9-4db1a76d6332",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.09417581558227539,
+    "prompt_length": 33
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.075380+00:00",
+    "session_id": "c599a07c-f00c-4b3f-99ed-6a5fb0fe66e0",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.09385275840759277,
+    "prompt_length": 39
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.222805+00:00",
+    "session_id": "ce973f44-34a3-4e0f-8970-974877c8b3bd",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.09302735328674316,
+    "prompt_length": 63
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.378305+00:00",
+    "session_id": "e33e5996-4ef1-4f8b-8461-1b2189fe5752",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.09999346733093262,
+    "prompt_length": 54
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.519370+00:00",
+    "session_id": "6e1c922b-c852-4df0-93be-cf9f30899303",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.0849757194519043,
+    "prompt_length": 35
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.671064+00:00",
+    "session_id": "4ba2bab2-9208-4799-999a-09ece68c5810",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.09694814682006836,
+    "prompt_length": 37
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.826836+00:00",
+    "session_id": "af3be98d-593b-4a02-baeb-c85d8179d719",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.10004496574401855,
+    "prompt_length": 40
+  },
+  {
+    "timestamp": "2026-07-03T17:47:20.985403+00:00",
+    "session_id": "1925320a-7eba-4434-b10b-9612f7f95905",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.10298728942871094,
+    "prompt_length": 34
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.146938+00:00",
+    "session_id": "9231d5cc-c6e0-48cc-85db-ef1815e92253",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.10617375373840332,
+    "prompt_length": 47
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.299534+00:00",
+    "session_id": "e17a368f-6524-4db7-9f97-b90db50437a0",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.09602546691894531,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.449761+00:00",
+    "session_id": "4a9a50ab-49ec-46e9-bb0a-c93067d197a4",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.09492850303649902,
+    "prompt_length": 55
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.593086+00:00",
+    "session_id": "d20a4c33-7ee8-4e3b-af27-5f2d139c5401",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.08699822425842285,
+    "prompt_length": 51
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.749978+00:00",
+    "session_id": "27f076f2-aa8d-480c-94b1-207d43f929b7",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 0.10179686546325684,
+    "prompt_length": 39
+  },
+  {
+    "timestamp": "2026-07-03T17:47:21.916738+00:00",
+    "session_id": "1142036c-3d06-4c24-89c7-062b9dd3afda",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 0.11092019081115723,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.068396+00:00",
+    "session_id": "4f2bfc77-23e6-455a-a900-f6ea9c0cac79",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.09609031677246094,
+    "prompt_length": 31
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.220954+00:00",
+    "session_id": "91c7934b-958d-46a0-8616-a9dc24df022c",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 0.09601426124572754,
+    "prompt_length": 19
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.373317+00:00",
+    "session_id": "6b9c23a2-52bc-4fb5-a626-16aa41c52543",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 0.09717130661010742,
+    "prompt_length": 32
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.513198+00:00",
+    "session_id": "1e88a0a9-4fb4-49ea-9ee5-362652393458",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 0.0850827693939209,
+    "prompt_length": 54
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.662429+00:00",
+    "session_id": "7143a317-86c3-40c8-aa3d-17a1d43cab13",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 0.09407186508178711,
+    "prompt_length": 38
+  },
+  {
+    "timestamp": "2026-07-03T17:47:22.804262+00:00",
+    "session_id": "f270a141-cf0e-4140-bd4f-3dbc08793e7f",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 0.08600187301635742,
+    "prompt_length": 68
+  }
+]

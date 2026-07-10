@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-07-06T11:18:46.918675+00:00",
+    "session_id": "c395560d-06d9-48d4-8301-5a4d1101088a",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.4537184238433838,
+    "prompt_length": 30,
+    "completion_tokens": 4,
+    "response_preview": "\nParis."
+  },
+  {
+    "timestamp": "2026-07-06T11:18:48.494992+00:00",
+    "session_id": "53a9ac11-e74b-4473-a8c0-657ea4cccc85",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 1.5256915092468262,
+    "prompt_length": 29,
+    "completion_tokens": 14,
+    "response_preview": "\n\u0411\u043e\u043b\u0435\u0435 \u0441\u0435\u043c\u0438 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432. "
+  },
+  {
+    "timestamp": "2026-07-06T11:18:49.411793+00:00",
+    "session_id": "f715ccbc-1beb-4c07-b53d-94d392866bdd",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.8660879135131836,
+    "prompt_length": 27,
+    "completion_tokens": 8,
+    "response_preview": "\u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d."
+  },
+  {
+    "timestamp": "2026-07-06T11:18:51.207379+00:00",
+    "session_id": "2f41c8c3-e040-4255-8433-afd58e851339",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 1.7450110912322998,
+    "prompt_length": 43,
+    "completion_tokens": 16,
+    "response_preview": "\n```python\ndef reverse_string(s):\n    return s[::-1]\n``"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:53.008996+00:00",
+    "session_id": "55cb0298-7975-48bc-8166-d1ddb2d60832",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 1.7510721683502197,
+    "prompt_length": 46,
+    "completion_tokens": 16,
+    "response_preview": "\n```python\ndef sort_list(lst):\n    return sorted(lst)\n```\n"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:54.822201+00:00",
+    "session_id": "416c1616-f29b-4258-a4fb-f8aa00819b49",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 1.762650728225708,
+    "prompt_length": 57,
+    "completion_tokens": 16,
+    "response_preview": "\nRenewable energy offers numerous benefits, including reducing reliance on finit"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:56.630091+00:00",
+    "session_id": "cc2e7cce-eebc-4547-bcd4-ec8663fd5710",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 1.757392406463623,
+    "prompt_length": 51,
+    "completion_tokens": 16,
+    "response_preview": "\n\u0411\u044b\u0441\u0442\u0440\u043e\u0442\u0430. \u042d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c. \u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044f"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:58.436877+00:00",
+    "session_id": "8b7bcd57-305e-4c01-b0f4-e504eed59406",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 1.7562294006347656,
+    "prompt_length": 35,
+    "completion_tokens": 16,
+    "response_preview": "\nIn silicon halls, where codes entwine,\nA dance of electrons, a"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:59.681582+00:00",
+    "session_id": "6c467b85-b1a7-4c87-b321-ac35029d6555",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 1.1942181587219238,
+    "prompt_length": 35,
+    "completion_tokens": 11,
+    "response_preview": "\n\u0417\u0432\u0435\u0437\u0434\u043d\u0430\u044f"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:00.706661+00:00",
+    "session_id": "f32c7bd0-1b1c-40ef-9b9c-b9a3269dc401",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.9744124412536621,
+    "prompt_length": 30,
+    "completion_tokens": 9,
+    "response_preview": "\nParis. "
+  }
+]

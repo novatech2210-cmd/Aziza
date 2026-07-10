@@ -1,0 +1,129 @@
+[
+  {
+    "timestamp": "2026-07-03T11:54:00.589042+00:00",
+    "session_id": "dcd9af65-1d7a-4504-a428-9fa152161a60",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:00.744537+00:00",
+    "session_id": "e87a12e0-c349-4a08-bc45-00d62f7d3ea5",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:00.900013+00:00",
+    "session_id": "615ce093-53e4-404c-93f3-48772b9c45aa",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:01.056414+00:00",
+    "session_id": "56ac42ad-7813-4049-ac1c-979bfbd6a65b",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:01.212447+00:00",
+    "session_id": "a18ef31b-7233-426f-b3b3-3efa667fd1ea",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:01.367021+00:00",
+    "session_id": "5f3c99ba-11fb-4f5c-a855-e63d602b1f2c",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:01.521432+00:00",
+    "session_id": "b9213170-eab4-4ff7-8c7b-9cb4393cc4ac",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T11:54:11.687389+00:00",
+    "session_id": "3ca91e02-e460-4a92-a506-8b9e18ee0e4e",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T11:54:21.844723+00:00",
+    "session_id": "90c8f67b-3796-4053-88ed-0e9e43490b58",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T11:54:32.010173+00:00",
+    "session_id": "f619c707-a6da-4be9-bf00-a2f7817387a8",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T11:54:42.169815+00:00",
+    "session_id": "026ad70b-4c3e-4681-93a4-3d103cbe9870",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:54:52.334163+00:00",
+    "session_id": "fab7efae-e21f-4853-8f9f-d2d2a4821dcd",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:02.499551+00:00",
+    "session_id": "74c35090-403c-4dde-b8cb-19e9f8b62bcd",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:12.665640+00:00",
+    "session_id": "2e56d74e-ed3c-4ed8-8cb5-2b3c3ccce201",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:22.833065+00:00",
+    "session_id": "2b49a85b-546b-47cb-8e2d-8c0121b07170",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:32.997240+00:00",
+    "session_id": "b1dc1095-0791-4e75-a9c2-f8fd1608a292",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:43.160912+00:00",
+    "session_id": "994ed346-0f5e-42bd-bfef-96d609f06921",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:55:53.323934+00:00",
+    "session_id": "1343407f-a690-43c7-b74a-4f7c05893bc9",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:56:03.489171+00:00",
+    "session_id": "4d9285a3-d738-4a9e-943f-0e3d6215fae2",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T11:56:13.649999+00:00",
+    "session_id": "b951edcf-2fe2-4887-883b-9a1bbe410413",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  }
+]

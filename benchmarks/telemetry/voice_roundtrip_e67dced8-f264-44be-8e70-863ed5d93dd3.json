@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-07-06T11:20:12.585283+00:00",
+    "session_id": "22bc56a6-3f50-4d82-8c1c-46ea55cabdcc",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336802.4982145,
+      "audio_send": 1783336802.5192382,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336802.5721977
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:20:22.706374+00:00",
+    "session_id": "5a6b4ba6-623e-4637-8621-f67800bce704",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336812.640876,
+      "audio_send": 1783336812.6420593,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336812.6933548
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:20:32.829356+00:00",
+    "session_id": "5597866d-696d-43b9-8035-37f61573f157",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336822.7617795,
+      "audio_send": 1783336822.7628748,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336822.8159413
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:20:42.950715+00:00",
+    "session_id": "8520dc60-5995-4bb2-af4a-ceea5bd7fbfb",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336832.8847063,
+      "audio_send": 1783336832.8857405,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336832.937302
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:20:53.072339+00:00",
+    "session_id": "2bf20a8a-3b47-4581-a42b-7be348c4ddd6",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336843.0076063,
+      "audio_send": 1783336843.0090606,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336843.0616174
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:03.194399+00:00",
+    "session_id": "be784ca1-1e01-4f04-9831-d468d30a39d3",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336853.1276014,
+      "audio_send": 1783336853.1286576,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336853.1805472
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:13.306026+00:00",
+    "session_id": "aec35dad-f8b5-4ec7-b462-0bb3255309e0",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336863.249704,
+      "audio_send": 1783336863.2507198,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336863.302602
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:23.427184+00:00",
+    "session_id": "dfb4e5fd-923e-4339-b960-f49f9118fcab",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336873.3614435,
+      "audio_send": 1783336873.362494,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336873.41403
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:33.549073+00:00",
+    "session_id": "e0b63b70-2428-4873-bb87-925edeac991c",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336883.4825354,
+      "audio_send": 1783336883.4835997,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336883.5359879
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:43.672144+00:00",
+    "session_id": "d947620d-bba5-42e2-b775-3cc9b5384561",
+    "event_type": "roundtrip_timeout",
+    "timestamps": {
+      "mic_capture": 1783336893.6045027,
+      "audio_send": 1783336893.6055586,
+      "processing_start": null,
+      "playback_start": null,
+      "audio_end_sent": 1783336893.6582386
+    }
+  }
+]

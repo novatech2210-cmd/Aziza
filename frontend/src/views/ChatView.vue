@@ -1,0 +1,648 @@
+<script setup>
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAuthStore, authFetch } from '../stores/auth'
+import { useChatStore } from '../stores/chat'
+import { useThemeStore } from '../stores/theme'
+import { useVoiceRecorder } from '../composables/useVoiceRecorder'
+import { useVoiceChat } from '../composables/useVoiceChat'
+
+const auth = useAuthStore()
+const chat = useChatStore()
+const theme = useThemeStore()
+const router = useRouter()
+const voice = useVoiceRecorder()
+const voiceFullDuplex = useVoiceChat()
+
+const inputText = ref('')
+const messagesContainer = ref(null)
+const sidebarOpen = ref(true)
+const imageFile = ref(null)
+const userMenuOpen = ref(false)
+const userTier = ref(auth.user?.tier || 'free')
+
+const AUTH_API = import.meta.env.VITE_AUTH_API_URL || '/api'
+
+async function fetchTier() {
+  try {
+    const res = await authFetch(`${AUTH_API}/me/tier`)
+    if (res.ok) {
+      const data = await res.json()
+      userTier.value = data.tier
+    }
+  } catch {}
+}
+
+const modes = [
+  { id: 'text', label: 'Text to Text', icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' },
+  { id: 'voice-text', label: 'Voice to Text', icon: 'M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m-4 0h8M12 3a3 3 0 00-3 3v4a3 3 0 006 0V6a3 3 0 00-3-3z' },
+  { id: 'voice-voice', label: 'Voice to Voice', icon: 'M8 12h.01M12 12h.01M16 12h.01M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22' },
+  { id: 'image-text', label: 'Image to Text', icon: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z', soon: true },
+]
+
+function closeUserMenu(e) {
+  if (userMenuOpen.value && !e.target.closest('.user-menu-wrapper')) {
+    userMenuOpen.value = false
+  }
+}
+
+onMounted(() => {
+  chat.connect(auth.user?.id)
+  chat.loadHistoryFromServer()
+  fetchTier()
+  document.addEventListener('click', closeUserMenu)
+})
+
+onUnmounted(() => {
+  chat.disconnect()
+  document.removeEventListener('click', closeUserMenu)
+})
+
+watch(
+  () => chat.messages.length,
+  () => {
+    nextTick(() => {
+      if (messagesContainer.value) {
+        messagesContainer.value.scrollTop = messagesContainer.value.scrollHeight
+      }
+    })
+  }
+)
+
+watch(
+  () => chat.messages[chat.messages.length - 1]?.content,
+  () => {
+    nextTick(() => {
+      if (messagesContainer.value) {
+        messagesContainer.value.scrollTop = messagesContainer.value.scrollHeight
+      }
+    })
+  }
+)
+
+function sendMessage() {
+  const text = inputText.value.trim()
+  if (!text || chat.isStreaming) return
+  chat.sendMessage(text)
+  inputText.value = ''
+}
+
+function handleKeydown(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault()
+    sendMessage()
+  }
+}
+
+function handleImageUpload(e) {
+  const file = e.target.files?.[0]
+  if (file) {
+    imageFile.value = file
+  }
+}
+
+async function toggleRecording() {
+  if (chat.selectedMode === 'voice-voice') {
+    if (voiceFullDuplex.isConnected.value) {
+      voiceFullDuplex.disconnect()
+    } else {
+      await voiceFullDuplex.connect()
+    }
+    return
+  }
+
+  if (voice.isRecording.value) {
+    await voice.stop()
+    if (voice.finalText.value.trim()) {
+      chat.sendMessage(voice.finalText.value.trim())
+      voice.reset()
+    }
+  } else {
+    voice.reset()
+    await voice.start(chat.selectedLanguage)
+  }
+}
+
+watch([() => voice.errorMessage.value, () => voiceFullDuplex.errorMessage.value], ([msg1, msg2]) => {
+  const msg = msg1 || msg2
+  if (msg) {
+    window.dispatchEvent(new CustomEvent('aziza-toast', {
+      detail: { type: 'error', message: `Voice: ${msg}` },
+    }))
+  }
+})
+
+const isVoiceMode = computed(() => chat.selectedMode === 'voice-text' || chat.selectedMode === 'voice-voice')
+
+function logout() {
+  chat.disconnect()
+  auth.logout()
+}
+
+function formatTime(ts) {
+  return new Date(ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+}
+
+function getInitials(name) {
+  return (name || 'U')[0].toUpperCase()
+}
+</script>
+
+<template>
+  <div class="chat-layout">
+    <aside class="sidebar" :class="{ collapsed: !sidebarOpen }">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo">
+          <div class="logo-mark">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+              <rect width="48" height="48" rx="10" fill="url(#sg)" />
+              <path d="M14 32L24 16L34 32H14Z" fill="white" opacity="0.9" />
+              <defs><linearGradient id="sg" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs>
+            </svg>
+          </div>
+          <span class="logo-name">AZIZA</span>
+        </div>
+
+        <button @click="chat.newSession()" class="new-chat-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+          New Chat
+        </button>
+
+        <div class="sidebar-section">
+          <p class="section-label">Mode</p>
+          <div class="mode-list">
+            <button
+              v-for="mode in modes"
+              :key="mode.id"
+              @click="!mode.soon && chat.setMode(mode.id)"
+              :class="['mode-btn', { active: chat.selectedMode === mode.id, disabled: mode.soon }]"
+              :disabled="mode.soon"
+            >
+              <svg class="mode-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path :d="mode.icon" />
+              </svg>
+              <span>{{ mode.label }}</span>
+              <span v-if="mode.soon" class="soon-badge">Soon</span>
+            </button>
+          </div>
+        </div>
+
+        <div v-if="chat.detectedLanguage" class="sidebar-section">
+          <div class="detected-lang">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            <span>Detected: <strong>{{ chat.detectedLanguage.language?.toUpperCase() }}</strong></span>
+            <span v-if="chat.detectedLanguage.is_mixed" class="mixed-badge">Mixed</span>
+          </div>
+        </div>
+
+        <div class="sidebar-section history-section">
+          <p class="section-label">History</p>
+          <div class="history-list">
+            <div
+              v-for="session in chat.sessionHistory"
+              :key="session.id"
+              :class="['history-item', { active: chat.sessionId === session.id }]"
+              @click="chat.loadSession(session)"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
+              <span>{{ session.preview }}</span>
+              <button class="history-delete" @click.stop="chat.deleteSession(session.id)" title="Delete">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+              </button>
+            </div>
+            <p v-if="!chat.sessionHistory?.length" class="no-history">No previous chats</p>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="user-menu-wrapper">
+            <button @click="userMenuOpen = !userMenuOpen" class="user-row-btn">
+              <div class="user-avatar">{{ getInitials(auth.user?.username) }}</div>
+              <div class="user-info">
+                <span class="username">{{ auth.user?.username }}</span>
+                <span :class="['tier-badge', userTier]">{{ userTier.toUpperCase() }}</span>
+              </div>
+              <svg class="chevron" :class="{ open: userMenuOpen }" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+
+            <transition name="dropdown">
+              <div v-if="userMenuOpen" class="user-dropdown">
+                <router-link v-if="auth.isAdmin" to="/admin" class="dropdown-item" @click="userMenuOpen = false">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                  Admin Panel
+                </router-link>
+
+                <router-link to="/usage" class="dropdown-item" @click="userMenuOpen = false">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                  Usage & Plan
+                </router-link>
+
+                <button @click="theme.toggle()" class="dropdown-item">
+                  <svg v-if="theme.isDark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                  <svg v-else width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                  {{ theme.isDark ? 'Light Mode' : 'Dark Mode' }}
+                </button>
+
+                <div class="dropdown-divider" />
+
+                <button @click="logout" class="dropdown-item danger">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+                  Sign Out
+                </button>
+              </div>
+            </transition>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div v-if="sidebarOpen" class="sidebar-overlay" @click="sidebarOpen = false" />
+
+    <main class="chat-main">
+      <header class="chat-header">
+        <button @click="sidebarOpen = !sidebarOpen" class="menu-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
+        <div class="header-info">
+          <span class="header-mode">
+            {{ modes.find(m => m.id === chat.selectedMode)?.label || 'Chat' }}
+          </span>
+          <select 
+            class="header-lang-select" 
+            :value="chat.selectedLanguage" 
+            @change="(e) => { chat.setLanguage(e.target.value); if (chat.selectedMode === 'voice-voice') voiceFullDuplex.updateLanguage(e.target.value); }"
+          >
+            <option value="auto">Auto-detect</option>
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+            <option value="uz">Uzbek</option>
+            <option value="ru_colloquial">RU Colloquial</option>
+            <option value="ru_professional">RU Professional</option>
+          </select>
+        </div>
+
+        <div class="connection-badge" :class="chat.connectionState">
+          <span class="status-dot" />
+          <template v-if="chat.connectionState === 'connected'">Connected</template>
+          <template v-else-if="chat.connectionState === 'connecting'">Connecting...</template>
+          <template v-else-if="chat.connectionState === 'reconnecting'">Reconnecting ({{ chat.reconnectAttempt }})...</template>
+          <template v-else>Disconnected</template>
+        </div>
+      </header>
+
+      <div ref="messagesContainer" class="messages-area">
+        <div v-if="!chat.messages.length" class="empty-state">
+          <div class="empty-logo">
+            <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+              <rect width="48" height="48" rx="14" fill="url(#eg)" opacity="0.15" />
+              <path d="M14 32L24 16L34 32H14Z" fill="#14b8a6" opacity="0.5" />
+              <defs><linearGradient id="eg" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#14b8a6"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h2 class="empty-title">Start a conversation</h2>
+          <p class="empty-subtitle">Ask AZIZA anything — type below or use voice input</p>
+
+          <div class="quick-prompts">
+            <button @click="inputText = 'What can you help me with?'" class="quick-btn">What can you help me with?</button>
+            <button @click="inputText = 'Tell me about yourself'" class="quick-btn">Tell me about yourself</button>
+            <button @click="inputText = 'Hello!'" class="quick-btn">Say hello</button>
+          </div>
+        </div>
+
+        <template v-for="(msg, i) in chat.messages" :key="msg.id">
+          <div :class="['msg-row', msg.role]">
+            <div :class="['msg-avatar', msg.role]">
+              <template v-if="msg.role === 'assistant'">
+                <svg width="18" height="18" viewBox="0 0 48 48" fill="none">
+                  <path d="M14 32L24 16L34 32H14Z" fill="white" />
+                </svg>
+              </template>
+              <template v-else>
+                {{ getInitials(auth.user?.username) }}
+              </template>
+            </div>
+
+            <div :class="['msg-bubble', msg.role]">
+              <div class="msg-header">
+                <span class="msg-author">{{ msg.role === 'assistant' ? 'AZIZA' : auth.user?.username }}</span>
+                <span class="msg-time">{{ formatTime(msg.timestamp) }}</span>
+              </div>
+              <div class="msg-content">
+                <span>{{ msg.content }}</span>
+                <span v-if="msg.isStreaming" class="cursor-blink">|</span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <div class="input-area">
+        <div v-if="isVoiceMode" class="voice-input-container">
+          <div v-if="voice.partialText.value || voice.finalText.value" class="voice-transcript">
+            <span class="transcript-label">{{ voice.state.value === 'done' ? 'Transcript' : 'Listening...' }}</span>
+            <p class="transcript-text">{{ voice.partialText.value || voice.finalText.value }}</p>
+          </div>
+
+          <div class="voice-controls">
+            <button
+              @click="toggleRecording"
+              :class="['mic-btn', voice.state.value]"
+              :disabled="!chat.isConnected || voice.state.value === 'processing'"
+            >
+              <svg v-if="!voice.isRecording.value && !voiceFullDuplex.isConnecting.value" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+                <path d="M19 10v2a7 7 0 01-14 0v-2" />
+                <line x1="12" y1="19" x2="12" y2="23" />
+                <line x1="8" y1="23" x2="16" y2="23" />
+              </svg>
+              <svg v-else width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="6" y="6" width="12" height="12" rx="2" />
+              </svg>
+              <div v-if="voice.isRecording.value" class="mic-pulse" :style="{ transform: `scale(${1 + voice.audioLevel.value * 3})` }" />
+            </button>
+
+            <span class="voice-state-label">
+              <template v-if="voiceFullDuplex.isConnecting.value">Connecting...</template>
+              <template v-else-if="voice.state.value === 'idle'">Tap to speak</template>
+              <template v-else-if="voice.state.value === 'requesting'">Requesting mic...</template>
+              <template v-else-if="voice.state.value === 'recording'">Recording — tap to stop</template>
+              <template v-else-if="voice.state.value === 'processing'">Transcribing...</template>
+              <template v-else-if="voice.state.value === 'done'">Sent!</template>
+              <template v-else-if="voice.state.value === 'error'">{{ voice.errorMessage.value }}</template>
+            </span>
+          </div>
+        </div>
+
+        <div v-else class="input-container">
+          <label v-if="chat.selectedMode === 'image-text'" class="icon-btn">
+            <input type="file" accept="image/*" @change="handleImageUpload" style="display:none" />
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </label>
+
+          <textarea
+            v-model="inputText"
+            @keydown="handleKeydown"
+            rows="1"
+            placeholder="Message AZIZA..."
+            class="chat-input"
+            :disabled="!chat.isConnected"
+          />
+
+          <button
+            @click="sendMessage"
+            :disabled="!inputText.trim() || chat.isStreaming || !chat.isConnected"
+            :class="['send-btn', { active: inputText.trim() && !chat.isStreaming }]"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </div>
+        <p class="input-hint">
+          <template v-if="chat.selectedMode === 'voice-voice'">Continuous full-duplex — tap mic to connect</template>
+          <template v-else-if="isVoiceMode">Tap the microphone to start speaking</template>
+          <template v-else>Press Enter to send, Shift+Enter for new line</template>
+        </p>
+      </div>
+    </main>
+
+    <!-- Full-Duplex UI Overlay -->
+    <transition name="fade">
+      <div v-if="chat.selectedMode === 'voice-voice' && voiceFullDuplex.isConnected.value" class="voice-overlay">
+        <div class="voice-overlay-content">
+          <div class="voice-visualizer">
+            <div class="orb-container">
+              <div class="orb-outer" :style="{ transform: `scale(${1 + voiceFullDuplex.amplitude.value * 0.5})` }" />
+              <div class="orb-inner" :class="{ speaking: voiceFullDuplex.assistantState.value === 'SPEAKING' }">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                  <path d="M14 32L24 16L34 32H14Z" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="waves">
+              <div v-for="i in 3" :key="i" class="wave" :style="{ animationDelay: `${i * 0.2}s`, opacity: 0.1 + (voiceFullDuplex.amplitude.value * 0.5) }" />
+            </div>
+          </div>
+          
+          <h2 class="voice-title">{{ voiceFullDuplex.assistantState.value === 'SPEAKING' ? 'AZIZA is speaking...' : 'Listening...' }}</h2>
+          
+          <div class="voice-transcript-full">
+            <p v-for="(s, i) in voiceFullDuplex.completedSentences.value.slice(-3)" :key="i" class="transcript-line old">{{ s }}</p>
+            <p v-if="voiceFullDuplex.pendingSentence.value" class="transcript-line pending">{{ voiceFullDuplex.pendingSentence.value }}<span class="cursor">|</span></p>
+          </div>
+
+          <!-- Add latency telemetry display -->
+          <div v-if="voiceFullDuplex.e2eMetrics.value.timeToFirstChunk > 0" class="voice-metrics">
+            <span class="metric-chip" title="Voice↔Voice Latency">V↔V: {{ voiceFullDuplex.e2eMetrics.value.voiceToVoiceLatency }}ms</span>
+            <span class="metric-chip" title="Time to first chunk">TTFC: {{ voiceFullDuplex.e2eMetrics.value.timeToFirstChunk }}ms</span>
+            <span v-if="voiceFullDuplex.e2eMetrics.value.voiceToTextLatency > 0" class="metric-chip" title="Voice→Text Latency">V→T: {{ voiceFullDuplex.e2eMetrics.value.voiceToTextLatency }}ms</span>
+          </div>
+
+          <div class="voice-actions">
+            <button @click="voiceFullDuplex.toggleMute()" :class="['action-btn', { muted: voiceFullDuplex.muted.value }]">
+              <svg v-if="!voiceFullDuplex.muted.value" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 005.12 2.12M15 9.34V4a3 3 0 00-5.94-.6"/><path d="M17 16.95A7 7 0 015 12v-2m14 0v2a7 7 0 01-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </button>
+            <button @click="voiceFullDuplex.disconnect()" class="action-btn exit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </div>
+</template>
+
+<style scoped>
+.chat-layout { display: flex; height: 100vh; background: var(--bg-page); overflow: hidden; transition: background 0.3s; }
+.sidebar { width: 280px; flex-shrink: 0; background: var(--bg-primary); border-right: 1px solid var(--border); transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s; overflow: hidden; z-index: 40; }
+.sidebar.collapsed { width: 0; border-right: none; }
+.sidebar-inner { display: flex; flex-direction: column; height: 100%; width: 280px; }
+.sidebar-overlay { display: none; }
+.sidebar-logo { display: flex; align-items: center; gap: 0.75rem; padding: 1.25rem; }
+.logo-mark { flex-shrink: 0; filter: drop-shadow(0 0 8px rgba(20, 184, 166, 0.3)); }
+.logo-name { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.1em; background: linear-gradient(135deg, #14b8a6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.new-chat-btn { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 0 1rem 0.75rem; padding: 0.65rem; border: 1px dashed var(--border-light); border-radius: 10px; background: transparent; color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+.new-chat-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+.sidebar-section { padding: 0.5rem 1rem; }
+.section-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-tertiary); padding: 0 0.25rem; margin-bottom: 0.5rem; font-weight: 700; }
+.mode-list { display: flex; flex-direction: column; gap: 2px; }
+.mode-btn { display: flex; align-items: center; gap: 0.65rem; width: 100%; padding: 0.55rem 0.75rem; border: none; border-radius: 8px; background: transparent; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; text-align: left; }
+.mode-btn:hover:not(.disabled) { background: var(--accent-glow); color: var(--text-primary); }
+.mode-btn.active { background: var(--accent-glow); color: var(--accent); }
+.mode-btn.disabled { opacity: 0.4; cursor: not-allowed; }
+.mode-btn.disabled:hover { background: transparent; color: var(--text-secondary); }
+.soon-badge { margin-left: auto; font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.12rem 0.45rem; border-radius: 6px; background: rgba(250, 204, 21, 0.12); color: #facc15; }
+.mode-svg { flex-shrink: 0; opacity: 0.7; }
+.mode-btn.active .mode-svg { opacity: 1; }
+.detected-lang { display: flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.5rem; margin-top: 0.35rem; font-size: 0.68rem; color: var(--text-tertiary); background: var(--bg-tertiary); border-radius: 6px; }
+.detected-lang svg { color: var(--accent); opacity: 0.7; flex-shrink: 0; }
+.detected-lang strong { color: var(--accent); }
+.mixed-badge, .layout-badge { font-size: 0.55rem; font-weight: 700; padding: 0.08rem 0.35rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.mixed-badge { background: rgba(168, 85, 247, 0.12); color: #a78bfa; }
+.layout-badge { background: rgba(250, 204, 21, 0.12); color: #facc15; }
+.history-section { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+.history-list { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 1px; }
+.history-item { display: flex; align-items: center; gap: 0.5rem; width: 100%; padding: 0.5rem 0.65rem; border: none; border-radius: 8px; background: transparent; color: var(--text-tertiary); font-size: 0.8rem; text-align: left; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: all 0.15s; }
+.history-item:hover { background: var(--accent-glow); color: var(--text-secondary); }
+.history-item.active { background: var(--accent-glow); color: var(--accent); border-left: 2px solid var(--accent); }
+.history-item svg { flex-shrink: 0; opacity: 0.4; }
+.history-item span { overflow: hidden; text-overflow: ellipsis; flex: 1; }
+.history-delete { display: none; flex-shrink: 0; background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 2px; border-radius: 4px; transition: all 0.15s; }
+.history-item:hover .history-delete { display: flex; }
+.history-delete:hover { color: var(--danger); background: var(--danger-bg); }
+.no-history { font-size: 0.75rem; color: var(--text-muted); padding: 0.5rem 0.25rem; }
+.sidebar-footer { border-top: 1px solid var(--border); padding: 0.75rem 1rem; }
+.user-menu-wrapper { position: relative; }
+.user-row-btn { display: flex; align-items: center; gap: 0.65rem; width: 100%; padding: 0.5rem 0.5rem; background: transparent; border: 1px solid transparent; border-radius: 10px; cursor: pointer; transition: all 0.15s; }
+.user-row-btn:hover { background: var(--hover-overlay); border-color: var(--border); }
+.user-avatar { width: 30px; height: 30px; border-radius: 8px; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; color: var(--accent); flex-shrink: 0; }
+.user-info { display: flex; align-items: center; gap: 0.4rem; flex: 1; min-width: 0; }
+.username { font-size: 0.8rem; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
+.tier-badge { font-size: 0.55rem; font-weight: 800; letter-spacing: 0.06em; padding: 0.1rem 0.4rem; border-radius: 4px; text-transform: uppercase; flex-shrink: 0; }
+.tier-badge.free { background: rgba(107, 114, 128, 0.15); color: #9ca3af; }
+.tier-badge.basic { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.tier-badge.pro { background: rgba(168, 85, 247, 0.15); color: #a78bfa; }
+.tier-badge.enterprise { background: rgba(234, 179, 8, 0.15); color: #facc15; }
+.chevron { color: var(--text-tertiary); flex-shrink: 0; transition: transform 0.2s; }
+.chevron.open { transform: rotate(180deg); }
+.user-dropdown { position: absolute; bottom: calc(100% + 0.5rem); left: 0; right: 0; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 12px; padding: 0.35rem; box-shadow: 0 8px 30px var(--shadow); z-index: 50; }
+.dropdown-item { display: flex; align-items: center; gap: 0.6rem; width: 100%; padding: 0.6rem 0.75rem; border: none; border-radius: 8px; background: transparent; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; transition: all 0.15s; text-decoration: none; }
+.dropdown-item:hover { background: var(--hover-overlay); color: var(--text-primary); }
+.dropdown-item.danger { color: var(--danger); }
+.dropdown-item.danger:hover { background: var(--danger-bg); }
+.dropdown-divider { height: 1px; background: var(--border); margin: 0.25rem 0.5rem; }
+.dropdown-enter-active, .dropdown-leave-active { transition: opacity 0.15s, transform 0.15s; }
+.dropdown-enter-from, .dropdown-leave-to { opacity: 0; transform: translateY(8px); }
+.chat-main { flex: 1; display: flex; flex-direction: column; min-width: 0; background: var(--bg-page); transition: background 0.3s; }
+.chat-header { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; background: var(--bg-secondary); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 10; transition: background 0.3s, border-color 0.3s; }
+.menu-btn { background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0.35rem; border-radius: 6px; display: flex; transition: all 0.15s; }
+.menu-btn:hover { color: var(--text-primary); background: var(--accent-glow); }
+.header-info { display: flex; align-items: center; gap: 0.75rem; }
+.header-mode { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+.header-lang { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; color: var(--accent); background: var(--accent-glow); padding: 0.2rem 0.5rem; border-radius: 4px; }
+.header-lang-select { font-size: 0.75rem; font-weight: 600; color: var(--accent); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.5rem; cursor: pointer; outline: none; }
+.header-lang-select:focus { border-color: var(--accent); }
+.connection-badge { margin-left: auto; display: flex; align-items: center; gap: 0.4rem; font-size: 0.7rem; font-weight: 500; padding: 0.3rem 0.75rem; border-radius: 20px; letter-spacing: 0.02em; }
+.connection-badge.connected { color: var(--success); background: rgba(34, 197, 94, 0.08); }
+.connection-badge.disconnected { color: var(--danger); background: var(--danger-bg); }
+.connection-badge.connecting, .connection-badge.reconnecting { color: var(--warning); background: rgba(234, 179, 8, 0.08); }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; }
+.connection-badge.connected .status-dot { background: var(--success); box-shadow: 0 0 8px rgba(34, 197, 94, 0.5); }
+.connection-badge.disconnected .status-dot { background: var(--danger); box-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
+.connection-badge.connecting .status-dot, .connection-badge.reconnecting .status-dot { background: var(--warning); box-shadow: 0 0 8px rgba(234, 179, 8, 0.5); animation: pulse-dot 1s infinite; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+.messages-area { flex: 1; overflow-y: auto; padding: 1.5rem 1rem; display: flex; flex-direction: column; gap: 0.25rem; }
+.empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; padding: 2rem; }
+.empty-logo { margin-bottom: 1.5rem; opacity: 0.6; }
+.empty-title { font-size: 1.5rem; font-weight: 600; color: var(--text-tertiary); margin-bottom: 0.5rem; }
+.empty-subtitle { font-size: 0.9rem; color: var(--text-muted); }
+.quick-prompts { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; justify-content: center; }
+.quick-btn { padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 20px; background: transparent; color: var(--text-tertiary); font-size: 0.8rem; cursor: pointer; transition: all 0.2s; }
+.quick-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+.msg-row { display: flex; gap: 0.75rem; padding: 0.75rem 0.5rem; max-width: 900px; width: 100%; margin: 0 auto; }
+.msg-row.user { flex-direction: row-reverse; }
+.msg-avatar { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.7rem; font-weight: 700; margin-top: 2px; }
+.msg-avatar.assistant { background: linear-gradient(135deg, #14b8a6, #0891b2); box-shadow: 0 2px 8px rgba(20, 184, 166, 0.2); }
+.msg-avatar.user { background: var(--accent-glow); color: var(--accent); }
+.msg-bubble { max-width: 70%; min-width: 0; }
+.msg-bubble.user { text-align: right; }
+.msg-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem; }
+.msg-row.user .msg-header { flex-direction: row-reverse; }
+.msg-author { font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); }
+.msg-time { font-size: 0.65rem; color: var(--text-muted); }
+.msg-content { font-size: 0.9rem; line-height: 1.65; color: var(--text-primary); background: var(--msg-ai-bg); padding: 0.85rem 1.1rem; border-radius: 14px; border: 1px solid var(--msg-ai-border); white-space: pre-wrap; word-break: break-word; transition: background 0.3s, border-color 0.3s; }
+.msg-row.user .msg-content { background: var(--msg-user-bg); border-color: var(--msg-user-border); }
+.cursor-blink { color: var(--accent); animation: blink 0.8s step-end infinite; font-weight: 300; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.input-area { padding: 0.75rem 1rem 1rem; background: var(--bg-secondary); backdrop-filter: blur(12px); border-top: 1px solid var(--border); transition: background 0.3s; }
+.input-container { display: flex; align-items: flex-end; gap: 0.5rem; max-width: 900px; margin: 0 auto; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 14px; padding: 0.4rem 0.5rem; transition: border-color 0.2s, background 0.3s; }
+.input-container:focus-within { border-color: rgba(20, 184, 166, 0.3); }
+.icon-btn { flex-shrink: 0; color: var(--text-tertiary); cursor: pointer; padding: 0.5rem; border-radius: 8px; display: flex; transition: all 0.15s; }
+.icon-btn:hover { color: var(--accent); background: var(--accent-glow); }
+.chat-input { flex: 1; background: transparent; border: none; padding: 0.6rem 0.5rem; color: var(--text-primary); font-size: 0.9rem; resize: none; outline: none; font-family: inherit; min-height: 24px; max-height: 120px; line-height: 1.5; }
+.chat-input::placeholder { color: var(--text-tertiary); }
+.chat-input:disabled { opacity: 0.4; }
+.send-btn { flex-shrink: 0; background: var(--bg-elevated); border: none; color: var(--text-tertiary); padding: 0.55rem; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.send-btn.active { background: linear-gradient(135deg, #14b8a6, #0891b2); color: white; box-shadow: 0 2px 8px rgba(20, 184, 166, 0.25); }
+.send-btn:disabled { cursor: not-allowed; }
+.input-hint { text-align: center; font-size: 0.65rem; color: var(--text-muted); margin-top: 0.5rem; }
+.voice-input-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 0.5rem 0; }
+.voice-transcript { width: 100%; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; padding: 0.75rem 1rem; }
+.transcript-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary); font-weight: 700; }
+.transcript-text { font-size: 0.9rem; color: var(--text-primary); margin-top: 0.25rem; line-height: 1.5; min-height: 1.4em; }
+.voice-controls { display: flex; align-items: center; gap: 1rem; }
+.mic-btn { position: relative; width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--border-light); background: var(--bg-tertiary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.mic-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+.mic-btn.recording { border-color: #ef4444; color: #ef4444; background: rgba(239, 68, 68, 0.1); animation: mic-glow 1.5s ease-in-out infinite; }
+.mic-btn.processing { border-color: var(--warning); color: var(--warning); opacity: 0.7; cursor: wait; }
+.mic-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+@keyframes mic-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.3); } 50% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); } }
+.mic-pulse { position: absolute; inset: -4px; border-radius: 50%; border: 2px solid rgba(239, 68, 68, 0.3); pointer-events: none; transition: transform 0.1s ease-out; }
+.voice-state-label { font-size: 0.8rem; color: var(--text-tertiary); font-weight: 500; }
+
+/* Voice Overlay Styles */
+.voice-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.voice-overlay-content { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 600px; padding: 2rem; }
+.voice-visualizer { position: relative; width: 240px; height: 240px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; }
+.orb-container { position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; }
+.orb-outer { position: absolute; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(20,184,166,0.2) 0%, rgba(8,145,178,0) 70%); transition: transform 0.1s; }
+.orb-inner { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #14b8a6, #0891b2); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px rgba(20,184,166,0.4); transition: all 0.3s; }
+.orb-inner.speaking { box-shadow: 0 0 50px rgba(20,184,166,0.8); transform: scale(1.05); }
+.waves { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+.wave { position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid #14b8a6; animation: ripple 2s linear infinite; }
+@keyframes ripple { 0% { transform: scale(0.5); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+.voice-title { font-size: 1.5rem; font-weight: 600; color: white; margin-bottom: 2rem; letter-spacing: 0.02em; }
+.voice-transcript-full { width: 100%; height: 120px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; margin-bottom: 3rem; }
+.transcript-line { font-size: 1.1rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; max-width: 90%; }
+.transcript-line.old { color: rgba(255,255,255,0.5); font-size: 0.95rem; }
+.transcript-line.pending { font-size: 1.25rem; font-weight: 500; }
+.transcript-line .cursor { color: #14b8a6; animation: blink 0.8s step-end infinite; }
+.voice-actions { display: flex; gap: 1.5rem; }
+.action-btn { width: 56px; height: 56px; border-radius: 50%; border: none; background: rgba(255,255,255,0.1); color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; backdrop-filter: blur(4px); }
+.action-btn:hover { background: rgba(255,255,255,0.2); transform: scale(1.05); }
+.action-btn.muted { background: rgba(239,68,68,0.2); color: #fca5a5; }
+.action-btn.exit { background: rgba(239,68,68,0.8); }
+.action-btn.exit:hover { background: #ef4444; }
+
+.voice-metrics { display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap; }
+.metric-chip { background: rgba(20, 184, 166, 0.15); border: 1px solid rgba(20, 184, 166, 0.3); color: #5eead4; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+
+
+/* Fade transition for overlay */
+.fade-enter-active, .fade-leave-active { transition: opacity 0.3s; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+
+@media (max-width: 768px) {
+  .sidebar { position: fixed; left: 0; top: 0; bottom: 0; box-shadow: 4px 0 30px var(--shadow); }
+  .sidebar.collapsed { width: 0; box-shadow: none; }
+  .sidebar-overlay { display: block; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 30; }
+  .msg-bubble { max-width: 85%; }
+  .msg-row { padding: 0.5rem 0.25rem; }
+  .messages-area { padding: 1rem 0.5rem; }
+  .input-area { padding: 0.5rem 0.5rem 0.75rem; }
+  .input-hint { display: none; }
+  .header-info { gap: 0.5rem; }
+  .connection-badge { font-size: 0.6rem; padding: 0.25rem 0.5rem; }
+  .history-delete { display: flex; }
+}
+
+@media (max-width: 480px) {
+  .chat-header { padding: 0.5rem 0.75rem; }
+  .header-mode { font-size: 0.78rem; }
+  .msg-avatar { width: 28px; height: 28px; }
+  .msg-content { font-size: 0.85rem; padding: 0.65rem 0.85rem; }
+  .quick-prompts { flex-direction: column; }
+  .quick-btn { width: 100%; }
+}
+</style>

@@ -1,0 +1,34 @@
+#!/usr/bin/expect -f
+set timeout 10
+
+set ssh_host $env(AZIZA_SSH_HOST)
+set ssh_pass $env(AZIZA_SSH_PASS)
+
+spawn ssh -o StrictHostKeyChecking=no aziza@$ssh_host
+expect "password"
+send "$ssh_pass\r"
+
+expect {
+    "$ " {
+        send "sudo su -\r"
+        expect "password for aziza:"
+        send "$ssh_pass\r"
+        expect "# "
+    }
+    "# " {
+    }
+}
+
+send "nvidia-smi\r"
+expect "# "
+
+send "cat /etc/os-release\r"
+expect "# "
+
+send "dpkg -l | grep nvidia\r"
+expect "# "
+
+send "exit\r"
+expect "$ "
+send "exit\r"
+expect eof

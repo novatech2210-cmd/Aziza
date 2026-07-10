@@ -1,0 +1,26 @@
+groups:
+  - name: aziza
+    rules:
+      - alert: WorkerPoolExhausted
+        expr: aziza_workers_idle == 0
+        for: 30s
+        labels: { severity: warning }
+
+      - alert: HighTTFT
+        expr: histogram_quantile(0.95, aziza_ttft_ms) > 150
+        for: 60s
+        labels: { severity: warning }
+
+      - alert: CUDAError
+        expr: increase(aziza_cuda_errors_total[5m]) > 0
+        labels: { severity: critical }
+
+      - alert: PersonaPlexSlow
+        expr: histogram_quantile(0.99, aziza_prompt_build_ms) > 50
+        for: 60s
+        labels: { severity: warning }
+
+      - alert: WorkerOffline
+        expr: up{job="moshi-worker"} == 0
+        for: 15s
+        labels: { severity: critical }

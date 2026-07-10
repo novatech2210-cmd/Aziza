@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-07-04T13:01:59.699563+00:00",
+    "session_id": "7181c0e7-2358-4a2f-964d-bfdec6333824",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:01:59.750678+00:00",
+    "session_id": "8ea847d5-8f4f-4668-9ba9-8c9a2cc9114c",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:01:59.801663+00:00",
+    "session_id": "5116d7e0-2773-4779-97db-2739c8763bcb",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:01:59.852571+00:00",
+    "session_id": "41e28520-cc33-4187-ba0e-a9cb714a7d21",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:01:59.903561+00:00",
+    "session_id": "74fc63d8-d53a-40cb-9b3a-c878daa8ff43",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:01:59.954534+00:00",
+    "session_id": "450a13c8-cc9f-45d3-a64a-bfe4b8e9ab8a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:02:00.005739+00:00",
+    "session_id": "bb53213e-a358-4c96-bdea-0ddeb3b5e14e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:02:00.056633+00:00",
+    "session_id": "a11365d7-d97d-4357-96c1-6d26719acc90",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:02:00.107532+00:00",
+    "session_id": "830aaaa5-fc27-47c7-86e6-c2cb697d08ee",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "uz",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  },
+  {
+    "timestamp": "2026-07-04T13:02:00.158385+00:00",
+    "session_id": "67369b6f-1d72-42fc-88c8-e029e083584c",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Cannot connect to host 127.0.0.1:8002 ssl:default [Connect call failed ('127.0.0.1', 8002)]"
+  }
+]

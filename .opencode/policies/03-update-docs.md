@@ -1,0 +1,1 @@
+Always update documentation when modifying code.

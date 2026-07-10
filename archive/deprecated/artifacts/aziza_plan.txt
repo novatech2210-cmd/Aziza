@@ -1,0 +1,1409 @@
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+AZIZA
+Build Execution Plan — Phase 2 & 3
+Field
+
+Value
+
+Engineer
+
+Chris — Novatech
+
+Client
+
+Ivan (leon375)
+
+Date
+
+03 June 2026
+
+Phase 2
+
+Multilingual Fine-Tuning — Russian + Uzbek QLoRA
+
+Phase 3
+
+Production Integration — Asterisk + Orchestrator
+
+GPU
+
+Vast.ai H100 SXM 80GB
+
+Base model
+
+NVIDIA PersonaPlex-7B (Moshi / Helium backbone)
+
+Stack
+
+NestJS · FastAPI · Redis · MongoDB · Asterisk ARI
+
+Doc ref
+
+AZIZA-BUILD-PLAN-PH2-PH3 — INTERNAL USE ONLY
+
+■ PURPOSE — this document is the working execution plan, not a client proposal.
+It contains exact commands, configs, file paths, and decision gates.
+Use it as a checklist as you build. Update status column as tasks complete.
+■ SEQUENCE — Phase 2 must be fully accepted before Phase 3 begins.
+Each section has a VERIFY gate. Do not proceed past a gate until it passes.
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 1
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+PHASE 2 — MULTILINGUAL FINE-TUNING | 5–7 DAYS | $1,000
+
+Objective
+Produce QLoRA adapters that give PersonaPlex-7B native Russian and Uzbek (Latin + Cyrillic) phonetics across three
+registers: academic, professional, and colloquial. Phonetics baked into the adapter; persona injected at runtime by
+PersonaPlex.
+
+Environment Checklist — Before Day 1
+Day
+
+Area
+
+Task
+
+Command / Detail
+
+Status
+
+Pre
+
+HF
+
+Accept PersonaPlex-7B model
+license on HuggingFace
+
+https://huggingface.co/nvidia/personaplex-7b-v1
+
+TODO
+
+Pre
+
+Vast.ai
+
+Provision H100 SXM instance (80GB,
+CUDA 12.x)
+
+Vast.ai console → rent H100 SXM
+
+TODO
+
+Pre
+
+Vast.ai
+
+Note public IP + open ports 8000,
+8998, 5173
+
+Vast.ai → instance detail → "Open Ports"
+
+TODO
+
+Pre
+
+Server
+
+Run setup script (installs libopus, git,
+venv)
+
+bash setup_vastai.sh $HF_TOKEN
+
+TODO
+
+Pre
+
+Server
+
+Verify PersonaPlex server starts clean
+
+systemctl start personaplex && journalctl -fu
+personaplex
+
+VERIFY
+
+Pre
+
+Server
+
+Clone PersonaPlex repo + install
+moshi package
+
+git clone …nvidia/personaplex && pip install
+moshi/.
+
+TODO
+
+2.1 — TOKENIZER AUDIT
+Goal
+Measure fertility (tokens-per-word) for Russian and Uzbek against the English baseline. If fertility > 2.5× English →
+vocab extension required before training. If within threshold → proceed directly to dataset prep.
+
+Commands
+pip install transformers datasets sentencepiece sacremoses accelerate peft bitsandbytes trl -q
+python3 audit_tokenizer.py \ --model nvidia/personaplex-7b-v1 \ --languages en ru uz_latin
+uz_cyrillic \ --samples 1000 \ --output tokenizer_audit.json
+
+audit_tokenizer.py — write this first
+1. Load AutoTokenizer from nvidia/personaplex-7b-v1
+2. For each language: tokenize 1,000 sentences from Common Voice text
+3. Compute fertility = total_tokens / total_words (split on whitespace)
+4. Print table: language | fertility | verdict (PASS <2.5x / FAIL >2.5x)
+5. Save JSON with all metrics → tokenizer_audit.json
+
+Decision Gate — Tokenizer
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 2
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+Result
+
+Action
+
+All fertility ≤ 2.5×
+
+→ Proceed to 2.2 Dataset Prep immediately
+
+RU fertility > 2.5×
+
+→ Extend vocab: add 4,000 Cyrillic tokens, retrain embedding layer (adds 1–2 days)
+
+UZ-Latin > 2.5×
+
+→ Extend vocab: add UZ Latin digraphs as single tokens (O', G', Sh, Ch, etc.)
+
+UZ-Cyrillic > 2.5×
+
+→ Usually OK as it shares Cyrillic base — verify coverage specifically
+
+2.2 — DATASET PREPARATION
+Sources to pull
+Source
+
+Use
+
+Mozilla Common Voice 16.0 — ru
+
+Transcripts for colloquial + professional RU turns
+
+OpenSLR SLR83 (Uzbek)
+
+UZ audio transcripts — Latin and Cyrillic splits
+
+OPUS multilingual corpus
+
+Formal RU/UZ pairs for academic register
+
+Synthetic via HF Inference API
+
+Gap-filling for low-resource register/language combos
+
+PersonaPlex existing dataset
+
+Base distribution reference — keep adapter consistent
+
+Dataset pipeline — run in order
+python3 01_download.py --langs ru uz_latin uz_cyrillic --output raw/
+python3 02_filter.py --input raw/ --min_tokens 10 --max_tokens 80 --output filtered/
+python3 03_register.py --input filtered/ --output labelled/ # classify academic/prof/colloquial
+python3 04_format.py --input labelled/ --output dataset/ # → HF Dataset format
+python3 05_quality.py --input dataset/ --threshold 0.85 # reject low-quality pairs
+python3 06_stats.py --input dataset/ --output dataset_report.md
+
+Target dataset size (minimum before training)
+Language + Register
+
+Min pairs
+
+Russian — Academic
+
+5,000
+
+Russian — Professional
+
+5,000
+
+Russian — Colloquial
+
+5,000
+
+Uzbek Latin — all registers
+
+5,000 each (15,000 total)
+
+Uzbek Cyrillic — all registers
+
+5,000 each (15,000 total)
+
+TOTAL
+
+30,000+ pairs across 9 register/language combos
+
+Format each sample as
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 3
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+{ "messages": [
+{ "role": "system", "content": "" },
+{ "role": "user", "content": "" },
+{ "role": "assistant", "content": "" }
+],
+"language": "ru|uz_latin|uz_cyrillic",
+"register": "academic|professional|colloquial"
+}
+
+2.3 — QLORA FINE-TUNING
+Locked configuration — do not change
+Parameter
+
+Value
+
+Method
+
+QLoRA — 4-bit NF4, double quantisation
+
+LoRA rank (r)
+
+16
+
+LoRA alpha
+
+32
+
+Target modules
+
+q_proj, v_proj, k_proj, o_proj
+
+Batch size
+
+4 (grad accum × 4 = effective 16)
+
+Learning rate
+
+2e-4, cosine schedule, 100-step warmup
+
+Epochs
+
+3 (early stop on val perplexity plateau)
+
+Max seq length
+
+512 tokens (voice-first budget)
+
+GPU
+
+H100 SXM 80GB — Vast.ai
+
+Est. train time
+
+12–18 hours per language pair
+
+Framework
+
+HuggingFace PEFT + TRL SFTTrainer
+
+Training script skeleton — train.py
+from peft import LoraConfig, get_peft_model, TaskType
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from trl import SFTTrainer, SFTConfig
+bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.float16)
+model = AutoModelForCausalLM.from_pretrained(
+"nvidia/personaplex-7b-v1", quantization_config=bnb_config, device_map="auto")
+lora_cfg = LoraConfig(r=16, lora_alpha=32, target_modules=["q_proj","v_proj","k_proj","o_proj"],
+lora_dropout=0.05, bias="none", task_type=TaskType.CAUSAL_LM)
+trainer = SFTTrainer(model=model, train_dataset=dataset["train"],
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 4
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+eval_dataset=dataset["validation"], args=SFTConfig(max_seq_length=512, ...))
+trainer.train()
+trainer.model.save_pretrained("./adapter_ru_professional")
+
+Run one adapter per language/register combo
+HF_TOKEN=$HF_TOKEN python3 train.py --lang ru --register professional --output
+adapters/ru_professional/
+HF_TOKEN=$HF_TOKEN python3 train.py --lang ru --register academic --output
+adapters/ru_academic/
+HF_TOKEN=$HF_TOKEN python3 train.py --lang ru --register colloquial --output
+adapters/ru_colloquial/
+# Repeat for uz_latin and uz_cyrillic
+■ MONITOR during training: watch -n 10 nvidia-smi
+H100 SXM should sit at 90–100% utilisation. If < 70% → dataloader is bottlenecking.
+■ Watch eval/perplexity in TensorBoard: tensorboard --logdir ./runs --host 0.0.0.0 --port 6006
+■ Expected VRAM: ~35–45GB per run. H100 has 80GB — safe headroom.
+■ If OOM: reduce batch_size to 2, increase grad_accum to 8 to maintain effective batch 16.
+
+2.4 — EVALUATION & ACCEPTANCE GATE
+Run evaluation suite
+python3 eval.py --adapters adapters/ --model nvidia/personaplex-7b-v1 --output eval_report.md
+
+Acceptance criteria — ALL must pass
+Day
+
+Area
+
+Task
+
+Command / Detail
+
+Status
+
+Eval
+
+Metrics
+
+Val perplexity below base
+PersonaPlex-7B on RU/UZ test set
+
+eval.py → perplexity_delta < 0
+
+VERIFY
+
+Eval
+
+Latency
+
+Time-to-First-Token ≤ 180ms on H100
+SXM at batch_size=1
+
+python3 benchmark_ttft.py
+
+VERIFY
+
+Eval
+
+Load
+
+Each adapter loads into PersonaPlex
+without error
+
+python3 test_load.py --adapter
+adapters/ru_professional/
+
+VERIFY
+
+Eval
+
+Audio
+
+Play 5 sample outputs per language
+— no phoneme regression
+
+python3 offline_eval.py --wav samples/
+
+VERIFY
+
+Eval
+
+Register
+
+Spot-check: academic register does
+not output colloquial
+
+manual review of 20 outputs per register
+
+VERIFY
+
+Deliverable packaging
+# Structure each adapter output directory as:
+adapters/
+ru_professional/ → adapter_model.safetensors + adapter_config.json + README.md
+ru_academic/ → ...
+ru_colloquial/ → ...
+uz_latin_*/ → ...
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 5
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+uz_cyrillic_*/ → ...
+training_scripts/ → train.py + eval.py + all pipeline scripts
+dataset/ → processed HF Dataset (compressed)
+reports/ → tokenizer_audit.json + eval_report.md + dataset_report.md
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 6
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+PHASE 3 — PRODUCTION INTEGRATION | 7–10 DAYS
+
+Objective
+Wire the fine-tuned Aziza adapters into the live production stack: NestJS session orchestrator, FastAPI GPU
+middleware, PersonaPlex persona injection, Asterisk ARI telephony bridge, and the full monitoring/deployment layer.
+
+Infrastructure Access Required — Day 1 Gate
+Credential / Access
+
+What it unlocks
+
+SSH to Vast.ai H100 instance
+
+Full server access for deployment
+
+Asterisk ARI credentials (user + pass)
+
+ARI client can connect to PBX
+
+SIP trunk test number
+
+Live telephony call testing
+
+Redis connection string
+
+Session state + pub/sub
+
+MongoDB URI
+
+Conversation history + user profiles
+
+NestJS API Gateway repo access
+
+PR workflow + CI config
+
+3.1 — NESTJS SESSION ORCHESTRATOR
+What it does
+Central routing layer. Creates sessions, assigns GPU workers, tracks session state in Redis, dispatches PersonaPlex
+persona at session start.
+
+Key endpoints to implement
+Endpoint
+
+Behaviour
+
+POST /session/create
+
+Validate caller → assign GPU worker → inject persona via PersonaPlex → return
+session_id + WS URL
+
+GET /session/:id/status
+
+Return active | paused | terminated + GPU worker health
+
+POST /session/:id/persona
+
+Hot-swap PersonaPlex persona mid-session (no audio interrupt)
+
+DELETE /session/:id
+
+Graceful terminate → release GPU worker → flush Redis state
+
+GET /workers/health
+
+List all GPU workers + VRAM usage + active session count
+
+POST /workers/:id/drain
+
+Drain worker before restart (reject new sessions, finish active)
+
+Redis data model
+session:{id} → { workerId, personaName, language, register, startedAt, callerId }
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 7
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+worker:{id}:state → { status: active|draining|idle, vram_used_gb, sessions: [...] }
+worker:{id}:heartbeat → TTL 10s — set by FastAPI worker on each health tick
+persona:{name} → { systemPrompt, voicePrompt, language, register } (cache)
+Pub/Sub channels:
+aziza:session:events → created | terminated | persona_swapped | error
+aziza:worker:events → online | draining | oom_warning | offline
+
+Session lifecycle — single-stream-per-GPU rule
+■ One active Moshi stream per GPU worker — locked architectural decision from Phase 1.
+Do NOT allow concurrent sessions on same worker. Assign → lock → release.
+■ Worker assignment: round-robin over idle workers. If all busy → queue or reject with 503.
+■ OOM guard: FastAPI worker reports VRAM on heartbeat. If > 70GB used → mark worker full.
+■ Persona injection: PersonaPlex /text endpoint called at session start with system_prompt.
+Hot-swap: POST /session/:id/persona triggers new injection without stream restart.
+
+3.2 — FASTAPI GPU MIDDLEWARE
+What it does
+Runs on the H100 alongside PersonaPlex. Manages the Moshi runtime process, monitors VRAM, assigns/releases
+sessions, and bridges audio streams.
+
+Key routes
+Route
+
+Behaviour
+
+GET /health
+
+Return status + vram_used + active_session_count + personaplex_pid
+
+POST /session/assign
+
+Start PersonaPlex stream for session → return ws_url
+
+DELETE /session/:id
+
+Terminate stream → free VRAM → update Redis
+
+GET /metrics
+
+Prometheus-compatible scrape endpoint (VRAM, TTFT, session count)
+
+POST /adapter/load
+
+Load specified QLoRA adapter (ru_professional etc.) → restart stream
+
+Adapter loading logic
+# On session create, determine language + register from caller profile or IVR selection
+# Then load the matching adapter before starting PersonaPlex stream:
+ADAPTER_MAP = {
+("ru", "professional"): "adapters/ru_professional/",
+("ru", "academic"): "adapters/ru_academic/",
+("ru", "colloquial"): "adapters/ru_colloquial/",
+("uz_latin", ...): "adapters/uz_latin_.../",
+("uz_cyrillic", ...): "adapters/uz_cyrillic_.../",
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 8
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+}
+# PersonaPlex server started with: python -m moshi.server --ssl $SSL_DIR --adapter $ADAPTER_PATH
+
+3.3 — ASTERISK ARI INTEGRATION
+Call flow — exact sequence
+1. PSTN/SIP call arrives → Asterisk matches dialplan → enters Stasis app "aziza"
+2. ARI StasisStart event fires → Aziza ARI client receives it
+3. ARI client POSTs to NestJS /session/create { callerId, language, register }
+4. NestJS assigns GPU worker, injects PersonaPlex persona, returns { session_id, ws_url }
+5. ARI client opens WebSocket to FastAPI /ws/speech?session_id=...
+6. ARI client opens Asterisk media socket, starts ExternalMedia bridge
+7. Audio flows: Asterisk µ-law 8kHz → ARI client → resample 24kHz PCM → Moshi WS
+8. Moshi response PCM 24kHz → downsample 8kHz µ-law → Asterisk → caller hears Aziza
+9. WebRTC VAD runs on client side — detects end-of-utterance → signals Moshi
+10. On hangup: ARI StasisEnd → ARI client DELETEs session → GPU worker released
+
+Asterisk dialplan — add to extensions.conf or AEL
+[from-pstn]
+exten => _X.,1,NoOp(Aziza inbound)
+same => n,Stasis(aziza)
+same => n,Hangup()
+# ARI config in ari.conf:
+[general]
+enabled = yes
+pretty = yes
+[aziza]
+type = user
+password =
+read_only = no
+
+Audio bridge — critical implementation notes
+Day
+
+Area
+
+Task
+
+Command / Detail
+
+Status
+
+3.3a
+
+Audio
+
+µ-law → PCM resampling: use
+audioop.ulaw2lin +
+scipy.signal.resample_poly
+
+8kHz → 24kHz: resample_poly(audio, 3, 1)
+
+TODO
+
+3.3b
+
+Audio
+
+PCM → µ-law: scipy resample
+24→8kHz then audioop.lin2ulaw
+
+24kHz → 8kHz: resample_poly(audio, 1, 3)
+
+TODO
+
+3.3c
+
+VAD
+
+WebRTC VAD: pip install webrtcvad
+— frame size 20ms at 8kHz
+
+vad.is_speech(frame, 8000)
+
+TODO
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 9
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+3.3d
+
+Echo
+
+Echo cancellation: use SpeexDSP or
+WebRTC AEC module
+
+pip install speexdsp
+
+TODO
+
+3.3e
+
+Latency
+
+Measure end-to-end: Asterisk
+StasisStart → first Moshi audio byte
+out
+
+target: < 250ms total pipeline
+
+VERIFY
+
+3.4 — DEPLOYMENT (NO DOCKER)
+Process management — systemd + PM2
+Service
+
+Manager
+
+personaplex.service
+
+systemd — Python moshi.server (already configured by setup_vastai.sh)
+
+aziza-api.service
+
+systemd — FastAPI uvicorn (GPU middleware)
+
+aziza-gateway
+
+PM2 — NestJS API Gateway
+
+aziza-ari-client
+
+PM2 — Asterisk ARI Node.js client
+
+nginx
+
+systemd — SSL termination + WebSocket proxy
+
+Nginx config — key directives
+upstream nestjs { server 127.0.0.1:3000; }
+upstream fastapi { server 127.0.0.1:8000; }
+upstream moshi { server 127.0.0.1:8998; }
+location /api/ { proxy_pass http://nestjs; proxy_http_version 1.1; }
+location /gpu/ { proxy_pass http://fastapi; proxy_http_version 1.1; }
+location /ws/speech { proxy_pass https://moshi;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection "upgrade";
+proxy_read_timeout 3600s; }
+
+One-command startup script — start_aziza.sh
+#!/bin/bash
+source /root/personaplex-env/bin/activate
+systemctl start personaplex nginx aziza-api
+pm2 start ecosystem.config.js
+pm2 logs --lines 50
+# ecosystem.config.js defines aziza-gateway + aziza-ari-client
+# with auto-restart, log rotation, and env var injection
+
+Environment variables — all services
+Variable
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Service
+
+Page 10
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+HF_TOKEN
+
+personaplex.service + aziza-api
+
+PERSONAPLEX_WS_URL
+
+aziza-api, aziza-ari-client
+
+REDIS_URL
+
+aziza-gateway, aziza-api
+
+MONGODB_URI
+
+aziza-gateway
+
+ASTERISK_ARI_URL
+
+aziza-ari-client
+
+ASTERISK_ARI_USER
+
+aziza-ari-client
+
+ASTERISK_ARI_PASS
+
+aziza-ari-client
+
+NESTJS_API_KEY
+
+aziza-ari-client, external callers
+
+ADAPTER_BASE_PATH
+
+aziza-api — path to adapters/ directory
+
+3.5 — MONITORING
+Prometheus scrapes /metrics from FastAPI. Grafana dashboards consume Prometheus. Key metrics to track:
+Metric
+
+Alert threshold
+
+aziza_ttft_seconds (histogram)
+
+p95 > 0.25s → page
+
+aziza_session_active (gauge)
+
+Track concurrency — alert if > worker_count
+
+aziza_gpu_vram_used_gb (gauge)
+
+> 72GB → drain + restart worker
+
+aziza_session_errors_total (counter)
+
+Any spike in 5-min window → alert
+
+aziza_ari_latency_ms (histogram)
+
+p95 > 500ms → Asterisk network issue
+
+aziza_adapter_load_seconds
+
+> 30s → adapter too large / disk slow
+
+3.6 — END-TO-END TEST PLAN
+Day
+
+Area
+
+Task
+
+Command / Detail
+
+Status
+
+T1
+
+API
+
+NestJS /session/create returns 200 +
+valid session_id
+
+curl -X POST
+http://localhost:3000/api/session/create
+
+VERIFY
+
+T2
+
+GPU
+
+FastAPI /health returns
+personaplex_pid + vram_used
+
+curl http://localhost:8000/health
+
+VERIFY
+
+T3
+
+WS
+
+WebSocket /ws/speech connects and
+echoes ping frame
+
+wscat -c ws://localhost:8998/api/chat
+
+VERIFY
+
+T4
+
+Adapter
+
+Load ru_professional adapter →
+PersonaPlex responds in Russian
+
+python3 test_load.py --adapter ru_professional
+
+VERIFY
+
+T5
+
+Persona
+
+POST /session/:id/persona →
+language + tone changes without
+reconnect
+
+curl -X POST .../persona
+
+VERIFY
+
+T6
+
+ARI
+
+Simulated StasisStart → session
+created → WS bridge active
+
+python3 test_ari_sim.py
+
+VERIFY
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 11
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+T7
+
+Call
+
+Real SIP call → Aziza answers in
+Russian within 250ms of greeting
+
+dial SIP test number
+
+VERIFY
+
+T8
+
+Load
+
+5 concurrent simulated calls sustained
+10 min — no OOM or restart
+
+python3 load_test.py --sessions 5 --duration 600
+
+VERIFY
+
+T9
+
+Failover
+
+Kill personaplex process → ARI client
+detects → session error returned
+
+kill $(pgrep -f moshi.server)
+
+VERIFY
+
+T10
+
+Uzbek
+
+Uzbek Latin call: Aziza responds in
+UZ-Latin script
+
+dial with register=uz_latin in session payload
+
+VERIFY
+
+3.7 — GIT WORKFLOW
+Branch strategy
+
+Detail
+
+main
+
+Protected — only merge via PR. Deploys to production on merge.
+
+develop
+
+Integration branch. All feature branches merge here first.
+
+feature/phase2-*
+
+Fine-tuning scripts, datasets, adapter training code.
+
+feature/phase3-*
+
+Orchestrator, ARI client, GPU middleware, deployment.
+
+hotfix/*
+
+Emergency fixes to main — must include test proving the fix.
+
+GitHub Actions CI — .github/workflows/ci.yml
+on: [pull_request]
+jobs:
+lint-and-type:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- run: npm ci && npm run lint && npm run type-check # NestJS
+- run: pip install -r requirements.txt && mypy src/ # FastAPI
+test:
+runs-on: ubuntu-latest
+steps:
+- run: npm run test # Jest unit tests
+- run: pytest tests/ -v --tb=short # Python tests
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 12
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+MASTER TASK CHECKLIST — PHASES 2 + 3
+
+Phase 2 — Fine-Tuning
+Day
+
+Area
+
+Task
+
+Command / Detail
+
+Status
+
+2.0
+
+Setup
+
+H100 instance provisioned +
+setup_vastai.sh executed
+
+TODO
+
+2.0
+
+Setup
+
+PersonaPlex license accepted on
+HuggingFace
+
+TODO
+
+2.1
+
+Tokenizer
+
+audit_tokenizer.py written and
+executed
+
+TODO
+
+2.1
+
+Tokenizer
+
+Fertility results documented in
+tokenizer_audit.json
+
+TODO
+
+2.1
+
+Tokenizer
+
+Decision: vocab extension needed?
+Y/N — documented
+
+VERIFY
+
+2.2
+
+Dataset
+
+All 5 pipeline scripts (01–06) written
+and executed
+
+TODO
+
+2.2
+
+Dataset
+
+30,000+ quality pairs generated
+across all register/language combos
+
+VERIFY
+
+2.3
+
+Training
+
+train.py written with locked QLoRA
+config (r=16, alpha=32)
+
+TODO
+
+2.3
+
+Training
+
+Russian adapter: all 3 registers
+trained and saved
+
+TODO
+
+2.3
+
+Training
+
+Uzbek Latin adapter: all 3 registers
+trained and saved
+
+TODO
+
+2.3
+
+Training
+
+Uzbek Cyrillic adapter: all 3 registers
+trained and saved
+
+TODO
+
+2.4
+
+Eval
+
+eval.py executed — perplexity below
+PersonaPlex-7B baseline
+
+VERIFY
+
+2.4
+
+Eval
+
+benchmark_ttft.py — all adapters ≤
+180ms TTFT on H100
+
+VERIFY
+
+2.4
+
+Eval
+
+Audio output spot-checked — no
+phoneme regression
+
+VERIFY
+
+2.4
+
+Delivery
+
+adapters/ directory packaged per
+spec + reports/ included
+
+TODO
+
+Phase 3 — Production Integration
+Day
+
+Area
+
+Task
+
+3.0
+
+Access
+
+SSH + ARI creds + Redis + MongoDB
++ NestJS repo access granted
+
+TODO
+
+3.1
+
+NestJS
+
+/session/create endpoint implemented
++ Redis state written
+
+TODO
+
+3.1
+
+NestJS
+
+/session/:id/persona hot-swap
+endpoint implemented
+
+TODO
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Command / Detail
+
+Status
+
+Page 13
+
+AZIZA PLATFORM
+— Phase 2 & 3 Build Execution Plan
+
+INTERNAL | Novatech
+
+3.1
+
+NestJS
+
+/workers/health + drain endpoints
+implemented
+
+TODO
+
+3.2
+
+FastAPI
+
+/health + /session/assign +
+/adapter/load routes implemented
+
+TODO
+
+3.2
+
+FastAPI
+
+Prometheus /metrics endpoint live
+
+TODO
+
+3.2
+
+FastAPI
+
+Adapter map config loaded +
+hot-swap works
+
+TODO
+
+3.3
+
+ARI
+
+Asterisk dialplan entry added for
+Stasis(aziza)
+
+TODO
+
+3.3
+
+ARI
+
+ARI client: StasisStart → session
+create → WS bridge open
+
+TODO
+
+3.3
+
+ARI
+
+Audio bridge: µ-law ↔ 24kHz PCM
+resampling verified
+
+TODO
+
+3.3
+
+ARI
+
+WebRTC VAD + echo cancellation
+module integrated
+
+TODO
+
+3.4
+
+Deploy
+
+systemd service files for personaplex
++ aziza-api created
+
+TODO
+
+3.4
+
+Deploy
+
+PM2 ecosystem.config.js for NestJS +
+ARI client
+
+TODO
+
+3.4
+
+Deploy
+
+Nginx config: SSL + WS proxy for all 3
+upstreams
+
+TODO
+
+3.4
+
+Deploy
+
+start_aziza.sh tested: full stack up in
+single command
+
+TODO
+
+3.5
+
+Monitoring
+
+Prometheus + Grafana configured
+with all key metrics
+
+TODO
+
+3.5
+
+Monitoring
+
+Alerts set: TTFT p95, VRAM, error
+rate
+
+TODO
+
+3.6
+
+Tests
+
+T1–T10 all passing (see test plan
+above)
+
+VERIFY
+
+3.6
+
+Tests
+
+Real SIP call test: Aziza answers in
+Russian < 250ms
+
+VERIFY
+
+3.6
+
+Tests
+
+Load test: 5 sessions × 10 min —
+clean
+
+VERIFY
+
+3.7
+
+Git
+
+All code in feature branches, PRs
+reviewed, merged to develop
+
+TODO
+
+3.7
+
+Git
+
+CI passing on all PRs before merge
+
+VERIFY
+
+3.7
+
+Git
+
+main tagged with release version on
+Phase 3 delivery
+
+TODO
+
+AZIZA-BUILD-PLAN-PH2-PH3 · Novatech · Internal Use Only · 03 June 2026
+
+Generated 03 June 2026 | AZIZA-EXEC-PLAN-PH2-PH3
+
+Page 14
+
+

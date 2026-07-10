@@ -1,0 +1,33 @@
+#!/usr/bin/expect -f
+set timeout -1
+
+set ssh_host $env(AZIZA_SSH_HOST)
+set ssh_pass $env(AZIZA_SSH_PASS)
+
+spawn scp -o StrictHostKeyChecking=no /home/kali/Desktop/AZIZA-BUILD/frontend/dist.tar.gz aziza@$ssh_host:/home/aziza/
+expect "password"
+send "$ssh_pass\r"
+expect eof
+
+spawn ssh -o StrictHostKeyChecking=no aziza@$ssh_host
+expect "password"
+send "$ssh_pass\r"
+expect "$ "
+send "sudo su -\r"
+expect "password for aziza:"
+send "$ssh_pass\r"
+expect "# "
+send "mkdir -p /var/www/aziza\r"
+expect "# "
+send "rm -rf /var/www/aziza/*\r"
+expect "# "
+send "tar -xzf /home/aziza/dist.tar.gz -C /var/www/aziza --strip-components=1\r"
+expect "# "
+send "chown -R www-data:www-data /var/www/aziza\r"
+expect "# "
+send "systemctl restart nginx\r"
+expect "# "
+send "exit\r"
+expect "$ "
+send "exit\r"
+expect eof

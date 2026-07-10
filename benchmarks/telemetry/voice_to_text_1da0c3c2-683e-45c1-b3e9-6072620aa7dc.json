@@ -1,0 +1,126 @@
+[
+  {
+    "timestamp": "2026-07-04T11:40:40.193061+00:00",
+    "session_id": "2e08b079-ad08-4513-9ae7-8d14206ded1a",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:40:50.378469+00:00",
+    "session_id": "0d94e312-d460-4507-83bc-1d827f2da55e",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:00.542879+00:00",
+    "session_id": "7ac0a44d-ea1d-497d-8af6-0aceccf3b327",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:10.725342+00:00",
+    "session_id": "e650de78-1a9d-449d-8b74-9d3f2e83f2eb",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:20.897618+00:00",
+    "session_id": "4e1da465-6ea2-4fdf-8e2a-7a9d77a47ec7",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:31.067911+00:00",
+    "session_id": "71835a2f-778a-45a3-a712-bd2a45a805a2",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:41.236271+00:00",
+    "session_id": "db630d68-b630-4b78-b714-2678bba62039",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:51.401746+00:00",
+    "session_id": "1f033e8d-056e-4280-86e6-75f6331864b1",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:01.570183+00:00",
+    "session_id": "afee6030-6ed2-4c60-94e6-fe3def164d67",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:11.741039+00:00",
+    "session_id": "22673a0e-dd60-4937-b9cc-e04e1ff83487",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:21.915567+00:00",
+    "session_id": "2873f7a9-023b-401e-8182-09cd072d45b4",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:22.927834+00:00",
+    "session_id": "fed80f58-860a-4da6-b95c-11a706335776",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "no close frame received or sent"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.086101+00:00",
+    "session_id": "63d71942-412f-45a5-bebb-83452f8a2032",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.246744+00:00",
+    "session_id": "1a007bb5-dbfe-49d1-bd97-c572cdfee557",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.409625+00:00",
+    "session_id": "11e1b1ec-b9db-4156-9739-b6dae9a5d002",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:33.596663+00:00",
+    "session_id": "2cd73b81-1544-49c7-a3fa-ef6cc2105c10",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:43.810744+00:00",
+    "session_id": "8e314b75-edaf-4f62-a914-69a172abd226",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:53.981548+00:00",
+    "session_id": "92e0af25-bfb0-4ba0-8f75-018e8edc88c9",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:04.150406+00:00",
+    "session_id": "16572a17-da19-4237-a846-46574d2c2bac",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:14.321881+00:00",
+    "session_id": "95dd6166-c898-4b6f-859d-3fcb4a90fbaf",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  }
+]

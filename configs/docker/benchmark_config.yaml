@@ -1,0 +1,71 @@
+# Aziza Milestone 2 Benchmark Configuration
+version: "1.0"
+environment:
+  worker_host: "aziza-worker-01"
+  api_gateway_url: "http://127.0.0.1:3000"
+  personaplex_url: "http://127.0.0.1:8000"
+  websocket_url: "ws://127.0.0.1:3000/api/chat"
+  
+targets:
+  ttft_median_ms: 300
+  text_to_text_s: 3
+  voice_to_text_s: 2
+  voice_roundtrip_ms: 300
+  stability_duration_min: 10
+  
+benchmarks:
+  e2e_integration:
+    enabled: true
+    iterations: 10
+    timeout_s: 30
+    
+  ttft:
+    enabled: true
+    iterations: 100
+    warmup_iterations: 5
+    
+  text_to_text:
+    enabled: true
+    iterations: 10
+    prompt_file: "data/text_prompts.json"
+    
+  voice_to_text:
+    enabled: true
+    sample_dir: "data/voice_samples"
+    languages: ["ru", "uz"]
+    
+  voice_roundtrip:
+    enabled: true
+    iterations: 10
+    audio_duration_ms: 2000
+    
+  stability:
+    enabled: true
+    duration_min: 10
+    persona_switch_interval_s: 60
+    
+telemetry:
+  log_dir: "telemetry"
+  log_format: "json"
+  log_level: "INFO"
+  metrics:
+    - request_id
+    - session_id
+    - timestamp
+    - adapter_latency_ms
+    - inference_latency_ms
+    - streaming_latency_ms
+    - total_latency_ms
+    - errors
+    - reconnects
+    - dropped_frames
+    
+ci:
+  fail_on_ttft_breach: true
+  fail_on_text_breach: true
+  fail_on_voice_breach: true
+  fail_on_roundtrip_breach: true
+  fail_on_integration_failure: true
+  fail_on_websocket_disconnect: true
+  fail_on_benchmark_crash: true
+  artifact_dir: "reports"

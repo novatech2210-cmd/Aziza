@@ -1,0 +1,54 @@
+[Unit]
+Description=Telephony AI dialogue service (Qube ecosystem, Phase 4)
+Documentation=https://github.com/<repo>/Docs/phase4/05_GUIDE_VPS_Deployment.md
+# We want Postgres up because the RAG dependency (Kyo's aziza-web) needs it
+# even though we don't talk to Postgres directly — but we DO depend on
+# aziza-web being up. The After= here is a soft ordering; full readiness
+# is verified by the /ready endpoint, not by systemd.
+After=network.target postgresql.service aziza-web.service
+Wants=postgresql.service aziza-web.service
+
+[Service]
+Type=simple
+User=telephony-llm
+Group=telephony-llm
+
+WorkingDirectory=/workspace/telephony-llm
+
+# Env file pinned to a path we own. Never put secrets here directly;
+# the file is gitignored and populated by deploy/dialogue-engine/install.sh.
+EnvironmentFile=/workspace/telephony-llm/config/.env
+
+# Sane Python defaults — unbuffered logs to journal.
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+
+# The dialogue-engine package's `python -m dialogue_engine` entry runs uvicorn.
+ExecStart=/workspace/telephony-llm/.venv/bin/python -m dialogue_engine
+
+# Graceful shutdown — uvicorn handles SIGTERM, drains in-flight requests,
+# vLLM releases GPU memory. 30 s should be plenty; bump if first-token
+# latency on shutdown is problematic.
+KillSignal=SIGTERM
+TimeoutStopSec=30
+Restart=on-failure
+RestartSec=10
+
+# Standard journal output.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=telephony-llm
+
+# Resource hardening (mild — Kyo's GPU server, not a multi-tenant host).
+LimitNOFILE=65536
+# We DO want PrivateTmp=false here (lesson learned from Phase-3 adapter:
+# PrivateTmp=true broke /tmp file handoffs to dialplan, see
+# Docs/phase3/10_REFERENCE_VM-B_Live_AMD_Validation_2026-05-15.md §2 Bug 1).
+PrivateTmp=false
+
+# Reload without restart on SIGHUP — useful if we add config hot-reload later.
+# Currently a no-op (uvicorn re-reads config on full restart only).
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

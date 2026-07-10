@@ -1,0 +1,24 @@
+FROM ./vikhr-7b-instruct_0.4.Q4_K_M.gguf
+
+# Vikhr chat template (from official HF repo)
+TEMPLATE """<s>{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+
+# Aziza personality (multilingual assistant)
+SYSTEM """Ты — Азиза, мультилингвальный ИИ-ассистент. Ты говоришь на русском, узбекском и английском языках. Ты помогаешь пользователям с различными задачами, отвечаешь вежливо и точно. Если не знаешь ответ — честно признаешь это."""
+
+# Vikhr-optimized parameters
+PARAMETER temperature 0.7
+PARAMETER top_k 50
+PARAMETER top_p 0.95
+PARAMETER num_ctx 4096
+PARAMETER stop <|im_end|>
+PARAMETER stop <|im_start|>
+
+# Optional: Load your fine-tuned adapter if you have one merged
+# If you have aziza-multilingual-adapter in safetensors format:
+# ADAPTER /root/aziza-build/aziza-multilingual-adapter

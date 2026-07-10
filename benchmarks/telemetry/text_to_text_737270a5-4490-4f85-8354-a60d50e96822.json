@@ -1,0 +1,802 @@
+[
+  {
+    "timestamp": "2026-07-03T14:35:46.081655+00:00",
+    "session_id": "4caba739-2f02-4343-8282-7cf1133ba28b",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:46.331898+00:00",
+    "session_id": "b20b02a6-14e0-4979-aa10-8b642096465c",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:46.575081+00:00",
+    "session_id": "87f209e6-8360-43a5-980f-710e5c783d49",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:46.826686+00:00",
+    "session_id": "ba6d943c-ae99-45ce-ae95-de61059638c9",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:47.061425+00:00",
+    "session_id": "dc07ed0b-e203-482e-8d90-a74804cf3d96",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:47.294047+00:00",
+    "session_id": "69954f75-dc21-4b31-966e-6528ff09c057",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:47.528427+00:00",
+    "session_id": "8cae3ed5-da2e-4baa-959d-f8fb13228dd8",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:47.761141+00:00",
+    "session_id": "6f270212-b0d7-4e5d-a797-eab278d6ad9d",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:47.993711+00:00",
+    "session_id": "6dd757cb-169b-4ba4-b3f8-9fb453f1a556",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:48.226713+00:00",
+    "session_id": "9f23ffbf-fb45-49dc-a011-b334b167f7b2",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:48.459270+00:00",
+    "session_id": "add64449-552d-41c0-be68-8f9dbc66a869",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:48.696482+00:00",
+    "session_id": "2f5f36d5-8dd1-4ad7-88ed-7b5ca1f1da4e",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:48.928644+00:00",
+    "session_id": "0471d1ee-0f83-43ae-a03b-b97affb5e1b6",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:49.161556+00:00",
+    "session_id": "e5384586-6386-4861-9fd5-583b0aeedec5",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:49.393897+00:00",
+    "session_id": "ce608b76-b29f-4c81-a6eb-52e29aa6b18d",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:49.626428+00:00",
+    "session_id": "778da4df-e3e3-4c95-8091-a64945e877d9",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:49.860089+00:00",
+    "session_id": "1717571d-1e74-4225-b698-c5a12c9ebf82",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:50.093531+00:00",
+    "session_id": "a0e86458-b984-4d99-9d6a-43c8781b3826",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:50.326521+00:00",
+    "session_id": "a0b89ea2-fdf1-432a-9274-32d9fca0e825",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:50.561503+00:00",
+    "session_id": "a945e560-734d-4843-ab58-15960c6f3cd5",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:50.800611+00:00",
+    "session_id": "be68582b-cc33-4b39-9d8c-1f505a2f4110",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:51.040689+00:00",
+    "session_id": "46256a63-5771-4da7-9bdc-9bd048324a48",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:51.278148+00:00",
+    "session_id": "aaffbf3d-199a-4ed3-bb07-4509f1fcf777",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:51.532344+00:00",
+    "session_id": "07649488-341a-4ac0-bff4-50444678e833",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:51.766674+00:00",
+    "session_id": "68075e44-4878-4b3d-b2e9-2ffab7203d62",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:52.001375+00:00",
+    "session_id": "b9f934ce-8cc2-4573-af01-6d6f68742f96",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:52.236619+00:00",
+    "session_id": "89a40fbc-c6d6-4aa1-bf6b-cac2a436738b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:52.470542+00:00",
+    "session_id": "e0e9ef3a-52b6-4784-9ced-fb35f0955473",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:52.703854+00:00",
+    "session_id": "253e4000-e52c-4abd-87c4-eb0cbe73259b",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:52.935930+00:00",
+    "session_id": "51d8fbb1-c0a4-48e0-9d2d-84e4788fd998",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:53.168142+00:00",
+    "session_id": "024a2b6c-a04d-474e-b733-63b92525ff0a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:53.401686+00:00",
+    "session_id": "6aaa5980-99fe-4c73-a2ab-33108a6df65d",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:53.634759+00:00",
+    "session_id": "4da27307-9b7c-4627-ab93-3ce9f9fc74e4",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:53.867791+00:00",
+    "session_id": "b6d27c5f-b486-48e2-8178-f4bcaa4ccf48",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:54.103977+00:00",
+    "session_id": "73454f3a-8673-40cb-ad29-f941e7d7043b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:54.335736+00:00",
+    "session_id": "2b2acbaf-674d-4eef-9406-f831d5ba1ff1",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:54.567969+00:00",
+    "session_id": "f8380552-ee10-4d0d-9a81-03f1dd9e74bc",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:54.801497+00:00",
+    "session_id": "d4c0597d-5b81-42ae-9fdf-23b3889052a1",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:55.033270+00:00",
+    "session_id": "96159d0d-4f93-4931-8782-8ed692bf5308",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:55.265020+00:00",
+    "session_id": "03813145-2b2f-4533-8408-9cc251a5f931",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:55.497549+00:00",
+    "session_id": "e9b8c5fa-4414-4de4-aa1b-57674bf4d926",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:55.763860+00:00",
+    "session_id": "9168ff0f-b582-4789-8444-5d9253239e8c",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:56.011254+00:00",
+    "session_id": "51902e7c-bf05-45f8-b3b1-b8f586541a4d",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:56.268164+00:00",
+    "session_id": "89a3059c-e1c7-4659-b6a4-0187ff73fda9",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:56.524190+00:00",
+    "session_id": "b172f3a7-6394-414b-9e81-1c421c34414a",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:56.771874+00:00",
+    "session_id": "4708c8d8-caf5-4567-9fbf-9636cad2a959",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:57.016642+00:00",
+    "session_id": "895c7209-9e43-42e7-a830-296673632c59",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:57.251051+00:00",
+    "session_id": "b2eddd14-0e4e-4ad8-94c7-f0a5bd2960b2",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:57.488505+00:00",
+    "session_id": "51feac51-eef8-4bf7-a648-161aeba6b930",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:57.729824+00:00",
+    "session_id": "bcf5b6f1-d9e7-424b-9d39-ceee2a27c1a0",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:57.964020+00:00",
+    "session_id": "5c2875ab-9ee5-47f9-8d34-f229e7b591f6",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:58.204493+00:00",
+    "session_id": "95525cb9-ebc4-44a4-a3ce-75d8822d120d",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:58.436595+00:00",
+    "session_id": "314d0448-b1b9-4b7e-8d12-89d3e23e4e68",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:58.669050+00:00",
+    "session_id": "60394a13-7f67-4ddc-aa70-0c9dfb6a686f",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:58.901943+00:00",
+    "session_id": "c8533f55-f2e9-442f-8c05-ab6176c57b92",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:59.133525+00:00",
+    "session_id": "1d46f13e-a224-4b1e-988b-371001e95cb4",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:59.368124+00:00",
+    "session_id": "36eab633-b79b-42fa-8297-815b5abe5d0d",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:59.600176+00:00",
+    "session_id": "a934682f-8bf8-4796-8ff4-aff632bfd219",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:35:59.832450+00:00",
+    "session_id": "d7436d54-ac50-4975-8cbf-247660043c9f",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:00.065120+00:00",
+    "session_id": "5d285e9f-faa9-4f6c-999b-ebe360443b23",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:00.297944+00:00",
+    "session_id": "9b6c4eee-8697-46bd-a77e-bcf07d3933e3",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:00.530121+00:00",
+    "session_id": "58d49ae7-bc94-4319-8d0c-b26ce13daaa4",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:00.766557+00:00",
+    "session_id": "aa416ec7-ec87-4629-9304-e1b203f8e691",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:01.011518+00:00",
+    "session_id": "c0309490-b815-4b4a-85f1-ab943437be91",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:01.247157+00:00",
+    "session_id": "b6967e08-ef6a-4598-a5b1-649e5f246743",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:01.510647+00:00",
+    "session_id": "ee8292d9-2448-4202-a30d-49827bbd63ae",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:01.756691+00:00",
+    "session_id": "ec6ed6ee-8d4a-4ff5-b6a1-93969975a8e1",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:01.999626+00:00",
+    "session_id": "8e8082a2-a606-47b7-9520-23a20a7c16f5",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:02.252569+00:00",
+    "session_id": "abbc4d37-bf6d-47e6-9c7f-217a873fc096",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:02.484499+00:00",
+    "session_id": "e9a968ae-9269-4575-9922-acb9c0cfe022",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:02.716322+00:00",
+    "session_id": "1b5e61bb-da45-482a-b1fd-247f16000c8b",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:02.954436+00:00",
+    "session_id": "546460fd-4444-45f9-ab5f-5f03a2c0c9ae",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:03.187679+00:00",
+    "session_id": "60df30b4-9500-4e58-9a1f-0bbe01171722",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:03.423469+00:00",
+    "session_id": "4e808440-719a-461c-b680-c122fa2d4ac6",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:03.656588+00:00",
+    "session_id": "07305061-65bc-4020-a82f-fa5a1937925b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:03.889174+00:00",
+    "session_id": "730e4ed3-dedb-49be-9a89-5b1038899d3b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:04.120835+00:00",
+    "session_id": "3848d751-ed83-4df2-8d66-704d19a3c82e",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:04.352606+00:00",
+    "session_id": "c5377563-eb65-4878-beb3-6a804ed417a4",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:04.585531+00:00",
+    "session_id": "12622230-1779-4113-8a06-29696017b824",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:04.819186+00:00",
+    "session_id": "d1c8ce15-b057-4396-a3ee-fdc09940767a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:05.052157+00:00",
+    "session_id": "676a49ed-5f0c-40c9-a3d8-4c5fbdf3c54a",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:05.285026+00:00",
+    "session_id": "8a1e5950-b801-473f-84c9-4bab70baa5f0",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:05.521144+00:00",
+    "session_id": "e2a3c3f1-23e3-42b2-8e04-b1c9e8c73286",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:05.771284+00:00",
+    "session_id": "9cae46c6-e752-43a5-aa41-ee08ad6f0086",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:06.090131+00:00",
+    "session_id": "ca2df199-61c0-4b62-86d4-f63d0fb0679d",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:06.331435+00:00",
+    "session_id": "8b81f0f2-4739-48c4-8e9c-2745d145a86c",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:06.591793+00:00",
+    "session_id": "6244f546-a722-4627-b377-1dac8af24f80",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:06.843547+00:00",
+    "session_id": "2d310cec-65c4-46ad-b73b-9b21476c7469",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:07.084943+00:00",
+    "session_id": "4a8d90ba-9b81-4b72-b753-5f88d6f4d29c",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:07.318460+00:00",
+    "session_id": "f07c2769-1bbb-43fc-9ec8-696b2447070e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:07.550342+00:00",
+    "session_id": "183e7f23-192c-4cd1-8b93-5c61e3eaed22",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:07.783404+00:00",
+    "session_id": "0ea5b82d-fede-49e6-9743-f4cbb425c3cf",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:08.016848+00:00",
+    "session_id": "d1dc9f20-56ab-4429-992f-5dce6690354d",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:08.252969+00:00",
+    "session_id": "57680ff3-bbe9-435e-a076-3153d19ced2c",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:08.487908+00:00",
+    "session_id": "1baa2820-9e91-4ad8-854b-00f8a70257af",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:08.725256+00:00",
+    "session_id": "1ae55ca4-b68b-4ad1-91c9-b8382be1f549",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:08.959663+00:00",
+    "session_id": "abf2586d-9811-45db-921b-1872b73098be",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:09.195576+00:00",
+    "session_id": "28d54edd-a24a-4ea3-aa28-820780683512",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:09.429171+00:00",
+    "session_id": "6091fbc5-f42d-4ef2-972d-c80f067520af",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:36:09.662214+00:00",
+    "session_id": "0ef25edd-5146-491b-ab45-6ab6a0511f58",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('83.126.40.53', 8080)"
+  }
+]

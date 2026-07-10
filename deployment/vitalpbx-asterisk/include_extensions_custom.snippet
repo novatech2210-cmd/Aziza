@@ -1,0 +1,9 @@
+; --- Phase 3: AMD/LID test context ---
+; Append the line below to /etc/asterisk/extensions_custom.conf on VM-B,
+; then reload the dialplan:
+;     asterisk -rx "dialplan reload"
+;
+; To verify:
+;     asterisk -rx "dialplan show from-amd-test"
+
+#include "extensions_amd.conf"

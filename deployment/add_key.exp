@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+set timeout 10
+set PUBKEY [exec cat /home/kali/.ssh/id_rsa.pub]
+
+set ssh_host $env(PROXMOX_HOST)
+set ssh_pass $env(PROXMOX_SSH_PASS)
+
+spawn ssh -p 122 -o StrictHostKeyChecking=no root@$ssh_host
+expect "*?assword:*"
+send "$ssh_pass\r"
+expect "# "
+send "mkdir -p ~/.ssh && chmod 700 ~/.ssh && echo '$PUBKEY' >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys\r"
+expect "# "
+send "exit\r"
+exit

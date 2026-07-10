@@ -1,0 +1,1577 @@
+[
+  {
+    "timestamp": "2026-07-06T10:59:54.176554+00:00",
+    "session_id": "5a6840d2-d245-4554-b40d-4fdb50b50800",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.16183,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.277526+00:00",
+    "session_id": "d7b5ff8d-d04a-4697-9f3a-2c04b17e1757",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.2769895,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.378678+00:00",
+    "session_id": "610afb8c-fa5b-44e7-bdec-b361f50dc798",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.3780332,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.480279+00:00",
+    "session_id": "e3606181-75ae-47d3-a916-08886be83fdb",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.4792972,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.581733+00:00",
+    "session_id": "3bd68417-04d6-4169-9b2b-8a5ea002b1f1",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.5808623,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.682899+00:00",
+    "session_id": "2e6b43ab-afac-4fbc-9936-0b7839072b11",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.6822321,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.784079+00:00",
+    "session_id": "00a177b5-af7f-4816-b8e8-5d0d15098c0c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.783397,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.884979+00:00",
+    "session_id": "dedb55f2-095e-4a9d-a2ff-6690d8742f16",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.8845158,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:54.986159+00:00",
+    "session_id": "e79637b7-fffe-4a51-8b94-313493aff8d6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335594.9853873,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.086869+00:00",
+    "session_id": "54e4355b-a57f-4a8d-8570-cc042c825433",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.0864584,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.187886+00:00",
+    "session_id": "49b0c448-bf0c-4a64-9639-cc41cadbe2a6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.1872215,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.288882+00:00",
+    "session_id": "82f53f59-ba81-47a7-94b7-22d0220835c2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.2882886,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.389760+00:00",
+    "session_id": "d4be90bd-78c5-4c0c-b906-69a48d18a00f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.3892162,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.490668+00:00",
+    "session_id": "bd2ee2fd-ca80-43a3-8906-9b8404111e2d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.4901166,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.591504+00:00",
+    "session_id": "c5b854ac-0a9e-4ce5-bdd7-e5b3836307ca",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.591058,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.692383+00:00",
+    "session_id": "1a25a811-cb56-46ea-8578-b869eda98449",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.6918702,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.793462+00:00",
+    "session_id": "14c40a0c-7abb-4eaa-93ad-8f04e0046b75",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.7929003,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.894629+00:00",
+    "session_id": "3b2c5cf2-68f7-49ac-b2c8-d7c3e63e1d09",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.8938093,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:55.995422+00:00",
+    "session_id": "e93b9986-441b-4a3d-9502-6f507efd4250",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335595.9949677,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.096506+00:00",
+    "session_id": "8bd65473-d22b-4464-a47c-4bb8de361064",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.095977,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.197327+00:00",
+    "session_id": "609b00e8-84d8-4f92-aa0c-8a4bfa813650",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.1968462,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.298459+00:00",
+    "session_id": "2b286352-d6db-4bc6-9a63-7858f9ea1f25",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.2977557,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.399454+00:00",
+    "session_id": "7a73c6f4-ebf1-47c0-a4f9-46adb6f77ba7",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.3988686,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.500585+00:00",
+    "session_id": "79abeaa6-ec59-416c-bcb2-9ac33f25126d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.4998925,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.601781+00:00",
+    "session_id": "2e566e5d-9233-4a32-82b2-654f120f4cc5",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.6010501,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.702940+00:00",
+    "session_id": "dff6210c-88e3-4cce-8873-1265bfa09c10",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.7022212,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.803718+00:00",
+    "session_id": "b57e9cc3-d8b5-4b69-86cb-26c5e46d07e6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.803289,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:56.904737+00:00",
+    "session_id": "30739abb-2fbb-4119-8c10-d1a0078a51e6",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335596.904091,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.005658+00:00",
+    "session_id": "f56ec65c-4ae8-4613-bc09-c737de519e16",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.0051334,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.106449+00:00",
+    "session_id": "6cb969be-84c5-497b-bae7-d8e42ab77e1a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.1060507,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.207336+00:00",
+    "session_id": "ee2f63d9-a773-43ae-976e-b7f7c9d79c7b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.2068114,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.308357+00:00",
+    "session_id": "d9d7735d-899f-481e-a37a-fc5cd448e96c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.3077376,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.409319+00:00",
+    "session_id": "4e57e6d8-5512-4442-99f9-c61dd064a70c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.4087274,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.510333+00:00",
+    "session_id": "8e3416a5-d29a-4285-ba78-6c6dff4c506d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.5097508,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.611257+00:00",
+    "session_id": "77091233-7075-4081-85e5-ace95eafa1bc",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.6107004,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.712323+00:00",
+    "session_id": "d29426d6-e7fa-48cb-806d-c6d6021597fb",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.7115986,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.813455+00:00",
+    "session_id": "0fd73b0a-3c6f-4d57-b11c-27ad089edf1f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.8128593,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:57.914389+00:00",
+    "session_id": "07b365d8-9327-4259-8a0f-9c399149c29f",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335597.913842,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.015185+00:00",
+    "session_id": "3e3afb88-2263-41a4-8ce4-74ee6ad3ea27",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.0147393,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.116109+00:00",
+    "session_id": "ab063b5d-c16c-4bef-ba25-6196057bdb33",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.1155643,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.217184+00:00",
+    "session_id": "1613c4e1-2549-43fa-8da5-084c53c19c6e",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.2166276,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.318172+00:00",
+    "session_id": "72595406-1faf-4647-ae5f-9f093fe5b2fd",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.317606,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.419234+00:00",
+    "session_id": "e1262414-a525-410d-9c82-b75a302edeff",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.4185848,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.520313+00:00",
+    "session_id": "ca78f442-3725-4b8c-bc1f-6655a20e9af0",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.5196505,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.621145+00:00",
+    "session_id": "768609ca-6b76-46e4-ad8e-c91434dd828b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.6207352,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.722083+00:00",
+    "session_id": "e2a7bc6e-24b3-4194-9da9-57b5cb72d765",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.7216203,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.823042+00:00",
+    "session_id": "609d20fb-c6f5-4d18-8804-7ec97ef7add2",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.8224075,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:58.924091+00:00",
+    "session_id": "25a42819-456f-464b-a7c5-8056a4b084d4",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335598.9234746,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.024915+00:00",
+    "session_id": "c8bf6d57-7d8f-421b-ac96-450f1eff32c4",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.0244112,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.125897+00:00",
+    "session_id": "715067a5-cb1a-4402-b12a-6c55cd25f7a6",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.125335,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.226650+00:00",
+    "session_id": "9035a4b2-ea6b-40f0-9f32-904e082ddebb",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.2261975,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.328064+00:00",
+    "session_id": "0fa6f19f-4a48-4494-aeec-c3299749e970",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.3271644,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.428904+00:00",
+    "session_id": "3327bb22-cb5e-4c4e-92f8-3e7a9699ff12",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.4283783,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.529885+00:00",
+    "session_id": "e2e81044-b887-463b-b272-632381b2d82a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.5293272,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.630795+00:00",
+    "session_id": "06a13ddf-7bee-4a4b-b21a-c77ee2741146",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.6302323,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.731810+00:00",
+    "session_id": "f3bc8ff5-b4ee-4e51-9837-d2f9e9474c27",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.7312112,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.832453+00:00",
+    "session_id": "11ca3d82-51aa-4e6b-bb1f-e46a17106f2d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.8321152,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T10:59:59.933414+00:00",
+    "session_id": "86e3c0e7-6458-44ca-9508-207c961621ac",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335599.932857,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.034397+00:00",
+    "session_id": "a9f8c4a3-00b0-4000-bd79-bfaa43ee56d7",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.033822,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.135211+00:00",
+    "session_id": "0571433e-c073-47e3-853d-b189641034ed",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.1348011,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.236105+00:00",
+    "session_id": "b11f0638-908a-487f-b45e-9219c10d9f14",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.2356164,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.336805+00:00",
+    "session_id": "e90e2a36-a6d0-4c9d-bd7e-5cab86c3b50e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.336398,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.437977+00:00",
+    "session_id": "4d8c8b70-bfc0-47fe-9065-80b98caa9f73",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.4373198,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.538872+00:00",
+    "session_id": "27bc7526-b661-4a5b-9c90-3d2b113108b3",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.5383983,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.639993+00:00",
+    "session_id": "f9a101f0-ee05-4184-a885-73e67c2a1d21",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.6393223,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.740941+00:00",
+    "session_id": "9c181f08-cd55-49d8-9990-7c6ed455f7d8",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.7403703,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.842222+00:00",
+    "session_id": "57d2bfcf-f188-4367-b035-f53235878e5a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.8414679,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:00.943244+00:00",
+    "session_id": "29ec6c71-d985-47ce-af69-17c89fb69f45",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335600.9426644,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.043944+00:00",
+    "session_id": "102747f7-50b3-42cd-a233-9e73c263f022",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.0435982,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.144969+00:00",
+    "session_id": "9d75a941-31c6-4d7a-969d-0b3b45401eb4",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.1443336,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.246017+00:00",
+    "session_id": "3790d9de-300f-4321-a848-95ef49c8c8a0",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.2453432,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.347176+00:00",
+    "session_id": "df18f719-8f56-4fdb-b286-3b65f3fb053a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.3464904,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.448255+00:00",
+    "session_id": "9b981375-341f-4668-97be-7002716981fb",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.4476213,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.549550+00:00",
+    "session_id": "13de08cb-5a14-4632-8b51-8f222454c070",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.5488083,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.650561+00:00",
+    "session_id": "a2418062-26ac-4bb5-86bf-0d77ce26ca15",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.6499863,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.751535+00:00",
+    "session_id": "c37c598c-09b5-4d2e-b29b-7a2c9b763941",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.7508976,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.852733+00:00",
+    "session_id": "4a2c21e3-714b-45bb-bbb3-94a2b858598d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.8519776,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:01.953627+00:00",
+    "session_id": "375be80c-d0e7-4f01-b02e-4fc68d10b8d5",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335601.9531221,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.054661+00:00",
+    "session_id": "23ada6be-eacc-4578-8416-c11763726b8a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.0540078,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.155652+00:00",
+    "session_id": "1c379023-3083-4d82-8969-0cd37746acb2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.155158,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.256557+00:00",
+    "session_id": "9c3a2c7f-2670-48cf-8b2a-be04553e989f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.2560284,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.357849+00:00",
+    "session_id": "c2a7f974-cbf7-4409-87e2-c5b99966933e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.357021,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.458705+00:00",
+    "session_id": "4c593b70-29ce-4997-9269-e898eba877f2",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.458251,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.559548+00:00",
+    "session_id": "63992641-2094-49c7-a0a0-2e5a21864e80",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.5590682,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.660986+00:00",
+    "session_id": "e68a74f3-21ab-4153-95c2-4904920dffb9",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.6600668,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.761949+00:00",
+    "session_id": "e249b3e4-14b2-457c-a038-0f95558f4ad2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.7614765,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.862875+00:00",
+    "session_id": "70ce6add-40d9-4161-b22b-47f0b71ff036",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.8624098,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:02.963782+00:00",
+    "session_id": "14a4f295-ce8d-4d89-85f4-c37221099820",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335602.9632745,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.064903+00:00",
+    "session_id": "3af562be-6034-46a5-a3f7-0696113a6730",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.0642781,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.165751+00:00",
+    "session_id": "e4053a1b-19cb-4ac3-b080-d18ed5559739",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.1652646,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.266779+00:00",
+    "session_id": "f4a3fd62-4d52-48eb-8cda-27ba4bf6ee15",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.2661319,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.367873+00:00",
+    "session_id": "20d00ba3-eab8-4e03-8b21-9b8587b108e4",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.3671649,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.468905+00:00",
+    "session_id": "01706ab9-a77d-4542-b6c9-322e6cd685ae",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.4683325,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.569703+00:00",
+    "session_id": "102bf704-a546-40cc-adce-0bfd1cbed44c",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.5692286,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.670814+00:00",
+    "session_id": "8a90ae16-88e4-4543-8076-1759ba19e31b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.670128,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.771582+00:00",
+    "session_id": "2bb1458c-b2dd-454f-b415-9f625f9e9e36",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.7711833,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.872279+00:00",
+    "session_id": "7429677b-1319-46cd-9910-3d180434999c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.871891,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:03.973617+00:00",
+    "session_id": "c0dd3245-2428-4858-afc5-2fae6d8aecb1",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335603.9728107,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.074632+00:00",
+    "session_id": "b2a70b16-dfea-49be-aca9-df2e2662e968",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.0739985,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.175629+00:00",
+    "session_id": "dcbadfbe-2478-4507-9db6-0456f2bed2f5",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.1750236,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.276627+00:00",
+    "session_id": "ef00ec9e-29b8-4f1b-b6e6-28a4f3c97175",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.2760756,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.377558+00:00",
+    "session_id": "be489608-4b14-4705-8b59-83a2454df753",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.3770535,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.478486+00:00",
+    "session_id": "92290bc2-5521-41b1-b213-605c89c4f19a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.4779327,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.579493+00:00",
+    "session_id": "cf5973f8-cd17-4c2c-ae15-2dde323ddbf3",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.578902,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:00:04.680782+00:00",
+    "session_id": "c7ff56bb-876f-4e70-9dd6-2c2f4fa6a26e",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "request_start": 1783335604.6799104,
+      "websocket_send": null,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  }
+]

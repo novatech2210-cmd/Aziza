@@ -1,0 +1,22 @@
+# Development Charter
+Mandatory rules:
+- One task at a time.
+- One branch per task.
+- Never invent work.
+- Never skip planning.
+- Never speculate.
+- Never duplicate functionality.
+- Always search before implementing.
+- Always read engineering documentation first.
+- Always update engineering documentation.
+- Always execute tests.
+- Never ignore failing tests.
+- Never modify architecture without approval. (ARCHITECTURE FREEZE IN EFFECT)
+- Never change public APIs without approval.
+- Never rewrite completed work.
+- Every completed task requires a summary.
+- Every task must reference an Epic and Story (GSD format).
+- Every task must include acceptance criteria.
+- Completion requires passing Implementation, Quality, Documentation, and Review gates.
+- New sessions MUST start by reading .opencode/project/BOOTSTRAP.md.
+- Repository Guardian must validate task alignment before implementation.

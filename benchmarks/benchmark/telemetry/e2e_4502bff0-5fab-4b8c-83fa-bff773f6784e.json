@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-07-03T08:59:17.078117",
+    "session_id": "5d87fcf9-6727-4cdf-9b20-ade9a41d0e2c",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:17.582646",
+    "session_id": "ed7c1194-fe7b-42a4-a3bd-fdb7d4707778",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:18.086695",
+    "session_id": "f27a23b1-a502-4bcf-9fd1-92ac00db57f9",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:18.590764",
+    "session_id": "56a291f6-dae8-4a7d-9e3b-a53e9c470acb",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:19.095486",
+    "session_id": "be1730c4-a3e0-463d-be9c-adc375944ec1",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:19.599216",
+    "session_id": "47ec31c4-b53f-45d0-b81a-14b0835a67e8",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:20.102954",
+    "session_id": "6253f3c6-98b4-4a7e-8fc0-42229b1abdf6",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:20.607143",
+    "session_id": "bf68a75c-bb93-4f62-83cf-28f44afd8be3",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:21.111029",
+    "session_id": "fe68cf18-aa57-47cb-a93f-df7f39753650",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  },
+  {
+    "timestamp": "2026-07-03T08:59:21.614483",
+    "session_id": "868b5e5a-f6e7-4c92-9e75-312f228ddd7e",
+    "event_type": "websocket_error",
+    "error": "server rejected WebSocket connection: HTTP 500"
+  }
+]

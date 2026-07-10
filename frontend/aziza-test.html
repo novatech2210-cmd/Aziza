@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aziza AI — Test Console</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0b0f;--surface:#12141a;--surface2:#1a1d26;
+  --border:#2a2d3a;--accent:#7c6fff;--accent2:#ff6b9d;
+  --text:#e8eaf0;--muted:#6b7280;--green:#22d3a5;--red:#f87171;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+header{padding:20px 32px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px;background:var(--surface)}
+.logo{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px}
+header h1{font-size:18px;font-weight:600}
+header .subtitle{font-size:12px;color:var(--muted)}
+.status{margin-left:auto;display:flex;gap:8px;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--green);box-shadow:0 0 8px var(--green)}
+.dot.err{background:var(--red)}
+.status-label{font-size:12px;color:var(--muted)}
+
+.tabs{display:flex;gap:0;padding:0 32px;background:var(--surface);border-bottom:1px solid var(--border)}
+.tab{padding:14px 24px;font-size:13px;font-weight:500;cursor:pointer;border-bottom:2px solid transparent;color:var(--muted);transition:all .2s}
+.tab.active{border-bottom-color:var(--accent);color:var(--text)}
+.tab:hover:not(.active){color:var(--text)}
+
+.panel{display:none;flex:1;flex-direction:column;overflow:hidden}
+.panel.active{display:flex}
+
+/* ── TEXT PANEL ── */
+.chat-area{flex:1;overflow-y:auto;padding:24px 32px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:70%;padding:12px 16px;border-radius:12px;font-size:14px;line-height:1.6}
+.msg.user{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:4px}
+.msg.assistant{align-self:flex-start;background:var(--surface2);border:1px solid var(--border);border-bottom-left-radius:4px}
+.msg.streaming{border-color:var(--accent)}
+.msg .role{font-size:11px;font-weight:600;margin-bottom:4px;opacity:.7;text-transform:uppercase;letter-spacing:.5px}
+.chat-input{padding:20px 32px;border-top:1px solid var(--border);background:var(--surface);display:flex;gap:12px}
+.chat-input input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:.2s}
+.chat-input input:focus{border-color:var(--accent)}
+.btn{padding:12px 24px;border-radius:8px;border:none;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#6b5fee}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed}
+.btn-danger{background:var(--red);color:#fff}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── VOICE PANEL ── */
+.voice-area{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;padding:40px}
+.voice-ring{position:relative;width:160px;height:160px}
+.voice-ring .ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--accent);opacity:0;animation:none}
+.voice-ring.recording .ring:nth-child(1){animation:pulse 1.5s ease-out infinite}
+.voice-ring.recording .ring:nth-child(2){animation:pulse 1.5s ease-out .4s infinite}
+.voice-ring.recording .ring:nth-child(3){animation:pulse 1.5s ease-out .8s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.8);opacity:0}}
+.mic-btn{position:absolute;inset:20px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:36px;transition:all .2s;box-shadow:0 8px 32px rgba(124,111,255,.4)}
+.mic-btn:hover{transform:scale(1.05)}
+.mic-btn.recording{background:linear-gradient(135deg,var(--red),#f97316)}
+.voice-status{font-size:15px;color:var(--muted);text-align:center}
+.voice-status b{color:var(--text)}
+.transcript-box{width:100%;max-width:600px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:20px;min-height:100px;font-size:14px;line-height:1.7}
+.transcript-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px}
+.transcript-text{color:var(--text)}
+.audio-visual{display:flex;gap:3px;align-items:center;height:40px}
+.bar{width:4px;background:var(--accent);border-radius:2px;transition:height .1s;height:4px}
+
+/* ── V2T PANEL ── */
+.v2t-area{flex:1;display:flex;gap:0;overflow:hidden}
+.v2t-left{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:40px;border-right:1px solid var(--border)}
+.v2t-right{width:400px;display:flex;flex-direction:column}
+.v2t-log{flex:1;overflow-y:auto;padding:20px}
+.log-entry{padding:10px 12px;border-radius:8px;margin-bottom:8px;font-size:13px;line-height:1.5}
+.log-entry.transcript{background:var(--surface2);border:1px solid var(--border)}
+.log-entry.response{background:rgba(124,111,255,.1);border:1px solid rgba(124,111,255,.3)}
+.log-entry .ts{font-size:10px;color:var(--muted);margin-bottom:3px}
+
+.empty{color:var(--muted);font-size:14px;text-align:center}
+canvas{display:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">A</div>
+  <div>
+    <h1>Aziza AI Console</h1>
+    <div class="subtitle">Real-time test interface — all modes</div>
+  </div>
+  <div class="status">
+    <div class="dot" id="txt-dot"></div><span class="status-label">Text</span>
+    <div class="dot" id="voice-dot" style="margin-left:12px"></div><span class="status-label">Voice</span>
+  </div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('text')">💬 Text to Text</div>
+  <div class="tab" onclick="switchTab('v2v')">🎙️ Voice to Voice</div>
+  <div class="tab" onclick="switchTab('v2t')">📝 Voice to Text</div>
+</div>
+
+<!-- TEXT PANEL -->
+<div class="panel active" id="panel-text">
+  <div class="chat-area" id="chat-msgs">
+    <div class="empty">Start a conversation with Aziza…</div>
+  </div>
+  <div class="chat-input">
+    <input id="txt-input" type="text" placeholder="Type a message…" onkeydown="if(event.key==='Enter')sendText()"/>
+    <button class="btn btn-primary" id="txt-send" onclick="sendText()">Send</button>
+    <button class="btn btn-outline" onclick="clearChat()">Clear</button>
+  </div>
+</div>
+
+<!-- VOICE TO VOICE PANEL -->
+<div class="panel" id="panel-v2v">
+  <div class="voice-area">
+    <div class="voice-ring" id="v2v-ring">
+      <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+      <button class="mic-btn" id="v2v-mic" onclick="toggleV2V()">🎙️</button>
+    </div>
+    <div class="voice-status" id="v2v-status"><b>Click mic</b> to start voice session</div>
+    <div class="audio-visual" id="v2v-bars"></div>
+    <div style="width:100%;max-width:600px">
+      <div class="transcript-label">Aziza's response</div>
+      <div class="transcript-box">
+        <div class="transcript-text" id="v2v-transcript">Waiting for response…</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VOICE TO TEXT PANEL -->
+<div class="panel" id="panel-v2t">
+  <div class="v2t-area">
+    <div class="v2t-left">
+      <div class="voice-ring" id="v2t-ring">
+        <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+        <button class="mic-btn" id="v2t-mic" onclick="toggleV2T()">🎙️</button>
+      </div>
+      <div class="voice-status" id="v2t-status"><b>Click mic</b> to record and transcribe</div>
+      <div class="audio-visual" id="v2t-bars"></div>
+    </div>
+    <div class="v2t-right">
+      <div style="padding:16px 20px;border-bottom:1px solid var(--border);font-size:13px;font-weight:600">Transcript Log</div>
+      <div class="v2t-log" id="v2t-log">
+        <div class="empty" style="padding-top:40px">Transcriptions will appear here</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="analyser-canvas"></canvas>
+<audio id="audio-out" autoplay></audio>
+
+<script>
+const WS_BASE = `ws://${location.host}`;
+const CHAT_TEXT_PATH = '/api/chat-text';
+const VOICE_PATH     = '/api/chat';
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    const names = ['text','v2v','v2t'];
+    t.classList.toggle('active', names[i] === name);
+  });
+  document.querySelectorAll('.panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'panel-'+name);
+  });
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// TEXT-TO-TEXT
+// ══════════════════════════════════════════════════════════════════════════════
+let txtWs = null, txtBubble = null;
+
+function connectText() {
+  const sid = 'txt-' + Date.now();
+  txtWs = new WebSocket(`${WS_BASE}${CHAT_TEXT_PATH}?sessionId=${sid}`);
+
+  txtWs.onopen = () => {
+    document.getElementById('txt-dot').className = 'dot ok';
+  };
+  txtWs.onclose = () => {
+    document.getElementById('txt-dot').className = 'dot err';
+    setTimeout(connectText, 3000);
+  };
+  txtWs.onerror = () => {
+    document.getElementById('txt-dot').className = 'dot err';
+  };
+  txtWs.onmessage = (ev) => {
+    const data = JSON.parse(ev.data);
+    if (data.type === 'ready') return;
+    if (data.type === 'pong') return;
+    if (data.type === 'token') {
+      if (!txtBubble) {
+        txtBubble = addMsg('assistant', '');
+      }
+      const el = txtBubble.querySelector('.body');
+      el.textContent += data.content;
+      txtBubble.classList.add('streaming');
+      scrollChat();
+    }
+    if (data.type === 'done') {
+      if (txtBubble) txtBubble.classList.remove('streaming');
+      txtBubble = null;
+      document.getElementById('txt-send').disabled = false;
+    }
+    if (data.type === 'error') {
+      if (txtBubble) txtBubble.querySelector('.body').textContent = '⚠️ ' + data.message;
+      txtBubble = null;
+      document.getElementById('txt-send').disabled = false;
+    }
+  };
+}
+
+function addMsg(role, text) {
+  const area = document.getElementById('chat-msgs');
+  const empties = area.querySelectorAll('.empty');
+  empties.forEach(e => e.remove());
+  const div = document.createElement('div');
+  div.className = `msg ${role}`;
+  div.innerHTML = `<div class="role">${role === 'user' ? 'You' : 'Aziza'}</div><div class="body">${text}</div>`;
+  area.appendChild(div);
+  scrollChat();
+  return div;
+}
+
+function scrollChat() {
+  const area = document.getElementById('chat-msgs');
+  area.scrollTop = area.scrollHeight;
+}
+
+function sendText() {
+  const inp = document.getElementById('txt-input');
+  const msg = inp.value.trim();
+  if (!msg || !txtWs || txtWs.readyState !== WebSocket.OPEN) return;
+  addMsg('user', msg);
+  inp.value = '';
+  document.getElementById('txt-send').disabled = true;
+  txtWs.send(JSON.stringify({ message: msg }));
+}
+
+function clearChat() {
+  document.getElementById('chat-msgs').innerHTML = '<div class="empty">Start a conversation with Aziza…</div>';
+  txtBubble = null;
+  document.getElementById('txt-send').disabled = false;
+}
+
+connectText();
+
+// ══════════════════════════════════════════════════════════════════════════════
+// SHARED AUDIO HELPERS
+// ══════════════════════════════════════════════════════════════════════════════
+let audioCtx = null;
+let analyserNode = null;
+let animFrame = null;
+
+async function getAudioCtx() {
+  if (!audioCtx) audioCtx = new AudioContext({ sampleRate: 24000 });
+  if (audioCtx.state === 'suspended') await audioCtx.resume();
+  return audioCtx;
+}
+
+function buildBars(containerId, count = 20) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  for (let i = 0; i < count; i++) {
+    const b = document.createElement('div');
+    b.className = 'bar';
+    c.appendChild(b);
+  }
+}
+
+function animateBars(containerId, analyser) {
+  const bars = document.getElementById(containerId).children;
+  const buf = new Uint8Array(analyser.frequencyBinCount);
+  const step = Math.floor(analyser.frequencyBinCount / bars.length);
+  function frame() {
+    animFrame = requestAnimationFrame(frame);
+    analyser.getByteFrequencyData(buf);
+    for (let i = 0; i < bars.length; i++) {
+      const val = buf[i * step] / 255;
+      bars[i].style.height = (4 + val * 36) + 'px';
+    }
+  }
+  frame();
+}
+
+function stopBars() {
+  if (animFrame) { cancelAnimationFrame(animFrame); animFrame = null; }
+}
+
+async function startMic(onChunk) {
+  const ctx = await getAudioCtx();
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: { sampleRate: 24000, channelCount: 1 }, video: false });
+  const src = ctx.createMediaStreamSource(stream);
+  analyserNode = ctx.createAnalyser();
+  analyserNode.fftSize = 256;
+  src.connect(analyserNode);
+
+  const proc = ctx.createScriptProcessor(1024, 1, 1);
+  src.connect(proc);
+  proc.connect(ctx.destination);
+  proc.onaudioprocess = (e) => {
+    const f32 = e.inputBuffer.getChannelData(0);
+    const i16 = new Int16Array(f32.length);
+    for (let i = 0; i < f32.length; i++) i16[i] = Math.max(-32768, Math.min(32767, f32[i] * 32768));
+    onChunk(i16.buffer);
+  };
+
+  return { stream, proc, src };
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// VOICE-TO-VOICE
+// ══════════════════════════════════════════════════════════════════════════════
+let v2vWs = null, v2vMicState = null, v2vActive = false;
+const audioQueue = [];
+let v2vPlaying = false;
+
+async function toggleV2V() {
+  if (!v2vActive) {
+    v2vActive = true;
+    document.getElementById('v2v-mic').textContent = '⏹️';
+    document.getElementById('v2v-mic').classList.add('recording');
+    document.getElementById('v2v-ring').classList.add('recording');
+    document.getElementById('v2v-status').innerHTML = '<b>Connected</b> — speak now…';
+    buildBars('v2v-bars');
+    await startV2VSession();
+  } else {
+    stopV2V();
+  }
+}
+
+async function startV2VSession() {
+  const sid = 'v2v-' + Date.now();
+  v2vWs = new WebSocket(`${WS_BASE}${VOICE_PATH}?sessionId=${sid}&mode=voice`);
+  v2vWs.binaryType = 'arraybuffer';
+
+  v2vWs.onopen = () => {
+    document.getElementById('voice-dot').className = 'dot ok';
+  };
+  v2vWs.onclose = () => {
+    document.getElementById('voice-dot').className = 'dot err';
+  };
+  v2vWs.onmessage = async (ev) => {
+    if (typeof ev.data === 'string') return;
+    const buf = new Uint8Array(ev.data);
+    if (buf[0] === 0x01) {
+      // Audio chunk — queue for playback
+      audioQueue.push(buf.slice(1));
+      if (!v2vPlaying) playNextChunk();
+    } else if (buf[0] === 0x02) {
+      // Text token
+      const text = new TextDecoder().decode(buf.slice(1));
+      const el = document.getElementById('v2v-transcript');
+      el.textContent += text;
+    }
+  };
+
+  // Start mic → send 0x01 + audio
+  v2vMicState = await startMic((chunk) => {
+    if (v2vWs && v2vWs.readyState === WebSocket.OPEN) {
+      const payload = new Uint8Array(1 + chunk.byteLength);
+      payload[0] = 0x01;
+      payload.set(new Uint8Array(chunk), 1);
+      v2vWs.send(payload);
+    }
+  });
+  animateBars('v2v-bars', analyserNode);
+}
+
+async function playNextChunk() {
+  if (audioQueue.length === 0) { v2vPlaying = false; return; }
+  v2vPlaying = true;
+  const chunk = audioQueue.shift();
+  const ctx = await getAudioCtx();
+  // Raw PCM Int16 → float32
+  const i16 = new Int16Array(chunk.buffer);
+  const f32 = new Float32Array(i16.length);
+  for (let i = 0; i < i16.length; i++) f32[i] = i16[i] / 32768;
+  const abuf = ctx.createBuffer(1, f32.length, 24000);
+  abuf.copyToChannel(f32, 0);
+  const src = ctx.createBufferSource();
+  src.buffer = abuf;
+  src.connect(ctx.destination);
+  src.onended = () => playNextChunk();
+  src.start();
+}
+
+function stopV2V() {
+  v2vActive = false;
+  document.getElementById('v2v-mic').textContent = '🎙️';
+  document.getElementById('v2v-mic').classList.remove('recording');
+  document.getElementById('v2v-ring').classList.remove('recording');
+  document.getElementById('v2v-status').innerHTML = '<b>Click mic</b> to start voice session';
+  stopBars();
+  if (v2vMicState) {
+    v2vMicState.proc.disconnect();
+    v2vMicState.src.disconnect();
+    v2vMicState.stream.getTracks().forEach(t => t.stop());
+    v2vMicState = null;
+  }
+  if (v2vWs) { v2vWs.close(); v2vWs = null; }
+  document.getElementById('voice-dot').className = 'dot';
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// VOICE-TO-TEXT
+// ══════════════════════════════════════════════════════════════════════════════
+let v2tWs = null, v2tMicState = null, v2tActive = false;
+let currentTranscript = '';
+
+async function toggleV2T() {
+  if (!v2tActive) {
+    v2tActive = true;
+    document.getElementById('v2t-mic').textContent = '⏹️';
+    document.getElementById('v2t-mic').classList.add('recording');
+    document.getElementById('v2t-ring').classList.add('recording');
+    document.getElementById('v2t-status').innerHTML = '<b>Recording</b> — Aziza is listening…';
+    buildBars('v2t-bars');
+    currentTranscript = '';
+    await startV2TSession();
+  } else {
+    stopV2T();
+  }
+}
+
+async function startV2TSession() {
+  const sid = 'v2t-' + Date.now();
+  v2tWs = new WebSocket(`${WS_BASE}${VOICE_PATH}?sessionId=${sid}&mode=transcribe`);
+  v2tWs.binaryType = 'arraybuffer';
+
+  v2tWs.onopen = () => {};
+  v2tWs.onmessage = (ev) => {
+    if (typeof ev.data === 'string') return;
+    const buf = new Uint8Array(ev.data);
+    if (buf[0] === 0x02) {
+      const text = new TextDecoder().decode(buf.slice(1));
+      currentTranscript += text;
+      appendLog('transcript', currentTranscript);
+    }
+  };
+
+  v2tMicState = await startMic((chunk) => {
+    if (v2tWs && v2tWs.readyState === WebSocket.OPEN) {
+      const payload = new Uint8Array(1 + chunk.byteLength);
+      payload[0] = 0x01;
+      payload.set(new Uint8Array(chunk), 1);
+      v2tWs.send(payload);
+    }
+  });
+  animateBars('v2t-bars', analyserNode);
+}
+
+function appendLog(type, text) {
+  const log = document.getElementById('v2t-log');
+  const empties = log.querySelectorAll('.empty');
+  empties.forEach(e => e.remove());
+  let last = log.querySelector('.log-entry:last-child');
+  if (last && last.dataset.type === type && type === 'transcript') {
+    last.querySelector('.body').textContent = text;
+    return;
+  }
+  const div = document.createElement('div');
+  div.className = `log-entry ${type}`;
+  div.dataset.type = type;
+  const now = new Date().toLocaleTimeString();
+  div.innerHTML = `<div class="ts">${type === 'transcript' ? '🎙️ Transcript' : '🤖 Aziza'} · ${now}</div><div class="body">${text}</div>`;
+  log.appendChild(div);
+  log.scrollTop = log.scrollHeight;
+}
+
+function stopV2T() {
+  v2tActive = false;
+  document.getElementById('v2t-mic').textContent = '🎙️';
+  document.getElementById('v2t-mic').classList.remove('recording');
+  document.getElementById('v2t-ring').classList.remove('recording');
+  document.getElementById('v2t-status').innerHTML = '<b>Click mic</b> to record and transcribe';
+  stopBars();
+  if (v2tMicState) {
+    v2tMicState.proc.disconnect();
+    v2tMicState.src.disconnect();
+    v2tMicState.stream.getTracks().forEach(t => t.stop());
+    v2tMicState = null;
+  }
+  if (currentTranscript) {
+    appendLog('transcript', currentTranscript);
+    currentTranscript = '';
+  }
+  if (v2tWs) { v2tWs.close(); v2tWs = null; }
+}
+
+// Init bars placeholders
+buildBars('v2v-bars');
+buildBars('v2t-bars');
+</script>
+</body>
+</html>

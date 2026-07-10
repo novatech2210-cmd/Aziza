@@ -1,0 +1,77 @@
+# PersonaPlex Aziza Bilingual (Russian/Uzbek) QLoRA Finetuning Config
+# 
+# Targeting native phonetic pronunciation with minimal latency overhead.
+
+data:
+  train_data: <EDIT_ME>/data/aziza-bilingual/dataset/train.jsonl
+  eval_data: <EDIT_ME>/data/aziza-bilingual/dataset/eval.jsonl
+  shuffle: true
+
+moshi_paths:
+  hf_repo_id: "nvidia/personaplex-7b-v1"
+
+# We enable system prompting for dynamic personality & language switching
+system_prompt:
+  enable: true
+  audio_silence_frames: 6
+  prompt_budget_frames: 0
+
+# Puppeteer context injection is crucial for injecting real-time state without audio interruption
+puppeteer:
+  enable: true
+  max_tokens_per_injection: 50
+  context_tag: "context"
+
+full_finetuning: false
+lora:
+  enable: true
+  rank: 64           # Rank 64 for complex bilingual phonetic adaptation
+  scaling: 2.0       # Alpha = 128 (rank * scaling)
+  dropout: 0.05      # Mitigate overfitting on synthetic bilingual data
+  ft_embed: false    # Freezing embeddings preserves base model latency
+  skip_depformer: true # Skip dependency former to save VRAM and latency
+
+# Loss weights tuned for phonetic audio quality vs text
+first_codebook_weight_multiplier: 4.0
+text_padding_weight: 0.04
+audio_loss_weight: 1.0
+lora_l2_weight: 1e-4
+
+duration_sec: 80
+batch_size: 8
+max_steps: 2048      # Higher steps for bilingual convergence
+gradient_checkpointing: true
+num_microbatches: 6
+optim:
+  lr: 2.0e-05
+  weight_decay: 0.1
+  pct_start: 0.05
+
+# Checkpointing & eval
+seed: 42
+log_freq: 1
+eval_freq: 128
+do_eval: true
+do_ckpt: true
+ckpt_freq: 128
+num_ckpt_keep: 3
+skip_zero_eval: true
+save_adapters: true
+
+run_dir: <EDIT_ME>/runs/aziza-bilingual
+overwrite_run_dir: true
+
+wandb:
+  project: "aziza-bilingual"
+  run_name: "aziza-ru-uz-phonetic"
+
+gen_eval:
+  enable: true
+  freq: 256
+  gpu_a: 0
+  gpu_b: 1
+  dialogue_duration: 150.0
+  seed: 42
+  eval_prompts_path: "<EDIT_ME>/moshi-finetune/finetune/eval_prompts_aziza.json"
+  llm_review: true
+  dialogue_timeout: 900

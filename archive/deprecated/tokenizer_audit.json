@@ -1,0 +1,26 @@
+{
+  "ru": {
+    "coverage": 1.0,
+    "roundtrip": true,
+    "special_chars_ok": true,
+    "token_count": 43
+  },
+  "uz-latn": {
+    "coverage": 1.0,
+    "roundtrip": true,
+    "special_chars_ok": true,
+    "token_count": 23
+  },
+  "uz-cyrl": {
+    "coverage": 1.0,
+    "roundtrip": true,
+    "special_chars_ok": true,
+    "token_count": 40
+  },
+  "en": {
+    "coverage": 1.0,
+    "roundtrip": true,
+    "special_chars_ok": true,
+    "token_count": 15
+  }
+}

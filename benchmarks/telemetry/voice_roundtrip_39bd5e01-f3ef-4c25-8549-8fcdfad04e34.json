@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-07-06T11:02:46.136319+00:00",
+    "session_id": "519c93f6-4d15-44b2-adb6-ecc8e4528396",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.1197374,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.189338+00:00",
+    "session_id": "40480108-2e54-4dc2-b8e1-2e78f5c88678",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.188976,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.242506+00:00",
+    "session_id": "2cefde67-6c30-44c8-9658-0dd5daf2a091",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.242214,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.296687+00:00",
+    "session_id": "bbb41655-a158-4574-9f8b-adede1bc1b75",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.2963302,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.349842+00:00",
+    "session_id": "1314694c-f97b-4747-8e77-bd35c7e127cd",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.3492706,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.403178+00:00",
+    "session_id": "e732c20c-5118-4306-85dc-efaf14faf3de",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.4027922,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.456080+00:00",
+    "session_id": "a34d58d9-5a0f-4276-a986-0ff6fb9bc60d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.4557762,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.509071+00:00",
+    "session_id": "d7a7c9b5-d6bd-4e9b-9fb9-212abe010424",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.5087063,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.562170+00:00",
+    "session_id": "21d189ca-b0dc-4c7b-963b-7fd9d332113d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.5618892,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.615358+00:00",
+    "session_id": "4c7b0059-a051-4db4-8a53-124f52ce634a",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "timestamps": {
+      "mic_capture": 1783335766.6147194,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  }
+]

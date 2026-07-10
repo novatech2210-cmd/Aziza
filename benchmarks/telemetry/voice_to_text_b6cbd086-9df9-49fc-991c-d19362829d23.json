@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-03T14:23:20.464762+00:00",
+    "session_id": "59ea1a2b-841e-4a6d-baf3-8958713f8a12",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.621379+00:00",
+    "session_id": "4f171175-ec3a-45d4-8282-84bccc7628d6",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.780499+00:00",
+    "session_id": "61dfb1e3-1151-439f-a147-77b147413937",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.937189+00:00",
+    "session_id": "76600f44-fe06-493d-af02-c5f4941881f6",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.095916+00:00",
+    "session_id": "ff8999cf-8ff5-4711-be4b-9d73dacba38c",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.252229+00:00",
+    "session_id": "8732f434-0873-4a0f-ac91-229668a27659",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.411737+00:00",
+    "session_id": "b212da7e-6de9-403e-b198-e4b3f83afca7",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.569182+00:00",
+    "session_id": "12c0dc11-3dbd-4486-877c-ebf000087c3b",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.726641+00:00",
+    "session_id": "c1acacaf-f479-43a6-aa18-56590675abd6",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:21.884631+00:00",
+    "session_id": "56fe39ea-4d67-4adf-921f-858f6a447599",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.044598+00:00",
+    "session_id": "ecfce04a-e671-4df1-83df-01026bffe9a1",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.202115+00:00",
+    "session_id": "a20b25dc-1394-4777-b3b0-53ffcabf2614",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.361370+00:00",
+    "session_id": "296280fd-771a-4398-a8fe-362739642243",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.520418+00:00",
+    "session_id": "e6167751-b588-4986-8442-4b72fbd06d33",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.679692+00:00",
+    "session_id": "a8fbb418-80ed-455e-9470-3e3a0595d9ca",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.838969+00:00",
+    "session_id": "c946e007-f02f-4ab8-bfd4-7a8699513a4f",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:22.997775+00:00",
+    "session_id": "f5aa6f87-c8d6-43e4-88b3-a384d095f52b",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:23.157447+00:00",
+    "session_id": "cc2c0d22-7330-4d85-bcc2-5a1df22965b0",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:23.316440+00:00",
+    "session_id": "f07a59ea-73a5-43b3-94c3-60d876c37146",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:23.475975+00:00",
+    "session_id": "d22a509e-b91b-4d9b-ad57-3f59d861715a",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  }
+]

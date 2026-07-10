@@ -1,0 +1,38 @@
+[Unit]
+Description=Aziza Web (Qube assistant) — Kyo's FastAPI backend; deployed by us
+Documentation=https://github.com/<repo>/Docs/phase4/05_GUIDE_VPS_Deployment.md
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=aziza-web
+Group=aziza-web
+
+WorkingDirectory=/workspace/aziza-web/backend
+
+# Env file mirrors the layout Kyo's DEPLOY.md describes. Populated by
+# deploy/aziza-web/install.sh on first run from env.example, then left
+# alone so secrets aren't rewritten.
+EnvironmentFile=/workspace/aziza-web/config/.env
+
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+
+# Kyo's server.py is a single-command entry that mounts all routers
+# and runs uvicorn internally. Path is the python in our deployed venv.
+ExecStart=/workspace/aziza-web/.venv/bin/python server.py
+
+KillSignal=SIGTERM
+TimeoutStopSec=30
+Restart=on-failure
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=aziza-web
+
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

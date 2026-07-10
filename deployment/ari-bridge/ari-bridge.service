@@ -1,0 +1,26 @@
+[Unit]
+Description=Qube ari-bridge — Asterisk ARI to Qube_Web call-event producer (Phase 5 Stage 2)
+After=network-online.target asterisk.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ari-bridge
+Group=ari-bridge
+WorkingDirectory=/opt/ari-bridge
+Environment=NODE_ENV=production
+Environment=ARI_BRIDGE_CONFIG_DIR=/etc/ari-bridge
+ExecStart=/usr/bin/node /opt/ari-bridge/dist/index.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/log/ari-bridge
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1202 @@
+[
+  {
+    "timestamp": "2026-07-03T14:03:58.477351+00:00",
+    "session_id": "521338d9-988c-401c-b435-2cb27517a728",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.3959892,
+      "audio_send": 1783087438.419985,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:58.582278+00:00",
+    "session_id": "8b9ffff7-776a-4413-abe2-0d38577a8e47",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.527638,
+      "audio_send": 1783087438.5291,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:58.688786+00:00",
+    "session_id": "b2939af5-5bd8-4e19-ab82-2decc719e63e",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.6324937,
+      "audio_send": 1783087438.634184,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:58.795169+00:00",
+    "session_id": "4f2efa34-e2a8-469c-bfbe-cd2d6e97efa6",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.7391741,
+      "audio_send": 1783087438.7406716,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:58.902617+00:00",
+    "session_id": "c6e0678f-2edf-485c-903f-50dd66bcb675",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.8454602,
+      "audio_send": 1783087438.8469238,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.008279+00:00",
+    "session_id": "83157355-3fcc-4c8a-8c41-9f257dd5a26f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087438.952926,
+      "audio_send": 1783087438.954358,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.114404+00:00",
+    "session_id": "dd444612-64c1-4859-b0c3-01b6aa13d27b",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.0585396,
+      "audio_send": 1783087439.0598812,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.219304+00:00",
+    "session_id": "55ffc122-1946-4c36-b460-826a44cc8614",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.1646864,
+      "audio_send": 1783087439.1660442,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.324533+00:00",
+    "session_id": "fb728f38-bb83-4c69-8ace-1be6dbed65be",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.269518,
+      "audio_send": 1783087439.2708495,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.431054+00:00",
+    "session_id": "68cdc0d6-cecf-4034-a5c3-b3fce9d2993c",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.374959,
+      "audio_send": 1783087439.3765218,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.537180+00:00",
+    "session_id": "ba28326d-786c-4548-97e5-f2ab895d6fda",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.4814012,
+      "audio_send": 1783087439.4827483,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.643474+00:00",
+    "session_id": "ddf7720b-b2ac-4857-b313-3a9445dd7351",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.5874674,
+      "audio_send": 1783087439.5888264,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.749682+00:00",
+    "session_id": "9e8fe605-ab78-44b2-abf9-0ed612637385",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.6938074,
+      "audio_send": 1783087439.6950943,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.854737+00:00",
+    "session_id": "2de79903-54f0-4e70-a900-ce47a66268c5",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.7999353,
+      "audio_send": 1783087439.8012366,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:03:59.959878+00:00",
+    "session_id": "324afcee-05fd-4b2e-990e-b898b440d2f7",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087439.905017,
+      "audio_send": 1783087439.9064097,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.066501+00:00",
+    "session_id": "4cc73ad0-15f6-47f4-9588-db2bf9a9e72f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.010196,
+      "audio_send": 1783087440.0116398,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.172478+00:00",
+    "session_id": "b97dbeed-5b2a-4ce7-a29c-60d6149381f7",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.1169121,
+      "audio_send": 1783087440.1183736,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.278709+00:00",
+    "session_id": "27957cc0-7862-4784-be9f-738ab1a3a931",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.222819,
+      "audio_send": 1783087440.2242188,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.383789+00:00",
+    "session_id": "2657f095-851e-4174-bbbd-06808dc38fb6",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.3290036,
+      "audio_send": 1783087440.3303528,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.488937+00:00",
+    "session_id": "133c081f-593b-4ca6-9475-c254bce89181",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.4340448,
+      "audio_send": 1783087440.4353557,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.595308+00:00",
+    "session_id": "5f790b0d-81d8-434d-a7f4-ea87d95d0480",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.5391858,
+      "audio_send": 1783087440.5405748,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.702778+00:00",
+    "session_id": "0a515293-7143-41fb-afe0-1365b4acde90",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.6455843,
+      "audio_send": 1783087440.6468601,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.808051+00:00",
+    "session_id": "7ab94087-fd3f-4c9a-95fd-f74ed6b84e41",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.753089,
+      "audio_send": 1783087440.7544205,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:00.913649+00:00",
+    "session_id": "4b3fc687-7b0f-447c-8278-231207e76e28",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.8584754,
+      "audio_send": 1783087440.8598273,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.020487+00:00",
+    "session_id": "77752efc-0dd6-4595-8f1d-6eaa5aa267e7",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087440.9639726,
+      "audio_send": 1783087440.9653175,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.126094+00:00",
+    "session_id": "d007067d-a772-43d7-8f3d-a9cc106a33e0",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.0707667,
+      "audio_send": 1783087441.0723567,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.230586+00:00",
+    "session_id": "108aa2db-92ac-47d5-933f-3b48c2a75eb3",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.176347,
+      "audio_send": 1783087441.177663,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.335382+00:00",
+    "session_id": "68042c77-b2cc-4dfe-bd1c-74e23c27c2a9",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.280843,
+      "audio_send": 1783087441.2821515,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.442451+00:00",
+    "session_id": "07b6e46e-bf44-4c2a-af67-789379914685",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.3858013,
+      "audio_send": 1783087441.3871264,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.548467+00:00",
+    "session_id": "d236410e-6185-44bf-94d4-44004713f3f0",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.492797,
+      "audio_send": 1783087441.4941497,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.656538+00:00",
+    "session_id": "f4feaab5-fa69-4439-a265-6c9b9c9d5421",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.598696,
+      "audio_send": 1783087441.600032,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.765440+00:00",
+    "session_id": "a2c74ddc-e518-4964-80eb-518b441e0e12",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.7068248,
+      "audio_send": 1783087441.7083497,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.874157+00:00",
+    "session_id": "7c4de821-3056-4915-a074-b0d288a9e327",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.815709,
+      "audio_send": 1783087441.8172007,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:01.982808+00:00",
+    "session_id": "dd889528-8a31-407a-bd3a-baa50a03d81f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087441.9245768,
+      "audio_send": 1783087441.9259722,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.091680+00:00",
+    "session_id": "bf87957d-7a77-4dcc-9442-bcadd3078dde",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.0331602,
+      "audio_send": 1783087442.034799,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.200117+00:00",
+    "session_id": "7b2f0568-9350-46ad-893e-6e6ee3194045",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.1419384,
+      "audio_send": 1783087442.1431985,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.307946+00:00",
+    "session_id": "86660410-1ba8-4839-8822-57b10393e3ec",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.2504308,
+      "audio_send": 1783087442.2519152,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.415574+00:00",
+    "session_id": "8ef8821e-5111-48c8-b40c-33c1b109913b",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.3582385,
+      "audio_send": 1783087442.359618,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.522091+00:00",
+    "session_id": "0fba0411-d751-4306-95b2-c9a50afcc462",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.4658456,
+      "audio_send": 1783087442.4683018,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.628100+00:00",
+    "session_id": "1cd71183-743c-4f6e-8830-7051366db05c",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.5723746,
+      "audio_send": 1783087442.573652,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.733279+00:00",
+    "session_id": "175ba1bc-b5fc-43fa-9027-e62b54c89b61",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.6783612,
+      "audio_send": 1783087442.6796148,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.838940+00:00",
+    "session_id": "2378a17f-6ccb-4b67-b44c-5bbcf6f74cf0",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.7835698,
+      "audio_send": 1783087442.7848885,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:02.946847+00:00",
+    "session_id": "e14e05c1-015d-419c-8760-443bbc51caae",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.8892338,
+      "audio_send": 1783087442.8905768,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.052478+00:00",
+    "session_id": "4c98fc17-bc8f-4efa-93ca-11bcf5dffbe6",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087442.997299,
+      "audio_send": 1783087442.998694,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.157651+00:00",
+    "session_id": "1c0acb1d-5274-44b1-a89d-5e8730cd7941",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.102749,
+      "audio_send": 1783087443.1041584,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.263915+00:00",
+    "session_id": "7c367c5a-d42e-4419-ab4b-0df2735bb2e3",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.2078674,
+      "audio_send": 1783087443.2091808,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.368298+00:00",
+    "session_id": "fbb57bf1-ec4c-4e41-882b-bea5df9b7b2d",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.3141775,
+      "audio_send": 1783087443.3154995,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.473858+00:00",
+    "session_id": "3cdccf23-b6f8-4bba-aa53-8ce4e8ddc57b",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.4185617,
+      "audio_send": 1783087443.4198341,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.580888+00:00",
+    "session_id": "c28d65c8-383c-42ad-b826-74e2085951bb",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.524246,
+      "audio_send": 1783087443.5256503,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.685925+00:00",
+    "session_id": "d7b9655d-14f3-422d-bdb2-09f92ae618aa",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.6311486,
+      "audio_send": 1783087443.6324112,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.792002+00:00",
+    "session_id": "4386236a-261e-498c-bf86-722cf5f9aaaf",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.736184,
+      "audio_send": 1783087443.7374623,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:03.900222+00:00",
+    "session_id": "3d909466-e698-4b6e-95d0-ba2382230b22",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.8423083,
+      "audio_send": 1783087443.8435688,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.006452+00:00",
+    "session_id": "15a0232f-6180-4acb-8238-4a9d5ac37a36",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087443.950631,
+      "audio_send": 1783087443.9523032,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.112005+00:00",
+    "session_id": "0945291e-b3bb-4f18-a1f1-d39a1298c12e",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.0567012,
+      "audio_send": 1783087444.058084,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.219939+00:00",
+    "session_id": "bb6367f9-fee3-4705-97b0-274871699357",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.1623962,
+      "audio_send": 1783087444.163784,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.324788+00:00",
+    "session_id": "0acf7429-c9e3-4ccb-80a2-4c2fb133fe8a",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.2702208,
+      "audio_send": 1783087444.2714782,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.431042+00:00",
+    "session_id": "d5849f7f-b84f-4638-9c29-ce057d365672",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.3750443,
+      "audio_send": 1783087444.3764534,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.537426+00:00",
+    "session_id": "6cd1ac6d-cce2-43c2-b052-e1a07ee8ce48",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.4813387,
+      "audio_send": 1783087444.4825914,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.643021+00:00",
+    "session_id": "cb881b20-9974-4c6d-8c76-a05ac65bff7a",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.5878515,
+      "audio_send": 1783087444.5892105,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.751029+00:00",
+    "session_id": "414a2afd-825f-47a3-92f9-252633b4bead",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.6932237,
+      "audio_send": 1783087444.6969264,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.857070+00:00",
+    "session_id": "f86e8494-abee-4b26-b2c5-d0f076951adf",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.8013227,
+      "audio_send": 1783087444.8027043,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:04.962694+00:00",
+    "session_id": "ef512017-a06d-4853-b3d0-1d48093a412c",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087444.9073615,
+      "audio_send": 1783087444.909013,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.068062+00:00",
+    "session_id": "c73ba1e5-7bcf-41a8-a22e-4dbd78912e86",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.0129335,
+      "audio_send": 1783087445.014337,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.177847+00:00",
+    "session_id": "77acfb75-310f-4a3d-9d59-cf08781ba926",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.118353,
+      "audio_send": 1783087445.1196802,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.283302+00:00",
+    "session_id": "d04a3d5b-2af4-438a-a1ee-031a2bef778c",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.2282493,
+      "audio_send": 1783087445.229723,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.387773+00:00",
+    "session_id": "0a549231-fefa-4477-bc5f-9b54f9835a2f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.3335862,
+      "audio_send": 1783087445.3349235,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.492043+00:00",
+    "session_id": "7769c398-7367-4435-84d1-e22f126a10b4",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.4380174,
+      "audio_send": 1783087445.4393003,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.597881+00:00",
+    "session_id": "0d33ec8f-a3ca-492b-9b34-f9713299208a",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.5423462,
+      "audio_send": 1783087445.543679,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.704927+00:00",
+    "session_id": "d785f9ed-dc0b-4406-ac36-3c31abf6c095",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.648098,
+      "audio_send": 1783087445.6495068,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.827711+00:00",
+    "session_id": "011dd086-2d0b-4e7c-b042-644f459a7862",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.755387,
+      "audio_send": 1783087445.7568512,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:05.949572+00:00",
+    "session_id": "73450ac0-35f6-4df3-9633-6cff132e5110",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.878004,
+      "audio_send": 1783087445.8793871,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.071657+00:00",
+    "session_id": "498cfd36-383a-4c79-b121-6361804a7920",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087445.999977,
+      "audio_send": 1783087446.0012963,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.191566+00:00",
+    "session_id": "7c56bae8-e21c-4e72-a881-fc1642b0b506",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.1219351,
+      "audio_send": 1783087446.123208,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.296567+00:00",
+    "session_id": "51987276-3ed8-45bc-bee4-302671c813f8",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.2417743,
+      "audio_send": 1783087446.242924,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.349449+00:00",
+    "session_id": "a7c72461-ecc8-451a-b031-6be92562bbda",
+    "event_type": "roundtrip_error",
+    "error": "received 1013 (try again later) No workers available; then sent 1013 (try again later) No workers available",
+    "timestamps": {
+      "mic_capture": 1783087446.3467724,
+      "audio_send": 1783087446.3491948,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.454226+00:00",
+    "session_id": "ff69bd03-85a2-4b53-b854-5b4a8bfa8a80",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.3997524,
+      "audio_send": 1783087446.4008007,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.559166+00:00",
+    "session_id": "267d38c8-7303-4283-b696-12f9bee06f9b",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.5046701,
+      "audio_send": 1783087446.5058775,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.665194+00:00",
+    "session_id": "59763ec6-2d39-46dd-b683-40d956d72647",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.6094208,
+      "audio_send": 1783087446.6105554,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.770494+00:00",
+    "session_id": "317d6c43-3ef3-412a-82f6-3c8ed693180c",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.7154632,
+      "audio_send": 1783087446.7165987,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.875305+00:00",
+    "session_id": "31716e9c-823f-44b5-b269-17c93edc3241",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.820881,
+      "audio_send": 1783087446.8221507,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:06.980204+00:00",
+    "session_id": "63e5c1c4-f09c-4416-b4ca-a7fee732f15f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087446.9256127,
+      "audio_send": 1783087446.9267693,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.084441+00:00",
+    "session_id": "84417c43-8a37-4ed2-9968-4f2a9ece34a9",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.0304775,
+      "audio_send": 1783087447.0316403,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.188677+00:00",
+    "session_id": "569aeae5-27ff-4cc6-a15c-bcd81c39c2d3",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.1346574,
+      "audio_send": 1783087447.1358268,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.293378+00:00",
+    "session_id": "3a553770-d1ff-41b2-b84e-a79003f78cd1",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.2390072,
+      "audio_send": 1783087447.2402124,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.398115+00:00",
+    "session_id": "cd0d7454-241f-4f1d-a04c-c5820372bf36",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.343771,
+      "audio_send": 1783087447.3450744,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.502911+00:00",
+    "session_id": "a4791a57-a4aa-4817-8576-73701c5c1ca6",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.4483724,
+      "audio_send": 1783087447.4495294,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.607167+00:00",
+    "session_id": "9ae2ff04-6c55-4776-92a9-f15c2fbea585",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.5532532,
+      "audio_send": 1783087447.5543606,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.712156+00:00",
+    "session_id": "5981bda2-c11c-4bde-9f99-38c89dccbd95",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.6575837,
+      "audio_send": 1783087447.658794,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.817233+00:00",
+    "session_id": "1fe463e0-70b3-4d45-84a5-a6d980a2d939",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.7624836,
+      "audio_send": 1783087447.7639604,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:07.922135+00:00",
+    "session_id": "708abb68-c594-45ad-92c7-4e235f396563",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.8675008,
+      "audio_send": 1783087447.8686802,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.029050+00:00",
+    "session_id": "a7f9d57c-b3b9-4c42-b1e0-0ca58793849a",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087447.972351,
+      "audio_send": 1783087447.9735513,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.134111+00:00",
+    "session_id": "c0a1a15b-4b29-406a-b829-02f46c59a60a",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.0792859,
+      "audio_send": 1783087448.0804925,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.239180+00:00",
+    "session_id": "75ec1ed8-3922-4d2b-9988-3cf1bf35c2f8",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.1844802,
+      "audio_send": 1783087448.1856709,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.343731+00:00",
+    "session_id": "55f18d7d-be37-4c55-beeb-95aff267267f",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.2895885,
+      "audio_send": 1783087448.2908163,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.448049+00:00",
+    "session_id": "d4595539-88e0-4691-90bd-a5b02bc5db99",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.393981,
+      "audio_send": 1783087448.3951323,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.552591+00:00",
+    "session_id": "316aad0a-56a0-406f-a5ef-19ea79dab9c4",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.4984503,
+      "audio_send": 1783087448.499742,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.657086+00:00",
+    "session_id": "d59a9b54-c694-46ca-aff3-b8034b2a271d",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.6028454,
+      "audio_send": 1783087448.6039329,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.762771+00:00",
+    "session_id": "70ba1416-93cd-4066-99ec-3c294ab0e0b3",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.7074707,
+      "audio_send": 1783087448.7090724,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.868161+00:00",
+    "session_id": "df4ab0f9-1950-489c-bc09-f3c0823782ac",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.8129592,
+      "audio_send": 1783087448.8142164,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:04:08.975177+00:00",
+    "session_id": "d0d6f4e2-c2eb-4c12-b871-36ebbdb2815d",
+    "event_type": "roundtrip_error",
+    "error": "Server error: No GPU workers available. Please try again shortly.",
+    "timestamps": {
+      "mic_capture": 1783087448.9184463,
+      "audio_send": 1783087448.9199202,
+      "processing_start": null,
+      "playback_start": null
+    }
+  }
+]

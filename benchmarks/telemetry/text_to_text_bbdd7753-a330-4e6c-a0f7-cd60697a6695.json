@@ -1,0 +1,759 @@
+[
+  {
+    "timestamp": "2026-07-03T14:16:06.939659+00:00",
+    "session_id": "654ac57b-0750-44fd-be39-d51fa984ab48",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:16:17.001730+00:00",
+    "session_id": "a3d0a0ca-ab3e-4bb8-b5e7-9a707ed58b1f",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:16:27.058039+00:00",
+    "session_id": "99507b4d-fae9-4f37-9f24-1aef82c8ca3f",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:16:37.112410+00:00",
+    "session_id": "b7bd48e8-cb0a-4009-a46f-1eec120854dd",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:16:47.174010+00:00",
+    "session_id": "cd5fe1e0-78d3-46cf-9b58-d4a0d6934e21",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:16:57.229621+00:00",
+    "session_id": "1ed62d95-15c7-424d-92c7-842a4c09e657",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:07.286791+00:00",
+    "session_id": "e194a5b0-3eaa-49a0-a5a6-5d4f5df178ed",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:17.348213+00:00",
+    "session_id": "1914a83c-d45c-43ed-9271-4b7c643765e7",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:27.409947+00:00",
+    "session_id": "3ff4361d-f925-47ff-96a2-10b8e387e3bc",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:37.466158+00:00",
+    "session_id": "9a5f40d0-bc4a-4b31-bb6e-d9222a366cc6",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:47.528539+00:00",
+    "session_id": "c894ec69-7fe6-40c4-abb7-568533aab375",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:17:57.588720+00:00",
+    "session_id": "7fdee226-2412-4488-b6c5-c824064473d2",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:07.650845+00:00",
+    "session_id": "e28b767f-5896-47d0-b914-2ff2cbbd30dd",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:17.708999+00:00",
+    "session_id": "0497c230-9050-4a7b-8855-a8e715b7f8a2",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:27.771678+00:00",
+    "session_id": "b2f270f2-576d-4d9f-b8ed-34598cd6477d",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:37.830360+00:00",
+    "session_id": "d3a23663-5004-46ba-ba59-9ae0d5aacca4",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:47.894551+00:00",
+    "session_id": "56a95bf2-bbcf-4386-b588-5cb906b22c77",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:18:57.958928+00:00",
+    "session_id": "5db4016c-85fc-47c5-b585-b9bb21831e7b",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:08.019935+00:00",
+    "session_id": "4f7c9f4c-65e9-4afd-a947-ffa64ddc2083",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:18.083743+00:00",
+    "session_id": "731f4f08-01bd-47f5-9a35-5c1e42d4da9a",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:28.140507+00:00",
+    "session_id": "c4cff0fc-c384-4a12-b125-66a59dc8702f",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:38.196123+00:00",
+    "session_id": "f04eb5f6-4f35-4265-baf3-0989fc01fd38",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:48.253796+00:00",
+    "session_id": "d7852de6-085f-443b-aaac-b80a5104bf58",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:19:58.317419+00:00",
+    "session_id": "95c8eb79-0388-412c-b328-94c1debdc3e1",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:08.372426+00:00",
+    "session_id": "d2eb0eb9-f44f-4d29-98df-e47f7de42e0d",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:18.436779+00:00",
+    "session_id": "4f840d35-0c6d-4951-8c0b-a6b753532857",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:28.495790+00:00",
+    "session_id": "be25d1f6-0c88-4671-8867-78f3ce192400",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:38.551192+00:00",
+    "session_id": "f57d6ed1-9ec2-4e86-83c9-1372f7d35f36",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:48.610450+00:00",
+    "session_id": "6d74b093-894a-4f0a-bb89-3d5c8de1eb69",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:20:58.668353+00:00",
+    "session_id": "0fe334b0-bd52-4513-9005-dfa944d5f1b7",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:08.726537+00:00",
+    "session_id": "31c83fde-6403-4419-bc8c-9562982bfe71",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:18.791697+00:00",
+    "session_id": "923afc2a-a2bf-47d2-a89c-06c43c97b279",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:28.849164+00:00",
+    "session_id": "e6b1b20b-085c-44fb-8ed3-340125cc160d",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:38.905088+00:00",
+    "session_id": "3860f5da-42f8-4da8-90bc-3d1786e1a707",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:48.969074+00:00",
+    "session_id": "e174fa9f-f1b5-4330-b66d-27506c48c399",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:21:59.032911+00:00",
+    "session_id": "806f34a9-151d-4b98-8863-a85511136d28",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:09.090202+00:00",
+    "session_id": "f6a8a71a-e73f-4b5d-9e12-17349d3fe348",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:19.147892+00:00",
+    "session_id": "35938a21-5992-4571-a82b-cdb80e308881",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:29.208448+00:00",
+    "session_id": "3d0cec12-6c36-4b2e-8a81-09c4d5a3cb98",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:39.268405+00:00",
+    "session_id": "438f3d71-cf72-4684-bb54-76d15730b344",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:49.332091+00:00",
+    "session_id": "b0b1234d-5211-48de-bb6a-493b84dd0486",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:22:59.395970+00:00",
+    "session_id": "4540d58d-48ca-426c-89e9-b119dc7f2154",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:09.460119+00:00",
+    "session_id": "3007977c-80d7-4377-a988-8ce00ac58d75",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.227617+00:00",
+    "session_id": "6ba6f5aa-1ffe-46c2-86a4-31aa54f29396",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "no close frame received or sent"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.278702+00:00",
+    "session_id": "775456d5-f61f-4cfd-b475-4be23207c3c6",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.329597+00:00",
+    "session_id": "0eadb60c-621a-43c6-8dba-04103c0a40a0",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.380667+00:00",
+    "session_id": "96392c7b-914b-4cc1-adb4-a7c8b36c014f",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.431761+00:00",
+    "session_id": "d71245c9-9689-48c5-9701-51448b7e111d",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.482864+00:00",
+    "session_id": "a27160ab-373a-4cb5-aacc-1c7b8fbe38ec",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.533816+00:00",
+    "session_id": "64d03354-5612-49d4-8e19-33dca955d8ee",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.585140+00:00",
+    "session_id": "772771b1-ab8d-41b2-baf3-665dce6dec39",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.636120+00:00",
+    "session_id": "3a6649d1-748d-425e-8ff7-bbd6105d3596",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.687076+00:00",
+    "session_id": "31a34386-4da2-4a3b-9dd6-f64b3bd11c33",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.738069+00:00",
+    "session_id": "9208b375-9e7d-4e9d-99cd-bd24d088e2ac",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.789079+00:00",
+    "session_id": "f24ec7f3-a819-4e13-a6f5-ee043e5f1291",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.840093+00:00",
+    "session_id": "28e1bbfe-6c45-47ec-9be6-722ca55fa650",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.891125+00:00",
+    "session_id": "d3c1fc0d-4531-4e37-8bc7-090f3abd96eb",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:17.953373+00:00",
+    "session_id": "f77bfb20-3054-499f-95f2-d688c1ac4475",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.007293+00:00",
+    "session_id": "9d3cf64a-794e-420f-bc58-94a680a2670e",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.060903+00:00",
+    "session_id": "dc285f20-c74f-47ae-a78a-01c845bd7b38",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.114564+00:00",
+    "session_id": "6cddcf3e-d21a-47ad-9d88-adb615e4a1dd",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.167965+00:00",
+    "session_id": "0d6e0e46-737e-44d5-903f-b375bb61fe69",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.222160+00:00",
+    "session_id": "b00ea40d-78e1-40da-a759-b2f51371479d",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.276049+00:00",
+    "session_id": "c3f0ae78-ba04-46a8-aec8-48e1d28f4dce",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.329934+00:00",
+    "session_id": "c6d1547d-0a5d-4301-a1a0-4c7171a46f3e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.383941+00:00",
+    "session_id": "932d4b0a-de69-4bd8-bd6b-7082e6257f9b",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.437738+00:00",
+    "session_id": "e9f93805-d0ce-4571-a605-c90686d499f8",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.490825+00:00",
+    "session_id": "b53b6f00-aa5d-44b2-8d35-e375e642b9f8",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.544095+00:00",
+    "session_id": "95ce0e0a-ac0d-460f-8981-258d0a1e70a5",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.597443+00:00",
+    "session_id": "493be8f4-6a85-440c-9c05-bbf89c03e22d",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.650815+00:00",
+    "session_id": "7096e07e-bed0-49ce-8d33-a89c9b56a19d",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.703808+00:00",
+    "session_id": "a97ff3ca-82eb-493b-a0cd-ff52667b12eb",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.756804+00:00",
+    "session_id": "033516d2-94ad-4a36-b73f-2ad218f70151",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.809844+00:00",
+    "session_id": "41d24919-c950-4736-ae51-755c206569ec",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.862903+00:00",
+    "session_id": "0705aaf0-e994-4f20-af30-ed1a771b37ea",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.916066+00:00",
+    "session_id": "bbd38fb1-ca4a-467d-b14b-6882ec3e35f3",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:18.969233+00:00",
+    "session_id": "bcfc57af-b706-4dba-be15-852bd26dc9ee",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.022402+00:00",
+    "session_id": "18fd097c-3255-4e9f-b23a-786de8198b3c",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.075300+00:00",
+    "session_id": "97d9fb34-36cb-48a3-8a60-7bb9c151c17a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.128124+00:00",
+    "session_id": "6b569ead-e56c-415f-b5aa-e3cae4105fc3",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.181072+00:00",
+    "session_id": "175e19cb-31e1-4743-a9d6-7e64cd912589",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.233845+00:00",
+    "session_id": "2527cbca-68e5-4836-95e0-0090e710045c",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.286506+00:00",
+    "session_id": "ca5f6bb6-885e-4622-8661-662cd5de17c2",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.339572+00:00",
+    "session_id": "bda1ae4e-968b-4ddc-806b-f6100af65181",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.392391+00:00",
+    "session_id": "a8b670ca-14f3-4cf6-804e-9aa8dc99b664",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.445108+00:00",
+    "session_id": "613819ff-5e8c-4bd3-97b0-7f76cd18ad44",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.497920+00:00",
+    "session_id": "c845e6e7-352b-4e6f-82c5-d53f39beabf8",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.550652+00:00",
+    "session_id": "f7163e62-0be9-443a-bfa0-983ed9d757dd",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.603401+00:00",
+    "session_id": "251d6a66-9239-4fde-860e-6edbf657eb1a",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.656129+00:00",
+    "session_id": "b071fcde-a72f-4457-857d-1ae5e9f83100",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.709017+00:00",
+    "session_id": "86387915-3b53-4523-b450-f2569984ca00",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.761982+00:00",
+    "session_id": "625c1338-edb9-4639-97dc-53cb9375fe75",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.814706+00:00",
+    "session_id": "8ae1dfde-0922-478a-90d0-b77776deb3f5",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.867457+00:00",
+    "session_id": "49269ec5-4934-477f-9b6f-e05d9590fe63",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.920185+00:00",
+    "session_id": "3abf40c5-d2a8-4376-a1ee-e0b0aff83f7c",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:19.972988+00:00",
+    "session_id": "8d1d957c-d832-449f-a2d1-5f770c329707",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.026401+00:00",
+    "session_id": "18702306-c30f-4fd4-8615-371bcb3e9e5e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "received 1013 (try again later) No workers available; then sent 1013 (try again later) No workers available"
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.079372+00:00",
+    "session_id": "1e0b8c5c-3f01-444a-97c9-dafc777b5708",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.132577+00:00",
+    "session_id": "81f86beb-3182-4a96-a9e8-d75d97c5ddf4",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  },
+  {
+    "timestamp": "2026-07-03T14:23:20.185429+00:00",
+    "session_id": "25e31fa4-c0f5-47f2-bdbd-5805db3f929b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No GPU workers available. Please try again shortly."
+  }
+]

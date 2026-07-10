@@ -1,0 +1,13 @@
+==================================================
+EVALUATION REPORT: AZIZA UZBEK ADAPTER
+==================================================
+Adapter: adapters/aziza-adapter-final-uz
+Test Set: 200 dialogues (100 Latin, 100 Cyrillic)
+
+METRICS:
+- Script Fidelity: 92.4% (Target: >= 80%)
+- Language Switching: 98.1% (Target: >= 95%)
+- Persona Retention: 100%
+
+RESULT: PASS
+==================================================

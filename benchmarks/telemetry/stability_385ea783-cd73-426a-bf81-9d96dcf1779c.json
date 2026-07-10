@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-07-03T11:40:29.448694",
+    "session_id": "11fee5a5-ef1f-4385-84b0-06497a009e87",
+    "event_type": "session_crash",
+    "error": "server rejected WebSocket connection: HTTP 500",
+    "duration_s": 0.016175270080566406
+  },
+  {
+    "timestamp": "2026-07-03T11:40:29.560400",
+    "session_id": "385ea783-cd73-426a-bf81-9d96dcf1779c",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 32.2,
+    "memory_used_gb": 16.036006927490234,
+    "memory_available_gb": 33.74667739868164,
+    "disk_usage_percent": 81.2,
+    "network_io": {
+      "bytes_sent": 3901836,
+      "bytes_recv": 51702391,
+      "packets_sent": 34288,
+      "packets_recv": 41533,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 3,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 32164.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 16512.0,
+      "temperature": 38.0
+    }
+  }
+]

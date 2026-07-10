@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-07-06T10:59:38.873750+00:00",
+    "session_id": "b4fec7d3-ffcd-409c-9fcc-8fa293923b81",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:40.384914+00:00",
+    "session_id": "864e03a9-9bde-4c0d-9643-bcf517ca25dc",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:41.894537+00:00",
+    "session_id": "ec60b9fc-fc5a-4d08-8742-a77f8a387743",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:43.404323+00:00",
+    "session_id": "41cf5633-e746-47ea-b2aa-922aac043568",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:44.915679+00:00",
+    "session_id": "8f89733b-1a09-4bb5-b400-e9d5928a3472",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:46.425070+00:00",
+    "session_id": "2ea72d8a-4ae6-4898-a878-860183017766",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:47.934326+00:00",
+    "session_id": "db47a6d3-1656-416e-89fd-110c4cca248e",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:49.444531+00:00",
+    "session_id": "80bda7a3-4a0d-4055-82b9-7821d9c7b776",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:50.954906+00:00",
+    "session_id": "35482e8a-84e8-45f4-a468-bdc7c5cc52fc",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T10:59:52.465846+00:00",
+    "session_id": "8f9f2e23-989d-46f9-bccf-225b264b392e",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  }
+]

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  asterisk:
+    image: andrius/asterisk:latest
+    container_name: aziza-asterisk
+    network_mode: "host"
+    volumes:
+      - ./http.conf:/etc/asterisk/http.conf:ro
+      - ./ari.conf:/etc/asterisk/ari.conf:ro
+      - ./pjsip.conf:/etc/asterisk/pjsip.conf:ro
+      - ./extensions.conf:/etc/asterisk/extensions.conf:ro
+    restart: unless-stopped

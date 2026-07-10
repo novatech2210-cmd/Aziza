@@ -1,0 +1,3508 @@
+[
+  {
+    "timestamp": "2026-07-06T11:21:43.964467+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "session_started",
+    "persona": "aziza_ru"
+  },
+  {
+    "timestamp": "2026-07-06T11:21:44.071299+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.46097183227539,
+    "memory_available_gb": 41.321712493896484,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994186143,
+      "bytes_recv": 99081793360,
+      "packets_sent": 19319504,
+      "packets_recv": 27182888,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 60.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:49.189784+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.477348327636719,
+    "memory_available_gb": 41.305335998535156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994210897,
+      "bytes_recv": 99081817996,
+      "packets_sent": 19319629,
+      "packets_recv": 27183013,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 60.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:54.309309+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.472942352294922,
+    "memory_available_gb": 41.30974197387695,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994233263,
+      "bytes_recv": 99081840248,
+      "packets_sent": 19319720,
+      "packets_recv": 27183104,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 60.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:21:59.428159+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.470523834228516,
+    "memory_available_gb": 41.31216049194336,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994257881,
+      "bytes_recv": 99081864795,
+      "packets_sent": 19319843,
+      "packets_recv": 27183227,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 59.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:04.546387+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485095977783203,
+    "memory_available_gb": 41.29758834838867,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994280648,
+      "bytes_recv": 99081887443,
+      "packets_sent": 19319942,
+      "packets_recv": 27183326,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 59.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:09.665392+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.484336853027344,
+    "memory_available_gb": 41.29834747314453,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994305276,
+      "bytes_recv": 99081912000,
+      "packets_sent": 19320065,
+      "packets_recv": 27183449,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 59.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:14.783423+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.476177215576172,
+    "memory_available_gb": 41.3065071105957,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994327827,
+      "bytes_recv": 99081934432,
+      "packets_sent": 19320160,
+      "packets_recv": 27183544,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 58.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:19.901669+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475223541259766,
+    "memory_available_gb": 41.30746078491211,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994352559,
+      "bytes_recv": 99081959093,
+      "packets_sent": 19320285,
+      "packets_recv": 27183669,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 58.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:25.019900+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.471294403076172,
+    "memory_available_gb": 41.3113899230957,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994375056,
+      "bytes_recv": 99081981471,
+      "packets_sent": 19320379,
+      "packets_recv": 27183763,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 58.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:30.138226+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.46475601196289,
+    "memory_available_gb": 41.317928314208984,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994402306,
+      "bytes_recv": 99082011703,
+      "packets_sent": 19320524,
+      "packets_recv": 27183906,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 58.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:35.256435+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.471637725830078,
+    "memory_available_gb": 41.3110466003418,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994426560,
+      "bytes_recv": 99082035838,
+      "packets_sent": 19320631,
+      "packets_recv": 27184013,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 57.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:40.377284+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48459243774414,
+    "memory_available_gb": 41.298091888427734,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994451398,
+      "bytes_recv": 99082060563,
+      "packets_sent": 19320757,
+      "packets_recv": 27184139,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 57.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:44.070372+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-06T11:22:45.496111+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483760833740234,
+    "memory_available_gb": 41.29892349243164,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994474767,
+      "bytes_recv": 99082083864,
+      "packets_sent": 19320861,
+      "packets_recv": 27184243,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 57.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:50.614665+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.499073028564453,
+    "memory_available_gb": 41.28361129760742,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994499564,
+      "bytes_recv": 99082108544,
+      "packets_sent": 19320987,
+      "packets_recv": 27184369,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 57.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:22:55.733728+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48238754272461,
+    "memory_available_gb": 41.300296783447266,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994522696,
+      "bytes_recv": 99082131608,
+      "packets_sent": 19321083,
+      "packets_recv": 27184465,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 57.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:00.852609+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.495670318603516,
+    "memory_available_gb": 41.28701400756836,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994547451,
+      "bytes_recv": 99082156246,
+      "packets_sent": 19321208,
+      "packets_recv": 27184590,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 56.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:05.971301+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.492725372314453,
+    "memory_available_gb": 41.28995895385742,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994570091,
+      "bytes_recv": 99082178818,
+      "packets_sent": 19321305,
+      "packets_recv": 27184687,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 56.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:11.089595+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.490886688232422,
+    "memory_available_gb": 41.29179763793945,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994594732,
+      "bytes_recv": 99082203342,
+      "packets_sent": 19321428,
+      "packets_recv": 27184810,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 56.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:16.208155+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.487918853759766,
+    "memory_available_gb": 41.29476547241211,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994629040,
+      "bytes_recv": 99082237582,
+      "packets_sent": 19321531,
+      "packets_recv": 27184913,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 56.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:21.326573+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.492691040039062,
+    "memory_available_gb": 41.28999328613281,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994655548,
+      "bytes_recv": 99082263973,
+      "packets_sent": 19321669,
+      "packets_recv": 27185051,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 56.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:26.444664+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.490455627441406,
+    "memory_available_gb": 41.29222869873047,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994678138,
+      "bytes_recv": 99082286452,
+      "packets_sent": 19321764,
+      "packets_recv": 27185146,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:31.562997+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.490837097167969,
+    "memory_available_gb": 41.291847229003906,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994702714,
+      "bytes_recv": 99082310960,
+      "packets_sent": 19321886,
+      "packets_recv": 27185268,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:36.681671+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.491046905517578,
+    "memory_available_gb": 41.2916374206543,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994725247,
+      "bytes_recv": 99082333376,
+      "packets_sent": 19321981,
+      "packets_recv": 27185363,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:41.802454+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.496257781982422,
+    "memory_available_gb": 41.28642654418945,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994749875,
+      "bytes_recv": 99082357936,
+      "packets_sent": 19322104,
+      "packets_recv": 27185486,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:44.181087+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_uz",
+    "to_persona": "aziza_en",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-06T11:23:46.920892+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.495353698730469,
+    "memory_available_gb": 41.287330627441406,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994773427,
+      "bytes_recv": 99082381497,
+      "packets_sent": 19322210,
+      "packets_recv": 27185593,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:52.039236+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 3.3,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.49615478515625,
+    "memory_available_gb": 41.286529541015625,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994798159,
+      "bytes_recv": 99082406161,
+      "packets_sent": 19322335,
+      "packets_recv": 27185718,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 55.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:23:57.157878+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.486526489257812,
+    "memory_available_gb": 41.29615783691406,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994820442,
+      "bytes_recv": 99082428327,
+      "packets_sent": 19322425,
+      "packets_recv": 27185808,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:02.276304+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.481033325195312,
+    "memory_available_gb": 41.30165100097656,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994845527,
+      "bytes_recv": 99082453344,
+      "packets_sent": 19322554,
+      "packets_recv": 27185937,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:07.395132+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.473140716552734,
+    "memory_available_gb": 41.30954360961914,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994870506,
+      "bytes_recv": 99082478206,
+      "packets_sent": 19322683,
+      "packets_recv": 27186066,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:12.513281+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.486331939697266,
+    "memory_available_gb": 41.29635238647461,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994894635,
+      "bytes_recv": 99082502224,
+      "packets_sent": 19322787,
+      "packets_recv": 27186170,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:17.631353+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485363006591797,
+    "memory_available_gb": 41.29732131958008,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994919677,
+      "bytes_recv": 99082527198,
+      "packets_sent": 19322918,
+      "packets_recv": 27186301,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:22.749547+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482311248779297,
+    "memory_available_gb": 41.30037307739258,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994942064,
+      "bytes_recv": 99082549468,
+      "packets_sent": 19323010,
+      "packets_recv": 27186393,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:27.868212+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.480243682861328,
+    "memory_available_gb": 41.30244064331055,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994966812,
+      "bytes_recv": 99082574148,
+      "packets_sent": 19323135,
+      "packets_recv": 27186518,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 54.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:32.986523+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.481246948242188,
+    "memory_available_gb": 41.30143737792969,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1994989345,
+      "bytes_recv": 99082596564,
+      "packets_sent": 19323230,
+      "packets_recv": 27186613,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:38.104607+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475914001464844,
+    "memory_available_gb": 41.30677032470703,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995013921,
+      "bytes_recv": 99082621072,
+      "packets_sent": 19323352,
+      "packets_recv": 27186735,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:43.225213+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.472881317138672,
+    "memory_available_gb": 41.3098030090332,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995036204,
+      "bytes_recv": 99082643238,
+      "packets_sent": 19323442,
+      "packets_recv": 27186825,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:44.292005+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_en",
+    "to_persona": "aziza_ru",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-06T11:24:48.343875+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475399017333984,
+    "memory_available_gb": 41.30728530883789,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995062402,
+      "bytes_recv": 99082669494,
+      "packets_sent": 19323584,
+      "packets_recv": 27186968,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:53.462579+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.477863311767578,
+    "memory_available_gb": 41.3048210144043,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995084789,
+      "bytes_recv": 99082691764,
+      "packets_sent": 19323676,
+      "packets_recv": 27187060,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:24:58.581328+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.484989166259766,
+    "memory_available_gb": 41.29769515991211,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995109407,
+      "bytes_recv": 99082716377,
+      "packets_sent": 19323799,
+      "packets_recv": 27187184,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:03.699704+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.476200103759766,
+    "memory_available_gb": 41.30648422241211,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995133744,
+      "bytes_recv": 99082740540,
+      "packets_sent": 19323907,
+      "packets_recv": 27187291,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:08.818207+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47198486328125,
+    "memory_available_gb": 41.310699462890625,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995158515,
+      "bytes_recv": 99082765194,
+      "packets_sent": 19324032,
+      "packets_recv": 27187416,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:13.936447+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47494125366211,
+    "memory_available_gb": 41.307743072509766,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995180775,
+      "bytes_recv": 99082787386,
+      "packets_sent": 19324122,
+      "packets_recv": 27187506,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:19.055281+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.477588653564453,
+    "memory_available_gb": 41.30509567260742,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995205746,
+      "bytes_recv": 99082812240,
+      "packets_sent": 19324251,
+      "packets_recv": 27187635,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 53.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:24.173540+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.479351043701172,
+    "memory_available_gb": 41.3033332824707,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995228282,
+      "bytes_recv": 99082834708,
+      "packets_sent": 19324346,
+      "packets_recv": 27187730,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:29.291710+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478717803955078,
+    "memory_available_gb": 41.3039665222168,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995252881,
+      "bytes_recv": 99082859190,
+      "packets_sent": 19324468,
+      "packets_recv": 27187852,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:34.409573+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482017517089844,
+    "memory_available_gb": 41.30066680908203,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995275650,
+      "bytes_recv": 99082881891,
+      "packets_sent": 19324565,
+      "packets_recv": 27187949,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:39.527849+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.479595184326172,
+    "memory_available_gb": 41.3030891418457,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995300489,
+      "bytes_recv": 99082906613,
+      "packets_sent": 19324692,
+      "packets_recv": 27188076,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:44.404104+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-06T11:25:44.648880+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47674560546875,
+    "memory_available_gb": 41.305938720703125,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995323858,
+      "bytes_recv": 99082929977,
+      "packets_sent": 19324796,
+      "packets_recv": 27188181,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:49.769563+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478290557861328,
+    "memory_available_gb": 41.30439376831055,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995348804,
+      "bytes_recv": 99082954875,
+      "packets_sent": 19324923,
+      "packets_recv": 27188308,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:25:54.888210+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.469463348388672,
+    "memory_available_gb": 41.3132209777832,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995381292,
+      "bytes_recv": 99082979002,
+      "packets_sent": 19325029,
+      "packets_recv": 27188414,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:00.006099+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.469890594482422,
+    "memory_available_gb": 41.31279373168945,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995406024,
+      "bytes_recv": 99083003666,
+      "packets_sent": 19325154,
+      "packets_recv": 27188539,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:05.124152+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.472084045410156,
+    "memory_available_gb": 41.31060028076172,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995428687,
+      "bytes_recv": 99083026212,
+      "packets_sent": 19325251,
+      "packets_recv": 27188636,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:10.242459+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.471797943115234,
+    "memory_available_gb": 41.31088638305664,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995453367,
+      "bytes_recv": 99083050824,
+      "packets_sent": 19325375,
+      "packets_recv": 27188760,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:15.360360+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.471977233886719,
+    "memory_available_gb": 41.310707092285156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995476510,
+      "bytes_recv": 99083073945,
+      "packets_sent": 19325477,
+      "packets_recv": 27188864,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 52.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:20.479109+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.476795196533203,
+    "memory_available_gb": 41.30588912963867,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995501348,
+      "bytes_recv": 99083098721,
+      "packets_sent": 19325604,
+      "packets_recv": 27188991,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:25.597716+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.479522705078125,
+    "memory_available_gb": 41.30316162109375,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995524122,
+      "bytes_recv": 99083121372,
+      "packets_sent": 19325700,
+      "packets_recv": 27189087,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:30.716696+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482112884521484,
+    "memory_available_gb": 41.30057144165039,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995549074,
+      "bytes_recv": 99083146262,
+      "packets_sent": 19325829,
+      "packets_recv": 27189216,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:35.834860+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.480148315429688,
+    "memory_available_gb": 41.30253601074219,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995571583,
+      "bytes_recv": 99083168648,
+      "packets_sent": 19325923,
+      "packets_recv": 27189310,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:40.953661+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48073959350586,
+    "memory_available_gb": 41.301944732666016,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995596213,
+      "bytes_recv": 99083193216,
+      "packets_sent": 19326046,
+      "packets_recv": 27189433,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:44.516414+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_uz",
+    "to_persona": "aziza_en",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-06T11:26:46.074748+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 3.3,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478469848632812,
+    "memory_available_gb": 41.30421447753906,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995619623,
+      "bytes_recv": 99083216503,
+      "packets_sent": 19326150,
+      "packets_recv": 27189537,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:51.194180+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47762680053711,
+    "memory_available_gb": 41.305057525634766,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995644639,
+      "bytes_recv": 99083241534,
+      "packets_sent": 19326278,
+      "packets_recv": 27189666,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:26:56.312659+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478702545166016,
+    "memory_available_gb": 41.30398178100586,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995668740,
+      "bytes_recv": 99083265775,
+      "packets_sent": 19326382,
+      "packets_recv": 27189771,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:01.430846+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475418090820312,
+    "memory_available_gb": 41.30726623535156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995705034,
+      "bytes_recv": 99083301946,
+      "packets_sent": 19326513,
+      "packets_recv": 27189902,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:06.549300+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482662200927734,
+    "memory_available_gb": 41.30002212524414,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995727686,
+      "bytes_recv": 99083324536,
+      "packets_sent": 19326610,
+      "packets_recv": 27189999,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:11.667873+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483253479003906,
+    "memory_available_gb": 41.29943084716797,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995752604,
+      "bytes_recv": 99083349331,
+      "packets_sent": 19326735,
+      "packets_recv": 27190124,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:16.785707+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.487037658691406,
+    "memory_available_gb": 41.29564666748047,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995775145,
+      "bytes_recv": 99083371810,
+      "packets_sent": 19326830,
+      "packets_recv": 27190219,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:21.905019+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.498493194580078,
+    "memory_available_gb": 41.2841911315918,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995799921,
+      "bytes_recv": 99083396462,
+      "packets_sent": 19326955,
+      "packets_recv": 27190344,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:27.022745+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.496437072753906,
+    "memory_available_gb": 41.28624725341797,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995822437,
+      "bytes_recv": 99083418847,
+      "packets_sent": 19327049,
+      "packets_recv": 27190437,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 51.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:32.140675+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.489887237548828,
+    "memory_available_gb": 41.29279708862305,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995847213,
+      "bytes_recv": 99083443499,
+      "packets_sent": 19327174,
+      "packets_recv": 27190562,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:37.258653+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.491386413574219,
+    "memory_available_gb": 41.291297912597656,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995869850,
+      "bytes_recv": 99083466025,
+      "packets_sent": 19327270,
+      "packets_recv": 27190658,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:42.377378+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.496734619140625,
+    "memory_available_gb": 41.28594970703125,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995895013,
+      "bytes_recv": 99083491127,
+      "packets_sent": 19327403,
+      "packets_recv": 27190791,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:44.624821+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_en",
+    "to_persona": "aziza_ru",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-06T11:27:47.499325+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 3.3,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.474388122558594,
+    "memory_available_gb": 41.30829620361328,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995922557,
+      "bytes_recv": 99083518547,
+      "packets_sent": 19327553,
+      "packets_recv": 27190941,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:52.617713+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485801696777344,
+    "memory_available_gb": 41.29688262939453,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995945095,
+      "bytes_recv": 99083541150,
+      "packets_sent": 19327647,
+      "packets_recv": 27191036,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:27:57.736346+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478462219238281,
+    "memory_available_gb": 41.304222106933594,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995970940,
+      "bytes_recv": 99083566871,
+      "packets_sent": 19327779,
+      "packets_recv": 27191168,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:02.854508+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.486988067626953,
+    "memory_available_gb": 41.29569625854492,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1995993214,
+      "bytes_recv": 99083589084,
+      "packets_sent": 19327869,
+      "packets_recv": 27191258,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:07.972925+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.480659484863281,
+    "memory_available_gb": 41.302024841308594,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996018214,
+      "bytes_recv": 99083613960,
+      "packets_sent": 19327998,
+      "packets_recv": 27191387,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:13.091412+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482013702392578,
+    "memory_available_gb": 41.3006706237793,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996040592,
+      "bytes_recv": 99083636277,
+      "packets_sent": 19328090,
+      "packets_recv": 27191479,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:18.210074+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47393798828125,
+    "memory_available_gb": 41.308746337890625,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996065636,
+      "bytes_recv": 99083661197,
+      "packets_sent": 19328220,
+      "packets_recv": 27191609,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:23.327937+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.480499267578125,
+    "memory_available_gb": 41.30218505859375,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996088211,
+      "bytes_recv": 99083683661,
+      "packets_sent": 19328315,
+      "packets_recv": 27191704,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:28.446582+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483573913574219,
+    "memory_available_gb": 41.299110412597656,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996113129,
+      "bytes_recv": 99083708518,
+      "packets_sent": 19328443,
+      "packets_recv": 27191832,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:33.565350+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.477264404296875,
+    "memory_available_gb": 41.305419921875,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996135433,
+      "bytes_recv": 99083730698,
+      "packets_sent": 19328533,
+      "packets_recv": 27191922,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:38.684059+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.477890014648438,
+    "memory_available_gb": 41.30479431152344,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996161994,
+      "bytes_recv": 99083757198,
+      "packets_sent": 19328672,
+      "packets_recv": 27192061,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:43.802619+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48659896850586,
+    "memory_available_gb": 41.296085357666016,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996184599,
+      "bytes_recv": 99083779679,
+      "packets_sent": 19328765,
+      "packets_recv": 27192154,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:44.735111+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_ru",
+    "to_persona": "aziza_uz",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-06T11:28:48.924244+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48360824584961,
+    "memory_available_gb": 41.299076080322266,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996210298,
+      "bytes_recv": 99083805317,
+      "packets_sent": 19328901,
+      "packets_recv": 27192290,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:54.042549+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483707427978516,
+    "memory_available_gb": 41.29897689819336,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996232866,
+      "bytes_recv": 99083827887,
+      "packets_sent": 19328995,
+      "packets_recv": 27192385,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:28:59.161034+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485542297363281,
+    "memory_available_gb": 41.297142028808594,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996257508,
+      "bytes_recv": 99083852468,
+      "packets_sent": 19329118,
+      "packets_recv": 27192508,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:04.278953+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.488750457763672,
+    "memory_available_gb": 41.2939338684082,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996280026,
+      "bytes_recv": 99083874862,
+      "packets_sent": 19329212,
+      "packets_recv": 27192602,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:09.397736+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.488243103027344,
+    "memory_available_gb": 41.29444122314453,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996305121,
+      "bytes_recv": 99083899870,
+      "packets_sent": 19329342,
+      "packets_recv": 27192732,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:14.516882+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478713989257812,
+    "memory_available_gb": 41.30397033691406,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996327611,
+      "bytes_recv": 99083922299,
+      "packets_sent": 19329436,
+      "packets_recv": 27192826,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:19.635104+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483383178710938,
+    "memory_available_gb": 41.29930114746094,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996352491,
+      "bytes_recv": 99083947055,
+      "packets_sent": 19329563,
+      "packets_recv": 27192953,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:24.753551+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.480789184570312,
+    "memory_available_gb": 41.30189514160156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996375794,
+      "bytes_recv": 99083970297,
+      "packets_sent": 19329665,
+      "packets_recv": 27193055,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:29.872368+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.470691680908203,
+    "memory_available_gb": 41.31199264526367,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996401767,
+      "bytes_recv": 99083996146,
+      "packets_sent": 19329797,
+      "packets_recv": 27193187,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:34.990793+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475414276123047,
+    "memory_available_gb": 41.30727005004883,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996424249,
+      "bytes_recv": 99084018567,
+      "packets_sent": 19329891,
+      "packets_recv": 27193281,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:40.109508+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478778839111328,
+    "memory_available_gb": 41.30390548706055,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996448921,
+      "bytes_recv": 99084043115,
+      "packets_sent": 19330014,
+      "packets_recv": 27193404,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:44.842708+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_uz",
+    "to_persona": "aziza_en",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-06T11:29:45.228037+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.476734161376953,
+    "memory_available_gb": 41.30595016479492,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996472346,
+      "bytes_recv": 99084066479,
+      "packets_sent": 19330119,
+      "packets_recv": 27193509,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:50.348592+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.47506332397461,
+    "memory_available_gb": 41.307621002197266,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996506708,
+      "bytes_recv": 99084101779,
+      "packets_sent": 19330334,
+      "packets_recv": 27193741,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:29:55.467355+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482475280761719,
+    "memory_available_gb": 41.300209045410156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996543161,
+      "bytes_recv": 99084139351,
+      "packets_sent": 19330556,
+      "packets_recv": 27193984,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:00.585664+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.475738525390625,
+    "memory_available_gb": 41.30694580078125,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996597895,
+      "bytes_recv": 99084191274,
+      "packets_sent": 19330879,
+      "packets_recv": 27194382,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:05.704339+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478572845458984,
+    "memory_available_gb": 41.30411148071289,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996640511,
+      "bytes_recv": 99084234678,
+      "packets_sent": 19331170,
+      "packets_recv": 27194689,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:10.822840+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482292175292969,
+    "memory_available_gb": 41.300392150878906,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996692897,
+      "bytes_recv": 99084278533,
+      "packets_sent": 19331482,
+      "packets_recv": 27195004,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:15.941468+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.481403350830078,
+    "memory_available_gb": 41.3012809753418,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996717533,
+      "bytes_recv": 99084303045,
+      "packets_sent": 19331593,
+      "packets_recv": 27195115,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:21.060278+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48211669921875,
+    "memory_available_gb": 41.300567626953125,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996740163,
+      "bytes_recv": 99084325614,
+      "packets_sent": 19331701,
+      "packets_recv": 27195223,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:26.179030+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.482429504394531,
+    "memory_available_gb": 41.300254821777344,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996762785,
+      "bytes_recv": 99084348112,
+      "packets_sent": 19331797,
+      "packets_recv": 27195319,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:31.297552+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.481266021728516,
+    "memory_available_gb": 41.30141830444336,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996787531,
+      "bytes_recv": 99084372797,
+      "packets_sent": 19331922,
+      "packets_recv": 27195444,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:36.415860+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48565673828125,
+    "memory_available_gb": 41.297027587890625,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996810043,
+      "bytes_recv": 99084395185,
+      "packets_sent": 19332016,
+      "packets_recv": 27195538,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:41.534469+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.486286163330078,
+    "memory_available_gb": 41.2963981628418,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996834685,
+      "bytes_recv": 99084419829,
+      "packets_sent": 19332139,
+      "packets_recv": 27195662,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:45.637674+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "persona_switch",
+    "from_persona": "aziza_en",
+    "to_persona": "aziza_ru",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-06T11:30:46.652982+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.478401184082031,
+    "memory_available_gb": 41.304283142089844,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996869702,
+      "bytes_recv": 99084454672,
+      "packets_sent": 19332250,
+      "packets_recv": 27195772,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:51.774598+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 2.2,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485958099365234,
+    "memory_available_gb": 41.29672622680664,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996896546,
+      "bytes_recv": 99084481518,
+      "packets_sent": 19332390,
+      "packets_recv": 27195913,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:30:56.892907+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.479595184326172,
+    "memory_available_gb": 41.3030891418457,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996918924,
+      "bytes_recv": 99084503835,
+      "packets_sent": 19332482,
+      "packets_recv": 27196005,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:02.011951+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.487247467041016,
+    "memory_available_gb": 41.29543685913086,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996943596,
+      "bytes_recv": 99084528383,
+      "packets_sent": 19332605,
+      "packets_recv": 27196128,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:07.130611+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.4881591796875,
+    "memory_available_gb": 41.294525146484375,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996966292,
+      "bytes_recv": 99084551018,
+      "packets_sent": 19332703,
+      "packets_recv": 27196226,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:12.249142+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485671997070312,
+    "memory_available_gb": 41.29701232910156,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1996990912,
+      "bytes_recv": 99084575514,
+      "packets_sent": 19332825,
+      "packets_recv": 27196348,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:17.367412+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.48550796508789,
+    "memory_available_gb": 41.297176361083984,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997013454,
+      "bytes_recv": 99084597995,
+      "packets_sent": 19332920,
+      "packets_recv": 27196443,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:22.485893+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.486042022705078,
+    "memory_available_gb": 41.2966423034668,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997038282,
+      "bytes_recv": 99084622699,
+      "packets_sent": 19333046,
+      "packets_recv": 27196569,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:27.604477+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.1,
+    "memory_used_gb": 8.495738983154297,
+    "memory_available_gb": 41.28694534301758,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997063086,
+      "bytes_recv": 99084647505,
+      "packets_sent": 19333172,
+      "packets_recv": 27196696,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:32.723183+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.485877990722656,
+    "memory_available_gb": 41.29680633544922,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997085681,
+      "bytes_recv": 99084669926,
+      "packets_sent": 19333267,
+      "packets_recv": 27196790,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 49.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:37.841933+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 0.0,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.487659454345703,
+    "memory_available_gb": 41.29502487182617,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997110810,
+      "bytes_recv": 99084694931,
+      "packets_sent": 19333396,
+      "packets_recv": 27196919,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 48.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:42.960190+00:00",
+    "session_id": "99e6423b-d1a8-42f0-8e38-0c3f2b0b8888",
+    "event_type": "system_stats",
+    "cpu_percent": 1.1,
+    "memory_percent": 17.0,
+    "memory_used_gb": 8.483440399169922,
+    "memory_available_gb": 41.29924392700195,
+    "disk_usage_percent": 86.3,
+    "network_io": {
+      "bytes_sent": 1997134847,
+      "bytes_recv": 99084718907,
+      "packets_sent": 19333499,
+      "packets_recv": 27197022,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 29247.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 19428.0,
+      "temperature": 48.0
+    }
+  },
+  {
+    "timestamp": "2026-07-06T11:31:44.746203+00:00",
+    "session_id": "308a71c7-97c7-4213-b774-22b3ecf95d7f",
+    "event_type": "session_ended",
+    "duration_s": 600.7948498725891
+  }
+]

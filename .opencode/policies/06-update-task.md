@@ -1,0 +1,1 @@
+Update CURRENT_TASK.md after every completed task.

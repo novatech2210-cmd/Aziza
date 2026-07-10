@@ -1,0 +1,1552 @@
+[
+  {
+    "timestamp": "2026-07-03T11:47:43.847023",
+    "session_id": "a6941e93-3c7b-429f-8ca3-0cdb9b055a2f",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079248.811608,
+      "websocket_send": 1783079248.8361382,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:47:58.954492",
+    "session_id": "ce8ec695-5e42-4090-9985-677d250ab58e",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079263.9473922,
+      "websocket_send": 1783079263.9489865,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:48:14.060945",
+    "session_id": "d0cbc1b8-2cff-445e-8832-a93086d15bc3",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079279.054923,
+      "websocket_send": 1783079279.056503,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:48:29.180798",
+    "session_id": "b373c242-09c7-4eac-831d-3674869c9206",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079294.1613238,
+      "websocket_send": 1783079294.1632292,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:48:44.299312",
+    "session_id": "da6c96bf-0524-4dfd-a29f-e92f71180cf1",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079309.2813785,
+      "websocket_send": 1783079309.283011,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:48:59.418304",
+    "session_id": "7afa73c1-9f76-455a-b855-e06105db8853",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079324.3996327,
+      "websocket_send": 1783079324.4010527,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:49:14.525125",
+    "session_id": "96783a8d-a61f-4f98-8a9e-707c76a3a9ca",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079339.5185876,
+      "websocket_send": 1783079339.520027,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:49:29.629778",
+    "session_id": "82a8f383-6656-4962-ad24-58ba00a10355",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079354.6256187,
+      "websocket_send": 1783079354.6270316,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:49:44.749036",
+    "session_id": "d6871f63-0cbc-4096-bdb6-cae2b96f9628",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079369.730215,
+      "websocket_send": 1783079369.7317913,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:49:59.868540",
+    "session_id": "11652fbd-cbcf-43b3-8986-459aaee6b5a3",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079384.8494463,
+      "websocket_send": 1783079384.8509588,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:50:14.976970",
+    "session_id": "d3efede0-3eae-4536-91c7-eb8604240631",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079399.9690506,
+      "websocket_send": 1783079399.970635,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:50:30.084967",
+    "session_id": "0f6ad463-3d31-4903-963b-80060c5777ea",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079415.0775337,
+      "websocket_send": 1783079415.079056,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:50:45.190737",
+    "session_id": "8f92fb3a-4ce4-4cb9-832f-26e00fde2735",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079430.1853478,
+      "websocket_send": 1783079430.1868894,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:51:00.299365",
+    "session_id": "5b3b17af-f974-4121-9bdb-3299548477bd",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079445.2910657,
+      "websocket_send": 1783079445.29287,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:51:15.418574",
+    "session_id": "c627d1bd-5ac7-47b8-bfe4-64e84cb66a40",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079460.3997557,
+      "websocket_send": 1783079460.4012156,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:51:30.531498",
+    "session_id": "ab7d306d-5917-4d86-b32a-4f7fde82521a",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079475.5188577,
+      "websocket_send": 1783079475.5202882,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:51:45.646132",
+    "session_id": "d1c0551c-efaa-42fe-a49f-4e34de4befee",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079490.6319165,
+      "websocket_send": 1783079490.6334453,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:52:00.756428",
+    "session_id": "aba62e23-9bfe-4dc8-9753-a2cb5777f0d1",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079505.7464807,
+      "websocket_send": 1783079505.748006,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:52:15.875838",
+    "session_id": "05d6d2ed-fe88-4df2-91af-0ac970d7353b",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079520.8567595,
+      "websocket_send": 1783079520.8583946,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:52:30.995427",
+    "session_id": "6026b212-ef93-4bd2-affe-9014418870de",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079535.9761834,
+      "websocket_send": 1783079535.9776807,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:52:46.114757",
+    "session_id": "82ada0d1-3d23-407c-b0ad-f3a1135a4acf",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079551.0957556,
+      "websocket_send": 1783079551.0972424,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:01.233527",
+    "session_id": "7cbf97fd-1630-4aab-b6c4-b15c2919e05f",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079566.2151244,
+      "websocket_send": 1783079566.2166498,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:16.346893",
+    "session_id": "c8fa9239-b65c-4397-9585-cfe09056f098",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079581.3338265,
+      "websocket_send": 1783079581.3353605,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:31.457874",
+    "session_id": "07dbd439-df76-4a19-88f8-95f6bc52262f",
+    "event_type": "ttft_timeout",
+    "language": "uz",
+    "timestamps": {
+      "request_start": 1783079596.4472106,
+      "websocket_send": 1783079596.4486234,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:46.576986",
+    "session_id": "ddd79fa0-ae13-4e3d-9370-bf88d4c01de7",
+    "event_type": "ttft_timeout",
+    "language": "ru",
+    "timestamps": {
+      "request_start": 1783079611.558247,
+      "websocket_send": 1783079611.5597491,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:46.680236",
+    "session_id": "86ecd72d-8f26-4285-855f-6b290a4693da",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079626.6773398,
+      "websocket_send": 1783079626.6787326,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:46.783240",
+    "session_id": "b2dd8bc0-9776-4fa3-9dcd-2130d58ddfbf",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079626.7806118,
+      "websocket_send": 1783079626.782016,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:46.886098",
+    "session_id": "42577866-637f-4db5-b82b-0dd1c6e96cb8",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079626.8835905,
+      "websocket_send": 1783079626.8849545,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:46.989156",
+    "session_id": "4e32dede-fc25-4b30-8431-8f17853ac2dd",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079626.9865808,
+      "websocket_send": 1783079626.9879713,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.092425",
+    "session_id": "17da9200-3f8a-4b7e-b493-acb591fe3bf9",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.0896542,
+      "websocket_send": 1783079627.0911741,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.195552",
+    "session_id": "904487ae-d1bd-4ef6-9d13-82562d5a2188",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.1928818,
+      "websocket_send": 1783079627.194376,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.298399",
+    "session_id": "262913de-73f0-472a-b369-43baa2e3b38e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.2958648,
+      "websocket_send": 1783079627.297211,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.401352",
+    "session_id": "d1935190-368f-4c1f-9da3-692c9b46ce56",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.398727,
+      "websocket_send": 1783079627.400162,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.504418",
+    "session_id": "df0d25cd-f7c0-4284-8bd3-8f6963a31349",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.5016718,
+      "websocket_send": 1783079627.5030937,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.607631",
+    "session_id": "580713ff-fd41-492a-854a-2e686a65c993",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.6048694,
+      "websocket_send": 1783079627.606349,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.710635",
+    "session_id": "2b706706-83f1-4693-aafe-04f27f65c262",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.7080555,
+      "websocket_send": 1783079627.7094333,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.813891",
+    "session_id": "afaa9ec6-807e-4e39-81cc-223761cf447c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.8109927,
+      "websocket_send": 1783079627.8125973,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:47.917577",
+    "session_id": "06390904-c64f-4311-bb1e-7e15d8bf4b26",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079627.9142044,
+      "websocket_send": 1783079627.9157658,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.020863",
+    "session_id": "1a982364-ed3e-408d-b276-58ce8aa4e62d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.0179484,
+      "websocket_send": 1783079628.0196679,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.124128",
+    "session_id": "d556f03d-52ae-44c8-ac96-2750092c0e44",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.1213696,
+      "websocket_send": 1783079628.1229072,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.227057",
+    "session_id": "cee6b8d6-9daf-47e0-a139-578b94d20a90",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.22447,
+      "websocket_send": 1783079628.2258558,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.329879",
+    "session_id": "f378dad7-9d4b-49ec-a460-3143b0e19132",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.3273654,
+      "websocket_send": 1783079628.328748,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.432807",
+    "session_id": "72acd9d4-087d-4a8e-b5e0-6f7c0f175c99",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.4303155,
+      "websocket_send": 1783079628.4316545,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.535966",
+    "session_id": "aa5fde70-b683-48fa-9a6d-8777543c1226",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.533327,
+      "websocket_send": 1783079628.5348012,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.639231",
+    "session_id": "177c01c6-3cb5-43ea-bd27-3212016323ac",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.6364942,
+      "websocket_send": 1783079628.6380095,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.742165",
+    "session_id": "3e9f00ec-4076-4d0f-a2e3-f6ff9bae32d7",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.739578,
+      "websocket_send": 1783079628.7409465,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.845080",
+    "session_id": "011ef3c0-5b0d-4199-aa97-8933d12b0ace",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.8425128,
+      "websocket_send": 1783079628.8438742,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:48.948012",
+    "session_id": "7022dfa3-7159-4c9d-9db2-2cff499e873d",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079628.9454768,
+      "websocket_send": 1783079628.9468675,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.051326",
+    "session_id": "4e1e5868-832e-402c-8b4f-198140dcd1bb",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.0484834,
+      "websocket_send": 1783079629.0500522,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.154499",
+    "session_id": "267faae7-04c0-42a0-a3fc-b0727b88167a",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.1516855,
+      "websocket_send": 1783079629.1531732,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.257382",
+    "session_id": "07912ea3-51ad-4d0f-a7c6-35dbc69b62b4",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.2548223,
+      "websocket_send": 1783079629.2561867,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.360535",
+    "session_id": "3ed41b92-cc11-4438-867c-a31021ac5896",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.3577278,
+      "websocket_send": 1783079629.359384,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.463422",
+    "session_id": "446d7d14-0c37-4882-804c-67067b7d9669",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.4608984,
+      "websocket_send": 1783079629.4622788,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.566388",
+    "session_id": "eb7f0a3f-8677-430f-9b50-2597de871c22",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.5637093,
+      "websocket_send": 1783079629.565086,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.669337",
+    "session_id": "774b5957-fc0b-4521-a3ac-3d0cf47ae928",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.666719,
+      "websocket_send": 1783079629.6680946,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.772426",
+    "session_id": "aacf4fea-728c-4fcc-b8a9-46735273bc95",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.7696311,
+      "websocket_send": 1783079629.7711604,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.875522",
+    "session_id": "b751a168-1596-4cb8-876b-fa20d2a0494f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.8728418,
+      "websocket_send": 1783079629.8742366,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:49.978666",
+    "session_id": "835e3ce0-e350-4213-8357-d777d045bfdd",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079629.975858,
+      "websocket_send": 1783079629.977432,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.082307",
+    "session_id": "83763de2-8fed-48d3-8d72-61afe66b32b6",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.0789895,
+      "websocket_send": 1783079630.0808642,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.185391",
+    "session_id": "22f1562d-f4dc-45f7-9dd2-3a1e92825038",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.1826267,
+      "websocket_send": 1783079630.1840358,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.288321",
+    "session_id": "48064000-6926-442b-93d1-2592d261d89f",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.2857175,
+      "websocket_send": 1783079630.2870579,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.391527",
+    "session_id": "9e0edac0-c205-4bb8-8916-67895b195be2",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.3887582,
+      "websocket_send": 1783079630.3901238,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.494489",
+    "session_id": "dc18e44e-c31b-47ef-b1c9-406b89976945",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.4918685,
+      "websocket_send": 1783079630.4932072,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.597465",
+    "session_id": "7e802ab6-0ffc-413e-a01a-d6b94ee801bf",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.5948024,
+      "websocket_send": 1783079630.5962908,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.700621",
+    "session_id": "05b13078-bd38-436a-839c-a6845bbe76fc",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.697716,
+      "websocket_send": 1783079630.6994555,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.803477",
+    "session_id": "73455187-8c0c-4c07-9d28-47a211ccc646",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.8009295,
+      "websocket_send": 1783079630.8023152,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:50.906512",
+    "session_id": "45362712-39db-4d4a-b545-056d1e0cdf74",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079630.9038084,
+      "websocket_send": 1783079630.9052262,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.009799",
+    "session_id": "1bc4f38f-74cf-45b6-9dc7-625824bf6a74",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.0067823,
+      "websocket_send": 1783079631.0081944,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.112748",
+    "session_id": "c89b5d95-ab69-462e-87e3-7f176c6b730a",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.110141,
+      "websocket_send": 1783079631.1114943,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.215825",
+    "session_id": "631e14c4-5221-4bfb-958b-376a915c1870",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.2133067,
+      "websocket_send": 1783079631.2146716,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.319033",
+    "session_id": "6e1f8cc0-05ee-47f8-aa53-e96e6aa6b363",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.3161254,
+      "websocket_send": 1783079631.3177428,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.422197",
+    "session_id": "d8675d96-cb74-418b-b93f-b0272fdb8f92",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.4193926,
+      "websocket_send": 1783079631.4209018,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.525000",
+    "session_id": "eb322383-b09d-4b20-9c05-456decffbee3",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.5225194,
+      "websocket_send": 1783079631.5238318,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.627947",
+    "session_id": "2871f83d-edc7-4b66-a08e-e53d8e9807da",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.6253862,
+      "websocket_send": 1783079631.62677,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.731024",
+    "session_id": "2c50595d-a5ce-4c38-96cf-7172577b8778",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.7284634,
+      "websocket_send": 1783079631.729814,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.834096",
+    "session_id": "3b74e540-53a2-4a79-9421-00cc5e004786",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.8314788,
+      "websocket_send": 1783079631.8329065,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:51.937291",
+    "session_id": "b1e4ffa5-bd7b-4c44-9b92-f2067db44b70",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079631.9343936,
+      "websocket_send": 1783079631.9358678,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.041074",
+    "session_id": "7bd2b1f1-c4f7-4b28-ab70-dfa85bea0e92",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.0376322,
+      "websocket_send": 1783079632.0394306,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.144054",
+    "session_id": "d3edd9f0-b83b-4b66-a252-aa613ed54c31",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.1415424,
+      "websocket_send": 1783079632.1428645,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.246828",
+    "session_id": "01142cb3-e328-46b1-b038-f5e2082c0a96",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.2444139,
+      "websocket_send": 1783079632.2457397,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.349907",
+    "session_id": "4bca59cb-616b-4ec5-a970-b0492952786b",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.3473573,
+      "websocket_send": 1783079632.348778,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.452855",
+    "session_id": "2cb92287-a209-4369-802c-e7cabe9308a5",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.45035,
+      "websocket_send": 1783079632.4517372,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.555668",
+    "session_id": "27809648-4c44-4e54-adf7-c13e959837cf",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.5532315,
+      "websocket_send": 1783079632.5545325,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.658449",
+    "session_id": "2576ebc1-5825-4cf9-b767-111e5c29fde7",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.6559408,
+      "websocket_send": 1783079632.6572385,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.761354",
+    "session_id": "aca39121-c8ed-4885-99ae-8b4a8efef622",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.7588227,
+      "websocket_send": 1783079632.7601652,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.864363",
+    "session_id": "0464ddbb-e5e7-435a-9eae-3850ed296235",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.8618014,
+      "websocket_send": 1783079632.8631928,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:52.967159",
+    "session_id": "90cb2722-4c57-4b04-bf24-71c46932c4e8",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079632.9646711,
+      "websocket_send": 1783079632.9660175,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.070128",
+    "session_id": "18b82fa1-3d71-4be0-bdd8-0268bbe8587e",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.0675125,
+      "websocket_send": 1783079633.0688899,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.173127",
+    "session_id": "c774d0ce-98e2-48c0-ad30-c799befa5aa3",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.170589,
+      "websocket_send": 1783079633.171926,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.276084",
+    "session_id": "db925343-53bb-4894-bd4f-f1885d8ed3e1",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.2735322,
+      "websocket_send": 1783079633.274923,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.379956",
+    "session_id": "0cf7ae5a-c3fd-4332-a58a-77878385feba",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.3763733,
+      "websocket_send": 1783079633.3787856,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.482890",
+    "session_id": "f72d1fb7-f47a-4690-bd09-7445d3dae191",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.4803305,
+      "websocket_send": 1783079633.4817185,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.585900",
+    "session_id": "ddce4066-9ba0-405b-9633-35099af25464",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.5831735,
+      "websocket_send": 1783079633.5846772,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.688779",
+    "session_id": "c66c4fb7-8072-4631-8077-4ca1903391c9",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.68618,
+      "websocket_send": 1783079633.6875849,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.792039",
+    "session_id": "b37cf437-a768-4f36-b355-f383c134b1bc",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.7892125,
+      "websocket_send": 1783079633.7907405,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.895026",
+    "session_id": "dd75b28f-c311-43b3-9adf-a3c3513a2e29",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.8925152,
+      "websocket_send": 1783079633.8938262,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:53.998242",
+    "session_id": "4360be37-1947-4683-a2b7-4c41a7286599",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079633.9953635,
+      "websocket_send": 1783079633.9966416,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.101271",
+    "session_id": "5820b11f-cb7f-4f5c-b38a-ffe540529eed",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.0985982,
+      "websocket_send": 1783079634.0999558,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.204688",
+    "session_id": "1aabe600-2f20-4326-b57c-753b2f7cea13",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.2017565,
+      "websocket_send": 1783079634.2033198,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.307832",
+    "session_id": "1e806e6a-93ba-4733-971b-97cf56121716",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.3051689,
+      "websocket_send": 1783079634.3066156,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.410835",
+    "session_id": "de92753f-fe6d-4e87-81a0-3d5d1d58bc2c",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.408223,
+      "websocket_send": 1783079634.4096792,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.513641",
+    "session_id": "4279f584-421b-47df-99c1-41995f1c4a46",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.511085,
+      "websocket_send": 1783079634.5124524,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.616524",
+    "session_id": "7fe786ea-56b9-403d-b192-aaef4634f98d",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.6139662,
+      "websocket_send": 1783079634.6153665,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.719702",
+    "session_id": "f33bac1f-2657-4d60-8f97-404ff905f797",
+    "event_type": "ttft_error",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.7169363,
+      "websocket_send": 1783079634.7183042,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T11:53:54.822653",
+    "session_id": "4469ddad-da73-4237-a873-7922b79d6684",
+    "event_type": "ttft_error",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool.",
+    "timestamps": {
+      "request_start": 1783079634.8200233,
+      "websocket_send": 1783079634.8214457,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": null,
+      "response_end": null
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-07-04T13:12:44.770934+00:00",
+    "session_id": "f059f298-917f-4119-b3e4-0c61dbc2a804",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 18.784173488616943,
+    "prompt_length": 30,
+    "completion_tokens": 74,
+    "response_preview": "\nThe capital of France is Paris. Paris is not only the capital but also the larg"
+  },
+  {
+    "timestamp": "2026-07-04T13:13:13.228759+00:00",
+    "session_id": "d422bc91-bc30-4703-879f-09292b988a7d",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 28.407052278518677,
+    "prompt_length": 29,
+    "completion_tokens": 256,
+    "response_preview": "\n\u041d\u0430 \u043c\u043e\u043c\u0435\u043d\u0442 \u043c\u043e\u0435\u0433\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u0437\u043d\u0430\u043d\u0438\u0439 (\u0434\u043e 2023 \u0433\u043e\u0434\u0430), \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u043f\u0440\u043e\u0436\u0438\u0432\u0430\u043b\u043e"
+  },
+  {
+    "timestamp": "2026-07-04T13:13:41.394673+00:00",
+    "session_id": "c367a919-cdc9-40cb-b222-db77ffb19d0e",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 28.1153666973114,
+    "prompt_length": 27,
+    "completion_tokens": 256,
+    "response_preview": "\n\u0422\u043e\u0448\u043a\u0435\u043d\u0442\u0434\u0430 \u043d\u0435\u0447\u0430 \u043a\u0438\u0448\u0438 \u044f\u0448\u0430\u0431\u0434\u0438, \u0447\u0443\u043d \u0422\u043e\u0448\u043a\u0435\u043d\u0442 \u0448\u0430\u04b3\u0440\u0438 \u049b\u0443\u0440\u0431\u0430\u043d\u043b\u0430\u0448\u0433\u0430\u043d \u0432\u0430 \u04b3\u0430\u0451\u0442\u04b3\u043e\u0438 \u04b7\u043e\u043d\u0432\u0430\u0440\u043e\u043d\u0440"
+  },
+  {
+    "timestamp": "2026-07-04T13:13:51.882408+00:00",
+    "session_id": "20acf9ab-8a0a-4bb9-8640-f1ecabd11a74",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 10.437150001525879,
+    "prompt_length": 32,
+    "completion_tokens": 96,
+    "response_preview": "\nThe population of Tokyo is approximately 13.9 million people, according to the "
+  },
+  {
+    "timestamp": "2026-07-04T13:14:20.220654+00:00",
+    "session_id": "cb1c15a0-300f-4806-90c1-4c69af8c2257",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 28.287676572799683,
+    "prompt_length": 32,
+    "completion_tokens": 256,
+    "response_preview": "\n\u0421\u0430\u043c\u0430\u044f \u0434\u043b\u0438\u043d\u043d\u0430\u044f \u0440\u0435\u043a\u0430 \u0432 \u043c\u0438\u0440\u0435 \u2014 \u044d\u0442\u043e \u0440\u0435\u043a\u0430 \u0410\u043c\u0430\u0437\u043e\u043d\u043a\u0430. \u041e\u043d\u0430 \u043f\u0440\u043e\u0442\u0435\u043a\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u0442"
+  },
+  {
+    "timestamp": "2026-07-04T13:14:48.623635+00:00",
+    "session_id": "1c1876d8-48e4-46e7-b07d-bbc244aac8b8",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 28.352322101593018,
+    "prompt_length": 30,
+    "completion_tokens": 256,
+    "response_preview": "\n\u040e\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u043e\u043d\u043d\u0438\u043d\u0433 \u043f\u043e\u0439\u0442\u0430\u0445\u0442\u0438 \u2014 \u0422\u043e\u0448\u043a\u0435\u043d\u0442. \u0423\u043b \u0448\u0430\u04b3\u0430\u0440 \u043a\u0438\u0448\u0432\u0430\u0440\u043d\u0438\u043d\u0433 \u0438\u04a3 \u049b\u0430\u049b\u0448\u043e\u049b\u0438 \u0432\u0430 \u0438\u04b3\u043e\u0442\u0430 \u043c\u0430\u0440\u043a"
+  },
+  {
+    "timestamp": "2026-07-04T13:15:17.188334+00:00",
+    "session_id": "d364df1a-2175-47bf-9f66-f094026b3b9a",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 28.51402735710144,
+    "prompt_length": 43,
+    "completion_tokens": 256,
+    "response_preview": "\nCertainly! Below is a Python function that takes a string as input and returns "
+  },
+  {
+    "timestamp": "2026-07-04T13:15:45.699757+00:00",
+    "session_id": "7976d414-e162-4153-bac0-dae9d395041a",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 28.46070694923401,
+    "prompt_length": 46,
+    "completion_tokens": 256,
+    "response_preview": "\n\u041a\u043e\u043d\u0435\u0447\u043d\u043e, \u0432\u043e\u0442 \u043f\u0440\u0438\u043c\u0435\u0440 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u043d\u0430 Python, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0441\u043e\u0440\u0442\u0438\u0440\u0443\u0435\u0442 \u0441\u043f\u0438\u0441\u043e\u043a:\n\n```python\ndef"
+  },
+  {
+    "timestamp": "2026-07-04T13:16:14.457557+00:00",
+    "session_id": "4247f734-a91d-425e-9c87-55a51c690633",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "uz",
+    "latency_s": 28.707176446914673,
+    "prompt_length": 42,
+    "completion_tokens": 256,
+    "response_preview": "\n\u041a \u0441\u043e\u0436\u0430\u043b\u0435\u043d\u0438\u044e, \u044f \u043d\u0435 \u043c\u043e\u0433\u0443 \u0442\u043e\u0447\u043d\u043e \u043f\u043e\u043d\u044f\u0442\u044c, \u0447\u0442\u043e \u0432\u044b \u0438\u043c\u0435\u0435\u0442\u0435 \u0432 \u0432\u0438\u0434\u0443 \u043f\u043e\u0434 \"\u041f\u0430\u0439\u0442\u043e\u043d\u0434\u0430 \u0440\u045e\u0439\u0441\u0430\u0442\u043d"
+  },
+  {
+    "timestamp": "2026-07-04T13:16:42.587806+00:00",
+    "session_id": "7e493b9c-e48d-45af-a94e-4f18f8c51194",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 28.07955551147461,
+    "prompt_length": 57,
+    "completion_tokens": 256,
+    "response_preview": "\n\nCertainly! To write a JavaScript function that checks if a number is prime, we"
+  }
+]

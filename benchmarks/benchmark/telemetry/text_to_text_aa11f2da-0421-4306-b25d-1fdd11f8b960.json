@@ -1,0 +1,788 @@
+[
+  {
+    "timestamp": "2026-07-03T12:35:56.079860+00:00",
+    "session_id": "750434ff-2a9f-4279-a22f-e54ac25bccda",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.133055+00:00",
+    "session_id": "e53fefac-d814-4ef2-ba3c-0037ec0b513d",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.186330+00:00",
+    "session_id": "af073107-8537-40e4-979f-9d1dc121e440",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.239150+00:00",
+    "session_id": "03a8e8dd-e990-4693-8717-88dfde2f6e53",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.294452+00:00",
+    "session_id": "051f6709-cd13-456d-aed8-29c69213789a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.347422+00:00",
+    "session_id": "5e3176bf-7762-412d-8812-144a1e599345",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.400368+00:00",
+    "session_id": "9b831a84-40ae-4a03-b674-f88e69985892",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.453502+00:00",
+    "session_id": "17896512-6b02-414a-9bef-aa024f6971dc",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.506463+00:00",
+    "session_id": "453124a9-276b-4483-aa35-46ebdc81f76e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.559272+00:00",
+    "session_id": "3f0ecdab-6447-48f6-af54-0a9f6837b8f1",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.612081+00:00",
+    "session_id": "7ba8592d-1345-47a5-85bc-1c4bf4386c4a",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.664858+00:00",
+    "session_id": "d474107d-0a68-404e-8a3f-2e83880fc0e8",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.717956+00:00",
+    "session_id": "39328828-76b3-46e7-9b9f-dfa08f5e08f2",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.770749+00:00",
+    "session_id": "1a7db3e3-81d8-4a1e-b369-ef410639ee59",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.823531+00:00",
+    "session_id": "06912d5c-b463-4163-a15c-1875d2f2faa3",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.876490+00:00",
+    "session_id": "7a064498-2059-43dc-990b-985e577988c5",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.929523+00:00",
+    "session_id": "9f8a9ca5-0bca-4bf3-bbe4-1b04bbdc222e",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:56.982344+00:00",
+    "session_id": "2f9e0f1b-a10e-4009-b450-5db71f1cf433",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.035386+00:00",
+    "session_id": "25b8b26a-211d-4fef-ad4d-0af2efbe1850",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.089129+00:00",
+    "session_id": "e7e373de-164f-47ab-bccf-0d2374d03bcb",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.142009+00:00",
+    "session_id": "dd5b5011-60ab-44f1-b7b3-539d2ddf6be8",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.194691+00:00",
+    "session_id": "39d861ef-7dbf-4c2a-b5ad-e8b3582aeebc",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.247458+00:00",
+    "session_id": "e5d2ee16-40e0-470d-9558-e80323be6d11",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.300480+00:00",
+    "session_id": "b400a972-e7bd-450b-b3d5-ded9d7556db1",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.353435+00:00",
+    "session_id": "c944b99a-c49b-4253-961d-a635091a4684",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.406392+00:00",
+    "session_id": "0242406f-371e-46bb-b47e-30dc95d0a915",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:35:57.459212+00:00",
+    "session_id": "f8e0324f-d78e-45ac-a48c-c2d96d33ebf5",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:36:07.515487+00:00",
+    "session_id": "6e863946-5d73-4d7a-9d06-3f88f0efdec2",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:36:17.576786+00:00",
+    "session_id": "32c02bb9-a2ba-45a1-91c8-adba346b55d9",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:36:27.641134+00:00",
+    "session_id": "7834eea5-dec8-4bab-b72a-90d70a54c4bb",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:36:37.701480+00:00",
+    "session_id": "7e1c643e-ed0b-4f10-a5c9-39f615f4c464",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:36:47.765048+00:00",
+    "session_id": "ad06c6c5-2a50-464a-b524-0a7942b25850",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:36:57.821665+00:00",
+    "session_id": "03a152fb-a84e-4ef4-9ba9-c2a8d7b3162e",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:07.883547+00:00",
+    "session_id": "7564cd2a-bab0-4fcd-b1fe-a24db48ada75",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:17.948525+00:00",
+    "session_id": "edfed862-6b35-4c5c-90b9-ed32649a00b1",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:28.004074+00:00",
+    "session_id": "a9ee58cd-bc81-422d-a9bd-41dd83f9ddb8",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:38.067583+00:00",
+    "session_id": "12adb089-e4c8-4862-b141-ab7af7f4e7b2",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:48.132171+00:00",
+    "session_id": "4af5b702-85e7-4d39-a346-bb51799bf91b",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:37:58.190406+00:00",
+    "session_id": "c200aed6-fc2b-46f3-8fe3-b026e892c4a2",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:08.249760+00:00",
+    "session_id": "91432145-98d3-4a5c-b844-cd1aece6e78c",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.313597+00:00",
+    "session_id": "949b0d44-1da1-4d83-9abd-f8840642472e",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.366545+00:00",
+    "session_id": "2758f60c-d7d4-41ed-a77e-0a74a00cd152",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.419342+00:00",
+    "session_id": "945b9cbd-f893-4fce-9939-547ab28512af",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.472118+00:00",
+    "session_id": "d6cdf27a-0ddc-4aab-a81f-55e7cda42672",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.524792+00:00",
+    "session_id": "0fd91f39-4680-44cf-944b-01a369864fe7",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.577702+00:00",
+    "session_id": "e489581c-8f8d-4af6-8f7d-5566b2c13655",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.630368+00:00",
+    "session_id": "4920e725-35f2-4407-a4b3-6d08d50634e7",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.682982+00:00",
+    "session_id": "79b931ac-45a2-4967-b1e5-bbb4c6172bcc",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.735884+00:00",
+    "session_id": "9112f9c1-42cd-48e9-b6ad-19ee5a073573",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.789085+00:00",
+    "session_id": "c3f8e70a-5aee-4043-876c-ec130e88881d",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.841625+00:00",
+    "session_id": "9985e89b-52c7-4954-bc4c-014244c94a5e",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.894109+00:00",
+    "session_id": "9e351e00-9b62-4e38-8f57-4f6ed82d0694",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.946820+00:00",
+    "session_id": "c58bbb0a-f1fe-470c-9297-526450f167c7",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:18.999481+00:00",
+    "session_id": "ea9ab631-1cc9-4c75-a09e-2f22f303cf2c",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.052348+00:00",
+    "session_id": "49fae4de-7ce4-4a0d-b524-4ee5c07c4566",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.104809+00:00",
+    "session_id": "2dd96304-1161-4424-a05c-3b21de50d7cb",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.157535+00:00",
+    "session_id": "4182e57d-4161-4d6c-8117-0bb44f2c22c6",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.210022+00:00",
+    "session_id": "8375ce0c-c211-4ccc-af14-571064979312",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.262571+00:00",
+    "session_id": "484ad2d7-b122-42dc-99ce-7d70dbe7709d",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.315769+00:00",
+    "session_id": "dcf65e57-b3f2-47f1-a7c1-c02c6be460f0",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.368468+00:00",
+    "session_id": "3c24473c-c9de-46b6-8a2b-02e5216dca6c",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.421022+00:00",
+    "session_id": "0a625df0-dc5f-4292-a8d8-8ab061b4bba7",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.473424+00:00",
+    "session_id": "567f4625-dbeb-4b88-9192-c8117f8e5db9",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.526514+00:00",
+    "session_id": "54ad2525-19b0-4192-9b15-50f5d806868f",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.578931+00:00",
+    "session_id": "f77af1ab-2695-44fa-a7a7-e1d4d53a5905",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.631595+00:00",
+    "session_id": "7f59c251-f4cb-48a7-a334-0e2b23ead9c6",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.684224+00:00",
+    "session_id": "a4901394-8be8-4d65-a97e-b741ba26cefc",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.736876+00:00",
+    "session_id": "000fb35a-e226-483d-8c69-86fe82bf7b98",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.789264+00:00",
+    "session_id": "51855a58-a3e8-41d7-8cd8-9861af9e094f",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.841670+00:00",
+    "session_id": "878397ee-1da9-424e-bd29-ab357fcd8f88",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.894399+00:00",
+    "session_id": "d43b0d90-7698-4d2b-a38e-73c2b598a83a",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.946956+00:00",
+    "session_id": "959ccf4a-c432-494d-b50e-493933b107d9",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:19.999768+00:00",
+    "session_id": "eebd9ca2-6c85-4b3c-a069-bfbec928e816",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.052438+00:00",
+    "session_id": "c2723c9e-d43e-4590-ab8a-55c31065d174",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.105037+00:00",
+    "session_id": "efd6cd20-8013-4551-8cac-06bf971956db",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.157541+00:00",
+    "session_id": "5c159f6e-9660-4767-b15e-151b917fb15b",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.210169+00:00",
+    "session_id": "cd1d13cd-2b0b-490b-8ac7-971e7b2d01cd",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.263142+00:00",
+    "session_id": "867451e2-9831-4263-96d6-a1be57d11275",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.315579+00:00",
+    "session_id": "cf8e2b62-c81b-49f5-978f-6f8ff50a97fc",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.368145+00:00",
+    "session_id": "708a5d84-e933-4a13-89f2-437f943f9191",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.420558+00:00",
+    "session_id": "749e76c8-f7d8-4e0f-ae7b-a4877ca3f7d2",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.472951+00:00",
+    "session_id": "89a783fb-6b21-402c-a8c6-3d75c1277ded",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.525439+00:00",
+    "session_id": "6d28e90d-662b-475c-95c0-925da352b622",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.577827+00:00",
+    "session_id": "5f344e13-308d-41a2-a87f-c46bf501646d",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.630334+00:00",
+    "session_id": "3e074722-422f-4b61-9cfc-c181fccec921",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.683207+00:00",
+    "session_id": "03285ddc-15c8-4534-bc85-041de7479062",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.736896+00:00",
+    "session_id": "4d3554cd-276b-4d7c-8e9a-b114bf0b3bc3",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.789606+00:00",
+    "session_id": "9fa688f9-d1c8-4383-b25b-3d9764dd8c00",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.842051+00:00",
+    "session_id": "ad41a670-7f4a-4c4e-a867-8a3dcf96bf77",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.894665+00:00",
+    "session_id": "c18a625f-01b7-4f2a-95b8-bf20b9f9db5d",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:20.947588+00:00",
+    "session_id": "f8bfdf13-20b8-4077-9ba4-6edbcd7b4049",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.000200+00:00",
+    "session_id": "43f2daa9-b076-4f47-a51c-7f460ab2c322",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.052775+00:00",
+    "session_id": "122524cc-d7cc-4450-8a58-3e59b0527557",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.105221+00:00",
+    "session_id": "40ff461e-d156-4b99-9a43-57a2bfaf19bc",
+    "event_type": "text_error",
+    "category": "creative",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.157898+00:00",
+    "session_id": "5295887c-9fa7-44c8-af87-20f6b0ea937c",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.210351+00:00",
+    "session_id": "ec8a4e6b-2c18-49de-a217-c340b983c5ee",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.263023+00:00",
+    "session_id": "8bc7dd19-ec27-4b7f-9716-7899cf20f424",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.315482+00:00",
+    "session_id": "8bbe137f-a1c9-4c8e-8ffb-95d225a99b60",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.367877+00:00",
+    "session_id": "1c2e9bea-615e-45b0-a974-567f8433adda",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "en",
+    "error": "Server error: No workers available in the pool."
+  },
+  {
+    "timestamp": "2026-07-03T12:38:21.420477+00:00",
+    "session_id": "933412dd-c864-49f3-b9c5-edca3efb0ce7",
+    "event_type": "text_error",
+    "category": "summarization",
+    "language": "ru",
+    "error": "Server error: No workers available in the pool."
+  }
+]

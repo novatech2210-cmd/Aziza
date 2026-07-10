@@ -1,0 +1,17 @@
+{"id":"ru_seen_001","language":"ru","category":"seen","type":"word","text":"привет","expected_phonetic":"p rʲ i vʲ e t","notes":"common greeting"}
+{"id":"ru_seen_002","language":"ru","category":"seen","type":"word","text":"машина","expected_phonetic":"m a ʂ i n a","notes":"common noun"}
+{"id":"ru_unseen_001","language":"ru","category":"unseen","type":"word","text":"криптометрия","expected_phonetic":"k rʲ i p t o mʲ e t rʲ i j a","notes":"novel composition"}
+{"id":"ru_cluster_001","language":"ru","category":"rule_cluster","type":"word","text":"встреча","expected_phonetic":"f s t rʲ e t͡ɕ a","notes":"consonant cluster"}
+{"id":"ru_palatal_001","language":"ru","category":"rule_palatalization","type":"word","text":"день","expected_phonetic":"dʲ e nʲ","notes":"palatalization"}
+{"id":"ru_vowelred_001","language":"ru","category":"rule_vowel_reduction","type":"word","text":"молоко","expected_phonetic":"m ə l ɐ k o","notes":"unstressed reduction proxy"}
+{"id":"uz_seen_001","language":"uz","category":"seen","type":"word","text":"salom","expected_phonetic":"s a l o m","notes":"common greeting"}
+{"id":"uz_seen_002","language":"uz","category":"seen","type":"word","text":"rahmat","expected_phonetic":"r a h m a t","notes":"common word"}
+{"id":"uz_unseen_001","language":"uz","category":"unseen","type":"word","text":"raqamlashtirish","expected_phonetic":"r a q a m l a ʃ t i r i ʃ","notes":"novel composition"}
+{"id":"uz_harmony_001","language":"uz","category":"rule_vowel_harmony","type":"word","text":"ko'ngilochar","expected_phonetic":"k o ŋ i l o t͡ʃ a r","notes":"vowel harmony proxy"}
+{"id":"uz_consonant_001","language":"uz","category":"rule_consonant_realization","type":"word","text":"qishloq","expected_phonetic":"q i ʃ l o q","notes":"q realization"}
+{"id":"mix_ru_uz_001","language":"mixed","category":"transition_ru_uz","type":"phrase","text":"Привет, bugun ishlar qanday?","expected_phonetic":"mixed","notes":"Russian to Uzbek transition"}
+{"id":"mix_uz_ru_001","language":"mixed","category":"transition_uz_ru","type":"phrase","text":"Salom, как дела сегодня?","expected_phonetic":"mixed","notes":"Uzbek to Russian transition"}
+{"id":"mix_en_uz_001","language":"mixed","category":"transition_en_uz","type":"phrase","text":"Hello, bugun meeting bor-mi?","expected_phonetic":"mixed","notes":"English to Uzbek transition"}
+{"id":"mix_en_ru_001","language":"mixed","category":"transition_en_ru","type":"phrase","text":"Hello, сегодня будет созвон?","expected_phonetic":"mixed","notes":"English to Russian transition"}
+{"id":"minpair_ru_001","language":"ru","category":"minimal_pair","type":"pair","text":"лук|люк","expected_phonetic":"l u k|lʲ u k","notes":"palatal contrast"}
+{"id":"minpair_uz_001","language":"uz","category":"minimal_pair","type":"pair","text":"qol|kol","expected_phonetic":"q o l|k o l","notes":"uvular vs velar contrast"}

@@ -1,0 +1,3 @@
+# QUALITY_GATES
+
+Content for QUALITY_GATES.md.

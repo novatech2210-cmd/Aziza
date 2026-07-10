@@ -1,0 +1,4 @@
+# Story Template
+
+## Goal
+## Tasks

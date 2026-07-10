@@ -1,0 +1,46 @@
+[Unit]
+Description=AMD/LID adapter (project Phase 3 - Parallel AMD + LID)
+Documentation=file:///opt/adapter/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=adapter
+Group=adapter
+WorkingDirectory=/opt/adapter
+ExecStart=/opt/adapter/.venv/bin/python -m adapter.main
+Environment=ADAPTER_CONFIG_DIR=/opt/adapter/config
+Environment=VOSK_MODELS_DIR=/opt/vosk/models
+Environment=LOG_LEVEL=INFO
+
+# Config reload without dropping in-flight calls. main.py installs a
+# SIGHUP handler (ConfigHolder.reload). Required so the documented
+# `systemctl reload adapter` in 06_GUIDE_Language_Model_Switch.md works;
+# without ExecReload, systemd rejects `reload` as not applicable.
+# Added 2026-05-15.
+ExecReload=/bin/kill -HUP $MAINPID
+
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/var/log/adapter/adapter.log
+StandardError=append:/var/log/adapter/adapter.log
+
+# Modest hardening. Tighten in a later phase when service profile is stable.
+NoNewPrivileges=true
+
+# PrivateTmp MUST stay false. The adapter writes the AMD/LID verdict to
+# /tmp/amd-<uuid>.{amd,lid}; the Asterisk dialplan reads it back with
+# SHELL(cat /tmp/...). Asterisk runs with PrivateTmp=no, so if the
+# adapter had a private /tmp namespace the dialplan would read an empty
+# file and EVERY call would wrongly take the HUMAN branch. This was a
+# production-blocking bug found on 2026-05-15 — see
+# Docs/phase3/10_REFERENCE_VM-B_Live_AMD_Validation_2026-05-15.md.
+PrivateTmp=false
+
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/log/adapter
+
+[Install]
+WantedBy=multi-user.target

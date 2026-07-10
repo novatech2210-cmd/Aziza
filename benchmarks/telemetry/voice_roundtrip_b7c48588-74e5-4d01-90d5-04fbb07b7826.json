@@ -1,0 +1,1202 @@
+[
+  {
+    "timestamp": "2026-07-03T15:12:10.466573+00:00",
+    "session_id": "b7ef9f27-7433-46df-839e-d4aad6374ad9",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.4521952,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.519662+00:00",
+    "session_id": "69a12aa7-cd77-4209-a452-62c670ae37ec",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.5190072,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.572705+00:00",
+    "session_id": "19df77fe-905b-40db-b591-2791b77ac8ff",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.5723836,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.625330+00:00",
+    "session_id": "a7f7fa4d-4bf8-4adb-933b-456b2d5b93b9",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.6249566,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.678182+00:00",
+    "session_id": "4a1238b9-aa11-4ebc-bb47-cbdbad32a1d9",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.6778004,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.731454+00:00",
+    "session_id": "26bc920c-ce4b-4cc8-a2e0-7a147f8fb66c",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.7311237,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.783725+00:00",
+    "session_id": "fea8519e-4600-44a8-b72f-43826b601330",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.783413,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.836871+00:00",
+    "session_id": "e10c08d1-3be9-462a-ad32-02d5328f0839",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.8364203,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.890595+00:00",
+    "session_id": "bbbcff90-fd6d-4675-af3e-08522fbedb3a",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.8900373,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.943711+00:00",
+    "session_id": "46a1ee20-c8dd-4679-8700-7dac39b80175",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.9431078,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:10.997147+00:00",
+    "session_id": "ed26efb2-07fe-4511-a68a-41c65a040155",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091530.9966078,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.050323+00:00",
+    "session_id": "2ae292e9-4497-489a-858e-af57e447f895",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.0496013,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.102823+00:00",
+    "session_id": "36c928bf-f120-494c-a969-88d5c64df713",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.102405,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.156410+00:00",
+    "session_id": "7fe7deee-5933-4627-be13-a4dfd08d2116",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.1560023,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.209170+00:00",
+    "session_id": "ffb4d3ab-b30a-49ab-bed4-890185a16131",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.2088726,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.262608+00:00",
+    "session_id": "6c6fed47-3608-4ce3-ad3c-797c1adb95f4",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.2622073,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.315626+00:00",
+    "session_id": "80577844-d0a9-464c-b2ea-ed637ad8048d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.3152635,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.368694+00:00",
+    "session_id": "483a5acb-0d12-4775-8f0c-298634d249b3",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.3683054,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.420939+00:00",
+    "session_id": "5e7f4cca-3963-4e19-8976-d76eee452627",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.4207184,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.473645+00:00",
+    "session_id": "23800a14-8feb-4dd9-ad09-c61df3cf685b",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.47323,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.526792+00:00",
+    "session_id": "a500a61c-fe25-404d-9b45-37ac16931eb6",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.5264812,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.579981+00:00",
+    "session_id": "a620a478-cb09-4bd9-a571-361a8949e1b1",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.579529,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.634940+00:00",
+    "session_id": "9f0af58c-def8-4bfe-b974-fb05792c2606",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.6345272,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.688236+00:00",
+    "session_id": "fc03451d-e0d4-4b18-8db3-a0beeb4cf1dd",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.6878521,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.741021+00:00",
+    "session_id": "4189141a-0111-42d5-bbfc-f3dce346f04c",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.740639,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.794276+00:00",
+    "session_id": "8b555891-b83f-4633-bdfc-dfe24a33eb51",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.7937996,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.846754+00:00",
+    "session_id": "db1d890c-9fed-4316-86d0-6575509ce0de",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.8462596,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.899246+00:00",
+    "session_id": "fe63575b-95ea-46ac-bb8d-c43bd9df6b3f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.8989608,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:11.952235+00:00",
+    "session_id": "71a1db25-23f4-4e37-b25e-436e79be8307",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091531.9518335,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.004889+00:00",
+    "session_id": "ce952ce4-51ab-4591-8615-8957a4b31bdc",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.0046306,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.058056+00:00",
+    "session_id": "570b1eeb-5415-47d8-b259-db2a9dcea70f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.0573897,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.110892+00:00",
+    "session_id": "c1255c32-1d98-443c-85b8-3a7ed7a2c26f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.1104698,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.163692+00:00",
+    "session_id": "146c9dc2-77ad-4f2f-b902-40b78e199add",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.1631846,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.216773+00:00",
+    "session_id": "d22980b1-5905-456c-b3f8-2898f556b4b8",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.2164521,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.269344+00:00",
+    "session_id": "a4252cf1-ed62-4a54-8fee-40ba09f68134",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.2689588,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.321910+00:00",
+    "session_id": "0b7ec48c-4100-4ce2-8bbb-ef35a5d43cf0",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.3215284,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.374412+00:00",
+    "session_id": "a0484cec-bef3-46e1-8329-aff3cbee739b",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.3739865,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.427055+00:00",
+    "session_id": "9345bdc8-f184-4c25-9447-5bb0b25e791b",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.4266775,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.479420+00:00",
+    "session_id": "50fd5c98-f493-4c85-8e5a-aacc4a402ad3",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.4790006,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.532663+00:00",
+    "session_id": "f9952af4-3761-4d35-b3e9-9f1bade96e4b",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.5323424,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.586133+00:00",
+    "session_id": "97bc998d-0c56-4f61-a202-cf376becc05a",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.5854664,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.640304+00:00",
+    "session_id": "070483cc-1a8a-4c07-8f5b-381afc1555eb",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.6399097,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.692857+00:00",
+    "session_id": "43488e65-be4e-4fbc-b891-7f5c3e35b7de",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.6925402,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.746905+00:00",
+    "session_id": "78e814fb-159b-43e3-97fb-8390050e9e1f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.746276,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.800327+00:00",
+    "session_id": "a968fd4f-e584-42ac-891f-5ca61552cef1",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.799603,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.853700+00:00",
+    "session_id": "fdc3c62a-1ed1-4dba-9966-139894623aa1",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.8533587,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.906804+00:00",
+    "session_id": "bb9e3a26-0899-40e6-a7cb-79e658b5ba5d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.9062512,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:12.959771+00:00",
+    "session_id": "aace5cec-f450-433b-b18d-9a408a46f3c6",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091532.9593828,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.012886+00:00",
+    "session_id": "770a6a38-97a4-48e5-be95-9d5c8b4a652e",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.012602,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.065737+00:00",
+    "session_id": "62a6b384-5a38-4f21-88c5-f606813f8d89",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.0653512,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.118409+00:00",
+    "session_id": "73bcdde5-0db1-48ff-9639-582d30c5833c",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.1180193,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.171523+00:00",
+    "session_id": "87836ebd-5349-4be2-aaf0-7010d6e8aa3d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.1708872,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.224903+00:00",
+    "session_id": "a7ce201e-8cfe-477c-b43d-74da87e2b4d5",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.2245932,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.278059+00:00",
+    "session_id": "bc33f447-911e-4e91-83c6-47fb07b22c6e",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.2776155,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.330490+00:00",
+    "session_id": "4cb4eb5e-67f5-487c-9cc6-0ae9cdd3b85a",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.3301003,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.383281+00:00",
+    "session_id": "622a4bd7-33fe-4888-b7f0-cfc257f9cf92",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.3828957,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.436032+00:00",
+    "session_id": "7aaa30a1-8062-4619-a211-fbe4cea95ae9",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.4356446,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.488401+00:00",
+    "session_id": "09bac0e8-20c2-4084-9435-72e64f544649",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.4880328,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.541712+00:00",
+    "session_id": "d5c7a7f6-49f5-4b8b-a76e-5c69924a56c6",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.5410762,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.594660+00:00",
+    "session_id": "b031be3c-95d4-4d69-8a26-166994c138c7",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.594166,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.647354+00:00",
+    "session_id": "547f8c93-62f8-44ee-9619-ccaba25f5397",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.6470551,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.700051+00:00",
+    "session_id": "7a04f683-779b-460e-bca1-5f957194fe49",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.6994383,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.753090+00:00",
+    "session_id": "732d94e5-6307-4b04-8e88-b3c771b2a70e",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.7527509,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.806145+00:00",
+    "session_id": "216cec96-d5c2-40c0-af31-86f606e6a7bb",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.8053644,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.859140+00:00",
+    "session_id": "626fef95-a50d-4690-90be-5bea056e3edd",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.8587143,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.911835+00:00",
+    "session_id": "b65c7947-447c-4039-9dc7-780e72597999",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.9114745,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:13.965459+00:00",
+    "session_id": "ebf027f7-4014-4d48-a598-52865d121300",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091533.9648821,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.018157+00:00",
+    "session_id": "371b6e7b-527e-4267-85e4-e04fecc2a4fc",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.0177562,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.070403+00:00",
+    "session_id": "65389296-4a86-4dfb-860c-126055bbc35c",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.070071,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.122644+00:00",
+    "session_id": "52119e19-d165-48d5-8314-cd21204b1f7f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.1223724,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.175740+00:00",
+    "session_id": "83ee0a13-8c2a-4563-992c-c50be42e7b4d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.1753669,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.229434+00:00",
+    "session_id": "a19a5946-01fb-4a7f-abf7-62e192a1264d",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.2290828,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.282408+00:00",
+    "session_id": "d40e6c40-7ffa-43cc-8a7e-dc1a654d4420",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.2821603,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.334913+00:00",
+    "session_id": "75ac7da1-7cb9-422d-b1a0-51755f786ad4",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.3346443,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.387171+00:00",
+    "session_id": "4b210097-65b8-4624-973e-912f9c588dcf",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.3868518,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.439940+00:00",
+    "session_id": "be688f26-fa3b-4251-9f03-c73ee9387439",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.4394467,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.492679+00:00",
+    "session_id": "70f36adf-6337-498d-92bc-3cd538f0b385",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.492364,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.544892+00:00",
+    "session_id": "6f82fa3d-b61c-4587-b198-65991330bc19",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.5445619,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.598889+00:00",
+    "session_id": "be94bf5d-10f4-44e2-b3db-4ef712f25e5f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.5983765,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.651603+00:00",
+    "session_id": "a5904d27-d10c-4519-bbe0-6e8c40ee78d1",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.6512332,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.704151+00:00",
+    "session_id": "0cbddd3d-21bc-4e82-acf5-406c2eedf26f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.7037046,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.757172+00:00",
+    "session_id": "cf791a5e-5e0a-4612-b79a-da742e90bda4",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.7567148,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.809628+00:00",
+    "session_id": "85866647-b2a7-466c-a1c5-2d5852d60589",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.8092322,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.862908+00:00",
+    "session_id": "5f77e76d-cadd-42a6-b7fd-c929ec7ac11f",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.8623571,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.915580+00:00",
+    "session_id": "4d055529-062e-423e-9bdc-878c86a0d9b7",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.9149442,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:14.968268+00:00",
+    "session_id": "99a64eec-8ef3-4be4-9931-60f161183b34",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091534.9678946,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.020382+00:00",
+    "session_id": "2ca05724-0f58-450b-97a4-56bf6e790168",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.0201607,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.072955+00:00",
+    "session_id": "be283d9d-d467-443b-8471-35cc138a2fa3",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.072553,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.125928+00:00",
+    "session_id": "12dab689-2a70-4e06-be13-a2f44af78049",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.1255608,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.178660+00:00",
+    "session_id": "e60ed390-d14e-412a-9e26-c8578da0367c",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.1783736,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.230946+00:00",
+    "session_id": "ceffe212-99ae-493a-ae61-e2974d9c46c4",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.2305198,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.283574+00:00",
+    "session_id": "4745c91c-feb2-465d-a13e-4b8de20577bf",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.2832668,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.335674+00:00",
+    "session_id": "960ff31d-fb65-4737-b63e-e7b6a2c8c7e4",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.3353052,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.388885+00:00",
+    "session_id": "d2e14d6a-63ff-46fd-856d-9069af5d2652",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.3883898,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.441184+00:00",
+    "session_id": "c163dc86-cd52-4800-81a3-680dcb7c6361",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.4409387,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.494841+00:00",
+    "session_id": "7d463250-0db7-4058-b72d-4be4a8725b63",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.4943504,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.547840+00:00",
+    "session_id": "4d90de9d-822c-4719-8921-a419d99897b1",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.5475535,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.600422+00:00",
+    "session_id": "3ab31609-bf87-459d-aea5-700226457e3e",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.600057,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.653897+00:00",
+    "session_id": "75dd758c-b78c-44d9-bae1-0bc0b65804fc",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.6533847,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  },
+  {
+    "timestamp": "2026-07-03T15:12:15.708126+00:00",
+    "session_id": "5983e476-5a22-4d7f-b530-ab822981c1a7",
+    "event_type": "roundtrip_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)",
+    "timestamps": {
+      "mic_capture": 1783091535.7075858,
+      "audio_send": null,
+      "processing_start": null,
+      "playback_start": null
+    }
+  }
+]

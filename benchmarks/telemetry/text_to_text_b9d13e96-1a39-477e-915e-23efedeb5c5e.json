@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-07-04T12:03:11.773151+00:00",
+    "session_id": "b14c5174-0fa2-4ee6-bdca-ff0b0b9e693f",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 1.0411548614501953,
+    "prompt_length": 30,
+    "completion_tokens": 9,
+    "response_preview": "\nThe capital of France is Paris."
+  },
+  {
+    "timestamp": "2026-07-04T12:03:18.551511+00:00",
+    "session_id": "5630501e-6f34-4dd6-8fb1-da7d77f42818",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 6.727649450302124,
+    "prompt_length": 29,
+    "completion_tokens": 61,
+    "response_preview": "\n\u041d\u0430 \u043c\u043e\u043c\u0435\u043d\u0442 \u043c\u043e\u0435\u0433\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438, \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u043f\u0440\u043e\u0436\u0438\u0432\u0430\u043b\u043e \u043e\u043a\u043e\u043b\u043e 12 \u043c"
+  },
+  {
+    "timestamp": "2026-07-04T12:03:47.167134+00:00",
+    "session_id": "3b3f221f-9ebe-4c2e-84c3-011f88461c54",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 28.56510853767395,
+    "prompt_length": 27,
+    "completion_tokens": 256,
+    "response_preview": "\n\u0422\u043e\u0448\u043a\u0435\u043d\u0442\u0434\u0430 \u044f\u0448\u0430\u0431\u0438\u043b\u0433\u0430\u043d \u043a\u0438\u0448\u0438\u043b\u0430\u0440 \u0441\u0430\u043d\u044f\u0441\u0438 \u0431\u0438\u0440 \u043a\u045e\u043f\u043b\u0438\u043a\u043a\u0430. \u0422\u043e\u0448\u043a\u0435\u043d\u0442 \u2014 \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u043e\u043d\u0434\u0438\u043d\u0438\u043d\u0433 \u0441\u043e\u043b"
+  },
+  {
+    "timestamp": "2026-07-04T12:04:02.555213+00:00",
+    "session_id": "9d14b5d4-18e2-4394-ad49-6f04ea67e1bb",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 15.337496757507324,
+    "prompt_length": 32,
+    "completion_tokens": 139,
+    "response_preview": "\nThe population of Tokyo is approximately 13.9 million people. However, it's imp"
+  },
+  {
+    "timestamp": "2026-07-04T12:04:30.846885+00:00",
+    "session_id": "ef13c9fa-f487-4891-ae43-0ed14d142b69",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 28.241061449050903,
+    "prompt_length": 32,
+    "completion_tokens": 256,
+    "response_preview": "\n\u0421\u0430\u043c\u043e\u0439 \u0434\u043b\u0438\u043d\u043d\u043e\u0439 \u0440\u0435\u043a\u043e\u0439 \u0432 \u043c\u0438\u0440\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0440\u0435\u043a\u0430 \u0410\u043c\u0430\u0437\u043e\u043d\u043a\u0430. \u0415\u0451 \u0434\u043b\u0438\u043d\u0430 \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e"
+  },
+  {
+    "timestamp": "2026-07-04T12:04:59.604150+00:00",
+    "session_id": "bba6a151-73f6-46ff-80be-8290c2cc7c86",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 28.70650553703308,
+    "prompt_length": 30,
+    "completion_tokens": 256,
+    "response_preview": "\n\u040e\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u043e\u043d\u043d\u0438\u043d\u0433 \u043f\u043e\u0439\u0442\u0430\u0445\u0442\u0438 \u0422\u043e\u0448\u043a\u0435\u043d\u0442. \u0422\u043e\u0448\u043a\u0435\u043d\u0442 \u0448\u0430\u04b3\u0440 \u0445\u0443\u0441\u0443\u0441\u0430\u043d \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u043e\u043d\u0434\u0430\u0493\u044b \u0438\u04a3 \u043a\u0430\u0442\u0442\u0430 \u0448"
+  },
+  {
+    "timestamp": "2026-07-04T12:05:25.218173+00:00",
+    "session_id": "f68f332f-6d35-414b-a6a3-3e6611590e6a",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 25.563376665115356,
+    "prompt_length": 43,
+    "completion_tokens": 232,
+    "response_preview": "\nCertainly! Below is a Python function that takes a string as input and returns "
+  },
+  {
+    "timestamp": "2026-07-04T12:05:53.840959+00:00",
+    "session_id": "730ce193-b47e-4439-9294-da6833940a44",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 28.572261095046997,
+    "prompt_length": 46,
+    "completion_tokens": 256,
+    "response_preview": "\n\n\u0414\u043b\u044f \u043d\u0430\u0447\u0430\u043b\u0430, \u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u043c, \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 \u0441\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0430 \u0441\u043f\u0438\u0441\u043a\u0430. \u0421\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0430 \u0441\u043f\u0438\u0441\u043a\u0430 "
+  },
+  {
+    "timestamp": "2026-07-04T12:06:22.138349+00:00",
+    "session_id": "32f71ada-baa3-4e8c-ae82-ef690e5f2685",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "uz",
+    "latency_s": 28.246739149093628,
+    "prompt_length": 42,
+    "completion_tokens": 256,
+    "response_preview": "\n\u041a\u0430\u0436\u0435\u043c, \u0431\u0438\u0437\u0433\u0430 \u041f\u0430\u0439\u0442\u043e\u043d\u0434\u0430 \u0440\u045e\u0439\u0441\u0430\u0442\u043d\u0438 \u049b\u0430\u0439\u0442\u0430\u0440\u0443\u0432\u0447\u0438 \u0444\u0443\u043d\u043a\u0446\u0438\u044f \u0451\u0437\u0438\u0448 \u043a\u0435\u0440\u0430\u043a. \u041f\u0430\u0439\u0442\u043e\u043d\u0434\u0430 \u0440\u045e\u0439\u0441\u0430\u0442\u043d\u0438"
+  },
+  {
+    "timestamp": "2026-07-04T12:06:50.950127+00:00",
+    "session_id": "d9469303-0950-4235-9728-3efe913bbea9",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 28.761229991912842,
+    "prompt_length": 57,
+    "completion_tokens": 256,
+    "response_preview": "\nCertainly! A prime number is a natural number greater than 1 that has no positi"
+  }
+]

@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout 5
+
+set ssh_host $env(PROXMOX_HOST)
+set ssh_pass $env(PROXMOX_SSH_PASS)
+
+spawn ssh -p 122 -o StrictHostKeyChecking=no root@$ssh_host
+expect "*?assword:*"
+send "$ssh_pass\r"
+expect "# "
+send "echo SSH_SUCCESS\r"
+expect "# "
+send "exit\r"
+exit

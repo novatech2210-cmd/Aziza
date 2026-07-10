@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-07-06T11:17:46.973910+00:00",
+    "session_id": "dc87dd28-820c-4573-8209-090a6577a1d6",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 1.5455951690673828,
+    "prompt_length": 30,
+    "completion_tokens": 14,
+    "response_preview": "\nThe capital of France is Paris. "
+  },
+  {
+    "timestamp": "2026-07-06T11:17:50.530362+00:00",
+    "session_id": "943bf8f1-1215-4d75-913c-c0ea49d40661",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 3.505774974822998,
+    "prompt_length": 29,
+    "completion_tokens": 32,
+    "response_preview": "\n\u0412 \u041c\u043e\u0441\u043a\u0432\u0435 \u043f\u0440\u043e\u0436\u0438\u0432\u0430\u0435\u0442 \u0431\u043e\u043b\u0435\u0435 12 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432 \u0447\u0435\u043b\u043e\u0432\u0435\u043a. \u042d\u0442\u043e \u043e\u0434\u043d\u0430 \u0438\u0437 \u0441\u0430\u043c\u044b\u0445 \u043a\u0440\u0443\u043f\u043d\u044b\u0445 \u0433\u043e\u0440\u043e\u0434\u0441"
+  },
+  {
+    "timestamp": "2026-07-06T11:17:52.974890+00:00",
+    "session_id": "ef510ba3-06b4-49bc-8d1b-6533559bcb6f",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 2.393982410430908,
+    "prompt_length": 27,
+    "completion_tokens": 22,
+    "response_preview": "\u0422\u043e\u0448\u043a\u0435\u043d\u0442\u0434\u0430, \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d\u0434\u0430, \u043a\u0438\u0448\u0438 \u044f\u0448\u0430\u0439\u0434\u0438."
+  },
+  {
+    "timestamp": "2026-07-06T11:17:55.428639+00:00",
+    "session_id": "daf0b48f-f2c3-434b-ae67-23a2f2c6e1d3",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 2.403127431869507,
+    "prompt_length": 43,
+    "completion_tokens": 22,
+    "response_preview": "\n```python\ndef reverse_string(s):\n    return s[::-1]\n```"
+  },
+  {
+    "timestamp": "2026-07-06T11:17:58.978064+00:00",
+    "session_id": "6168997d-c95e-4e05-82ce-6ca23c92aed9",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 3.498727798461914,
+    "prompt_length": 46,
+    "completion_tokens": 32,
+    "response_preview": "\n\u0414\u043b\u044f \u0441\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0438 \u0441\u043f\u0438\u0441\u043a\u0430 \u0432 Python \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u0444\u0443\u043d\u043a\u0446\u0438\u044e `sorted()`, \u043a\u043e\u0442\u043e\u0440"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:02.521421+00:00",
+    "session_id": "d5ad6f88-5248-4880-a07b-fdd3ed601928",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "en",
+    "latency_s": 3.4926416873931885,
+    "prompt_length": 57,
+    "completion_tokens": 32,
+    "response_preview": "\nRenewable energy offers numerous benefits, including reducing greenhouse gas em"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:06.065377+00:00",
+    "session_id": "da1bf89f-7b7b-4221-9826-c9962ee1cc48",
+    "event_type": "text_response",
+    "category": "summarization",
+    "language": "ru",
+    "latency_s": 3.493464231491089,
+    "prompt_length": 51,
+    "completion_tokens": 32,
+    "response_preview": "\n\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 (\u0418\u0418) \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0440\u0443\u0442\u0438\u043d\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438, \u0443\u043b\u0443\u0447\u0448\u0430"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:09.618097+00:00",
+    "session_id": "528a7057-0930-47b4-b35d-65dc193ab71e",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "en",
+    "latency_s": 3.5022430419921875,
+    "prompt_length": 35,
+    "completion_tokens": 32,
+    "response_preview": "\nTechnology's swift dance, a waltz of wires,  \nIn silicon halls, where data fire"
+  },
+  {
+    "timestamp": "2026-07-06T11:18:13.185669+00:00",
+    "session_id": "9a945232-7f9c-4f19-a106-b452a66a5b31",
+    "event_type": "text_response",
+    "category": "creative",
+    "language": "ru",
+    "latency_s": 3.516894817352295,
+    "prompt_length": 35,
+    "completion_tokens": 32,
+    "response_preview": "\n\u0412 \u0434\u0430\u043b\u0435\u043a\u043e\u0439 \u0433\u0430\u043b\u0430\u043a\u0442\u0438\u043a\u0435, \u043d\u0430 \u043f\u043b\u0430\u043d\u0435\u0442\u0435 \u0441 \u043b\u0430\u0437\u0443\u0440\u043d\u044b\u043c\u0438 \u0432\u043e\u0434\u0430\u043c\u0438, \u0436\u0438\u043b\u0438 \u0434\u0432\u0430 \u0434\u0440\u0443\u0433\u0430-\u0440\u043e\u0431\u043e\u0442\u0430. \u041e\u043d\u0438 "
+  },
+  {
+    "timestamp": "2026-07-06T11:18:14.776952+00:00",
+    "session_id": "5ffdd9e7-560a-46b5-a3fa-b1c24a9a5fca",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 1.5407383441925049,
+    "prompt_length": 30,
+    "completion_tokens": 14,
+    "response_preview": "\nThe capital of France is Paris. "
+  }
+]

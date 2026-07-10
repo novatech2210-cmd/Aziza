@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-07-06T10:57:22.675033+00:00",
+    "session_id": "f69463e0-7fcc-4548-beba-b2d90d64e755",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.727996+00:00",
+    "session_id": "06630a5f-5fac-47ed-a4fe-185353c23183",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.780529+00:00",
+    "session_id": "7a4974a5-7ea0-4c5a-b4d5-f24f839f9fe0",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.832947+00:00",
+    "session_id": "3a7e69e2-034b-4427-a568-e480fd1e5f36",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "en",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.885378+00:00",
+    "session_id": "7d9cb275-7e0a-4269-b54d-9fc8ad8ae230",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "ru",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.937955+00:00",
+    "session_id": "728012a7-6de9-4620-b47b-38c2fb3fbee8",
+    "event_type": "text_error",
+    "category": "factual",
+    "language": "uz",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:22.990940+00:00",
+    "session_id": "949f565b-53db-4d3a-ad5b-a0f91ac1686e",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:23.043816+00:00",
+    "session_id": "a19f0dba-bd9f-4652-a727-a86afba0413c",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "ru",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:23.096685+00:00",
+    "session_id": "d3ebf6bf-e151-4876-a8e8-5cafbe3d3147",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "uz",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  },
+  {
+    "timestamp": "2026-07-06T10:57:23.149538+00:00",
+    "session_id": "580a8733-8996-47e5-a37a-9e8ecb58ddd9",
+    "event_type": "text_error",
+    "category": "code",
+    "language": "en",
+    "error": "HTTP 400: {'object': 'error', 'message': 'Failed to load the tokenizer. If the tokenizer is a custom tokenizer not yet available in the HuggingFace transformers library, consider setting `trust_remote_code=True` in LLM or using the `--trust-remote-code` flag in the CLI.', 'type': 'BadRequestError', 'param': None, 'code': 400}"
+  }
+]

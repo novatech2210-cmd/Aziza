@@ -1,0 +1,198 @@
+[
+  {
+    "timestamp": "2026-07-03T14:04:10.422436+00:00",
+    "session_id": "c20aedb3-f745-4344-baff-6b698187149b",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 24.138212203979492
+  },
+  {
+    "timestamp": "2026-07-03T14:04:10.423351+00:00",
+    "session_id": "c20aedb3-f745-4344-baff-6b698187149b",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.8943080902099609,
+    "response_length": 80
+  },
+  {
+    "timestamp": "2026-07-03T14:04:10.423677+00:00",
+    "session_id": "c20aedb3-f745-4344-baff-6b698187149b",
+    "event_type": "websocket_error",
+    "error": "received 1013 (try again later) No workers available; then sent 1013 (try again later) No workers available"
+  },
+  {
+    "timestamp": "2026-07-03T14:04:11.432412+00:00",
+    "session_id": "5e368687-a94a-4735-b35b-77339966867b",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:11.935514+00:00",
+    "session_id": "6e49e9d3-a6c2-4b62-a5e7-281f9d0ba446",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.7745494842529297
+  },
+  {
+    "timestamp": "2026-07-03T14:04:11.936361+00:00",
+    "session_id": "6e49e9d3-a6c2-4b62-a5e7-281f9d0ba446",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.8275508880615234,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:12.944526+00:00",
+    "session_id": "6cb747f4-fc8c-4b60-95d9-df64861a4a6d",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:13.447403+00:00",
+    "session_id": "9a47be23-1a08-4700-b8a8-9eebb84a1bcf",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.5406608581542969
+  },
+  {
+    "timestamp": "2026-07-03T14:04:13.448120+00:00",
+    "session_id": "9a47be23-1a08-4700-b8a8-9eebb84a1bcf",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.6985664367675781,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:14.456207+00:00",
+    "session_id": "afb3fcbc-fe93-4e3b-ac74-4bc75a3ee81d",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:14.959033+00:00",
+    "session_id": "ddebea61-5ec8-444c-ba88-5511d3b4f3c1",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.493692398071289
+  },
+  {
+    "timestamp": "2026-07-03T14:04:14.959804+00:00",
+    "session_id": "ddebea61-5ec8-444c-ba88-5511d3b4f3c1",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.7541179656982422,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:15.967669+00:00",
+    "session_id": "33a2084f-8e7c-48e1-a40c-08784c75d512",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:16.470471+00:00",
+    "session_id": "63826514-6d18-4d26-9b9f-77018be8a3a2",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4591217041015625
+  },
+  {
+    "timestamp": "2026-07-03T14:04:16.471204+00:00",
+    "session_id": "63826514-6d18-4d26-9b9f-77018be8a3a2",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.7154941558837891,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:17.479395+00:00",
+    "session_id": "9f1223d4-7e54-4405-ac80-99c884c8e1e3",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:17.982269+00:00",
+    "session_id": "b4e8cf8e-3c35-4faa-9dcf-2099a0ecf28a",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4424324035644531
+  },
+  {
+    "timestamp": "2026-07-03T14:04:17.983020+00:00",
+    "session_id": "b4e8cf8e-3c35-4faa-9dcf-2099a0ecf28a",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.7331371307373047,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:18.990945+00:00",
+    "session_id": "b1e30150-e4cb-481e-9aaf-38dfa72b4a71",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:19.493704+00:00",
+    "session_id": "b850d1f6-27bd-480a-b4db-2d248a552191",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4557838439941406
+  },
+  {
+    "timestamp": "2026-07-03T14:04:19.494506+00:00",
+    "session_id": "b850d1f6-27bd-480a-b4db-2d248a552191",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.7839202880859375,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:20.502340+00:00",
+    "session_id": "8308dbbc-55be-4b54-a2a3-6193bba21eee",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:21.005080+00:00",
+    "session_id": "64bcbd7d-8f0f-4741-a86b-6e83cc8e9111",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4069080352783203
+  },
+  {
+    "timestamp": "2026-07-03T14:04:21.005910+00:00",
+    "session_id": "64bcbd7d-8f0f-4741-a86b-6e83cc8e9111",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.8134841918945312,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:22.013887+00:00",
+    "session_id": "5bfcc966-7ba4-4ddf-881e-84341a44a7de",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:22.516650+00:00",
+    "session_id": "5a0e22a9-8f2b-4cea-87d0-723065c4d2ec",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4469623565673828
+  },
+  {
+    "timestamp": "2026-07-03T14:04:22.517345+00:00",
+    "session_id": "5a0e22a9-8f2b-4cea-87d0-723065c4d2ec",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.6768703460693359,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:23.524881+00:00",
+    "session_id": "34f7cbe0-8baa-48a3-bacd-947b569f0303",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  },
+  {
+    "timestamp": "2026-07-03T14:04:24.027676+00:00",
+    "session_id": "297f6aad-aa9b-4ae8-9376-d587c935270b",
+    "event_type": "websocket_connected",
+    "connect_time_ms": 1.4944076538085938
+  },
+  {
+    "timestamp": "2026-07-03T14:04:24.028359+00:00",
+    "session_id": "297f6aad-aa9b-4ae8-9376-d587c935270b",
+    "event_type": "message_roundtrip",
+    "latency_ms": 0.6656646728515625,
+    "response_length": 135
+  },
+  {
+    "timestamp": "2026-07-03T14:04:25.037485+00:00",
+    "session_id": "314da6ef-91e6-41be-bfe1-8afaf67b4fa9",
+    "event_type": "reconnect_success",
+    "reconnect_count": 1
+  }
+]

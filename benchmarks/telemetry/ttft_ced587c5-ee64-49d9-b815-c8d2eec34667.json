@@ -1,0 +1,2102 @@
+[
+  {
+    "timestamp": "2026-07-03T14:48:00.581924+00:00",
+    "session_id": "0716f4d2-e3c7-4716-b5e3-b20cee056b28",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 20.961761474609375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 22.046804428100586
+    },
+    "timestamps": {
+      "request_start": 1783090080.5598028,
+      "websocket_send": 1783090080.5807645,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090080.5818496,
+      "response_end": 1783090080.581918
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:00.685428+00:00",
+    "session_id": "1020c2c4-8584-4d9b-98bf-48470ad77dca",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.2967586517333984,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.176046371459961
+    },
+    "timestamps": {
+      "request_start": 1783090080.6831822,
+      "websocket_send": 1783090080.684479,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090080.6853583,
+      "response_end": 1783090080.6854208
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:00.788194+00:00",
+    "session_id": "ea9ab6c8-6760-4a9d-a0bd-6a341d819caa",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0678768157958984,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8897056579589844
+    },
+    "timestamps": {
+      "request_start": 1783090080.7862484,
+      "websocket_send": 1783090080.7873163,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090080.7881382,
+      "response_end": 1783090080.7881892
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:00.890989+00:00",
+    "session_id": "091fa367-8134-49b6-b0c0-27a4d34caa2d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0609626770019531,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8906593322753906
+    },
+    "timestamps": {
+      "request_start": 1783090080.889039,
+      "websocket_send": 1783090080.8901,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090080.8909297,
+      "response_end": 1783090080.8909843
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:00.994395+00:00",
+    "session_id": "5ae039b3-83b4-4dc7-a5d4-ecf072f84e72",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1444091796875,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9683837890625
+    },
+    "timestamps": {
+      "request_start": 1783090080.9923708,
+      "websocket_send": 1783090080.9935153,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090080.9943392,
+      "response_end": 1783090080.9943907
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.097347+00:00",
+    "session_id": "85c0d8b3-5c8a-4e92-ad1d-43f201436c6c",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1019706726074219,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9886493682861328
+    },
+    "timestamps": {
+      "request_start": 1783090081.0953045,
+      "websocket_send": 1783090081.0964065,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.0972931,
+      "response_end": 1783090081.0973423
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.200169+00:00",
+    "session_id": "a6eb40ba-1987-46cf-9fcb-91fc4c8046d5",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0716915130615234,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9016265869140625
+    },
+    "timestamps": {
+      "request_start": 1783090081.1982143,
+      "websocket_send": 1783090081.199286,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.200116,
+      "response_end": 1783090081.2001648
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.303248+00:00",
+    "session_id": "e610836b-8385-4b7d-82ba-a6ad00c313fe",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1076927185058594,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9674301147460938
+    },
+    "timestamps": {
+      "request_start": 1783090081.3012216,
+      "websocket_send": 1783090081.3023293,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.303189,
+      "response_end": 1783090081.303243
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.406157+00:00",
+    "session_id": "60315679-ac90-47cd-82e0-90e5d55f820e",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.2812614440917969,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8990039825439453
+    },
+    "timestamps": {
+      "request_start": 1783090081.4042058,
+      "websocket_send": 1783090081.405487,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.4061048,
+      "response_end": 1783090081.4061534
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.508879+00:00",
+    "session_id": "44705839-1717-49ef-97be-d1d7ebf3293a",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.004934310913086,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8765926361083984
+    },
+    "timestamps": {
+      "request_start": 1783090081.506948,
+      "websocket_send": 1783090081.507953,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.5088246,
+      "response_end": 1783090081.5088756
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.611796+00:00",
+    "session_id": "ba1d7639-c783-4766-b4bc-500dfcf11be5",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.088857650756836,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9619464874267578
+    },
+    "timestamps": {
+      "request_start": 1783090081.6097791,
+      "websocket_send": 1783090081.610868,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.611741,
+      "response_end": 1783090081.6117923
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.714746+00:00",
+    "session_id": "42fbb730-a981-40d2-8813-53892b6007ad",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.069784164428711,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.913309097290039
+    },
+    "timestamps": {
+      "request_start": 1783090081.7127762,
+      "websocket_send": 1783090081.713846,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.7146895,
+      "response_end": 1783090081.714741
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.817549+00:00",
+    "session_id": "28254e0c-3ac3-4448-b58c-58fe0401a845",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.077413558959961,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8754005432128906
+    },
+    "timestamps": {
+      "request_start": 1783090081.8156188,
+      "websocket_send": 1783090081.8166962,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.8174942,
+      "response_end": 1783090081.8175442
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:01.920664+00:00",
+    "session_id": "2b26e904-4687-422c-8de0-9284c1ded8b9",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1188983917236328,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.046823501586914
+    },
+    "timestamps": {
+      "request_start": 1783090081.9185352,
+      "websocket_send": 1783090081.9196541,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090081.920582,
+      "response_end": 1783090081.9206572
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.024373+00:00",
+    "session_id": "f5f44d38-0719-45e3-bdf3-801997ee4a88",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1942386627197266,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.1314620971679688
+    },
+    "timestamps": {
+      "request_start": 1783090082.02216,
+      "websocket_send": 1783090082.0233543,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.0242915,
+      "response_end": 1783090082.0243673
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.127245+00:00",
+    "session_id": "d2a4b6f6-e04c-4260-8536-766acac73d5b",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1343955993652344,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9712448120117188
+    },
+    "timestamps": {
+      "request_start": 1783090082.1252031,
+      "websocket_send": 1783090082.1263375,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.1271744,
+      "response_end": 1783090082.127239
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.230002+00:00",
+    "session_id": "014d608b-b2c2-4e51-8a51-8d75a83b7c29",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0123252868652344,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8694400787353516
+    },
+    "timestamps": {
+      "request_start": 1783090082.228053,
+      "websocket_send": 1783090082.2290654,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.2299225,
+      "response_end": 1783090082.2299962
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.333051+00:00",
+    "session_id": "72b072fa-ba60-4e80-87b7-fde0cfdf6e84",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1250972747802734,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.006053924560547
+    },
+    "timestamps": {
+      "request_start": 1783090082.3309615,
+      "websocket_send": 1783090082.3320866,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.3329675,
+      "response_end": 1783090082.3330452
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.436623+00:00",
+    "session_id": "77827d13-a8cc-4e61-9fb8-ef9f3f826faf",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0957717895507812,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.498149871826172
+    },
+    "timestamps": {
+      "request_start": 1783090082.4340515,
+      "websocket_send": 1783090082.4351473,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.4365497,
+      "response_end": 1783090082.4366171
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.539870+00:00",
+    "session_id": "d74b171a-5a94-43a1-bdb9-71190776d725",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.2409687042236328,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.318859100341797
+    },
+    "timestamps": {
+      "request_start": 1783090082.5374677,
+      "websocket_send": 1783090082.5387087,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.5397866,
+      "response_end": 1783090082.5398643
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.643101+00:00",
+    "session_id": "770ea080-3518-4d4d-bbfe-e9a4624b7cc1",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.3790130615234375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.304553985595703
+    },
+    "timestamps": {
+      "request_start": 1783090082.6407063,
+      "websocket_send": 1783090082.6420853,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.6430109,
+      "response_end": 1783090082.6430957
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.746106+00:00",
+    "session_id": "7d360d1a-1e1f-422c-a992-69766263997e",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1572837829589844,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9834041595458984
+    },
+    "timestamps": {
+      "request_start": 1783090082.7440476,
+      "websocket_send": 1783090082.745205,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.746031,
+      "response_end": 1783090082.7460997
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.848856+00:00",
+    "session_id": "4775160e-8960-4610-ba92-2e078696aa8f",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0249614715576172,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8854141235351562
+    },
+    "timestamps": {
+      "request_start": 1783090082.8468862,
+      "websocket_send": 1783090082.8479111,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.8487716,
+      "response_end": 1783090082.8488505
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:02.951537+00:00",
+    "session_id": "12065119-8bef-4d5b-bd93-0bf10a357cb9",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 0.9791851043701172,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.804351806640625
+    },
+    "timestamps": {
+      "request_start": 1783090082.9496546,
+      "websocket_send": 1783090082.9506338,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090082.951459,
+      "response_end": 1783090082.9515307
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.054596+00:00",
+    "session_id": "f24815c2-6195-490c-8c6f-08a32b7eeeed",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1577606201171875,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.1431446075439453
+    },
+    "timestamps": {
+      "request_start": 1783090083.0523713,
+      "websocket_send": 1783090083.053529,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.0545144,
+      "response_end": 1783090083.0545897
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.157455+00:00",
+    "session_id": "b1717fd5-28b1-4fa8-a519-c8b381c46cf3",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0707378387451172,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.889944076538086
+    },
+    "timestamps": {
+      "request_start": 1783090083.155482,
+      "websocket_send": 1783090083.1565528,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.157372,
+      "response_end": 1783090083.1574485
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.260164+00:00",
+    "session_id": "9912a502-de33-4110-8e17-f9e08b31007c",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0170936584472656,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8808841705322266
+    },
+    "timestamps": {
+      "request_start": 1783090083.2581968,
+      "websocket_send": 1783090083.259214,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.2600777,
+      "response_end": 1783090083.2601564
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.363269+00:00",
+    "session_id": "ba86069a-4d22-43d6-884f-b1d583f5da13",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1370182037353516,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9719600677490234
+    },
+    "timestamps": {
+      "request_start": 1783090083.361183,
+      "websocket_send": 1783090083.36232,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.363155,
+      "response_end": 1783090083.363247
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.466296+00:00",
+    "session_id": "94e56159-1d5b-4573-9332-7762ef8f8a96",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1157989501953125,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9993782043457031
+    },
+    "timestamps": {
+      "request_start": 1783090083.4641814,
+      "websocket_send": 1783090083.4652972,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.4661808,
+      "response_end": 1783090083.4662886
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.569400+00:00",
+    "session_id": "b8102f1d-1e8b-4ee1-b08f-239005799382",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.180887222290039,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.170085906982422
+    },
+    "timestamps": {
+      "request_start": 1783090083.5671296,
+      "websocket_send": 1783090083.5683105,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.5692997,
+      "response_end": 1783090083.569393
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.672402+00:00",
+    "session_id": "0a12e526-659a-47dc-8a03-6e127a63c5e0",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0635852813720703,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9881725311279297
+    },
+    "timestamps": {
+      "request_start": 1783090083.6703253,
+      "websocket_send": 1783090083.6713889,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.6723135,
+      "response_end": 1783090083.672397
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.775366+00:00",
+    "session_id": "d987debf-9695-4af8-ad92-20954f47a043",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.069784164428711,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.911163330078125
+    },
+    "timestamps": {
+      "request_start": 1783090083.7733686,
+      "websocket_send": 1783090083.7744384,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.7752798,
+      "response_end": 1783090083.7753603
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.878217+00:00",
+    "session_id": "67bbb9ed-cc56-4f39-9b8e-371546ad81da",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1010169982910156,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0210742950439453
+    },
+    "timestamps": {
+      "request_start": 1783090083.8761363,
+      "websocket_send": 1783090083.8772373,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.8781574,
+      "response_end": 1783090083.878213
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:03.981101+00:00",
+    "session_id": "54feabd8-5ed3-4af8-8743-0b0dbe62c603",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0762214660644531,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9435882568359375
+    },
+    "timestamps": {
+      "request_start": 1783090083.9790723,
+      "websocket_send": 1783090083.9801486,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090083.981016,
+      "response_end": 1783090083.9810953
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.084270+00:00",
+    "session_id": "985690d4-b6e1-437c-ba6e-84a0e9d50e97",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0824203491210938,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0482540130615234
+    },
+    "timestamps": {
+      "request_start": 1783090084.0821526,
+      "websocket_send": 1783090084.083235,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.0842009,
+      "response_end": 1783090084.0842652
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.187425+00:00",
+    "session_id": "5767a9bd-38b7-4fc1-9ec4-e0483cd61900",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.3911724090576172,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.2170543670654297
+    },
+    "timestamps": {
+      "request_start": 1783090084.185143,
+      "websocket_send": 1783090084.1865342,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.18736,
+      "response_end": 1783090084.18742
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.290204+00:00",
+    "session_id": "f66148ac-8333-46cb-bd28-254633c2301d",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0464191436767578,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8765926361083984
+    },
+    "timestamps": {
+      "request_start": 1783090084.2882736,
+      "websocket_send": 1783090084.28932,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.2901502,
+      "response_end": 1783090084.290199
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.393154+00:00",
+    "session_id": "e1a00ec6-9c9e-4ef9-9b9d-62ccda4334f6",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1248588562011719,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9159317016601562
+    },
+    "timestamps": {
+      "request_start": 1783090084.3911848,
+      "websocket_send": 1783090084.3923097,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.3931007,
+      "response_end": 1783090084.393149
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.496205+00:00",
+    "session_id": "036f5970-75bf-46d5-9759-dda95d7df7c5",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1370182037353516,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9817352294921875
+    },
+    "timestamps": {
+      "request_start": 1783090084.4941683,
+      "websocket_send": 1783090084.4953053,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.49615,
+      "response_end": 1783090084.4962006
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.598981+00:00",
+    "session_id": "cbc386fb-8cf7-406a-af76-d1b23584b6d4",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0712146759033203,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8923282623291016
+    },
+    "timestamps": {
+      "request_start": 1783090084.5970304,
+      "websocket_send": 1783090084.5981016,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.5989227,
+      "response_end": 1783090084.598976
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.701866+00:00",
+    "session_id": "806f81fd-8245-47ce-91fb-c029cdb33ced",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0814666748046875,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.959085464477539
+    },
+    "timestamps": {
+      "request_start": 1783090084.6998465,
+      "websocket_send": 1783090084.700928,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.7018056,
+      "response_end": 1783090084.7018619
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.804802+00:00",
+    "session_id": "d51b3397-0265-492b-9ee3-83c25000ac7d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0764598846435547,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9233226776123047
+    },
+    "timestamps": {
+      "request_start": 1783090084.802824,
+      "websocket_send": 1783090084.8039005,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.8047473,
+      "response_end": 1783090084.8047974
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:04.908162+00:00",
+    "session_id": "a1b1bda6-457f-45e1-833f-99928245cfd8",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0263919830322266,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8045902252197266
+    },
+    "timestamps": {
+      "request_start": 1783090084.9062953,
+      "websocket_send": 1783090084.9073217,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090084.9081,
+      "response_end": 1783090084.908158
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.011069+00:00",
+    "session_id": "43597731-ec08-4f7d-90f7-29a1a975f142",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1990070343017578,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.014636993408203
+    },
+    "timestamps": {
+      "request_start": 1783090085.008998,
+      "websocket_send": 1783090085.010197,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.0110126,
+      "response_end": 1783090085.011064
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.113854+00:00",
+    "session_id": "e12385a8-9102-445a-87de-25ab6c5e3536",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.062631607055664,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.844644546508789
+    },
+    "timestamps": {
+      "request_start": 1783090085.111943,
+      "websocket_send": 1783090085.1130056,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.1137877,
+      "response_end": 1783090085.1138496
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.216722+00:00",
+    "session_id": "ae710657-e113-4e7b-8494-4198387f68d6",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.3511180877685547,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0585060119628906
+    },
+    "timestamps": {
+      "request_start": 1783090085.214608,
+      "websocket_send": 1783090085.215959,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.2166665,
+      "response_end": 1783090085.2167184
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.319442+00:00",
+    "session_id": "d51bc0bb-4ea7-454c-8b17-c7083c043929",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0383129119873047,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7712116241455078
+    },
+    "timestamps": {
+      "request_start": 1783090085.3176098,
+      "websocket_send": 1783090085.318648,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.319381,
+      "response_end": 1783090085.3194382
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.422144+00:00",
+    "session_id": "e7064b06-5e82-4f57-beff-a1bd0f5e71dd",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1246204376220703,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8749237060546875
+    },
+    "timestamps": {
+      "request_start": 1783090085.4202168,
+      "websocket_send": 1783090085.4213414,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.4220917,
+      "response_end": 1783090085.42214
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.524737+00:00",
+    "session_id": "2e425da7-1f8f-4b02-8a82-7e29dbeb1c77",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.026153564453125,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7998218536376953
+    },
+    "timestamps": {
+      "request_start": 1783090085.5228832,
+      "websocket_send": 1783090085.5239093,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.524683,
+      "response_end": 1783090085.524733
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.627473+00:00",
+    "session_id": "01ab953e-19de-41c0-a33c-2b04ced881e7",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0371208190917969,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.867055892944336
+    },
+    "timestamps": {
+      "request_start": 1783090085.625536,
+      "websocket_send": 1783090085.626573,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.627403,
+      "response_end": 1783090085.6274686
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.730400+00:00",
+    "session_id": "afcf1278-20c5-4f53-a4fc-9808507849cc",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0995864868164062,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8889904022216797
+    },
+    "timestamps": {
+      "request_start": 1783090085.7284565,
+      "websocket_send": 1783090085.729556,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.7303455,
+      "response_end": 1783090085.7303956
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.833227+00:00",
+    "session_id": "4e47bb7a-5888-4a9c-b520-c18814e28a4d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0709762573242188,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8510818481445312
+    },
+    "timestamps": {
+      "request_start": 1783090085.8313236,
+      "websocket_send": 1783090085.8323946,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.8331747,
+      "response_end": 1783090085.8332226
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:05.936114+00:00",
+    "session_id": "979dbafb-22a8-4e89-9261-4e6a5bed8f4a",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1446475982666016,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9974708557128906
+    },
+    "timestamps": {
+      "request_start": 1783090085.934062,
+      "websocket_send": 1783090085.9352067,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090085.9360595,
+      "response_end": 1783090085.9361095
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.039066+00:00",
+    "session_id": "c42e0870-10d1-46ab-8507-ec0aa3602878",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1813640594482422,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.014636993408203
+    },
+    "timestamps": {
+      "request_start": 1783090086.0369954,
+      "websocket_send": 1783090086.0381768,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.03901,
+      "response_end": 1783090086.0390613
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.142057+00:00",
+    "session_id": "bfe18459-67c4-4116-b752-2c18b59068b0",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1761188507080078,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9986629486083984
+    },
+    "timestamps": {
+      "request_start": 1783090086.1400034,
+      "websocket_send": 1783090086.1411796,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.142002,
+      "response_end": 1783090086.1420527
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.244863+00:00",
+    "session_id": "2d41b39d-0507-4411-a13c-debec4937a87",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0361671447753906,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.962900161743164
+    },
+    "timestamps": {
+      "request_start": 1783090086.2428448,
+      "websocket_send": 1783090086.243881,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.2448077,
+      "response_end": 1783090086.2448587
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.347554+00:00",
+    "session_id": "f2ba5f75-37ca-4e21-ba05-0e1cb3cedffe",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1327266693115234,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8684864044189453
+    },
+    "timestamps": {
+      "request_start": 1783090086.3456264,
+      "websocket_send": 1783090086.346759,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.3474948,
+      "response_end": 1783090086.3475487
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.450370+00:00",
+    "session_id": "0b1a8610-3aa4-4c61-8fc6-2e50583190df",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1255741119384766,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8150806427001953
+    },
+    "timestamps": {
+      "request_start": 1783090086.4484944,
+      "websocket_send": 1783090086.44962,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.4503095,
+      "response_end": 1783090086.4503648
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.553233+00:00",
+    "session_id": "6d7c6609-fa4c-4045-a517-f4e3b35c660f",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.4011859893798828,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.1059513092041016
+    },
+    "timestamps": {
+      "request_start": 1783090086.5510757,
+      "websocket_send": 1783090086.552477,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.5531816,
+      "response_end": 1783090086.5532289
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.655834+00:00",
+    "session_id": "797b5935-7bdb-4086-825d-8a1a863dea1c",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0170936584472656,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7628669738769531
+    },
+    "timestamps": {
+      "request_start": 1783090086.6540148,
+      "websocket_send": 1783090086.655032,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.6557777,
+      "response_end": 1783090086.65583
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.758742+00:00",
+    "session_id": "77fb4d8f-07eb-4903-bb41-4664fed922df",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1560916900634766,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9633769989013672
+    },
+    "timestamps": {
+      "request_start": 1783090086.7567184,
+      "websocket_send": 1783090086.7578745,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.7586818,
+      "response_end": 1783090086.7587376
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.861596+00:00",
+    "session_id": "cc128028-350c-41a9-a997-f0eb14a55492",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1677742004394531,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8849372863769531
+    },
+    "timestamps": {
+      "request_start": 1783090086.8596568,
+      "websocket_send": 1783090086.8608246,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.8615417,
+      "response_end": 1783090086.8615918
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:06.964101+00:00",
+    "session_id": "5c4259fa-a35d-4566-bddb-042aa591be31",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0089874267578125,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.6922950744628906
+    },
+    "timestamps": {
+      "request_start": 1783090086.962358,
+      "websocket_send": 1783090086.963367,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090086.9640503,
+      "response_end": 1783090086.964097
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.066868+00:00",
+    "session_id": "d1094d3b-7be6-414b-aaff-7aafd7e593c8",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0406970977783203,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8339157104492188
+    },
+    "timestamps": {
+      "request_start": 1783090087.064977,
+      "websocket_send": 1783090087.0660176,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.0668108,
+      "response_end": 1783090087.0668628
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.169638+00:00",
+    "session_id": "989257f2-56fb-4b27-be57-0feac0e41baa",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1527538299560547,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9481182098388672
+    },
+    "timestamps": {
+      "request_start": 1783090087.1676216,
+      "websocket_send": 1783090087.1687744,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.1695697,
+      "response_end": 1783090087.1696339
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.272276+00:00",
+    "session_id": "b7fe1cf4-d1cf-4bb0-b7a4-c2856e24ada2",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0895729064941406,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8367767333984375
+    },
+    "timestamps": {
+      "request_start": 1783090087.2703702,
+      "websocket_send": 1783090087.2714598,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.272207,
+      "response_end": 1783090087.2722714
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.375091+00:00",
+    "session_id": "5a716ffc-9101-4c99-aa8d-141bd4437cc3",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0974407196044922,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8353462219238281
+    },
+    "timestamps": {
+      "request_start": 1783090087.3732033,
+      "websocket_send": 1783090087.3743007,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.3750386,
+      "response_end": 1783090087.3750865
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.478132+00:00",
+    "session_id": "10223185-773e-4438-a991-f1396f46c622",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.2211799621582031,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.127408981323242
+    },
+    "timestamps": {
+      "request_start": 1783090087.4759483,
+      "websocket_send": 1783090087.4771695,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.4780757,
+      "response_end": 1783090087.4781277
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.581062+00:00",
+    "session_id": "468067d8-85c3-4777-a454-8d1a7fa6c0a3",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1632442474365234,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0618438720703125
+    },
+    "timestamps": {
+      "request_start": 1783090087.578941,
+      "websocket_send": 1783090087.5801044,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.581003,
+      "response_end": 1783090087.5810578
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.684288+00:00",
+    "session_id": "ad536760-9ad1-4a76-a157-8beffa28339b",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.2199878692626953,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.1209716796875
+    },
+    "timestamps": {
+      "request_start": 1783090087.6820989,
+      "websocket_send": 1783090087.6833189,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.6842198,
+      "response_end": 1783090087.6842828
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.787164+00:00",
+    "session_id": "e57b8275-5cd7-4dd6-8cd5-d123186e705c",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0950565338134766,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.898050308227539
+    },
+    "timestamps": {
+      "request_start": 1783090087.785214,
+      "websocket_send": 1783090087.786309,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.787112,
+      "response_end": 1783090087.7871587
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.890068+00:00",
+    "session_id": "b7506c30-5b3a-4f6c-8e3f-b24cb10da343",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.3427734375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0599365234375
+    },
+    "timestamps": {
+      "request_start": 1783090087.8879557,
+      "websocket_send": 1783090087.8892984,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.8900156,
+      "response_end": 1783090087.8900638
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:07.992940+00:00",
+    "session_id": "38eb633b-170e-46c5-b720-a88ef30a480c",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.087188720703125,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8951892852783203
+    },
+    "timestamps": {
+      "request_start": 1783090087.990988,
+      "websocket_send": 1783090087.9920752,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090087.9928832,
+      "response_end": 1783090087.9929347
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.095804+00:00",
+    "session_id": "29b1fcac-537d-4eea-9c3d-173416bd8864",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0914802551269531,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9011497497558594
+    },
+    "timestamps": {
+      "request_start": 1783090088.093847,
+      "websocket_send": 1783090088.0949385,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.0957482,
+      "response_end": 1783090088.0957994
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.198441+00:00",
+    "session_id": "42925371-dea5-4145-b26c-6ed1f04c1137",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.068115234375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8072128295898438
+    },
+    "timestamps": {
+      "request_start": 1783090088.1965714,
+      "websocket_send": 1783090088.1976395,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.1983786,
+      "response_end": 1783090088.1984355
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.301884+00:00",
+    "session_id": "40ab02a9-c738-43b3-8606-84d403e68948",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0683536529541016,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.837015151977539
+    },
+    "timestamps": {
+      "request_start": 1783090088.299964,
+      "websocket_send": 1783090088.3010323,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.301801,
+      "response_end": 1783090088.30188
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.404435+00:00",
+    "session_id": "59436431-a92a-475e-bfde-808717cd1321",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0459423065185547,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7740726470947266
+    },
+    "timestamps": {
+      "request_start": 1783090088.4025993,
+      "websocket_send": 1783090088.4036453,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.4043734,
+      "response_end": 1783090088.4044302
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.507054+00:00",
+    "session_id": "5c916a9e-b1f5-427d-88e1-cb03dfa5e0d7",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0342597961425781,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8630027770996094
+    },
+    "timestamps": {
+      "request_start": 1783090088.5051346,
+      "websocket_send": 1783090088.5061688,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.5069976,
+      "response_end": 1783090088.5070488
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.609833+00:00",
+    "session_id": "87dd8407-69bf-42b9-8fbf-206ec5a2ea04",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1255741119384766,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9752979278564453
+    },
+    "timestamps": {
+      "request_start": 1783090088.6077845,
+      "websocket_send": 1783090088.60891,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.6097598,
+      "response_end": 1783090088.6098287
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.712586+00:00",
+    "session_id": "34a3a3ff-1349-4536-b7c1-493eed7531e3",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.12152099609375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8317699432373047
+    },
+    "timestamps": {
+      "request_start": 1783090088.7106886,
+      "websocket_send": 1783090088.71181,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.7125204,
+      "response_end": 1783090088.7125807
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.815110+00:00",
+    "session_id": "6568a3de-b39b-4802-8d00-e05eca762521",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0182857513427734,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7139911651611328
+    },
+    "timestamps": {
+      "request_start": 1783090088.8133333,
+      "websocket_send": 1783090088.8143516,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.8150473,
+      "response_end": 1783090088.8151062
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:08.917761+00:00",
+    "session_id": "0a25e4aa-f9df-4c31-b950-6b22fe8e2959",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.008749008178711,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7333030700683594
+    },
+    "timestamps": {
+      "request_start": 1783090088.9159636,
+      "websocket_send": 1783090088.9169724,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090088.917697,
+      "response_end": 1783090088.917757
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.020469+00:00",
+    "session_id": "93549b06-2887-4894-b43a-b756c2e10749",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.073598861694336,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8317699432373047
+    },
+    "timestamps": {
+      "request_start": 1783090089.0185442,
+      "websocket_send": 1783090089.0196178,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.020376,
+      "response_end": 1783090089.020465
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.123214+00:00",
+    "session_id": "023b23cd-1b50-4880-9051-670560d7711c",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.055002212524414,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8534660339355469
+    },
+    "timestamps": {
+      "request_start": 1783090089.1212964,
+      "websocket_send": 1783090089.1223514,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.1231499,
+      "response_end": 1783090089.1232092
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.226306+00:00",
+    "session_id": "a53d261c-1e5b-4aaa-92d7-e549b3bbb151",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.3880729675292969,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0601749420166016
+    },
+    "timestamps": {
+      "request_start": 1783090089.2241597,
+      "websocket_send": 1783090089.2255478,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.22622,
+      "response_end": 1783090089.2263017
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.328969+00:00",
+    "session_id": "976fb2f4-01b5-4ae6-b918-e04a52822ae7",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0094642639160156,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7628669738769531
+    },
+    "timestamps": {
+      "request_start": 1783090089.3271413,
+      "websocket_send": 1783090089.3281507,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.3289042,
+      "response_end": 1783090089.328964
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.431861+00:00",
+    "session_id": "2358a4ea-46e9-4016-8a87-eb810ec3e279",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0390281677246094,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.036571502685547
+    },
+    "timestamps": {
+      "request_start": 1783090089.4297578,
+      "websocket_send": 1783090089.4307969,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.4317944,
+      "response_end": 1783090089.431857
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.534396+00:00",
+    "session_id": "24cd3c35-6731-4945-bc66-28437182b74d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0251998901367188,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7504692077636719
+    },
+    "timestamps": {
+      "request_start": 1783090089.5325837,
+      "websocket_send": 1783090089.533609,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.5343342,
+      "response_end": 1783090089.5343916
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.637810+00:00",
+    "session_id": "375d2159-c3c5-40e8-8ea0-e6fb3a7a5b6d",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1303424835205078,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.5415420532226562
+    },
+    "timestamps": {
+      "request_start": 1783090089.6352057,
+      "websocket_send": 1783090089.636336,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.6377473,
+      "response_end": 1783090089.637806
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.740682+00:00",
+    "session_id": "e2ed9fa0-08e2-417f-8018-373dbd2df5d3",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1947154998779297,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.0720958709716797
+    },
+    "timestamps": {
+      "request_start": 1783090089.7385383,
+      "websocket_send": 1783090089.739733,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.7406104,
+      "response_end": 1783090089.7406774
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.843394+00:00",
+    "session_id": "4392045f-760e-4215-8c7c-25322d01ea26",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0840892791748047,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8639564514160156
+    },
+    "timestamps": {
+      "request_start": 1783090089.8414676,
+      "websocket_send": 1783090089.8425517,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.8433316,
+      "response_end": 1783090089.8433897
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:09.946376+00:00",
+    "session_id": "768ed09f-ecdf-4d7f-97fd-3700beec43ee",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.1038780212402344,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.844644546508789
+    },
+    "timestamps": {
+      "request_start": 1783090089.9444628,
+      "websocket_send": 1783090089.9455667,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090089.9463074,
+      "response_end": 1783090089.9463701
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.049055+00:00",
+    "session_id": "425e2982-342b-4f19-a88d-ebb2bc208d2f",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0669231414794922,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8467903137207031
+    },
+    "timestamps": {
+      "request_start": 1783090090.0471406,
+      "websocket_send": 1783090090.0482075,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.0489874,
+      "response_end": 1783090090.04905
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.151612+00:00",
+    "session_id": "d3dae1b1-1e17-46a4-af55-39097b642b9b",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0118484497070312,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7168521881103516
+    },
+    "timestamps": {
+      "request_start": 1783090090.1498396,
+      "websocket_send": 1783090090.1508515,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.1515565,
+      "response_end": 1783090090.151608
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.254152+00:00",
+    "session_id": "1658d375-6517-415e-b00b-db2f3fb53847",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.0457038879394531,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.726388931274414
+    },
+    "timestamps": {
+      "request_start": 1783090090.2523708,
+      "websocket_send": 1783090090.2534165,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.2540972,
+      "response_end": 1783090090.254147
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.356722+00:00",
+    "session_id": "af1638a4-5cc3-48c6-a2fd-a85713d62e4d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0313987731933594,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7547607421875
+    },
+    "timestamps": {
+      "request_start": 1783090090.3549147,
+      "websocket_send": 1783090090.355946,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.3566694,
+      "response_end": 1783090090.356718
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.459153+00:00",
+    "session_id": "dc974106-7403-4108-a469-ddb4e63f7532",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 0.9989738464355469,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.653432846069336
+    },
+    "timestamps": {
+      "request_start": 1783090090.4574485,
+      "websocket_send": 1783090090.4584475,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.459102,
+      "response_end": 1783090090.4591486
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.562660+00:00",
+    "session_id": "048c75b1-2bcb-4f92-b364-310fc0254b70",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.9223690032958984,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 2.628803253173828
+    },
+    "timestamps": {
+      "request_start": 1783090090.5599773,
+      "websocket_send": 1783090090.5618997,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.562606,
+      "response_end": 1783090090.5626557
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.665198+00:00",
+    "session_id": "ce8c88e3-262f-4ec0-a870-852668c2260e",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 0.9815692901611328,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.711130142211914
+    },
+    "timestamps": {
+      "request_start": 1783090090.6634223,
+      "websocket_send": 1783090090.664404,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.6651335,
+      "response_end": 1783090090.665194
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.767686+00:00",
+    "session_id": "784bb426-8635-4eaa-a532-e50402a6325d",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0302066802978516,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7247200012207031
+    },
+    "timestamps": {
+      "request_start": 1783090090.7658956,
+      "websocket_send": 1783090090.7669258,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.7676203,
+      "response_end": 1783090090.767681
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.870494+00:00",
+    "session_id": "c12ad453-1fa4-4497-8e90-8b73ed4b2e05",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.1358261108398438,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.8477439880371094
+    },
+    "timestamps": {
+      "request_start": 1783090090.8685808,
+      "websocket_send": 1783090090.8697166,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.8704286,
+      "response_end": 1783090090.8704898
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:10.973155+00:00",
+    "session_id": "14ebabbd-741c-4701-84b9-008a0d72c207",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0128021240234375,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7001628875732422
+    },
+    "timestamps": {
+      "request_start": 1783090090.9713902,
+      "websocket_send": 1783090090.972403,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090090.9730904,
+      "response_end": 1783090090.97315
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:11.075938+00:00",
+    "session_id": "e08ca000-f68f-4749-a7d8-4b034cf2ebb8",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.149892807006836,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9347667694091797
+    },
+    "timestamps": {
+      "request_start": 1783090091.0739374,
+      "websocket_send": 1783090091.0750873,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090091.0758722,
+      "response_end": 1783090091.0759337
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:11.178529+00:00",
+    "session_id": "0d46adaa-642c-4cf2-8f52-f1e18b191742",
+    "event_type": "ttft_measurement",
+    "language": "uz",
+    "latencies": {
+      "websocket_connect_ms": 1.0256767272949219,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.7061233520507812
+    },
+    "timestamps": {
+      "request_start": 1783090091.176755,
+      "websocket_send": 1783090091.1777806,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090091.178461,
+      "response_end": 1783090091.1785247
+    }
+  },
+  {
+    "timestamp": "2026-07-03T14:48:11.281383+00:00",
+    "session_id": "a5d63899-ed8a-45bf-9fdc-53387df70b55",
+    "event_type": "ttft_measurement",
+    "language": "ru",
+    "latencies": {
+      "websocket_connect_ms": 1.085519790649414,
+      "adapter_ingest_ms": null,
+      "moshi_inference_ms": null,
+      "total_ttft_ms": 1.9288063049316406
+    },
+    "timestamps": {
+      "request_start": 1783090091.279386,
+      "websocket_send": 1783090091.2804716,
+      "adapter_ingest": null,
+      "moshi_inference_start": null,
+      "first_token": 1783090091.2813148,
+      "response_end": 1783090091.281379
+    }
+  }
+]

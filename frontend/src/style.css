@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* ===== Dark Theme (default) ===== */
+:root,
+[data-theme="dark"] {
+  --bg-page: #0a0a0a;
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #111111;
+  --bg-tertiary: #141414;
+  --bg-elevated: #1a1a1a;
+  --bg-input: #0d0d0d;
+  --border: #1a1a1a;
+  --border-light: #222222;
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --accent-glow: rgba(20, 184, 166, 0.15);
+  --text-primary: #f0f0f0;
+  --text-secondary: #999999;
+  --text-tertiary: #555555;
+  --text-muted: #333333;
+  --danger: #ef4444;
+  --danger-bg: rgba(239, 68, 68, 0.08);
+  --warning: #eab308;
+  --success: #22c55e;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --scrollbar-track: #111;
+  --scrollbar-thumb: #333;
+  --msg-user-bg: rgba(20, 184, 166, 0.12);
+  --msg-user-border: rgba(20, 184, 166, 0.15);
+  --msg-ai-bg: #141414;
+  --msg-ai-border: #1a1a1a;
+  --bg-glass: rgba(22, 22, 22, 0.8);
+  --bg-glass-border: rgba(255, 255, 255, 0.06);
+  --bg-glass-inset: rgba(255, 255, 255, 0.03);
+  --glow-opacity: 0.15;
+  --hover-overlay: rgba(255, 255, 255, 0.04);
+  --card-hover-border: #252525;
+}
+
+/* ===== Light Theme ===== */
+[data-theme="light"] {
+  --bg-page: #e8e8e8;
+  --bg-primary: #efefef;
+  --bg-secondary: #e8e8e8;
+  --bg-tertiary: #e0e0e0;
+  --bg-elevated: #efefef;
+  --bg-input: #e0e0e0;
+  --border: #d0d0d0;
+  --border-light: #d8d8d8;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-glow: rgba(13, 148, 136, 0.15);
+  --text-primary: #1a1a1a;
+  --text-secondary: #505050;
+  --text-tertiary: #787878;
+  --text-muted: #a0a0a0;
+  --danger: #dc2626;
+  --danger-bg: rgba(220, 38, 38, 0.08);
+  --warning: #ca8a04;
+  --success: #16a34a;
+  --shadow: rgba(0, 0, 0, 0.12);
+  --scrollbar-track: #ddd;
+  --scrollbar-thumb: #b0b0b0;
+  --msg-user-bg: rgba(13, 148, 136, 0.1);
+  --msg-user-border: rgba(13, 148, 136, 0.18);
+  --msg-ai-bg: #e2e2e2;
+  --msg-ai-border: #d5d5d5;
+  --bg-glass: rgba(230, 230, 230, 0.9);
+  --bg-glass-border: rgba(0, 0, 0, 0.1);
+  --bg-glass-inset: rgba(255, 255, 255, 0.3);
+  --glow-opacity: 0.1;
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  --card-hover-border: #b8b8b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { opacity: 0.8; }

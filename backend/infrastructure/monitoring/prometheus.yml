@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'aziza-gateway'
+    static_configs:
+      - targets: ['api-gateway:3000']
+
+  - job_name: 'aziza-personaplex'
+    static_configs:
+      - targets: ['personaplex:8001']
+
+  - job_name: 'aziza-moshi-worker'
+    static_configs:
+      - targets: ['moshi-worker:8000']
+
+  - job_name: 'aziza-orchestrator'
+    static_configs:
+      - targets: ['orchestrator:8002']

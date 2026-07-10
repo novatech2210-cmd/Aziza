@@ -1,0 +1,126 @@
+[
+  {
+    "timestamp": "2026-07-04T11:41:23.118472+00:00",
+    "session_id": "65d5532b-403e-47c0-ad75-b00d83fcbfeb",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:33.282114+00:00",
+    "session_id": "50fb3b49-425c-42a8-8a5f-69709bccf5aa",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:43.446472+00:00",
+    "session_id": "483471c2-531d-4d42-b2fa-e7a816417dda",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:41:53.634008+00:00",
+    "session_id": "4a6338e2-b30f-40ef-b4dd-a60dcd333d65",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:03.798726+00:00",
+    "session_id": "ed8950c6-7424-471e-ad6b-eb0ea2487938",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:13.963477+00:00",
+    "session_id": "bc7467ac-a740-4896-9f93-f650c475c9ec",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:22.927939+00:00",
+    "session_id": "5a77464b-d5a5-4e20-ac86-a9520bf075e8",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "no close frame received or sent"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.093351+00:00",
+    "session_id": "68ce156a-7f56-4f7e-960d-b2407010008a",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.258469+00:00",
+    "session_id": "c01d6e16-d7c1-4d10-af9e-669925da4780",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:23.423943+00:00",
+    "session_id": "7ab2d520-a63f-42b2-9812-8eb359b52097",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:33.595657+00:00",
+    "session_id": "bd7ff50d-ffa1-4fff-b0f9-7cc3d5137224",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:43.768280+00:00",
+    "session_id": "249b2c94-b75d-4965-b2f8-a5d0b6d3fd36",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:42:53.938904+00:00",
+    "session_id": "f005614d-bcb5-4f61-b141-adfac60a1d27",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:04.115442+00:00",
+    "session_id": "59deebd3-006d-4bf3-9b7c-40882abe61d3",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:14.282764+00:00",
+    "session_id": "820d2360-a098-46f9-a5e7-01f292f46d70",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:24.453101+00:00",
+    "session_id": "82de3b95-be37-4199-814e-0f4cfe1ed66b",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:34.623332+00:00",
+    "session_id": "c840c827-a319-4954-8e85-b0611cdd4ece",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:44.792609+00:00",
+    "session_id": "5b5bed7e-3e49-40a6-95c1-e226ab08c7dc",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:43:54.954771+00:00",
+    "session_id": "6c06469b-c2e6-4af9-b640-a9ca1eac05e2",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T11:44:05.118945+00:00",
+    "session_id": "bc0a4052-abcb-4631-a499-736e8e9db686",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  }
+]

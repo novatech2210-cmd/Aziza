@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+redis
+motor
+pydantic
+pydantic-settings
+python-dotenv

@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-06T11:02:43.305398+00:00",
+    "session_id": "d73d9d4b-1d52-4bd1-8d15-aab72744e3af",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:43.438776+00:00",
+    "session_id": "d4fc0de8-86ae-469f-9b1e-f1d4b7dec172",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:43.572406+00:00",
+    "session_id": "0a48dec6-01aa-4dcc-bbfe-da1231620c59",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:43.706432+00:00",
+    "session_id": "e3684519-3370-4abf-a440-8d46a9d58966",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:43.839304+00:00",
+    "session_id": "619aa2e5-4d11-4209-8cd9-1fc7087618fe",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:43.973269+00:00",
+    "session_id": "8abd4a42-d657-420d-94c9-32988a0fba2a",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.107148+00:00",
+    "session_id": "62680ceb-a4a9-4203-8594-debedf0c5dd8",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.239214+00:00",
+    "session_id": "e656a011-530c-4132-ba83-2a067d3367b6",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.371863+00:00",
+    "session_id": "0e4b0d28-cff2-477c-92a2-088c774d1152",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.504204+00:00",
+    "session_id": "8b70ef07-7468-4b28-8689-e3ab93499341",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.637304+00:00",
+    "session_id": "5766f016-0bc8-441b-93bb-a5e4b610c8ce",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.770042+00:00",
+    "session_id": "9fef7cfe-996d-4bbd-a898-1afdcf6b0da3",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:44.904363+00:00",
+    "session_id": "51505638-0fe1-49e7-acca-b4476a1edc63",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.038065+00:00",
+    "session_id": "1552d17b-c3f0-4280-86ec-0f8b7132cbc4",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.170705+00:00",
+    "session_id": "293c09ea-baf1-4ba9-9a80-5118b9649439",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.303441+00:00",
+    "session_id": "696a5cf2-7491-4bd1-9914-e11e63577c03",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.436732+00:00",
+    "session_id": "bfcf461f-de2d-4eda-b6d6-f062e0eebed9",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.568518+00:00",
+    "session_id": "0db4b2c7-7c0f-4b00-ae45-ed8f12826f43",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.700475+00:00",
+    "session_id": "8abf328a-4d54-4ea0-8b1c-95954bf6138f",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  },
+  {
+    "timestamp": "2026-07-06T11:02:45.831946+00:00",
+    "session_id": "283b755d-a572-4f2b-ad51-6644fe17911a",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)"
+  }
+]

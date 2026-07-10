@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2026-07-06T11:19:46.532554+00:00",
+    "session_id": "2b2d480b-8cf7-4fc9-9e70-6e3413e96619",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 0.9980700016021729,
+    "prompt_length": 30,
+    "completion_tokens": 9,
+    "response_preview": "\nParis. "
+  },
+  {
+    "timestamp": "2026-07-06T11:19:48.213115+00:00",
+    "session_id": "4751c0e2-d7e6-4cbc-b769-ffb6a9a85ba3",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 1.6299855709075928,
+    "prompt_length": 29,
+    "completion_tokens": 15,
+    "response_preview": "\n\u041f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0441\u0435\u043c\u044c \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432. "
+  },
+  {
+    "timestamp": "2026-07-06T11:19:49.030415+00:00",
+    "session_id": "eb57d4d6-21a7-4257-beee-a118f3353901",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.7667515277862549,
+    "prompt_length": 27,
+    "completion_tokens": 7,
+    "response_preview": "\u0422\u043e\u0448\u043a\u0435\u043d\u0442\u0434\u0430."
+  },
+  {
+    "timestamp": "2026-07-06T11:19:50.850072+00:00",
+    "session_id": "d3295a40-503c-4510-8974-ad55046424de",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 1.7689919471740723,
+    "prompt_length": 32,
+    "completion_tokens": 16,
+    "response_preview": "\nPopulation of Tokyo is approximately 13.9 million. However, the Tokyo"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:52.646893+00:00",
+    "session_id": "d50756d6-8c71-414b-942b-bfe5ba3d7b0d",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "ru",
+    "latency_s": 1.7463064193725586,
+    "prompt_length": 32,
+    "completion_tokens": 16,
+    "response_preview": "\n\u041e\u0431\u044a\u044f\u0441\u043d\u0438\u0442\u0435, \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430. \u041a\u0430\u043a\u043e\u0439 \u0432\u043e\u043f\u0440\u043e\u0441 \u0432\u044b \u0437\u0430\u0434"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:53.238388+00:00",
+    "session_id": "ff3381f7-cdbf-4f21-ba67-10302fa18bc4",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "uz",
+    "latency_s": 0.5407891273498535,
+    "prompt_length": 30,
+    "completion_tokens": 5,
+    "response_preview": "\u0422\u043e\u0448\u043a\u0435\u043d\u0442"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:55.025069+00:00",
+    "session_id": "d4186744-cbd7-4577-b0db-173560fbec24",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 1.7361643314361572,
+    "prompt_length": 43,
+    "completion_tokens": 16,
+    "response_preview": "\n```\ndef reverse_string(s):\n    return s[::-1]\n```<"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:56.823821+00:00",
+    "session_id": "62957354-00c2-4a69-a054-ab181d6969b9",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "ru",
+    "latency_s": 1.7482478618621826,
+    "prompt_length": 46,
+    "completion_tokens": 16,
+    "response_preview": "\n```python\ndef sort_list(lst):\n    return sorted(lst)\n```\n"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:57.083348+00:00",
+    "session_id": "cbf07c5e-42bd-4906-a5b9-ef5472c1053c",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "uz",
+    "latency_s": 0.20902776718139648,
+    "prompt_length": 42,
+    "completion_tokens": 2,
+    "response_preview": "return"
+  },
+  {
+    "timestamp": "2026-07-06T11:19:58.884064+00:00",
+    "session_id": "ecbb06ad-b9c8-43c6-aaa8-15d136351382",
+    "event_type": "text_response",
+    "category": "code",
+    "language": "en",
+    "latency_s": 1.7501838207244873,
+    "prompt_length": 57,
+    "completion_tokens": 16,
+    "response_preview": "\n```javascript\nfunction isPrime(number) {\n  if (number <= "
+  }
+]

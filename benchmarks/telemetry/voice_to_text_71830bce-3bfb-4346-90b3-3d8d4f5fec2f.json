@@ -1,0 +1,129 @@
+[
+  {
+    "timestamp": "2026-07-04T12:42:27.144629+00:00",
+    "session_id": "aa0de77c-8429-41cc-82b0-d32a1c53f534",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:42:37.310906+00:00",
+    "session_id": "acce8319-da5d-4c11-9e78-e2dab44159b4",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:42:47.480278+00:00",
+    "session_id": "49623e45-7f4e-4160-8506-b9298d045e5c",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:42:57.649298+00:00",
+    "session_id": "62bb5b33-f19f-4569-bc8f-9a740fcd22f4",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:07.819873+00:00",
+    "session_id": "b8be3b1c-3909-4e01-848d-089d53153b60",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:17.988528+00:00",
+    "session_id": "722ebc07-f725-4d3c-a782-05eab102edc1",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:28.159199+00:00",
+    "session_id": "3aaebf40-3529-42a0-a10c-af1be14dd5bb",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:38.333112+00:00",
+    "session_id": "b612ee70-506d-43ec-82d7-185712beebcf",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:48.499948+00:00",
+    "session_id": "e9093550-725f-43e0-a498-a6fc2c7366a3",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:43:58.663489+00:00",
+    "session_id": "4b407db4-e2ed-48e5-b514-00fd7406ec74",
+    "event_type": "transcription_timeout",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:08.832160+00:00",
+    "session_id": "570677dc-378c-4cbb-97e6-30699cbc0179",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:19.003117+00:00",
+    "session_id": "29a06137-7297-4315-8456-03ef76af052d",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:29.172596+00:00",
+    "session_id": "cbdda060-395f-425f-9faa-50f22db4ff0b",
+    "event_type": "transcription_timeout",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:30.235343+00:00",
+    "session_id": "41807ee7-9f1c-4f14-af01-1737494e6465",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "no close frame received or sent"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:30.394962+00:00",
+    "session_id": "c0947eeb-6bfd-4378-b544-066890946f9c",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:30.558088+00:00",
+    "session_id": "7fa507d0-aec9-4fd9-94ed-0ed470e1d00b",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:30.724419+00:00",
+    "session_id": "c82a88ad-e310-403b-b452-e03b03b52afc",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:30.888393+00:00",
+    "session_id": "2ace7f5d-6838-4257-801a-b8d15dfe7b03",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:31.051040+00:00",
+    "session_id": "a6502d47-07ad-424f-8434-f0517b47d153",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-04T12:44:31.214470+00:00",
+    "session_id": "6591f971-35a6-4285-ab88-15127767b5ce",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  }
+]

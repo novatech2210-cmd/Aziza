@@ -1,0 +1,10 @@
+Target Concurrent Sessions: 8
+
+Session 0: TTFT=3938.26ms, Avg Latency=91.01ms, Max Pause=272.91ms
+Session 1: TTFT=3876.63ms, Avg Latency=94.50ms, Max Pause=246.05ms
+Session 2: TTFT=4275.82ms, Avg Latency=97.09ms, Max Pause=270.67ms
+Session 3: TTFT=5113.43ms, Avg Latency=98.50ms, Max Pause=240.85ms
+Session 4: TTFT=6439.68ms, Avg Latency=98.35ms, Max Pause=244.74ms
+Session 5: TTFT=7913.46ms, Avg Latency=97.26ms, Max Pause=246.54ms
+Session 6: TTFT=10037.68ms, Avg Latency=94.59ms, Max Pause=246.46ms
+Session 7: TTFT=12646.75ms, Avg Latency=90.61ms, Max Pause=296.79ms

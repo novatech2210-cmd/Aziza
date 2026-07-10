@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-03T16:03:47.259581+00:00",
+    "session_id": "f6582cdd-b9ad-474e-8ed9-7ffd28573a3f",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:03:52.488599+00:00",
+    "session_id": "51c876d4-a47e-484e-87e8-ef1b12d0e521",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:03:57.743578+00:00",
+    "session_id": "5b0c861f-635b-49bf-913b-1141a02a35ed",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:02.974875+00:00",
+    "session_id": "baf99c45-cab3-4759-b64e-cbd4c568d3be",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:08.226753+00:00",
+    "session_id": "e8f2bd2c-08a9-4e99-a489-4b47e2d7bcf9",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:13.463709+00:00",
+    "session_id": "f528dabd-f10c-4355-87f2-f939600e4f06",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:18.725957+00:00",
+    "session_id": "a1e28622-8ab3-4631-9767-00111d1cf918",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:23.964522+00:00",
+    "session_id": "5090d6c1-abb1-45bc-89af-c00e344a1efb",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:29.246474+00:00",
+    "session_id": "08969178-0420-47a9-9ff8-94531b77ffb7",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:34.491710+00:00",
+    "session_id": "7b3acd3a-e0b3-4acd-868e-c8bb481307d5",
+    "event_type": "transcription_error",
+    "language": "ru",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:39.756313+00:00",
+    "session_id": "29976150-8979-4923-be8f-3052c48deb5e",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:44.999745+00:00",
+    "session_id": "14d03876-cb66-46cb-b667-0c07a9d9ceef",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:50.263172+00:00",
+    "session_id": "d9fff6c5-df9d-4ee9-8cd8-3da1b1d902f4",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:04:55.493537+00:00",
+    "session_id": "e72c61af-696e-4b40-a403-957ff0f81a4f",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:00.734762+00:00",
+    "session_id": "d5595cf6-4057-47b0-95b6-5d264b911407",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:05.973750+00:00",
+    "session_id": "094f8b29-01e7-489f-9b10-f0b5afbc4e00",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:11.210323+00:00",
+    "session_id": "2c7e2b25-6170-4e01-beff-0403583e556f",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:16.451883+00:00",
+    "session_id": "8741d7a9-461f-43fd-b970-80e31d314517",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:21.700628+00:00",
+    "session_id": "cba844fe-018f-4aa1-a38b-d3107dae2b22",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  },
+  {
+    "timestamp": "2026-07-03T16:05:26.932834+00:00",
+    "session_id": "d9951ce4-0a03-4cbb-aa0d-b5011d6c2271",
+    "event_type": "transcription_error",
+    "language": "uz",
+    "error": "'utf-16-le' codec can't decode byte 0x11 in position 3840: truncated data"
+  }
+]

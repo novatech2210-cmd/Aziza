@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-07-03T15:08:13.943730+00:00",
+    "session_id": "82c4aba4-f168-4153-a0c6-2df2c862b33c",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:14.445365+00:00",
+    "session_id": "1ac9f95b-c056-4ff5-bcaa-a19f54581484",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:14.946801+00:00",
+    "session_id": "9f6a20dd-b711-4e37-a38a-1ee1f828e604",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:15.448257+00:00",
+    "session_id": "00875cc3-35a5-44be-be6d-df6b52cd6385",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:15.949988+00:00",
+    "session_id": "05026fa3-94bd-4654-b81d-23f790e1cc1a",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:16.451211+00:00",
+    "session_id": "c4892d3a-4119-4bdf-acaa-ee143b394475",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:16.952723+00:00",
+    "session_id": "b43d428e-2870-4eb2-88f0-6148f89fd363",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:17.454343+00:00",
+    "session_id": "d23addd6-c126-4e9c-a5c4-43a980dff5df",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:17.955871+00:00",
+    "session_id": "6c60e724-2cf0-4129-bc79-020fc7d1590b",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:18.457275+00:00",
+    "session_id": "3d698f5e-1661-45a8-bd7d-25c73454de6b",
+    "event_type": "websocket_error",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 8080)"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "timestamp": "2026-07-06T11:02:46.863241+00:00",
+    "session_id": "03023d11-ab20-422f-8519-457a01b8b411",
+    "event_type": "session_crash",
+    "error": "[Errno 111] Connect call failed ('127.0.0.1', 3000)",
+    "duration_s": 0.013943910598754883
+  },
+  {
+    "timestamp": "2026-07-06T11:02:46.950838+00:00",
+    "session_id": "b225ac02-4dbf-4c42-869f-e5a50b212878",
+    "event_type": "system_stats",
+    "cpu_percent": 11.8,
+    "memory_percent": 51.0,
+    "memory_used_gb": 14.510395050048828,
+    "memory_available_gb": 15.181320190429688,
+    "disk_usage_percent": 99.2,
+    "network_io": {
+      "bytes_sent": 1283327509,
+      "bytes_recv": 328110957,
+      "packets_sent": 736437,
+      "packets_recv": 1108341,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 8
+    },
+    "thread_count": 2,
+    "gpu": null
+  }
+]

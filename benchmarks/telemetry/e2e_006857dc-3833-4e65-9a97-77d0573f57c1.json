@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-07-03T11:44:07.976025",
+    "session_id": "9dadd3e0-53f2-4692-bea0-2592e4d9b0d3",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:08.480934",
+    "session_id": "9150fc2e-758d-4df9-887d-853b2970a0f6",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:08.985301",
+    "session_id": "344554aa-5929-4622-ad1f-ea2b0a207bd5",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:09.489912",
+    "session_id": "a44824e2-a584-46b8-9311-6b0f49173078",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:09.994592",
+    "session_id": "3e54ea7e-8bf4-4b7d-b1c1-08b69ad31e0f",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:10.498670",
+    "session_id": "18455f6b-fab7-4fe1-a3db-1997242c0241",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:11.002611",
+    "session_id": "b9b3fc60-7d17-4950-8585-b7ac0b5499ff",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:11.506886",
+    "session_id": "3bece51d-bbae-432d-bc04-6ec507f81a4a",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:12.010805",
+    "session_id": "9101aa56-b696-44bd-9bde-115052b4e911",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  },
+  {
+    "timestamp": "2026-07-03T11:44:12.514731",
+    "session_id": "d940e960-8e65-4983-a769-343d67f0c3d7",
+    "event_type": "websocket_error",
+    "error": "did not receive a valid HTTP response"
+  }
+]

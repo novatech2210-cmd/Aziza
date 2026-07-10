@@ -1,0 +1,704 @@
+[
+  {
+    "timestamp": "2026-07-03T15:00:29.762914+00:00",
+    "session_id": "a6620892-b81e-46a9-9aa6-799ee616ce27",
+    "event_type": "text_response",
+    "category": "factual",
+    "language": "en",
+    "latency_s": 1.5888643264770508,
+    "prompt_length": 30
+  },
+  {
+    "timestamp": "2026-07-03T15:00:44.828389+00:00",
+    "session_id": "085d3bcb-f4ac-465d-9f3a-124568340cdd",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:00:59.896014+00:00",
+    "session_id": "d000f613-10d3-4991-9b1d-1271903d5712",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:01:14.971743+00:00",
+    "session_id": "b9c0ebed-0582-477e-8a24-7297aac5d457",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:01:30.040310+00:00",
+    "session_id": "afd7951b-1fbf-46c4-aa25-4767c14ba31d",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:01:45.112181+00:00",
+    "session_id": "94b9e8f2-a1ed-4943-9d20-a12be5be83cd",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:02:00.185976+00:00",
+    "session_id": "ae2bb78a-092d-463a-80fe-679cc9ba5f60",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:02:15.254071+00:00",
+    "session_id": "0090d64e-e4cc-4781-8584-840c58770e43",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:02:30.329242+00:00",
+    "session_id": "02828dc4-ad77-47d2-9b1c-04eb4dfdc028",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:02:45.402432+00:00",
+    "session_id": "66125690-dc96-4463-b897-1473045e7cd2",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:03:00.469411+00:00",
+    "session_id": "98b4ce51-e33b-442a-9980-337e010eae48",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:03:15.538856+00:00",
+    "session_id": "0bad7b18-6da2-4d8a-a1b2-3af7fffd1d33",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:03:30.612925+00:00",
+    "session_id": "30e95d8c-78c6-4b7a-9a24-261fd4f390f1",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:03:45.687210+00:00",
+    "session_id": "50ad951c-fadd-4aba-953b-66c35f042d97",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:04:00.754649+00:00",
+    "session_id": "a40121a0-9fb3-4abb-b059-54cf14000ac1",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:04:15.829330+00:00",
+    "session_id": "f45e907f-1d15-4489-a0ab-5106260c08ca",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:04:30.901414+00:00",
+    "session_id": "12c5800a-60de-4989-99c4-9a9ba8042ed5",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:04:45.973306+00:00",
+    "session_id": "c15a660f-91f0-4b35-975a-e55e1d18a600",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:05:01.043765+00:00",
+    "session_id": "416ee724-98fb-4ab6-b566-eaea7e6d1088",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:05:16.112058+00:00",
+    "session_id": "9bc08e9b-57c6-4903-8fd0-0ce64a1b5b83",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:05:31.176820+00:00",
+    "session_id": "ba9c8ef2-e18a-490e-af92-8fc9a68a8553",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:05:46.250811+00:00",
+    "session_id": "77e4640b-2ead-43ba-b85b-96a9d334766c",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:06:01.319285+00:00",
+    "session_id": "1f7760fc-f398-47ef-9b48-e131ded117ae",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:06:16.384323+00:00",
+    "session_id": "fcdf7114-fbae-4d6d-9665-ad9d2c553480",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "uz"
+  },
+  {
+    "timestamp": "2026-07-03T15:06:31.456075+00:00",
+    "session_id": "9d8ae251-7cda-4de3-8d0e-eabe8c8ca9f2",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:06:46.526195+00:00",
+    "session_id": "22669d0e-2eae-4a0a-8a93-41d8d587f0fd",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:07:01.592953+00:00",
+    "session_id": "796d441c-2374-4e88-9aac-30ed320374b5",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:07:16.665576+00:00",
+    "session_id": "40c16322-a1be-4c82-9d21-f01eacf175de",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:07:31.733599+00:00",
+    "session_id": "6e45c58e-72c7-4f8f-8f82-33b10a02b985",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:07:46.804075+00:00",
+    "session_id": "215b54ef-a73c-42f0-857a-dbabd7c9bf63",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:01.872734+00:00",
+    "session_id": "5464c948-b488-4520-b9c4-f570db7b9716",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:16.941368+00:00",
+    "session_id": "37772730-f4c4-4e72-b45f-d71bc3534f53",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:32.014154+00:00",
+    "session_id": "fda54684-f463-448c-ab29-d472d24479ed",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:08:47.087933+00:00",
+    "session_id": "36dfec3a-3274-4602-9e25-f841a765a680",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:09:02.158365+00:00",
+    "session_id": "6d8694c9-47b6-4f75-8113-e0cca4a69fcf",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:09:17.228358+00:00",
+    "session_id": "d69fd8b7-111c-4b01-9f9e-7fe8bca0d3e0",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:09:32.300415+00:00",
+    "session_id": "3e10e57e-981b-42d2-8da3-e1df38b114c3",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:09:47.375292+00:00",
+    "session_id": "b360825e-51a4-4395-81ae-6f04b8519854",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:02.442392+00:00",
+    "session_id": "c4ba75e8-cde0-4643-ac16-2ce180bfd502",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:17.511820+00:00",
+    "session_id": "f09accd5-b5f6-4141-8780-a24bfecbaa57",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:32.588430+00:00",
+    "session_id": "dc8bca38-8366-43c6-af14-089b8ac71b34",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:10:47.663051+00:00",
+    "session_id": "1c280346-73f8-43b9-86ec-9d078c0ca7d2",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:11:02.737546+00:00",
+    "session_id": "16510a02-5afa-4d74-9bfa-18535979b599",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:11:17.800507+00:00",
+    "session_id": "99fed67a-9269-4936-a0b0-5be32800bfa7",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:11:32.876857+00:00",
+    "session_id": "55a07da0-30e0-4cd8-b64a-335e7e3bdf0c",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:11:47.951321+00:00",
+    "session_id": "11eda76c-0972-4128-80f2-236682244048",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:12:03.016346+00:00",
+    "session_id": "170b8a0e-2f6c-4bc3-a76e-6d6955de1b4b",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:12:18.088514+00:00",
+    "session_id": "f2eb5595-b3b5-4289-8900-88a2ce2b59e9",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:12:33.161119+00:00",
+    "session_id": "6d80376f-ae2b-433a-bc40-b6b1485e6669",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:12:48.233215+00:00",
+    "session_id": "0b8272ca-1437-4e94-9bf1-32d73c27ee68",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:13:03.307451+00:00",
+    "session_id": "3797ff3b-dc18-462b-8ad5-d0c6fd1fedb9",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:13:18.377210+00:00",
+    "session_id": "9bbb842d-e3e9-41e8-9bc1-81c48f28c63d",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:13:33.453537+00:00",
+    "session_id": "74a81ec5-ea43-452c-873d-03604e76c8a5",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:13:48.525218+00:00",
+    "session_id": "6fcbaff5-3df6-4a89-83a5-8b5fc2375264",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:14:03.598451+00:00",
+    "session_id": "2d33b9ac-b3dc-48c4-a183-455cf673cb34",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:14:18.662403+00:00",
+    "session_id": "b48df56f-4b12-4312-ab51-25c8cb0cfb02",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:14:33.734108+00:00",
+    "session_id": "274b63d4-f55a-4351-a2c5-285b5de15651",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:14:48.806129+00:00",
+    "session_id": "fc6cb222-dd41-4d9f-807e-0f58d6d92ee0",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:15:03.879943+00:00",
+    "session_id": "1381ded9-1de5-4e38-89be-04d1335054ff",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:15:18.946797+00:00",
+    "session_id": "085e0f21-15a8-4a41-b16a-7e4debf010e9",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:15:34.013076+00:00",
+    "session_id": "85869387-9699-4c27-a533-d3708f14a870",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:15:49.086716+00:00",
+    "session_id": "3fb7e8cb-af96-48ad-8dde-760bbd78f161",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:16:04.155514+00:00",
+    "session_id": "d4f61974-154e-42b0-ae9a-59b87e5e3fff",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:16:19.223270+00:00",
+    "session_id": "f4e04c25-7820-4c71-8a94-a6a6aed43183",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:16:34.300169+00:00",
+    "session_id": "a4973890-a97c-44ec-b5e7-022f5f586a4e",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:16:49.365040+00:00",
+    "session_id": "a0a60ec9-b29c-47aa-87f3-b6b85de616d0",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:17:04.436172+00:00",
+    "session_id": "6c385b0e-e87e-414e-bf7a-e09bfab5ddf6",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:17:19.510182+00:00",
+    "session_id": "06ac5857-c2b3-4f3a-a121-656a64a5e424",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:17:34.587055+00:00",
+    "session_id": "483e134e-df50-4a3f-a74d-59546ed8c5ec",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:17:49.653540+00:00",
+    "session_id": "6c63ff93-5751-4d53-8cc7-9d3084fbafbf",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:18:04.725009+00:00",
+    "session_id": "c5759c6b-010d-4d32-a895-92b9b709394f",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:18:19.795229+00:00",
+    "session_id": "7d99dda3-0d0b-4a24-8fea-51837baf4460",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:18:34.861662+00:00",
+    "session_id": "391b548e-2b90-45e6-b2e6-4c688eecf374",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:18:49.932860+00:00",
+    "session_id": "71a7909f-9abc-4bb3-b7c2-c83337afcc14",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:19:05.001682+00:00",
+    "session_id": "63c764b3-ee13-4683-a832-259714c62fb9",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:19:20.066710+00:00",
+    "session_id": "a0b02cbd-29b2-429f-981d-2e2be1cd3d43",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:19:35.138670+00:00",
+    "session_id": "93b36c6b-58ab-4aa5-b093-364b255cc51f",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:19:50.214722+00:00",
+    "session_id": "983e8269-bcb2-452f-a6dc-cb88fe9f2cfb",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:20:05.281192+00:00",
+    "session_id": "543e66b0-f245-40ea-80d7-23f6c43c2941",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:20:20.350132+00:00",
+    "session_id": "8da15528-6e5b-486c-857a-5deaaa486dc7",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:20:35.421427+00:00",
+    "session_id": "a6f3d35c-d3ff-4052-bc3e-30c99a971c5c",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:20:50.492786+00:00",
+    "session_id": "7acaf7b3-e373-482f-a809-64ac7fb3ca8a",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:21:05.559012+00:00",
+    "session_id": "5c336d68-9c26-406f-8b5f-9111062dbcde",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:21:20.631380+00:00",
+    "session_id": "374f7cfc-0dce-4843-b683-5accfdc62d3a",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:21:35.705872+00:00",
+    "session_id": "8c67430d-eef0-42e6-aa12-accacade28e5",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:21:50.778240+00:00",
+    "session_id": "32d0353e-c2ea-4c9a-9816-3369ea9cfcdc",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:22:05.845504+00:00",
+    "session_id": "5a50879c-a98b-4ce4-810e-d3880f78622c",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:22:20.918035+00:00",
+    "session_id": "e834f789-6e4a-40a5-b40e-11d517344d25",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:22:35.992542+00:00",
+    "session_id": "4c65d154-01f2-420a-9602-17803ca08236",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:22:51.064787+00:00",
+    "session_id": "bc769b69-c681-4988-a67c-8c2fd419d8e7",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:23:06.131245+00:00",
+    "session_id": "47507592-3f50-41b7-9c9d-fb8321374510",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:23:21.199783+00:00",
+    "session_id": "6c12be49-f864-4ad5-abb1-0c76e36ed58d",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:23:36.264088+00:00",
+    "session_id": "193c5930-2f65-425a-a892-6d226405a336",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:23:51.338243+00:00",
+    "session_id": "c688bfd7-f1cb-4b7e-a49e-46c549a8daf1",
+    "event_type": "text_timeout",
+    "category": "creative",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:24:06.404913+00:00",
+    "session_id": "610989ae-754d-4ba5-a3c2-82ec7d528a13",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:24:21.477826+00:00",
+    "session_id": "9a5d936c-d9d6-4300-8bec-35d7f947c07b",
+    "event_type": "text_timeout",
+    "category": "factual",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:24:36.543797+00:00",
+    "session_id": "7e18a1fc-8517-4460-9318-dc8af6e90164",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:24:51.605734+00:00",
+    "session_id": "60d358ae-d517-4d29-8ce8-098b8511c4a7",
+    "event_type": "text_timeout",
+    "category": "code",
+    "language": "ru"
+  },
+  {
+    "timestamp": "2026-07-03T15:25:06.676031+00:00",
+    "session_id": "f39e9781-b126-449d-a5ba-cd96f371b755",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "en"
+  },
+  {
+    "timestamp": "2026-07-03T15:25:21.747892+00:00",
+    "session_id": "1d210fc8-8627-4d5b-bbef-d933c0f1f8bc",
+    "event_type": "text_timeout",
+    "category": "summarization",
+    "language": "ru"
+  }
+]
