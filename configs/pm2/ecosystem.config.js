@@ -19,6 +19,7 @@ module.exports = {
         REDIS_URL: "redis://localhost:6379",
         MONGODB_URI: "mongodb://localhost:27017/aziza",
         JWT_SECRET: process.env.JWT_SECRET || "",
+        CORS_ORIGINS: process.env.CORS_ORIGINS || "http://localhost:5173,http://localhost:3000",
         ORCHESTRATOR_URL: "http://localhost:8001",
       },
       error_file: "/root/aziza-build/logs/api-gateway-error.log",

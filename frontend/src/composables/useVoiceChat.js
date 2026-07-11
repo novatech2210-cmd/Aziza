@@ -447,7 +447,7 @@ export function useVoiceChat() {
                 scheduleAudioPlayback(float32Array)
               }
             } catch (e) {
-              console.error('Audio decode error', e)
+              console.error('[Aziza] Audio decode error', e)
             }
           }
 
@@ -543,7 +543,7 @@ export function useVoiceChat() {
         buffer.set(textBytes, 1)
         ws.send(buffer)
       } catch (err) {
-        console.error('Failed to send session_update', err)
+        console.error('[Aziza] Failed to send session_update', err)
       }
     }
   }

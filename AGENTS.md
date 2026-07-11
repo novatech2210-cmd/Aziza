@@ -26,17 +26,24 @@ pm2 start ~/aziza-build/configs/pm2/ecosystem.config.js
 ```bash
 cd frontend && npm install && npm run build   # build
 cd frontend && npm run dev                     # dev server (proxies to :8080)
+cd frontend && npm test                        # unit tests (vitest)
 ```
 
 ### Backend API Gateway (NestJS, port 8080)
 ```bash
 cd backend/services/api-gateway && npm run build && npm run start:prod
+cd backend/services/api-gateway && npm test    # unit tests (jest, 50 tests)
 ```
 
 ### Python services (orchestrator, moshi-worker, persona-plex)
 All run under `venv312`:
 ```bash
 source /root/aziza-build/venv312/bin/activate
+```
+
+### Python tests
+```bash
+cd backend && python3 -m pytest tests/ -q      # integration tests (7 tests)
 ```
 
 ### Training (requires GPU, use screen/tmux)
@@ -69,12 +76,24 @@ python3 training/scripts/train_russian.py --help
 - `HF_TOKEN` required for gated model downloads (HuggingFace).
 - `REDIS_URL` defaults to `redis://localhost:6379`.
 - `MONGO_URL` defaults to `mongodb://localhost:27017/aziza`.
+- `JWT_SECRET` — required for API gateway auth. WS gateways + passport both enforce HS256.
+- `CORS_ORIGINS` — comma-separated allowed origins for CORS (default: `http://localhost:5173,http://localhost:3000`).
+
+## Security
+
+- Helmet middleware provides security headers (X-Content-Type-Options, X-Frame-Options, etc.).
+- Global ValidationPipe enforces DTO validation with whitelist + forbidNonWhitelisted.
+- Auth endpoints rate-limited: login 5/min, register 3/min.
+- Admin WebSocket requires JWT with `role=admin`.
+- DOMPurify sanitizes all markdown HTML output (XSS prevention).
+- User chat messages stripped of HTML tags + limited to 4096 chars.
 
 ## Testing
 
 ```bash
-cd backend && python3 test_emotion.py
-cd backend && python3 test_russian.py
+cd frontend && npm test                        # 13 frontend tests (vitest)
+cd backend/services/api-gateway && npm test    # 50 NestJS tests (jest)
+cd backend && python3 -m pytest tests/ -q      # 7 Python tests (pytest)
 ```
 
 Integration tests: `backend/tests/`

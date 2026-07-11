@@ -47,25 +47,16 @@ socket.addEventListener('message', (event) => {
       // heartbeat response
       break;
     case 'token':
-      // streaming token (or full uz_cyrillic response flushed at the end)
-      // eslint-disable-next-line no-console
-      console.log('token:', data.content);
       break;
     case 'done':
-      // full message complete
-      // eslint-disable-next-line no-console
-      console.log('done');
       break;
     case 'error':
-      // eslint-disable-next-line no-console
-      console.error('error:', data.message);
+      console.error('[ChatSocket]', data.message);
       break;
   }
 });
 
 socket.addEventListener('close', () => {
-  // eslint-disable-next-line no-console
-  console.log('disconnected');
 });
 
 // Optional heartbeat to keep proxies happy:
