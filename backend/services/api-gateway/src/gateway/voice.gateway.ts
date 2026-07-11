@@ -102,7 +102,7 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
     }
 
     try {
-      const payload = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
+      const payload = jwt.verify(token, JWT_SECRET, { algorithms: ['HS256'] }) as jwt.JwtPayload;
       client.userId = payload.sub || payload.userId;
       client.username = payload.username;
     } catch (err) {
@@ -237,6 +237,37 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
             );
             break;
 
+          case 'resume_session': {
+            // Resume a previously disconnected session
+            const existingMeta = await this.redis.hgetall(`session:${sessionId}:meta`);
+            const historyKey = `session:${sessionId}:history`;
+            const historyLen = await this.redis.llen(historyKey);
+
+            client.send(JSON.stringify({
+              type: 'session_resumed',
+              session_id: sessionId,
+              language: existingMeta.language || 'ru',
+              message_count: historyLen,
+              metadata: {
+                language: existingMeta.language,
+                persona: existingMeta.persona,
+                created_at: existingMeta.created_at,
+              },
+            }));
+
+            // Re-publish session start with existing context
+            await this.redis.publish(
+              'session:start',
+              JSON.stringify({
+                sessionId,
+                text_prompt: existingMeta.text_prompt || '',
+                voice_prompt: existingMeta.voice_prompt || '',
+              }),
+            );
+            this.logger.log(`Session resumed: ${sessionId} (history: ${historyLen} messages)`);
+            break;
+          }
+
           default:
             this.logger.debug(
               `Unknown message type '${msg.type}' from ${sessionId}`,
@@ -329,8 +360,20 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
       this.logger.log(`Persisted ${client.transcript.length} transcript entries for ${sessionId}`);
     }
 
+    // Preserve session metadata for potential resume
+    const metaKey = `session:${sessionId}:meta`;
+    const existingMeta = await this.redis.hgetall(metaKey);
+    if (existingMeta && Object.keys(existingMeta).length > 0) {
+      await this.redis.hset(metaKey, {
+        status: 'disconnected',
+        disconnected_at: new Date().toISOString(),
+        language: client.language || existingMeta.language || 'ru',
+      });
+      await this.redis.expire(metaKey, 86400); // Keep for 24h for resume
+    }
+
     this.clients.delete(sessionId);
-    this.logger.log(`Client disconnected: ${sessionId}`);
+    this.logger.log(`Client disconnected: ${sessionId} (session preserved for resume)`);
 
     if (workerId) {
       await this.redis.hset(`moshi:workers:${workerId}`, 'status', 'idle');

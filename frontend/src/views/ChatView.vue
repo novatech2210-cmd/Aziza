@@ -8,6 +8,7 @@ import { useVoiceRecorder } from '../composables/useVoiceRecorder'
 import { useVoiceChat } from '../composables/useVoiceChat'
 import { useAudioDevices } from '../composables/useAudioDevices'
 import { marked } from 'marked'
+import DOMPurify from 'dompurify'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import python from 'highlight.js/lib/languages/python'
@@ -192,7 +193,11 @@ const filteredSessions = computed(() => {
 
 function renderMarkdown(content) {
   if (!content) return ''
-  return marked.parse(content)
+  const raw = marked.parse(content)
+  return DOMPurify.sanitize(raw, {
+    ADD_TAGS: ['button'],
+    ADD_ATTR: ['class', 'data-lang'],
+  })
 }
 
 function copyCode(e) {

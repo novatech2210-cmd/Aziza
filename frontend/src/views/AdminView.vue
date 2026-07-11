@@ -40,7 +40,7 @@ let ws = null
 
 function connectWs() {
   const token = localStorage.getItem('aziza_token')
-  ws = new WebSocket(`${ADMIN_WS}/admin-stats`, ["token", token])
+  ws = new WebSocket(`${ADMIN_WS}/admin-stats?token=${token}`)
 
   ws.onmessage = (event) => {
     const data = JSON.parse(event.data)

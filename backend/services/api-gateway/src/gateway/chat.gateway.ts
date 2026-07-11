@@ -27,6 +27,18 @@ if (!JWT_SECRET) {
   throw new Error('JWT_SECRET environment variable is required');
 }
 
+const MAX_MESSAGE_LENGTH = 4096;
+
+function sanitizeUserInput(text: string): string {
+  // Strip HTML tags to prevent injection into LLM prompts
+  let clean = text.replace(/<[^>]*>/g, '');
+  // Limit length
+  if (clean.length > MAX_MESSAGE_LENGTH) {
+    clean = clean.slice(0, MAX_MESSAGE_LENGTH);
+  }
+  return clean;
+}
+
 /**
  * FIXED ChatGateway
  *
@@ -119,7 +131,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     }
 
     try {
-      const payload = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
+      const payload = jwt.verify(token, JWT_SECRET, { algorithms: ['HS256'] }) as jwt.JwtPayload;
       client.userId = payload.sub || payload.userId;
       client.username = payload.username;
     } catch (err) {
@@ -164,7 +176,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
           if (msg.language) {
             client.language = msg.language;
           }
-          this.handleTextMessage(sessionId, client, msg.message.trim());
+          this.handleTextMessage(sessionId, client, sanitizeUserInput(msg.message.trim()));
         }
       } catch {
         this.logger.warn(`Failed to parse message from ${sessionId}`);
