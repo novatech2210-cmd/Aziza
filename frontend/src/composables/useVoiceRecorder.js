@@ -80,7 +80,7 @@ export function useVoiceRecorder() {
     }
   }
 
-  async function start(language) {
+  async function start(language, deviceId) {
     if (isRecording.value) return
     state.value = 'requesting'
     errorMessage.value = ''
@@ -88,8 +88,11 @@ export function useVoiceRecorder() {
     finalText.value = ''
 
     try {
-      // Still request mic for audio level visualization
-      mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true })
+      const constraints = { audio: true }
+      if (deviceId) {
+        constraints.audio = { deviceId: { exact: deviceId } }
+      }
+      mediaStream = await navigator.mediaDevices.getUserMedia(constraints)
       audioContext = new (window.AudioContext || window.webkitAudioContext)()
       const source = audioContext.createMediaStreamSource(mediaStream)
       analyserNode = audioContext.createAnalyser()

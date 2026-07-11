@@ -6,6 +6,7 @@ import { useChatStore } from '../stores/chat'
 import { useThemeStore } from '../stores/theme'
 import { useVoiceRecorder } from '../composables/useVoiceRecorder'
 import { useVoiceChat } from '../composables/useVoiceChat'
+import { useAudioDevices } from '../composables/useAudioDevices'
 import { marked } from 'marked'
 import hljs from 'highlight.js'
 
@@ -28,6 +29,7 @@ const theme = useThemeStore()
 const router = useRouter()
 const voice = useVoiceRecorder()
 const voiceFullDuplex = useVoiceChat()
+const audioDevices = useAudioDevices()
 
 const inputText = ref('')
 const messagesContainer = ref(null)
@@ -123,7 +125,7 @@ async function toggleRecording() {
     if (voiceFullDuplex.isConnected.value) {
       voiceFullDuplex.disconnect()
     } else {
-      await voiceFullDuplex.connect()
+      await voiceFullDuplex.connect(audioDevices.selectedDeviceId.value)
     }
     return
   }
@@ -136,7 +138,7 @@ async function toggleRecording() {
     }
   } else {
     voice.reset()
-    await voice.start(chat.selectedLanguage)
+    await voice.start(chat.selectedLanguage, audioDevices.selectedDeviceId.value)
   }
 }
 
@@ -150,6 +152,12 @@ watch([() => voice.errorMessage.value, () => voiceFullDuplex.errorMessage.value]
 })
 
 const isVoiceMode = computed(() => chat.selectedMode === 'voice-text' || chat.selectedMode === 'voice-voice')
+
+watch(isVoiceMode, (voiceMode) => {
+  if (voiceMode && audioDevices.permissionState.value === 'prompt') {
+    audioDevices.requestPermission()
+  }
+})
 
 const filteredSessions = computed(() => {
   if (!searchQuery.value.trim()) return chat.sessionHistory
@@ -426,39 +434,62 @@ function getInitials(name) {
 
       <div class="input-area">
         <div v-if="isVoiceMode" class="voice-input-container">
-          <div v-if="voice.partialText.value || voice.finalText.value" class="voice-transcript">
-            <span class="transcript-label">{{ voice.state.value === 'done' ? 'Transcript' : 'Listening...' }}</span>
-            <p class="transcript-text">{{ voice.partialText.value || voice.finalText.value }}</p>
+          <!-- Permission denied state -->
+          <div v-if="audioDevices.permissionState.value === 'denied'" class="permission-denied">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            <span>Microphone access denied</span>
+            <button class="permission-retry-btn" @click="audioDevices.requestPermission()">Grant Access</button>
           </div>
 
-          <div class="voice-controls">
-            <button
-              @click="toggleRecording"
-              :class="['mic-btn', voice.state.value]"
-              :disabled="!chat.isConnected || voice.state.value === 'processing'"
-            >
-              <svg v-if="!voice.isRecording.value && !voiceFullDuplex.isConnecting.value" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
-                <path d="M19 10v2a7 7 0 01-14 0v-2" />
-                <line x1="12" y1="19" x2="12" y2="23" />
-                <line x1="8" y1="23" x2="16" y2="23" />
-              </svg>
-              <svg v-else width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <rect x="6" y="6" width="12" height="12" rx="2" />
-              </svg>
-              <div v-if="voice.isRecording.value" class="mic-pulse" :style="{ transform: `scale(${1 + voice.audioLevel.value * 3})` }" />
-            </button>
+          <template v-else>
+            <!-- Device selector -->
+            <div v-if="audioDevices.devices.value.length > 1" class="device-selector">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/></svg>
+              <select
+                :value="audioDevices.selectedDeviceId.value"
+                @change="(e) => audioDevices.selectDevice(e.target.value)"
+                class="device-select"
+              >
+                <option v-for="d in audioDevices.devices.value" :key="d.deviceId" :value="d.deviceId">
+                  {{ d.label || 'Microphone ' + (audioDevices.devices.value.indexOf(d) + 1) }}
+                </option>
+              </select>
+            </div>
 
-            <span class="voice-state-label">
-              <template v-if="voiceFullDuplex.isConnecting.value">Connecting...</template>
-              <template v-else-if="voice.state.value === 'idle'">Tap to speak</template>
-              <template v-else-if="voice.state.value === 'requesting'">Requesting mic...</template>
-              <template v-else-if="voice.state.value === 'recording'">Recording — tap to stop</template>
-              <template v-else-if="voice.state.value === 'processing'">Transcribing...</template>
-              <template v-else-if="voice.state.value === 'done'">Sent!</template>
-              <template v-else-if="voice.state.value === 'error'">{{ voice.errorMessage.value }}</template>
-            </span>
-          </div>
+            <div v-if="voice.partialText.value || voice.finalText.value" class="voice-transcript">
+              <span class="transcript-label">{{ voice.state.value === 'done' ? 'Transcript' : 'Listening...' }}</span>
+              <p class="transcript-text">{{ voice.partialText.value || voice.finalText.value }}</p>
+            </div>
+
+            <div class="voice-controls">
+              <button
+                @click="toggleRecording"
+                :class="['mic-btn', voice.state.value]"
+                :disabled="!chat.isConnected || voice.state.value === 'processing'"
+              >
+                <svg v-if="!voice.isRecording.value && !voiceFullDuplex.isConnecting.value" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+                  <path d="M19 10v2a7 7 0 01-14 0v-2" />
+                  <line x1="12" y1="19" x2="12" y2="23" />
+                  <line x1="8" y1="23" x2="16" y2="23" />
+                </svg>
+                <svg v-else width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="6" y="6" width="12" height="12" rx="2" />
+                </svg>
+                <div v-if="voice.isRecording.value" class="mic-pulse" :style="{ transform: `scale(${1 + voice.audioLevel.value * 3})` }" />
+              </button>
+
+              <span class="voice-state-label">
+                <template v-if="voiceFullDuplex.isConnecting.value">Connecting...</template>
+                <template v-else-if="voice.state.value === 'idle'">Tap to speak</template>
+                <template v-else-if="voice.state.value === 'requesting'">Requesting mic...</template>
+                <template v-else-if="voice.state.value === 'recording'">Recording — tap to stop</template>
+                <template v-else-if="voice.state.value === 'processing'">Transcribing...</template>
+                <template v-else-if="voice.state.value === 'done'">Sent!</template>
+                <template v-else-if="voice.state.value === 'error'">{{ voice.errorMessage.value }}</template>
+              </span>
+            </div>
+          </template>
         </div>
 
         <div v-else class="input-container">
@@ -679,10 +710,22 @@ function getInitials(name) {
 .send-btn.active { background: linear-gradient(135deg, #14b8a6, #0891b2); color: white; box-shadow: 0 2px 8px rgba(20, 184, 166, 0.25); }
 .send-btn:disabled { cursor: not-allowed; }
 .input-hint { text-align: center; font-size: 0.65rem; color: var(--text-muted); margin-top: 0.5rem; }
-.voice-input-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 0.5rem 0; }
+.voice-input-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 0.5rem 0; width: 100%; }
 .voice-transcript { width: 100%; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; padding: 0.75rem 1rem; }
 .transcript-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary); font-weight: 700; }
 .transcript-text { font-size: 0.9rem; color: var(--text-primary); margin-top: 0.25rem; line-height: 1.5; min-height: 1.4em; }
+
+/* Device selector */
+.device-selector { width: 100%; display: flex; align-items: center; gap: 0.5rem; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 10px; padding: 0.35rem 0.65rem; color: var(--text-secondary); }
+.device-select { flex: 1; background: transparent; border: none; color: var(--text-primary); font-size: 0.8rem; outline: none; cursor: pointer; padding: 0.2rem 0; }
+.device-select option { background: var(--bg-secondary); color: var(--text-primary); }
+
+/* Permission denied state */
+.permission-denied { width: 100%; display: flex; align-items: center; gap: 0.75rem; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 12px; padding: 0.75rem 1rem; color: #fca5a5; font-size: 0.85rem; }
+.permission-denied svg { flex-shrink: 0; }
+.permission-denied span { flex: 1; }
+.permission-retry-btn { flex-shrink: 0; background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 8px; cursor: pointer; transition: all 0.15s; }
+.permission-retry-btn:hover { background: rgba(239, 68, 68, 0.3); }
 .voice-controls { display: flex; align-items: center; gap: 1rem; }
 .mic-btn { position: relative; width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--border-light); background: var(--bg-tertiary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
 .mic-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }

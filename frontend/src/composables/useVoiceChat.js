@@ -43,6 +43,7 @@ export function useVoiceChat() {
   const assistantState  = ref('IDLE')          // FSM: IDLE | LISTENING | SPEAKING | INTERRUPTIBLE | PROCESSING
   const latencyP50      = ref(0)               // Server-reported p50 latency (ms)
   const latencyP95      = ref(0)               // Server-reported p95 latency (ms)
+  const activeDeviceId  = ref('')              // Currently used audio input device
 
   // End-to-end frontend metrics
   const e2eMetrics = ref({
@@ -147,7 +148,7 @@ export function useVoiceChat() {
 
   // ---- PCM Recording ----
 
-  async function startRecording() {
+  async function startRecording(deviceId) {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
       throw new Error(
         window.isSecureContext
@@ -155,14 +156,16 @@ export function useVoiceChat() {
           : 'Microphone requires HTTPS. Use the Cloudflare tunnel URL or access via localhost.'
       )
     }
-    micStream = await navigator.mediaDevices.getUserMedia({
-      audio: {
-        echoCancellation: true,
-        noiseSuppression: true,
-        autoGainControl: true,
-        channelCount: 1
-      },
-    })
+    const audioConstraints = {
+      echoCancellation: true,
+      noiseSuppression: true,
+      autoGainControl: true,
+      channelCount: 1
+    }
+    if (deviceId) {
+      audioConstraints.deviceId = { exact: deviceId }
+    }
+    micStream = await navigator.mediaDevices.getUserMedia({ audio: audioConstraints })
 
     analyserCtx = new (window.AudioContext || window.webkitAudioContext)()
     const micSourceNode = analyserCtx.createMediaStreamSource(micStream)
@@ -338,13 +341,14 @@ export function useVoiceChat() {
 
   // ---- WebSocket ----
 
-  async function connect() {
+  async function connect(deviceId) {
     if (isConnected.value || isConnecting.value) return
     isConnecting.value = true
     errorMessage.value = ''
     completedSentences.value = []
     pendingSentence.value = ''
     transcript.value = ''
+    if (deviceId) activeDeviceId.value = deviceId
 
     try {
       await initAudioContext()
@@ -409,7 +413,7 @@ export function useVoiceChat() {
             reconnectAttempt = 0
             cancelReconnect()
             try {
-              await startRecording()
+              await startRecording(activeDeviceId.value || undefined)
               isConnected.value = true
             } catch (recErr) {
               errorMessage.value = recErr.message || 'Failed to start microphone'
@@ -564,6 +568,7 @@ export function useVoiceChat() {
     latencyP50,
     latencyP95,
     e2eMetrics,
+    activeDeviceId,
     connect,
     disconnect,
     updateLanguage,
