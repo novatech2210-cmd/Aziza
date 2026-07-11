@@ -606,7 +606,7 @@ onUnmounted(() => { if (ws) ws.close() })
 /* Responsive */
 @media (max-width: 1024px) {
   .stat-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
   .chart-grid {
     grid-template-columns: 1fr;
@@ -615,15 +615,43 @@ onUnmounted(() => { if (ws) ws.close() })
 
 @media (max-width: 640px) {
   .admin-page {
-    padding: 1rem;
+    padding: 0.75rem;
   }
   .stat-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
   }
   .admin-header {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
     align-items: flex-start;
+  }
+  .header-actions {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .header-actions button, .header-actions a {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
+  .stat-card {
+    padding: 0.85rem;
+    gap: 0.6rem;
+  }
+  .stat-icon { width: 36px; height: 36px; }
+  .stat-icon svg { width: 16px; height: 16px; }
+  .stat-value { font-size: 1.1rem; }
+  .stat-label { font-size: 0.6rem; }
+  .stat-sub { font-size: 0.58rem; }
+  .health-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
   }
 }
 

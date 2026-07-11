@@ -778,14 +778,27 @@ function getInitials(name) {
   .sidebar { position: fixed; left: 0; top: 0; bottom: 0; box-shadow: 4px 0 30px var(--shadow); }
   .sidebar.collapsed { width: 0; box-shadow: none; }
   .sidebar-overlay { display: block; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 30; }
-  .msg-bubble { max-width: 85%; }
+  .msg-bubble { max-width: 88%; }
   .msg-row { padding: 0.5rem 0.25rem; }
-  .messages-area { padding: 1rem 0.5rem; }
-  .input-area { padding: 0.5rem 0.5rem 0.75rem; }
+  .messages-area { padding: 0.75rem 0.5rem; }
+  .input-area { padding: 0.5rem 0.5rem calc(0.75rem + env(safe-area-inset-bottom, 0px)); }
   .input-hint { display: none; }
   .header-info { gap: 0.5rem; }
   .connection-badge { font-size: 0.6rem; padding: 0.25rem 0.5rem; }
   .history-delete { display: flex; }
+  .voice-input-container { padding: 0.25rem 0; gap: 0.5rem; }
+  .device-selector { padding: 0.25rem 0.5rem; }
+  .device-select { font-size: 0.75rem; }
+  .permission-denied { padding: 0.5rem 0.75rem; font-size: 0.8rem; gap: 0.5rem; }
+  .voice-controls { gap: 0.75rem; }
+  .mic-btn { width: 48px; height: 48px; }
+  .mic-btn svg { width: 20px; height: 20px; }
+  .voice-state-label { font-size: 0.75rem; }
+  .code-block-wrapper pre { padding: 0.75em; font-size: 0.78em; }
+  .detected-badge { font-size: 0.6rem; padding: 0.1rem 0.35rem; }
+  .chat-header { padding: 0.5rem 0.75rem; gap: 0.5rem; }
+  .header-mode { font-size: 0.8rem; }
+  .header-lang-select { font-size: 0.75rem; padding: 0.25rem 0.5rem; }
 }
 
 /* Markdown body styles for assistant messages */
@@ -845,11 +858,37 @@ function getInitials(name) {
 .msg-bubble.error .msg-content { border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.05); }
 
 @media (max-width: 480px) {
-  .chat-header { padding: 0.5rem 0.75rem; }
-  .header-mode { font-size: 0.78rem; }
-  .msg-avatar { width: 28px; height: 28px; }
-  .msg-content { font-size: 0.85rem; padding: 0.65rem 0.85rem; }
-  .quick-prompts { flex-direction: column; }
-  .quick-btn { width: 100%; }
+  .chat-header { padding: 0.5rem 0.6rem; }
+  .header-mode { font-size: 0.75rem; }
+  .msg-avatar { width: 26px; height: 26px; border-radius: 6px; }
+  .msg-content { font-size: 0.84rem; padding: 0.6rem 0.75rem; }
+  .msg-bubble { max-width: 92%; border-radius: 12px; }
+  .quick-prompts { flex-direction: column; gap: 0.4rem; }
+  .quick-btn { width: 100%; font-size: 0.78rem; padding: 0.55rem 0.75rem; }
+  .empty-title { font-size: 1rem; }
+  .empty-subtitle { font-size: 0.8rem; }
+  .input-container { border-radius: 12px; padding: 0.3rem 0.4rem; }
+  .chat-input { font-size: 0.85rem; padding: 0.5rem 0.4rem; }
+  .mic-btn { width: 44px; height: 44px; }
+  .voice-transcript { padding: 0.5rem 0.75rem; }
+  .transcript-text { font-size: 0.85rem; }
+  .search-input { font-size: 0.75rem; padding: 0.4rem 0.6rem; }
+  .code-block-wrapper pre { padding: 0.5em; font-size: 0.72em; }
+  .code-copy-btn { opacity: 1; font-size: 0.6rem; }
+  .voice-overlay-content { padding: 1.5rem; }
+  .voice-visualizer { width: 180px; height: 180px; }
+  .orb-outer { width: 110px; height: 110px; }
+  .orb-inner { width: 80px; height: 80px; }
+  .orb-inner svg { width: 30px; height: 30px; }
+  .voice-title { font-size: 1.15rem; }
+  .transcript-line { font-size: 0.95rem; }
+  .transcript-line.pending { font-size: 1.1rem; }
+  .action-btn { width: 48px; height: 48px; }
+  .voice-metrics { gap: 0.35rem; }
+  .metric-chip { font-size: 0.65rem; padding: 0.2rem 0.6rem; }
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .input-area { padding-bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
 }
 </style>
