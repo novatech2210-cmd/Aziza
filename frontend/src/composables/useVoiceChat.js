@@ -29,6 +29,7 @@ const TAG_CTRL  = 0x03
 const BACKOFF_INITIAL_MS = 1000
 const BACKOFF_MAX_MS = 30000
 const BACKOFF_MULTIPLIER = 1.5
+const BACKOFF_MAX_ATTEMPTS = 15
 
 export function useVoiceChat() {
   const isConnected     = ref(false)
@@ -260,6 +261,12 @@ export function useVoiceChat() {
 
   function scheduleReconnect() {
     if (!shouldReconnect || reconnectTimer) return
+    if (reconnectAttempt >= BACKOFF_MAX_ATTEMPTS) {
+      errorMessage.value = 'Connection lost — tap to reconnect'
+      isConnecting.value = false
+      isConnected.value = false
+      return
+    }
     const delay = Math.min(
       BACKOFF_INITIAL_MS * Math.pow(BACKOFF_MULTIPLIER, reconnectAttempt),
       BACKOFF_MAX_MS
@@ -343,6 +350,7 @@ export function useVoiceChat() {
 
   async function connect(deviceId) {
     if (isConnected.value || isConnecting.value) return
+    reconnectAttempt = 0
     isConnecting.value = true
     errorMessage.value = ''
     completedSentences.value = []

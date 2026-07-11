@@ -4,6 +4,17 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
+  build: {
+    chunkSizeWarningLimit: 400,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-vue': ['vue', 'vue-router', 'pinia'],
+          'vendor-charts': ['chart.js', 'vue-chartjs', 'chartjs-plugin-annotation'],
+        },
+      },
+    },
+  },
   server: {
     proxy: {
       '/api/chat': {

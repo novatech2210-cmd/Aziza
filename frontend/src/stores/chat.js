@@ -9,6 +9,7 @@ const CHAT_API_BASE = import.meta.env.VITE_CHAT_API_URL || '/api'
 // Reconnect config
 const RECONNECT_BASE_DELAY = 500
 const RECONNECT_MAX_DELAY = 5000
+const RECONNECT_MAX_ATTEMPTS = 20
 
 export const useChatStore = defineStore('chat', {
   state: () => ({
@@ -92,15 +93,21 @@ export const useChatStore = defineStore('chat', {
     },
 
     _scheduleReconnect() {
+      if (this.reconnectAttempt >= RECONNECT_MAX_ATTEMPTS) {
+        this.connectionState = 'disconnected'
+        this.reconnectAttempt = 0
+        return
+      }
       if (this._reconnectTimer) clearTimeout(this._reconnectTimer)
       const delay = Math.min(
         RECONNECT_BASE_DELAY * Math.pow(1.5, this.reconnectAttempt),
         RECONNECT_MAX_DELAY
       )
+      const jitter = delay * (0.75 + Math.random() * 0.5)
       this.reconnectAttempt++
       this._reconnectTimer = setTimeout(() => {
         this.connect(this._userId)
-      }, delay)
+      }, jitter)
     },
 
     sendMessage(text) {
