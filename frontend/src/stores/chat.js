@@ -355,5 +355,39 @@ export const useChatStore = defineStore('chat', {
     setMode(mode) {
       this.selectedMode = mode
     },
+
+    stopGeneration() {
+      if (!this.isStreaming) return
+      // Mark the streaming message as done
+      const lastMsg = this.messages[this.messages.length - 1]
+      if (lastMsg?.role === 'assistant' && lastMsg.isStreaming) {
+        lastMsg.isStreaming = false
+      }
+      this.isStreaming = false
+      // Send stop signal to server
+      if (this.wsConnection?.readyState === WebSocket.OPEN) {
+        this.wsConnection.send(JSON.stringify({ type: 'stop' }))
+      }
+    },
+
+    retryLastMessage() {
+      if (this.isStreaming) return
+      // Find the last user message
+      let lastUserIdx = -1
+      for (let i = this.messages.length - 1; i >= 0; i--) {
+        if (this.messages[i].role === 'user') {
+          lastUserIdx = i
+          break
+        }
+      }
+      if (lastUserIdx === -1) return
+      // Remove everything after the last user message
+      this.messages.splice(lastUserIdx + 1)
+      // Re-send the user message
+      const text = this.messages[lastUserIdx].content
+      // Remove the user message too (sendMessage will re-add it)
+      this.messages.splice(lastUserIdx, 1)
+      this.sendMessage(text)
+    },
   },
 })

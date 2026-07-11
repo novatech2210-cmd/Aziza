@@ -6,6 +6,21 @@ import { useChatStore } from '../stores/chat'
 import { useThemeStore } from '../stores/theme'
 import { useVoiceRecorder } from '../composables/useVoiceRecorder'
 import { useVoiceChat } from '../composables/useVoiceChat'
+import { marked } from 'marked'
+import hljs from 'highlight.js'
+
+// Configure marked for markdown rendering
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+  highlight: (code, lang) => {
+    if (lang && hljs.getLanguage(lang)) {
+      try { return hljs.highlight(code, { language: lang }).value } catch {}
+    }
+    try { return hljs.highlightAuto(code).value } catch {}
+    return code
+  },
+})
 
 const auth = useAuthStore()
 const chat = useChatStore()
@@ -20,6 +35,8 @@ const sidebarOpen = ref(true)
 const imageFile = ref(null)
 const userMenuOpen = ref(false)
 const userTier = ref(auth.user?.tier || 'free')
+const searchQuery = ref('')
+const searchOpen = ref(false)
 
 const AUTH_API = import.meta.env.VITE_AUTH_API_URL || '/api'
 
@@ -134,6 +151,56 @@ watch([() => voice.errorMessage.value, () => voiceFullDuplex.errorMessage.value]
 
 const isVoiceMode = computed(() => chat.selectedMode === 'voice-text' || chat.selectedMode === 'voice-voice')
 
+const filteredSessions = computed(() => {
+  if (!searchQuery.value.trim()) return chat.sessionHistory
+  const q = searchQuery.value.toLowerCase()
+  return chat.sessionHistory.filter(s =>
+    s.preview?.toLowerCase().includes(q) ||
+    s.messages?.some(m => m.content?.toLowerCase().includes(q))
+  )
+})
+
+function renderMarkdown(content) {
+  if (!content) return ''
+  return marked.parse(content)
+}
+
+function copyCode(e) {
+  const btn = e.target.closest('.code-copy-btn')
+  if (!btn) return
+  const block = btn.closest('.code-block-wrapper')
+  if (!block) return
+  const code = block.querySelector('code')?.textContent || ''
+  navigator.clipboard.writeText(code).then(() => {
+    btn.textContent = 'Copied!'
+    setTimeout(() => { btn.textContent = 'Copy' }, 1500)
+  })
+}
+
+function exportConversation() {
+  const lines = []
+  lines.push(`# AZIZA Conversation`)
+  lines.push(`Date: ${new Date().toLocaleString()}`)
+  lines.push(`Language: ${chat.selectedLanguage}`)
+  lines.push(`Mode: ${chat.selectedMode}`)
+  lines.push('')
+  for (const msg of chat.messages) {
+    const role = msg.role === 'assistant' ? 'AZIZA' : 'You'
+    const time = new Date(msg.timestamp).toLocaleTimeString()
+    lines.push(`### ${role} (${time})`)
+    lines.push('')
+    lines.push(msg.content)
+    lines.push('')
+  }
+  const blob = new Blob([lines.join('\n')], { type: 'text/markdown' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `aziza-chat-${chat.sessionId.slice(0, 8)}.md`
+  a.click()
+  URL.revokeObjectURL(url)
+}
+
 function logout() {
   chat.disconnect()
   auth.logout()
@@ -198,10 +265,23 @@ function getInitials(name) {
         </div>
 
         <div class="sidebar-section history-section">
-          <p class="section-label">History</p>
+          <div class="history-header">
+            <p class="section-label">History</p>
+            <div class="history-actions">
+              <button @click="searchOpen = !searchOpen" class="sidebar-icon-btn" title="Search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              </button>
+              <button @click="exportConversation" class="sidebar-icon-btn" title="Export" :disabled="!chat.messages.length">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div v-if="searchOpen" class="history-search">
+            <input v-model="searchQuery" placeholder="Search conversations..." class="search-input" />
+          </div>
           <div class="history-list">
             <div
-              v-for="session in chat.sessionHistory"
+              v-for="session in filteredSessions"
               :key="session.id"
               :class="['history-item', { active: chat.sessionId === session.id }]"
               @click="chat.loadSession(session)"
@@ -214,7 +294,7 @@ function getInitials(name) {
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
               </button>
             </div>
-            <p v-if="!chat.sessionHistory?.length" class="no-history">No previous chats</p>
+            <p v-if="!filteredSessions?.length" class="no-history">{{ searchQuery ? 'No matches found' : 'No previous chats' }}</p>
           </div>
         </div>
 
@@ -329,15 +409,16 @@ function getInitials(name) {
               </template>
             </div>
 
-            <div :class="['msg-bubble', msg.role]">
+            <div :class="['msg-bubble', msg.role, { error: msg.isError }]">
               <div class="msg-header">
                 <span class="msg-author">{{ msg.role === 'assistant' ? 'AZIZA' : auth.user?.username }}</span>
                 <span class="msg-time">{{ formatTime(msg.timestamp) }}</span>
               </div>
-              <div class="msg-content">
+              <div v-if="msg.role === 'assistant'" class="msg-content markdown-body" v-html="renderMarkdown(msg.content)" @click="copyCode"></div>
+              <div v-else class="msg-content">
                 <span>{{ msg.content }}</span>
-                <span v-if="msg.isStreaming" class="cursor-blink">|</span>
               </div>
+              <span v-if="msg.isStreaming" class="cursor-blink">|</span>
             </div>
           </div>
         </template>
@@ -398,9 +479,19 @@ function getInitials(name) {
           />
 
           <button
+            v-if="chat.isStreaming"
+            @click="chat.stopGeneration()"
+            class="stop-btn"
+            title="Stop generation"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+
+          <button
+            v-else
             @click="sendMessage"
-            :disabled="!inputText.trim() || chat.isStreaming || !chat.isConnected"
-            :class="['send-btn', { active: inputText.trim() && !chat.isStreaming }]"
+            :disabled="!inputText.trim() || !chat.isConnected"
+            :class="['send-btn', { active: inputText.trim() }]"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
               <line x1="22" y1="2" x2="11" y2="13" />
@@ -408,11 +499,22 @@ function getInitials(name) {
             </svg>
           </button>
         </div>
-        <p class="input-hint">
+        <div class="input-actions">
+          <button
+            v-if="!chat.isStreaming && chat.messages.length > 0"
+            @click="chat.retryLastMessage()"
+            class="action-btn"
+            title="Retry last message"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+            Retry
+          </button>
+          <p class="input-hint">
           <template v-if="chat.selectedMode === 'voice-voice'">Continuous full-duplex — tap mic to connect</template>
           <template v-else-if="isVoiceMode">Tap the microphone to start speaking</template>
           <template v-else>Press Enter to send, Shift+Enter for new line</template>
         </p>
+        </div>
       </div>
     </main>
 
@@ -636,6 +738,62 @@ function getInitials(name) {
   .connection-badge { font-size: 0.6rem; padding: 0.25rem 0.5rem; }
   .history-delete { display: flex; }
 }
+
+/* Markdown body styles for assistant messages */
+.markdown-body { white-space: normal; }
+.markdown-body p { margin: 0.5em 0; }
+.markdown-body p:first-child { margin-top: 0; }
+.markdown-body p:last-child { margin-bottom: 0; }
+.markdown-body ul, .markdown-body ol { margin: 0.5em 0; padding-left: 1.5em; }
+.markdown-body li { margin: 0.25em 0; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 { font-weight: 600; margin: 1em 0 0.5em; color: var(--text-primary); }
+.markdown-body h1 { font-size: 1.2em; }
+.markdown-body h2 { font-size: 1.1em; }
+.markdown-body h3 { font-size: 1em; }
+.markdown-body blockquote { border-left: 3px solid var(--accent); padding-left: 0.75em; margin: 0.5em 0; color: var(--text-secondary); }
+.markdown-body code:not(.hljs) { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.85em; background: var(--bg-tertiary); padding: 0.15em 0.4em; border-radius: 4px; border: 1px solid var(--border); color: var(--accent); }
+.markdown-body a { color: var(--accent); text-decoration: underline; }
+.markdown-body table { border-collapse: collapse; margin: 0.75em 0; width: 100%; font-size: 0.85em; }
+.markdown-body th, .markdown-body td { border: 1px solid var(--border); padding: 0.4em 0.75em; text-align: left; }
+.markdown-body th { background: var(--bg-tertiary); font-weight: 600; }
+.markdown-body hr { border: none; border-top: 1px solid var(--border); margin: 1em 0; }
+
+/* Code block wrapper */
+.code-block-wrapper { position: relative; margin: 0.75em 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-tertiary); }
+.code-block-wrapper pre { margin: 0; padding: 1em; overflow-x: auto; font-size: 0.82em; line-height: 1.6; }
+.code-block-wrapper pre code { font-family: 'JetBrains Mono', 'Fira Code', monospace; background: none; border: none; padding: 0; color: var(--text-primary); }
+.code-lang-label { position: absolute; top: 0; right: 0; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2em 0.6em; color: var(--text-muted); background: var(--bg-secondary); border-bottom-left-radius: 6px; border-left: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.code-copy-btn { position: absolute; top: 0.35em; right: 4em; font-size: 0.65rem; font-weight: 600; padding: 0.2em 0.6em; border-radius: 5px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-muted); cursor: pointer; transition: all 0.15s; opacity: 0; }
+.code-block-wrapper:hover .code-copy-btn { opacity: 1; }
+.code-copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Stop generation button */
+.stop-btn { flex-shrink: 0; background: rgba(239, 68, 68, 0.15); border: none; color: #ef4444; padding: 0.55rem; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.stop-btn:hover { background: rgba(239, 68, 68, 0.25); }
+
+/* Input actions row */
+.input-actions { display: flex; align-items: center; justify-content: space-between; max-width: 900px; margin: 0 auto; }
+.input-actions .action-btn { width: auto; height: auto; border-radius: 6px; background: none; border: none; color: var(--text-muted); font-size: 0.7rem; font-weight: 500; padding: 0.3rem 0.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.3rem; transition: all 0.15s; }
+.input-actions .action-btn:hover { color: var(--accent); background: var(--accent-glow); }
+.input-actions .action-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.input-actions .input-hint { flex: 1; }
+
+/* Sidebar history header */
+.history-header { display: flex; align-items: center; justify-content: space-between; padding: 0 0.25rem; }
+.history-header .section-label { margin-bottom: 0; }
+.history-actions { display: flex; gap: 0.25rem; }
+.sidebar-icon-btn { background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 0.3rem; border-radius: 5px; display: flex; transition: all 0.15s; }
+.sidebar-icon-btn:hover { color: var(--accent); background: var(--accent-glow); }
+.sidebar-icon-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* Search input */
+.history-search { padding: 0.25rem 0 0.5rem; }
+.search-input { width: 100%; padding: 0.45rem 0.65rem; font-size: 0.78rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-tertiary); color: var(--text-primary); outline: none; transition: border-color 0.2s; }
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus { border-color: var(--accent); }
+
+/* Error message bubble */
+.msg-bubble.error .msg-content { border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.05); }
 
 @media (max-width: 480px) {
   .chat-header { padding: 0.5rem 0.75rem; }
