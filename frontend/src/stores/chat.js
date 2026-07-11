@@ -59,8 +59,12 @@ export const useChatStore = defineStore('chat', {
         }
 
         ws.onmessage = (event) => {
-          const data = JSON.parse(event.data)
-          this._handleIncoming(data)
+          try {
+            const data = JSON.parse(event.data)
+            this._handleIncoming(data)
+          } catch (err) {
+            console.error('[Chat] Failed to parse WS message:', err)
+          }
         }
 
         ws.onclose = (e) => {
@@ -111,7 +115,9 @@ export const useChatStore = defineStore('chat', {
     },
 
     sendMessage(text) {
-      if (!this.wsConnection || this.wsConnection.readyState !== WebSocket.OPEN) return
+      if (!this.wsConnection || this.wsConnection.readyState !== WebSocket.OPEN) {
+        return false
+      }
 
       const userMsg = {
         id: generateUUID(),
@@ -136,6 +142,7 @@ export const useChatStore = defineStore('chat', {
         isStreaming: true,
       })
       this.isStreaming = true
+      return true
     },
 
     _handleIncoming(data) {

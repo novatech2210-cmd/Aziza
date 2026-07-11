@@ -125,8 +125,14 @@ watch(
 function sendMessage() {
   const text = inputText.value.trim()
   if (!text || chat.isStreaming) return
-  chat.sendMessage(text)
-  inputText.value = ''
+  const sent = chat.sendMessage(text)
+  if (sent) {
+    inputText.value = ''
+  } else {
+    window.dispatchEvent(new CustomEvent('aziza-toast', {
+      detail: { type: 'error', message: 'Not connected to server. Please wait for reconnection.' },
+    }))
+  }
 }
 
 function handleKeydown(e) {

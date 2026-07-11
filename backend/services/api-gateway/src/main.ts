@@ -3,6 +3,7 @@ import { ValidationPipe, Logger } from '@nestjs/common';
 import { AppModule } from './app.module';
 import { WsAdapter } from '@nestjs/platform-ws';
 import { CorrelationIdMiddleware } from './middleware/correlation-id.middleware';
+import { AllExceptionsFilter } from './filters/all-exceptions.filter';
 import helmet from 'helmet';
 
 async function bootstrap() {
@@ -11,9 +12,12 @@ async function bootstrap() {
 
   // Security headers
   app.use(helmet({
-    contentSecurityPolicy: false, // Disabled for inline scripts in SPA
+    contentSecurityPolicy: false,
     crossOriginEmbedderPolicy: false,
   }));
+
+  // Global exception filter — structured error responses
+  app.useGlobalFilters(new AllExceptionsFilter());
 
   // CORS — restrict to allowed origins
   const allowedOrigins = process.env.CORS_ORIGINS

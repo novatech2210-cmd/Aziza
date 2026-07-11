@@ -1,12 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { authFetch } from '../stores/auth'
 import { useThemeStore } from '../stores/theme'
 
 const router = useRouter()
 const theme = useThemeStore()
 
-const PERSONA_API_BASE = 'http://localhost:8000/personas'
+const PERSONA_API_BASE = import.meta.env.VITE_PERSONA_API_URL || '/api/personas'
 
 const personas = ref([])
 const selectedPersona = ref(null)
@@ -31,7 +32,7 @@ function cancelEdit() {
 
 async function savePersona() {
   try {
-    const res = await fetch(`${PERSONA_API_BASE}`, {
+    const res = await authFetch(`${PERSONA_API_BASE}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(draftPersona.value)
@@ -62,7 +63,7 @@ async function savePersona() {
 async function deleteSelectedPersona() {
   if (!selectedPersona.value || !confirm('Are you sure you want to delete this persona?')) return
   try {
-    const res = await fetch(`${PERSONA_API_BASE}/${selectedPersona.value.id}`, { method: 'DELETE' })
+    const res = await authFetch(`${PERSONA_API_BASE}/${selectedPersona.value.id}`, { method: 'DELETE' })
     if (res.ok) {
       personas.value = personas.value.filter(p => p.id !== selectedPersona.value.id)
       selectedPersona.value = personas.value.length ? personas.value[0] : null
@@ -104,7 +105,7 @@ async function sendTestMessage() {
   testResponse.value = null
   
   try {
-    const res = await fetch(`${API_BASE}/chat`, {
+    const res = await authFetch(`${API_BASE}/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: testMessage.value, max_tokens: 150 })
@@ -124,7 +125,7 @@ async function sendTestMessage() {
 
 async function fetchPersonas() {
   try {
-    const res = await fetch(`${PERSONA_API_BASE}`)
+    const res = await authFetch(`${PERSONA_API_BASE}`)
     if (res.ok) {
       personas.value = await res.json()
       if (personas.value.length > 0 && !selectedPersona.value) {

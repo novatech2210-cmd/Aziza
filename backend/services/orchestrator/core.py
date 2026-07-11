@@ -99,26 +99,28 @@ class AIOrchestrator:
         last_audio_time = {}
 
         async for message in pubsub.listen():
-            if message["type"] != b"pmessage":
-                continue
+            try:
+                if message["type"] != b"pmessage":
+                    continue
+                    
+                channel = message["channel"].decode('utf-8')
                 
-            channel = message["channel"].decode('utf-8')
-            
-            if channel == "gateway:connection":
-                await self._handle_connection(message["data"].decode('utf-8'))
-            elif channel == "orchestrator:worker:heartbeat":
-                self._handle_heartbeat(message["data"].decode('utf-8'))
-            elif channel == "orchestrator:session:release":
-                self._handle_release(message["data"].decode('utf-8'))
-            elif channel.endswith(":audio"):
-                session_id = channel.split(":")[1]
-                last_audio_time[session_id] = asyncio.get_event_loop().time()
-                # Start a turn timer if not already running
-                asyncio.create_task(self._check_for_turn_end(session_id, last_audio_time))
-            elif channel.endswith(":vad"):
-                session_id = channel.split(":")[1]
-                if message["data"] == b"1":
-                    await self.trigger_interrupt(session_id)
+                if channel == "gateway:connection":
+                    await self._handle_connection(message["data"].decode('utf-8'))
+                elif channel == "orchestrator:worker:heartbeat":
+                    self._handle_heartbeat(message["data"].decode('utf-8'))
+                elif channel == "orchestrator:session:release":
+                    self._handle_release(message["data"].decode('utf-8'))
+                elif channel.endswith(":audio"):
+                    session_id = channel.split(":")[1]
+                    last_audio_time[session_id] = asyncio.get_event_loop().time()
+                    asyncio.create_task(self._check_for_turn_end(session_id, last_audio_time))
+                elif channel.endswith(":vad"):
+                    session_id = channel.split(":")[1]
+                    if message["data"] == b"1":
+                        await self.trigger_interrupt(session_id)
+            except Exception as e:
+                logger.error("Error processing Redis event", error=str(e), channel=channel if 'channel' in dir() else "unknown")
 
     def _handle_heartbeat(self, data: str):
         try:
@@ -238,6 +240,16 @@ class AIOrchestrator:
             await self.session_manager.ensure_session(session_id, params=params)
         except Exception as e:
             logger.error("Error handling gateway connection", error=str(e))
+            # Notify the session that connection setup failed
+            try:
+                session_id = json.loads(data).get("sessionId")
+                if session_id:
+                    await self.redis.publish(f"session:{session_id}:control", json.dumps({
+                        "type": "error",
+                        "message": "Failed to initialize session. Please reconnect.",
+                    }))
+            except Exception:
+                pass
 
     async def process_conversation_turn(self, session_id: str, text_input: str = None):
         session = await self.session_manager.get_or_create(session_id)
@@ -267,6 +279,14 @@ class AIOrchestrator:
         except Exception as e:
             logger.error("Turn coordination failed", error=str(e), session_id=session_id)
             await self.redis.hset(f"session:{session_id}:meta", "state", SessionState.LISTENING)
+            # Notify the user that something went wrong
+            try:
+                await self.redis.publish(f"session:{session_id}:control", json.dumps({
+                    "type": "error",
+                    "message": "Sorry, I encountered an error processing your request. Please try again.",
+                }))
+            except Exception:
+                logger.error("Failed to send error notification", session_id=session_id)
 
     async def trigger_interrupt(self, session_id: str):
         logger.info("Global interrupt triggered", session_id=session_id)

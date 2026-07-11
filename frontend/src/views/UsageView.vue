@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../stores/auth'
+import { useAuthStore, authFetch } from '../stores/auth'
 import { useThemeStore } from '../stores/theme'
 
 const auth = useAuthStore()
@@ -15,31 +15,29 @@ const tierInfo = ref(null)
 const tiers = ref({})
 const loading = ref(true)
 
-const headers = computed(() => ({
-  Authorization: `Bearer ${localStorage.getItem('aziza_token')}`,
-}))
-
 async function fetchAll() {
   loading.value = true
   try {
     const [usageRes, tierRes, tiersRes] = await Promise.all([
-      fetch(`${AUTH_API}/me/usage`, { headers: headers.value }),
-      fetch(`${AUTH_API}/me/tier`, { headers: headers.value }),
-      fetch(`${AUTH_API}/tiers`, { headers: headers.value }),
+      authFetch(`${AUTH_API}/me/usage`),
+      authFetch(`${AUTH_API}/me/tier`),
+      authFetch(`${AUTH_API}/tiers`),
     ])
     if (usageRes.ok) usage.value = await usageRes.json()
     if (tierRes.ok) tierInfo.value = await tierRes.json()
     if (tiersRes.ok) tiers.value = await tiersRes.json()
-  } catch {}
+  } catch (err) {
+    console.error('[Usage] Failed to fetch:', err)
+  }
   loading.value = false
 }
 
 async function selectTier(tierKey) {
   if (tierKey === tierInfo.value?.tier) return
   try {
-    const res = await fetch(`${AUTH_API}/me/tier`, {
+    const res = await authFetch(`${AUTH_API}/me/tier`, {
       method: 'PUT',
-      headers: { ...headers.value, 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ tier: tierKey }),
     })
     if (res.ok) {
@@ -49,7 +47,9 @@ async function selectTier(tierKey) {
         detail: { type: 'success', message: `Plan changed to ${tierInfo.value.label}` },
       }))
     }
-  } catch {}
+  } catch (err) {
+    console.error('[Usage] Failed to change tier:', err)
+  }
 }
 
 function usagePercent(used, limit) {

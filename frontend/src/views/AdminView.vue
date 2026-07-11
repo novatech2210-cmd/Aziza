@@ -43,24 +43,32 @@ function connectWs() {
   ws = new WebSocket(`${ADMIN_WS}/admin-stats?token=${token}`)
 
   ws.onmessage = (event) => {
-    const data = JSON.parse(event.data)
-    activeSessions.value = data.active_sessions ?? 0
-    gpu0Util.value = data.gpu_0_util ?? 0
-    gpu0Mem.value = data.gpu_0_mem ?? 0
-    gpu0MemTotal.value = data.gpu_0_mem_total ?? 0
-    gpu0Temp.value = data.gpu_0_temp ?? 0
-    gpu0Power.value = data.gpu_0_power ?? 0
-    latencyP50.value = data.latency_p50 ?? 0
-    latencyP95.value = data.latency_p95 ?? 0
-    errorRate.value = data.error_rate ?? 0
-    tokensPerSec.value = data.tokens_per_sec ?? 0
-    requestsTotal.value = data.requests_total ?? 0
+    try {
+      const data = JSON.parse(event.data)
+      activeSessions.value = data.active_sessions ?? 0
+      gpu0Util.value = data.gpu_0_util ?? 0
+      gpu0Mem.value = data.gpu_0_mem ?? 0
+      gpu0MemTotal.value = data.gpu_0_mem_total ?? 0
+      gpu0Temp.value = data.gpu_0_temp ?? 0
+      gpu0Power.value = data.gpu_0_power ?? 0
+      latencyP50.value = data.latency_p50 ?? 0
+      latencyP95.value = data.latency_p95 ?? 0
+      errorRate.value = data.error_rate ?? 0
+      tokensPerSec.value = data.tokens_per_sec ?? 0
+      requestsTotal.value = data.requests_total ?? 0
 
-    gpuHistory.value.push({ ts: Date.now(), gpu0: gpu0Util.value })
-    if (gpuHistory.value.length > 60) gpuHistory.value.shift()
+      gpuHistory.value.push({ ts: Date.now(), gpu0: gpu0Util.value })
+      if (gpuHistory.value.length > 60) gpuHistory.value.shift()
 
-    latencyHistory.value.push({ ts: Date.now(), p50: latencyP50.value, p95: latencyP95.value })
-    if (latencyHistory.value.length > 60) latencyHistory.value.shift()
+      latencyHistory.value.push({ ts: Date.now(), p50: latencyP50.value, p95: latencyP95.value })
+      if (latencyHistory.value.length > 60) latencyHistory.value.shift()
+    } catch (err) {
+      console.error('[Admin] Failed to parse WS message:', err)
+    }
+  }
+
+  ws.onerror = (err) => {
+    console.error('[Admin] WebSocket error:', err)
   }
 
   ws.onclose = (e) => {
@@ -101,8 +109,15 @@ async function fetchRequestMetrics() {
 }
 
 async function terminateSession(sessionId) {
-  await authFetch(`${ADMIN_API}/admin/sessions/${sessionId}`, { method: 'DELETE' })
-  await fetchSessions()
+  try {
+    await authFetch(`${ADMIN_API}/admin/sessions/${sessionId}`, { method: 'DELETE' })
+    await fetchSessions()
+  } catch (err) {
+    console.error('[Admin] Failed to terminate session:', err)
+    window.dispatchEvent(new CustomEvent('aziza-toast', {
+      detail: { type: 'error', message: 'Failed to terminate session' },
+    }))
+  }
 }
 
 // Disconnect All modal
@@ -120,8 +135,17 @@ async function disconnectAll() {
       }))
       sessions.value = []
       activeSessions.value = 0
+    } else {
+      window.dispatchEvent(new CustomEvent('aziza-toast', {
+        detail: { type: 'error', message: 'Failed to disconnect sessions' },
+      }))
     }
-  } catch {}
+  } catch (err) {
+    console.error('[Admin] Failed to disconnect all:', err)
+    window.dispatchEvent(new CustomEvent('aziza-toast', {
+      detail: { type: 'error', message: 'Failed to disconnect sessions' },
+    }))
+  }
   disconnecting.value = false
   showDisconnectModal.value = false
 }
