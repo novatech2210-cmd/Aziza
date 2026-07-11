@@ -27,16 +27,6 @@ const chartData = computed(() => ({
       pointRadius: 0,
       borderWidth: 2,
     },
-    {
-      label: 'GPU-1',
-      data: props.gpuHistory.map((d) => d.gpu1),
-      borderColor: '#8b5cf6',
-      backgroundColor: 'rgba(139, 92, 246, 0.08)',
-      fill: true,
-      tension: 0.4,
-      pointRadius: 0,
-      borderWidth: 2,
-    },
   ],
 }))
 

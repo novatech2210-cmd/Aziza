@@ -8,6 +8,8 @@ import LatencyChart from '../components/admin/LatencyChart.vue'
 import SessionMonitor from '../components/admin/SessionMonitor.vue'
 import RagViewer from '../components/admin/RagViewer.vue'
 import ErrorLog from '../components/admin/ErrorLog.vue'
+import ServiceHealth from '../components/admin/ServiceHealth.vue'
+import RequestMetrics from '../components/admin/RequestMetrics.vue'
 
 const auth = useAuthStore()
 const router = useRouter()
@@ -18,13 +20,21 @@ const ADMIN_API = import.meta.env.VITE_ADMIN_API_URL || '/admin-api'
 
 const activeSessions = ref(0)
 const gpu0Util = ref(0)
-const gpu1Util = ref(0)
+const gpu0Mem = ref(0)
+const gpu0MemTotal = ref(0)
+const gpu0Temp = ref(0)
+const gpu0Power = ref(0)
+const latencyP50 = ref(0)
+const latencyP95 = ref(0)
 const errorRate = ref(0)
+const tokensPerSec = ref(0)
+const requestsTotal = ref(0)
 const gpuHistory = ref([])
 const latencyHistory = ref([])
 const heatmapData = ref(null)
 const sessions = ref([])
 const errors = ref([])
+const requestMetrics = ref({})
 
 let ws = null
 
@@ -34,22 +44,23 @@ function connectWs() {
 
   ws.onmessage = (event) => {
     const data = JSON.parse(event.data)
-    activeSessions.value = data.sessions?.active ?? 0
+    activeSessions.value = data.active_sessions ?? 0
+    gpu0Util.value = data.gpu_0_util ?? 0
+    gpu0Mem.value = data.gpu_0_mem ?? 0
+    gpu0MemTotal.value = data.gpu_0_mem_total ?? 0
+    gpu0Temp.value = data.gpu_0_temp ?? 0
+    gpu0Power.value = data.gpu_0_power ?? 0
+    latencyP50.value = data.latency_p50 ?? 0
+    latencyP95.value = data.latency_p95 ?? 0
+    errorRate.value = data.error_rate ?? 0
+    tokensPerSec.value = data.tokens_per_sec ?? 0
+    requestsTotal.value = data.requests_total ?? 0
 
-    if (data.gpu?.length > 0) {
-      gpu0Util.value = data.gpu[0]?.utilization_pct ?? 0
-      gpu1Util.value = data.gpu[1]?.utilization_pct ?? 0
-    }
-
-    gpuHistory.value.push({ ts: data.ts, gpu0: gpu0Util.value, gpu1: gpu1Util.value })
+    gpuHistory.value.push({ ts: Date.now(), gpu0: gpu0Util.value })
     if (gpuHistory.value.length > 60) gpuHistory.value.shift()
 
-    if (data.latency) {
-      latencyHistory.value.push({ ts: data.ts, p50: data.latency.p50 ?? 0, p95: data.latency.p95 ?? 0 })
-      if (latencyHistory.value.length > 60) latencyHistory.value.shift()
-    }
-
-    errorRate.value = data.error_rate ?? 0
+    latencyHistory.value.push({ ts: Date.now(), p50: latencyP50.value, p95: latencyP95.value })
+    if (latencyHistory.value.length > 60) latencyHistory.value.shift()
   }
 
   ws.onclose = (e) => {
@@ -79,6 +90,13 @@ async function fetchHeatmap() {
   try {
     const res = await authFetch(`${ADMIN_API}/admin/latency/heatmap`)
     if (res.ok) heatmapData.value = await res.json()
+  } catch {}
+}
+
+async function fetchRequestMetrics() {
+  try {
+    const res = await authFetch(`${ADMIN_API}/admin/metrics`)
+    if (res.ok) requestMetrics.value = await res.json()
   } catch {}
 }
 
@@ -119,7 +137,8 @@ onMounted(() => {
   fetchSessions()
   fetchErrors()
   fetchHeatmap()
-  const interval = setInterval(() => { fetchSessions(); fetchErrors(); fetchHeatmap() }, 10000)
+  fetchRequestMetrics()
+  const interval = setInterval(() => { fetchSessions(); fetchErrors(); fetchHeatmap(); fetchRequestMetrics() }, 10000)
   onUnmounted(() => clearInterval(interval))
 })
 
@@ -165,6 +184,24 @@ onUnmounted(() => { if (ws) ws.close() })
       </div>
     </header>
 
+    <!-- Service Health -->
+    <div class="panel">
+      <h3 class="panel-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        Service Health
+      </h3>
+      <ServiceHealth />
+    </div>
+
+    <!-- Request Metrics -->
+    <div class="panel">
+      <h3 class="panel-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Request Metrics
+      </h3>
+      <RequestMetrics :metrics="requestMetrics" />
+    </div>
+
     <!-- Stat Cards -->
     <div class="stat-grid">
       <div class="stat-card">
@@ -182,18 +219,31 @@ onUnmounted(() => { if (ws) ws.close() })
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
         </div>
         <div class="stat-info">
-          <span class="stat-label">GPU-0</span>
+          <span class="stat-label">GPU</span>
           <span :class="['stat-value', gpuColorClass(gpu0Util)]">{{ gpu0Util }}%</span>
+          <span class="stat-sub" v-if="gpu0MemTotal">{{ Math.round(gpu0Mem / 1024) }}MB / {{ Math.round(gpu0MemTotal / 1024) }}MB</span>
         </div>
       </div>
 
       <div class="stat-card">
-        <div :class="['stat-icon', 'gpu-icon', gpuColorClass(gpu1Util)]">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+        <div class="stat-icon" :style="{ background: gpu0Temp > 80 ? 'rgba(239,68,68,0.1)' : gpu0Temp > 65 ? 'rgba(234,179,8,0.1)' : 'rgba(59,130,246,0.1)', color: gpu0Temp > 80 ? '#ef4444' : gpu0Temp > 65 ? '#eab308' : '#3b82f6' }">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>
         </div>
         <div class="stat-info">
-          <span class="stat-label">GPU-1</span>
-          <span :class="['stat-value', gpuColorClass(gpu1Util)]">{{ gpu1Util }}%</span>
+          <span class="stat-label">Temp</span>
+          <span class="stat-value">{{ gpu0Temp }}°C</span>
+          <span class="stat-sub" v-if="gpu0Power">{{ gpu0Power }}W</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon latency-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-label">TTFT P50</span>
+          <span :class="['stat-value', latencyP50 < 500 ? 'green' : latencyP50 < 2000 ? 'yellow' : 'red']">{{ latencyP50 < 1000 ? Math.round(latencyP50) + 'ms' : (latencyP50 / 1000).toFixed(1) + 's' }}</span>
+          <span class="stat-sub" v-if="latencyP95">P95: {{ latencyP95 < 1000 ? Math.round(latencyP95) + 'ms' : (latencyP95 / 1000).toFixed(1) + 's' }}</span>
         </div>
       </div>
 
@@ -204,6 +254,26 @@ onUnmounted(() => { if (ws) ws.close() })
         <div class="stat-info">
           <span class="stat-label">Error Rate</span>
           <span class="stat-value">{{ errorRate }}<small>/min</small></span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon" style="background: rgba(139,92,246,0.1); color: #8b5cf6;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-label">Tokens/sec</span>
+          <span class="stat-value accent">{{ Math.round(tokensPerSec) }}</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon" style="background: rgba(59,130,246,0.1); color: #3b82f6;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-label">Total Requests</span>
+          <span class="stat-value">{{ requestsTotal }}</span>
         </div>
       </div>
     </div>
@@ -387,7 +457,7 @@ onUnmounted(() => { if (ws) ws.close() })
 /* Stat Cards */
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
   margin-bottom: 1.25rem;
 }
@@ -471,6 +541,20 @@ onUnmounted(() => { if (ws) ws.close() })
   font-size: 0.75rem;
   color: var(--text-tertiary);
   font-weight: 500;
+}
+
+.stat-sub {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+.stat-value.accent { color: var(--accent); }
+
+.latency-icon {
+  background: rgba(20, 184, 166, 0.1);
+  color: #14b8a6;
 }
 
 /* Chart Grid */
