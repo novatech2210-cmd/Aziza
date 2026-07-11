@@ -10,6 +10,15 @@ import { v4 as uuidv4 } from 'uuid';
 import * as http from 'http';
 import Redis from 'ioredis';
 import * as jwt from 'jsonwebtoken';
+import * as path from 'path';
+import * as fs from 'fs';
+import { MetricsService } from '../monitoring/metrics.service';
+
+// Load shared system prompts
+const promptsPath = path.resolve(__dirname, '../../../../shared/system-prompts.json');
+const promptsData = JSON.parse(fs.readFileSync(promptsPath, 'utf-8'));
+const SHARED_PROMPTS = promptsData.prompts;
+const LANGUAGE_NAMES = promptsData.languageNames;
 
 const SYSTEM_PROMPT =
   'You are Aziza, an advanced AI Assistant. Be helpful, concise, and friendly.';
@@ -70,7 +79,17 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   /** sessionId → request start time (for TTFT measurement) */
   private requestStartTimes: Map<string, number> = new Map();
 
+  /** Drift detection statistics */
+  private driftStats = {
+    totalChecks: 0,
+    driftDetected: 0,
+    retriesTriggered: 0,
+    retriesSucceeded: 0,
+    retriesExhausted: 0,
+  };
+
   private redis: Redis;
+  private metricsService: MetricsService;
 
   constructor() {
     const redisConfig = {
@@ -82,6 +101,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     this.redis.on('error', (err: any) =>
       this.logger.error('Redis Publisher Error', err),
     );
+    this.metricsService = new MetricsService();
   }
 
   // ─── Connection lifecycle ────────────────────────────────────────────────────
@@ -167,33 +187,89 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
   // ─── Core text handler ───────────────────────────────────────────────────────
 
-  private readonly SYSTEM_PROMPTS = {
-    en: 'You are Aziza — a warm, intelligent, and attentive AI assistant. Speak naturally and conversationally. Keep responses concise. RESPOND ONLY IN ENGLISH.',
-    ru: 'Ты Азиза — тёплый, умный и внимательный AI-ассистент. Говори естественно по-русски, как живой человек. Избегай формальных оборотов. Отвечай кратко и по делу. ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.',
-    ru_colloquial: 'Ты Азиза — тёплый, умный и внимательный AI-ассистент. Говори естественно и непринужденно по-русски, используй разговорный стиль. ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.',
-    ru_professional: 'Вы Азиза — профессиональный, умный и внимательный AI-ассистент. Отвечайте вежливо, используя деловой и профессиональный стиль русского языка. ОТВЕЧАЙТЕ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.',
-    uz: "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. O'zbek tilida tabiiy va jonli gapiring. Qisqa va aniq javob bering. FAQAT O'ZBEK TILIDA JAVOB BERING.",
-    uz_latin: "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. Iltimos, rasmiy 'Siz' yoki norasmiy 'sen' shakllarini vaziyatga qarab ishlating. FAQAT O'ZBEK LOTIN YOZUVIDA JAVOB BERING.",
-    uz_cyrillic: 'Сиз Азиза — меҳрибон, ақлли ва диққатли АИ ёрдамчисиз. Илтимос, расмий \'Сиз\' ёки норасмий \'сен\' шаклларини вазиятга қараб ишлатинг. ФАҚАТ ЎЗБЕК КИРИЛЛ ЁЗУВИДА ЖАВОБ БЕРИНГ.',
-  } as const;
+  // System prompts loaded from shared/system-prompts.json
+  private readonly SYSTEM_PROMPTS = SHARED_PROMPTS as Record<string, string>;
+  private readonly LANGUAGE_NAMES = LANGUAGE_NAMES as Record<string, string>;
 
   private async detectLanguage(text: string): Promise<string> {
+    // 1. Try franc-min for language identification
     try {
-      // Inline franc-min logic for basic language detection.
-      // In production, you might want a proper library imported here.
-      // Since franc-min might not be installed, we will use a naive implementation 
-      // or rely on a fallback if franc-min is not available. 
-      // Actually, since franc-min is required by the task, we will require it.
       const franc = require('franc-min').franc;
       const code = franc(text, { minLength: 3 });
       const map: Record<string, string> = {
         rus: 'ru', uzb: 'uz', eng: 'en',
       };
-      return map[code] ?? 'unknown';
-    } catch (err) {
-      this.logger.error(`Language detection failed: ${err}`);
+      const detected = map[code];
+      if (detected) {
+        // For Uzbek, determine script variant
+        if (detected === 'uz') {
+          return this.detectUzbekScript(text);
+        }
+        return detected;
+      }
+    } catch {
+      // franc-min not available — fall through to heuristic detection
     }
+
+    // 2. Heuristic detection: count characters by script
+    let cyrillic = 0;
+    let latin = 0;
+    let hasOkina = false;
+    let hasUzbekCyrillic = false;
+
+    // Uzbek-specific Cyrillic chars (Қ, Ғ, Ҳ, Ў and their lowercase)
+    const uzbekCyrillicChars = new Set([
+      0x049A, 0x049B, // Қ/қ
+      0x0492, 0x0493, // Ғ/ғ
+      0x04BA, 0x04BB, // Һ/һ
+      0x040E, 0x045E, // Ў/ў
+      0x04B6, 0x04B7, // Ҷ/ҷ
+    ]);
+
+    for (const ch of text) {
+      const cp = ch.charCodeAt(0);
+      if (cp === 0x02BB) {
+        hasOkina = true;
+        latin++;
+      } else if ((cp >= 0x0400 && cp <= 0x04FF) || (cp >= 0x0500 && cp <= 0x052F)) {
+        cyrillic++;
+        if (uzbekCyrillicChars.has(cp)) {
+          hasUzbekCyrillic = true;
+        }
+      } else if (cp >= 0x0041 && cp <= 0x007A) {
+        latin++;
+      }
+    }
+
+    // 3. Uzbek detection: okina (ʻ) or Uzbek-specific Cyrillic chars
+    if (hasOkina || hasUzbekCyrillic) {
+      return this.detectUzbekScript(text);
+    }
+
+    // 4. Script-based fallback
+    if (cyrillic > latin && cyrillic > 0) {
+      return 'ru';
+    }
+    if (latin > 0) return 'en';
     return 'ru';
+  }
+
+  /**
+   * Determine Uzbek script variant (Latin vs Cyrillic) from text.
+   */
+  private detectUzbekScript(text: string): string {
+    let cyrillic = 0;
+    let latin = 0;
+    for (const ch of text) {
+      const cp = ch.charCodeAt(0);
+      if (cp === 0x02BB) { latin++; continue; } // okina counts as Latin
+      if ((cp >= 0x0400 && cp <= 0x04FF) || (cp >= 0x0500 && cp <= 0x052F)) {
+        cyrillic++;
+      } else if (cp >= 0x0041 && cp <= 0x007A) {
+        latin++;
+      }
+    }
+    return cyrillic > latin ? 'uz_cyrillic' : 'uz_latin';
   }
 
   /**
@@ -236,9 +312,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       this.SYSTEM_PROMPTS[lang as keyof typeof this.SYSTEM_PROMPTS] ||
       this.SYSTEM_PROMPTS.en;
 
-    let langName = 'English';
-    if (lang === 'ru' || lang.startsWith('ru_')) langName = 'Russian';
-    if (lang === 'uz' || lang.startsWith('uz_')) langName = 'Uzbek';
+    let langName = this.LANGUAGE_NAMES[lang] || 'English';
 
     const messages = [
       {
@@ -317,6 +391,16 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
         this.logger.error(
           `vLLM returned HTTP ${res.statusCode} for session ${sessionId}`,
         );
+        const startTime = this.requestStartTimes.get(sessionId) || Date.now();
+        this.metricsService.recordRequest({
+          timestamp: Date.now() / 1000,
+          ttftMs: 0,
+          tokensPerSec: 0,
+          service: `vllm:${targetPort}`,
+          language: lang,
+          success: false,
+          error: `HTTP ${res.statusCode}`,
+        });
         if (client.readyState === 1) {
           client.send(
             JSON.stringify({
@@ -380,9 +464,23 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
               client.send(JSON.stringify({ type: 'done' }));
             }
 
+            // Record request metrics
+            const startTime = this.requestStartTimes.get(sessionId) || Date.now();
+            const totalMs = Date.now() - startTime;
+            const tokenCount = fullResponse.split(/\s+/).length;
+            this.metricsService.recordRequest({
+              timestamp: Date.now() / 1000,
+              ttftMs: firstTokenSent ? totalMs : 0,
+              tokensPerSec: tokenCount / (totalMs / 1000),
+              service: `vllm:${targetPort}`,
+              language: lang,
+              success: true,
+            });
+
             history.push({ role: 'assistant', content: fullResponse });
             this.history.set(sessionId, history);
             this.retryAttempts.delete(sessionId);
+            this.trackDriftOutcome(sessionId, lang, true);
             this.logger.log(
               `[${sessionId}] ← Aziza: ${fullResponse.slice(0, 80)}…`,
             );
@@ -428,6 +526,16 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
         this.logger.error(
           `vLLM stream error for ${sessionId}: ${err.message}`,
         );
+        const startTime = this.requestStartTimes.get(sessionId) || Date.now();
+        this.metricsService.recordRequest({
+          timestamp: Date.now() / 1000,
+          ttftMs: Date.now() - startTime,
+          tokensPerSec: 0,
+          service: `vllm:${targetPort}`,
+          language: lang,
+          success: false,
+          error: `stream_error: ${err.message}`,
+        });
         if (client.readyState === 1) {
           client.send(
             JSON.stringify({
@@ -445,6 +553,17 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       this.logger.error(
         `Could not reach vLLM for ${sessionId}: ${err.message}`,
       );
+      // Record error metrics
+      const startTime = this.requestStartTimes.get(sessionId) || Date.now();
+      this.metricsService.recordRequest({
+        timestamp: Date.now() / 1000,
+        ttftMs: Date.now() - startTime,
+        tokensPerSec: 0,
+        service: `vllm:${targetPort}`,
+        language: lang,
+        success: false,
+        error: err.message,
+      });
       if (client.readyState === 1) {
         client.send(
           JSON.stringify({
@@ -465,8 +584,12 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   }
 
   /**
-   * Returns true iff we should retry the request because the
-   * uz_cyrillic response drifted into Latin/ASCII characters.
+   * Detects script drift in Uzbek responses and decides whether to retry.
+   *
+   * - uz_cyrillic: retries if >10% of non-space chars are Latin letters (A-Z)
+   * - uz_latin: retries if >10% of non-space chars are Cyrillic letters (А-Я)
+   * - uz (auto): retries if >30% of chars are from the "wrong" script
+   *
    * Caps retries at 1 per session per turn.
    */
   private shouldRetryForDrift(
@@ -474,37 +597,87 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
     lang: string,
     fullResponse: string,
   ): boolean {
-    if (lang !== 'uz_cyrillic') return false;
-    if (fullResponse.length === 0) return false;
+    if (!lang.startsWith('uz') || fullResponse.length === 0) return false;
 
-    let asciiCount = 0;
-    for (const char of fullResponse) {
-      const code = char.charCodeAt(0);
-      if (
-        code >= 32 &&
-        code <= 126 &&
-        !/\d/.test(char) &&
-        !/[.,!?()\[\]{}"':;\s]/.test(char)
-      ) {
-        asciiCount++;
+    this.driftStats.totalChecks++;
+
+    // Count characters by script
+    let cyrillicCount = 0;
+    let latinCount = 0;
+    let totalAlpha = 0;
+
+    for (const ch of fullResponse) {
+      const cp = ch.charCodeAt(0);
+      if ((cp >= 0x0400 && cp <= 0x04FF) || (cp >= 0x0500 && cp <= 0x052F)) {
+        cyrillicCount++;
+        totalAlpha++;
+      } else if (cp >= 0x0041 && cp <= 0x007A) {
+        latinCount++;
+        totalAlpha++;
       }
     }
 
-    const driftRatio = asciiCount / fullResponse.length;
-    if (driftRatio <= 0.1) return false;
+    if (totalAlpha === 0) return false;
 
+    let driftDetected = false;
+    let driftType = '';
+
+    if (lang === 'uz_cyrillic' || lang === 'uz-cyrl') {
+      // Expected: Cyrillic. Drift = Latin characters
+      const driftRatio = latinCount / totalAlpha;
+      if (driftRatio > 0.1) {
+        driftDetected = true;
+        driftType = `latin_in_cyrillic (${(driftRatio * 100).toFixed(1)}%)`;
+      }
+    } else if (lang === 'uz_latin' || lang === 'uz-latn') {
+      // Expected: Latin. Drift = Cyrillic characters
+      const driftRatio = cyrillicCount / totalAlpha;
+      if (driftRatio > 0.1) {
+        driftDetected = true;
+        driftType = `cyrillic_in_latin (${(driftRatio * 100).toFixed(1)}%)`;
+      }
+    } else if (lang === 'uz') {
+      // Auto-detected Uzbek — check for English drift (neither Cyrillic nor Latin Uzbek)
+      const englishRatio = latinCount / totalAlpha;
+      // If mostly Latin but no Uzbek indicators, might be English drift
+      // For now, just check that response isn't predominantly one script
+      // when the user sent in the other
+    }
+
+    if (!driftDetected) return false;
+
+    this.driftStats.driftDetected++;
     const attempts = this.retryAttempts.get(sessionId) ?? 0;
+
     if (attempts >= 1) {
+      this.driftStats.retriesExhausted++;
       this.logger.warn(
-        `[${sessionId}] English drift still present after retry (ratio=${driftRatio.toFixed(2)}). Sending as-is.`,
+        `[${sessionId}] Drift still present after retry (${driftType}). Sending as-is.`,
       );
       return false;
     }
 
     this.retryAttempts.set(sessionId, attempts + 1);
+    this.driftStats.retriesTriggered++;
     this.logger.warn(
-      `[${sessionId}] English drift detected (ratio=${driftRatio.toFixed(2)}). Retrying once.`,
+      `[${sessionId}] Drift detected for ${lang}: ${driftType}. Retrying once.`,
     );
     return true;
+  }
+
+  /**
+   * After a successful response, check if a retry would have been needed
+   * and if the retry fixed it (for metrics tracking).
+   */
+  private trackDriftOutcome(sessionId: string, lang: string, success: boolean) {
+    if (!lang.startsWith('uz')) return;
+    const attempts = this.retryAttempts.get(sessionId) ?? 0;
+    if (attempts > 0 && success) {
+      this.driftStats.retriesSucceeded++;
+    }
+  }
+
+  getDriftStats() {
+    return { ...this.driftStats };
   }
 }

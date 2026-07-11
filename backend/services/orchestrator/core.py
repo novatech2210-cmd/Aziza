@@ -6,7 +6,10 @@ import structlog
 import redis.asyncio as redis
 from session_manager import SessionManager
 from state_machine import SessionState
+from structured_logging import setup_structured_logging, set_session_id, set_worker_id
 
+# Setup structured logging
+setup_structured_logging("orchestrator", level=os.getenv("LOG_LEVEL", "INFO"))
 logger = structlog.get_logger()
 
 # vLLM endpoints by language
@@ -16,12 +19,19 @@ VLLM_ENDPOINTS = {
     "uz": {"host": "127.0.0.1", "port": 8003, "model": "alloma"},
 }
 
-# System prompts by language
-SYSTEM_PROMPTS = {
-    "en": "You are Aziza — a warm, intelligent, and attentive AI assistant. Speak naturally and conversationally. Keep responses concise. RESPOND ONLY IN ENGLISH.",
-    "ru": "Ты Азиза — тёплый, умный и внимательный AI-ассистент. Говори естественно по-русски, как живой человек. Избегай формальных оборотов. Отвечай кратко и по делу. ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.",
-    "uz": "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. O'zbek tilida tabiiy va jonli gapiring. Qisqa va aniq javob bering. FAQAT O'ZBEK TILIDA JAVOB BERING.",
-}
+# Load system prompts from shared config
+_PROMPTS_PATH = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'shared', 'system-prompts.json')
+try:
+    with open(_PROMPTS_PATH) as _f:
+        _prompts_data = json.load(_f)
+    SYSTEM_PROMPTS = _prompts_data["prompts"]
+except (FileNotFoundError, KeyError):
+    # Fallback if shared file not found
+    SYSTEM_PROMPTS = {
+        "en": "You are Aziza — a warm, intelligent, and attentive AI assistant. Speak naturally and conversationally. Keep responses concise. RESPOND ONLY IN ENGLISH.",
+        "ru": "Ты Азиза — тёплый, умный и внимательный AI-ассистент. Говори естественно по-русски, как живой человек. Избегай формальных оборотов. Отвечай кратко и по делу. ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.",
+        "uz": "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. O'zbek tilida tabiiy va jonli gapiring. Qisqa va aniq javob bering. FAQAT O'ZBEK TILIDA JAVOB BERING.",
+    }
 
 
 class AIOrchestrator:
@@ -35,9 +45,14 @@ class AIOrchestrator:
         # Worker registry: { "worker_id": {"status": "idle", "last_heartbeat": time, "session_id": None, "last_session_end": 0} }
         self.worker_registry = {}
         
+        # Session queue: FIFO queue for sessions waiting for a worker
+        self.session_queue: asyncio.Queue[str] = asyncio.Queue()
+        self.max_queue_size = int(os.getenv("MAX_SESSION_QUEUE_SIZE", "50"))
+        
         # Background tasks
         self.pubsub_task = None
         self.heartbeat_task = None
+        self.queue_processor_task = None
 
     async def startup(self):
         self.redis = redis.from_url(self.redis_url, decode_responses=True)
@@ -45,6 +60,7 @@ class AIOrchestrator:
         self.session_manager = SessionManager(self.redis)
         self.pubsub_task = asyncio.create_task(self._listen_to_redis_events())
         self.heartbeat_task = asyncio.create_task(self._heartbeat_monitor())
+        self.queue_processor_task = asyncio.create_task(self._process_session_queue())
         logger.info("AI Orchestrator started", personaplex_url=self.personaplex_url)
 
     async def shutdown(self):
@@ -53,6 +69,8 @@ class AIOrchestrator:
             self.pubsub_task.cancel()
         if self.heartbeat_task:
             self.heartbeat_task.cancel()
+        if self.queue_processor_task:
+            self.queue_processor_task.cancel()
         
         if getattr(self, 'pubsub_redis', None):
             await self.pubsub_redis.close()
@@ -122,6 +140,18 @@ class AIOrchestrator:
             self.worker_registry[wid]["status"] = "idle"
             self.worker_registry[wid]["session_id"] = None
             self.worker_registry[wid]["last_session_end"] = asyncio.get_event_loop().time()
+            # Wake up queue processor to assign pending sessions
+            if not self.session_queue.empty():
+                asyncio.create_task(self._wake_queue_processor())
+
+    async def _wake_queue_processor(self):
+        """Put a dummy item to wake the queue processor."""
+        try:
+            # Use a sentinel to check if queue has real items
+            if not self.session_queue.empty():
+                await asyncio.sleep(0.1)  # Brief delay to let worker status update
+        except Exception:
+            pass
 
     async def _check_for_turn_end(self, session_id, last_audio_time):
         await asyncio.sleep(1.0) # Wait for silence
@@ -134,8 +164,21 @@ class AIOrchestrator:
             if w["status"] == "idle"
         ]
         if not idle_workers:
-            logger.warning("No idle workers available. Session queued.")
-            await self.redis.publish(f"session:{session_id}:events", json.dumps({"type": "queued", "message": "Waiting for available worker"}))
+            if self.session_queue.qsize() < self.max_queue_size:
+                await self.session_queue.put(session_id)
+                queue_pos = self.session_queue.qsize()
+                logger.info("No idle workers. Session queued.", session_id=session_id, queue_position=queue_pos)
+                await self.redis.publish(f"session:{session_id}:events", json.dumps({
+                    "type": "queued",
+                    "queue_position": queue_pos,
+                    "message": f"Waiting for available worker (position {queue_pos})"
+                }))
+            else:
+                logger.warning("Session queue full. Rejecting session.", session_id=session_id)
+                await self.redis.publish(f"session:{session_id}:events", json.dumps({
+                    "type": "rejected",
+                    "message": "Server at capacity. Please try again later."
+                }))
             return
         
         worker_id, worker = min(idle_workers, key=lambda x: x[1].get("last_session_end", 0))
@@ -145,6 +188,45 @@ class AIOrchestrator:
         await self.redis.publish(f"orchestrator:session:assign:{worker_id}", session_id)
         logger.info("Assigned session to worker", session_id=session_id, worker_id=worker_id)
         await self.redis.publish(f"session:{session_id}:events", json.dumps({"type": "worker_assigned", "worker_id": worker_id}))
+
+    async def _process_session_queue(self):
+        """Process queued sessions when workers become available."""
+        while True:
+            try:
+                # Wait for a session to be queued
+                session_id = await self.session_queue.get()
+                
+                # Try to find an idle worker
+                for attempt in range(30):  # Wait up to 30 seconds
+                    idle_workers = [
+                        (wid, w) for wid, w in self.worker_registry.items()
+                        if w["status"] == "idle"
+                    ]
+                    if idle_workers:
+                        worker_id, worker = min(idle_workers, key=lambda x: x[1].get("last_session_end", 0))
+                        worker["status"] = "busy"
+                        worker["session_id"] = session_id
+                        await self.redis.publish(f"orchestrator:session:assign:{worker_id}", session_id)
+                        logger.info("Assigned queued session to worker", session_id=session_id, worker_id=worker_id)
+                        await self.redis.publish(f"session:{session_id}:events", json.dumps({
+                            "type": "worker_assigned",
+                            "worker_id": worker_id,
+                            "was_queued": True,
+                        }))
+                        break
+                    await asyncio.sleep(1.0)
+                else:
+                    # Timeout — notify session it couldn't be assigned
+                    logger.warning("Queued session timed out", session_id=session_id)
+                    await self.redis.publish(f"session:{session_id}:events", json.dumps({
+                        "type": "error",
+                        "message": "No workers available after queue timeout"
+                    }))
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logger.error("Queue processor error", error=str(e))
+                await asyncio.sleep(1)
 
     async def _handle_connection(self, data):
         try:
@@ -171,7 +253,7 @@ class AIOrchestrator:
 
             recall_resp = await self.http_client.post(
                 f"{self.personaplex_url}/memory/retrieve",
-                json={"user_id": session_data.get("user_id", "default"), "limit": 5}
+                json={"user_id": session.get("user_id", "default"), "limit": 5}
             )
             if recall_resp.json().get("memories"):
                 prompt += "\n\nRelevant Context:\n" + recall_resp.json()["memories"]

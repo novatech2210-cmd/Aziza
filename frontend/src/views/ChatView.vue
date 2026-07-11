@@ -362,6 +362,10 @@ function getInitials(name) {
           <span class="header-mode">
             {{ modes.find(m => m.id === chat.selectedMode)?.label || 'Chat' }}
           </span>
+          <span v-if="chat.selectedLanguage === 'auto' && chat.detectedLanguage?.language" class="detected-badge">
+            {{ chat.detectedLanguage.language.toUpperCase() }}
+            <span v-if="chat.detectedLanguage.is_mixed" class="mixed-dot" />
+          </span>
           <select 
             class="header-lang-select" 
             :value="chat.selectedLanguage" 
@@ -663,6 +667,8 @@ function getInitials(name) {
 .menu-btn:hover { color: var(--text-primary); background: var(--accent-glow); }
 .header-info { display: flex; align-items: center; gap: 0.75rem; }
 .header-mode { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+.detected-badge { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.15rem 0.45rem; border-radius: 5px; background: rgba(20, 184, 166, 0.12); color: #14b8a6; border: 1px solid rgba(20, 184, 166, 0.25); display: inline-flex; align-items: center; gap: 0.3rem; }
+.mixed-dot { width: 5px; height: 5px; border-radius: 50%; background: #f59e0b; }
 .header-lang { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; color: var(--accent); background: var(--accent-glow); padding: 0.2rem 0.5rem; border-radius: 4px; }
 .header-lang-select { font-size: 0.75rem; font-weight: 600; color: var(--accent); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.5rem; cursor: pointer; outline: none; }
 .header-lang-select:focus { border-color: var(--accent); }

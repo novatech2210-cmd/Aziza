@@ -1,4 +1,5 @@
 import os
+import json
 
 VLLM_DTYPE = os.getenv("VLLM_DTYPE", "bfloat16")
 VLLM_GPU_MEMORY_UTIL = float(os.getenv("VLLM_GPU_MEMORY_UTIL", "0.45"))
@@ -17,31 +18,28 @@ LLM_URL_UZ = os.getenv("TEXT_API_URL_UZ", f"http://localhost:{LLM_PORT_UZ}/v1/ch
 LLM_MODEL_EN = "Vikhrmodels/Vikhr-Llama3.1-8B-Instruct-R-21-09-24"
 LLM_MODEL_UZ = "uzlm/alloma-3B-Instruct"
 
-SYSTEM_PROMPTS = {
-    "ru": (
-        "Ты Азиза — тёплый, умный и внимательный AI-ассистент. "
-        "Говори естественно по-русски, как живой человек. "
-        "Избегай формальных оборотов. Отвечай кратко и по делу."
-    ),
-    "uz-latn": (
-        "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. "
-        "O'zbek tilida tabiiy va jonli gapiring. "
-        "Qisqa va aniq javob bering."
-    ),
-    "uz-cyrl": (
-        "Сиз Азиза — меҳрибон, ақлли ва диққатли AI ёрдамчисисиз. "
-        "Ўзбек тилида табиий ва жонли гапиринг. "
-        "Қисқа ва аниқ жавоб беринг."
-    ),
-    "uz": (
-        "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. "
-        "O'zbek tilida tabiiy va jonli gapiring. "
-        "Qisqa va aniq javob bering."
-    ),
-    "en": (
-        "You are Aziza — a warm, intelligent, and attentive AI assistant. "
-        "Speak naturally and conversationally. Keep responses concise."
-    ),
-}
+# Load system prompts from shared config
+_PROMPTS_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'shared', 'system-prompts.json')
+try:
+    with open(_PROMPTS_PATH) as _f:
+        _prompts_data = json.load(_f)
+    SYSTEM_PROMPTS = _prompts_data["prompts"]
+except (FileNotFoundError, KeyError):
+    SYSTEM_PROMPTS = {
+        "ru": (
+            "Ты Азиза — тёплый, умный и внимательный AI-ассистент. "
+            "Говори естественно по-русски, как живой человек. "
+            "Избегай формальных оборотов. Отвечай кратко и по делу."
+        ),
+        "uz": (
+            "Siz Aziza — mehribon, aqlli va diqqatli AI yordamchisiz. "
+            "O'zbek tilida tabiiy va jonli gapiring. "
+            "Qisqa va aniq javob bering."
+        ),
+        "en": (
+            "You are Aziza — a warm, intelligent, and attentive AI assistant. "
+            "Speak naturally and conversationally. Keep responses concise."
+        ),
+    }
 
 SYSTEM_PROMPTS_RAG = SYSTEM_PROMPTS.copy()
