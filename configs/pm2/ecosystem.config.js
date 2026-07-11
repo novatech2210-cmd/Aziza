@@ -1,78 +1,180 @@
 module.exports = {
   apps: [
+    // ── API Gateway (NestJS, port 8080) ──────────────────────────────────
     {
       name: "api-gateway",
       script: "dist/main.js",
       cwd: "/root/aziza-build/backend/services/api-gateway",
+      instances: 1,
+      exec_mode: "fork",
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "500M",
+      restart_delay: 3000,
+      max_restarts: 10,
+      min_uptime: "10s",
       env: {
+        NODE_ENV: "production",
         PORT: 8080,
         REDIS_URL: "redis://localhost:6379",
-        JWT_SECRET: process.env.JWT_SECRET,
-        ORCHESTRATOR_URL: "http://localhost:8001"
-      }
+        MONGODB_URI: "mongodb://localhost:27017/aziza",
+        JWT_SECRET: process.env.JWT_SECRET || "",
+        ORCHESTRATOR_URL: "http://localhost:8001",
+      },
+      error_file: "/root/aziza-build/logs/api-gateway-error.log",
+      out_file: "/root/aziza-build/logs/api-gateway-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── Orchestrator (Python, port 8001) ─────────────────────────────────
     {
       name: "orchestrator",
       script: "/root/aziza-build/venv312/bin/python3",
       args: "main.py",
       cwd: "/root/aziza-build/backend/services/orchestrator",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "1G",
+      restart_delay: 5000,
+      max_restarts: 10,
+      min_uptime: "15s",
       env: {
         REDIS_URL: "redis://localhost:6379",
-        PYTHONPATH: "/root/aziza-build/backend:/root/aziza-build/backend/services"
-      }
+        PYTHONPATH: "/root/aziza-build/backend:/root/aziza-build/backend/services",
+        MAX_SESSION_QUEUE_SIZE: "50",
+      },
+      error_file: "/root/aziza-build/logs/orchestrator-error.log",
+      out_file: "/root/aziza-build/logs/orchestrator-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── Moshi Worker ─────────────────────────────────────────────────────
     {
       name: "moshi-worker",
       script: "/root/aziza-build/venv312/bin/python3",
       args: "moshi_service.py",
       cwd: "/root/aziza-build/backend/services/moshi-worker",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "4G",
+      restart_delay: 5000,
+      max_restarts: 5,
+      min_uptime: "30s",
       env: {
         WORKER_ID: "worker-01",
         REDIS_URL: "redis://localhost:6379",
         TEXT_API_URL: "http://localhost:8002/v1/chat/completions",
         TEXT_API_URL_UZ: "http://localhost:8003/v1/chat/completions",
         HF_HOME: "/root/aziza-build/model_cache",
-        HF_TOKEN: process.env.HF_TOKEN
-      }
+        HF_TOKEN: process.env.HF_TOKEN || "",
+        MAX_CONCURRENT_SESSIONS: "10",
+        VAD_SPEECH_THRESHOLD_DB: "-18",
+        VAD_SILENCE_THRESHOLD_DB: "-23",
+        VAD_MIN_SPEECH_MS: "200",
+        VAD_MIN_SILENCE_MS: "350",
+        VAD_NOISE_ADAPT_RATE: "0.03",
+        GPU_MAX_CONCURRENT: "12",
+        GPU_MIN_FREE_VRAM_MB: "2048",
+      },
+      error_file: "/root/aziza-build/logs/moshi-worker-error.log",
+      out_file: "/root/aziza-build/logs/moshi-worker-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── PersonaPlex (FastAPI, port 8000) ─────────────────────────────────
     {
-      name: 'personaplex',
-      script: '/root/aziza-build/venv312/bin/python3',
-      args: '-m uvicorn main:app --port 8000',
-      cwd: '/root/aziza-build/backend/persona-plex',
+      name: "personaplex",
+      script: "/root/aziza-build/venv312/bin/python3",
+      args: "-m uvicorn main:app --port 8000",
+      cwd: "/root/aziza-build/backend/persona-plex",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "2G",
+      restart_delay: 3000,
+      max_restarts: 10,
+      min_uptime: "10s",
       env: {
-        REDIS_URL: 'redis://localhost:6379',
-        MONGO_URL: 'mongodb://localhost:27017/aziza'
-      }
+        REDIS_URL: "redis://localhost:6379",
+        MONGO_URL: "mongodb://localhost:27017/aziza",
+      },
+      error_file: "/root/aziza-build/logs/personaplex-error.log",
+      out_file: "/root/aziza-build/logs/personaplex-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── vLLM English (port 8002) ─────────────────────────────────────────
     {
       name: "vllm-english",
       script: "/root/aziza-build/venv312/bin/python3",
       args: "-m vllm.entrypoints.openai.api_server --model Vikhrmodels/Vikhr-Llama3.1-8B-Instruct-R-21-09-24 --quantization bitsandbytes --load-format bitsandbytes --gpu-memory-utilization 0.35 --port 8002 --max-model-len 1024 --max-num-seqs 4 --disable-frontend-multiprocessing --chat-template /root/aziza-build/training/scripts/en_chatml.jinja --enable-lora --lora-modules aziza_russian=/root/aziza-build/training/lora/adapters/ru_all --max-lora-rank 64 --enforce-eager",
       cwd: "/root/aziza-build",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "20G",
+      restart_delay: 10000,
+      max_restarts: 3,
+      min_uptime: "60s",
       env: {
-        CUDA_VISIBLE_DEVICES: "0"
-      }
+        CUDA_VISIBLE_DEVICES: "0",
+      },
+      error_file: "/root/aziza-build/logs/vllm-english-error.log",
+      out_file: "/root/aziza-build/logs/vllm-english-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── vLLM Uzbek (port 8003) ───────────────────────────────────────────
     {
       name: "vllm-uzbek",
       script: "/root/aziza-build/venv312/bin/python3",
-      args: "-m vllm.entrypoints.openai.api_server --model uzlm/alloma-3B-Instruct --trust-remote-code --quantization bitsandbytes --load-format bitsandbytes --gpu-memory-utilization 0.32 --port 8003 --max-model-len 1024 --max-num-seqs 2 --disable-frontend-multiprocessing --served-model-name alloma --chat-template /root/aziza-build/training/lora/adapters/aziza-adapter-final-uz/chat_template.jinja --enable-lora --lora-modules aziza_uzbek=/root/aziza-build/training/lora/adapters/aziza-adapter-final-uz --max-lora-rank 64 --enforce-eager",
+      args: "-m vllm.entrypoints.openai.api_server --model /root/aziza-build/model_cache/alloma-extended-model/ --trust-remote-code --quantization bitsandbytes --load-format bitsandbytes --gpu-memory-utilization 0.32 --port 8003 --max-model-len 1024 --max-num-seqs 2 --disable-frontend-multiprocessing --served-model-name alloma --chat-template /root/aziza-build/training/lora/adapters/aziza-adapter-final-uz/chat_template.jinja --enable-lora --lora-modules aziza_uzbek=/root/aziza-build/training/lora/adapters/aziza-adapter-final-uz --max-lora-rank 64 --enforce-eager",
       cwd: "/root/aziza-build",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "15G",
+      restart_delay: 10000,
+      max_restarts: 3,
+      min_uptime: "60s",
       env: {
-        CUDA_VISIBLE_DEVICES: "0"
-      }
+        CUDA_VISIBLE_DEVICES: "0",
+      },
+      error_file: "/root/aziza-build/logs/vllm-uzbek-error.log",
+      out_file: "/root/aziza-build/logs/vllm-uzbek-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
     },
+
+    // ── Russian Test Server (port 8020) ──────────────────────────────────
     {
       name: "aziza-russian-test",
       script: "/root/aziza-build/venv312/bin/python3",
       args: "-m uvicorn serve_russian_test:app --host 0.0.0.0 --port 8020 --workers 1",
       cwd: "/root/aziza-build/backend/gateway",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "2G",
+      restart_delay: 5000,
+      max_restarts: 5,
+      min_uptime: "10s",
       env: {
         PYTHONPATH: "/root/aziza-build",
         PORT: 8020,
-        HF_TOKEN: process.env.HF_TOKEN
-      }
-    }
-  ]
+        HF_TOKEN: process.env.HF_TOKEN || "",
+      },
+      error_file: "/root/aziza-build/logs/russian-test-error.log",
+      out_file: "/root/aziza-build/logs/russian-test-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
+    },
+  ],
 };
