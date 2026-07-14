@@ -72,3 +72,10 @@
 **Context**: Global rate limit of 100 req/min was too coarse. Auth endpoints need stricter limits (5/min login, 3/min register). Chat endpoints need separate limits (20/min stream, 10/min voice). Single throttle configuration couldn't differentiate.
 **Decision**: Configure three named throttler tiers: `global` (100 req/min), `auth` (5 req/min), `api` (60 req/min). Auth controller uses `@Throttle({ auth: ... })`. Chat controller uses `@Throttle({ api: ... })`. Nginx provides first layer of rate limiting at the edge; NestJS ThrottlerModule provides application-level enforcement.
 **Consequences**: Two-layer rate limiting (Nginx + NestJS). Auth endpoints protected against brute force. Chat endpoints protected against abuse. Named tiers allow per-endpoint tuning without global config changes.
+
+## Decision: Multi-Service CI Pipeline
+**Date**: 2026-07-14
+**Status**: Accepted → **Implemented** (Epic 4)
+**Context**: `.github/workflows/ci.yml` only tested the API Gateway. No automated testing for frontend or Python services. No security audit steps. No build verification gate.
+**Decision**: Expand CI to 4 parallel jobs: API Gateway (NestJS), Frontend (Vue 3), Python Services (matrix: orchestrator/moshi-worker/persona-plex), and Build Verification gate. Each job includes install, test, and audit steps. Python services use `continue-on-error` since they lack full test coverage. Build Verification gates on both API Gateway and Frontend passing.
+**Consequences**: All three service tiers tested on every push/PR. Security audits surface known vulnerabilities. Build verification prevents broken artifacts from merging. Python tests continue-on-error until full coverage achieved.
