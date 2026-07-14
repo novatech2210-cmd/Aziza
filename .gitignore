@@ -110,3 +110,9 @@ training/lora/adapters/moshi_uz_v1/
 
 # Junk files
 =*
+
+# TLS certificates (never commit private keys)
+*.pem
+*.key
+*.crt
+*.p12

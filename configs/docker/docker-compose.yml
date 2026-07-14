@@ -3,8 +3,23 @@ version: '3.8'
 services:
   nginx:
     image: nginx:alpine
-    ports: ["443:443", "8080:80"]
-    volumes: ["./infrastructure/nginx/nginx.conf:/etc/nginx/nginx.conf"]
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./infrastructure/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infrastructure/ssl/cert.pem:/etc/nginx/ssl/cert.pem:ro
+      - ./infrastructure/ssl/key.pem:/etc/nginx/ssl/key.pem:ro
+    depends_on:
+      - api-gateway
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
 
   redis:
     image: redis:7-alpine
@@ -43,7 +58,7 @@ services:
 #      - GPU_INDEX=${GPU_INDEX:-0}
 #      - REDIS_URL=${REDIS_URL}
 #      - ADAPTER_PATH=${ADAPTER_PATH:-""}  # Set after Phase 11 completes
-#
+
   streaming-runtime:
     build: ./services/streaming-runtime
     environment:
