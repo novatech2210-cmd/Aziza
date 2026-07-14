@@ -1,14 +1,14 @@
 # Next Task
 
 **Task**: Security Blockers Phase 1 — Hardening, Monitoring, Resilience, Testing
-**Status**: Epics 1-5 COMPLETE (Epic 6 candidates below)
+**Status**: Epics 1-6 COMPLETE
 
 ## Branch State
 
 ```
 security/blockers-phase1 — up to date with origin
 Working tree: clean
-25 commits total
+27 commits total
 ```
 
 ## Completed Epics
@@ -20,14 +20,14 @@ Working tree: clean
 | Epic 3 | `36f1497` | API Key Management & Rate Limiting — API keys module + named throttlers |
 | Epic 4 | `67351a3` | CI/CD Pipeline Completion — frontend, Python, lint, security audit, build verification |
 | Epic 5 | `f122077` | Centralized Log Aggregation — PM2 file watcher → MongoDB + admin API + LogViewer.vue |
+| Epic 6 | `7e0779c` | Transliteration-Aware Language Detection — shared module + expanded keyword sets |
 
-## PI-2 Candidates (Prioritized)
+## Remaining Work
 
 | Priority | Item | Rationale |
 |----------|------|-----------|
-| P1 | Multi-GPU inference support | Single GPU bottleneck for scaling (requires second GPU) |
+| P1 | Multi-GPU inference support | Requires second GPU (not yet available) |
 | P2 | WebSocket load/soak testing | 10-min stress test passed; 30/60-min not run |
-| P2 | Transliteration-aware language detection | Detection gaps for mixed-script text |
 | P3 | PWA manifest for mobile installability | Frontend is SPA, no offline support |
 
 ## Remaining PI-4 Gaps

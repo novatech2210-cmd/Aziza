@@ -25,6 +25,7 @@
 - ~~Add Nginx reverse proxy with TLS/HTTPS.~~ **DONE** (Epic 2, commit `47ac6c9`)
 - ~~Add API key management for external consumers.~~ **DONE** (Epic 3, commit `36f1497`)
 - ~~Centralized log aggregation.~~ **DONE** (Epic 5, LogCollectorService + admin API + LogViewer.vue)
+- ~~Transliteration-aware language detection.~~ **DONE** (Epic 6, language-detection.ts)
 - **NEW**: Run 30-min and 60-min stress tests (10-min passed)
 - **NEW**: Complete WER/CER measurement (script ready, needs audio recordings)
 - **NEW**: Obtain valid TLS certificates for production (self-signed for dev only)
@@ -41,4 +42,3 @@
 - Multi-node inference scaling.
 - Multi-worker V2V scaling.
 - Session isolation at GPU level.
-- Centralized log aggregation (structured logging modules exist, need aggregator layer like Loki/ELK)
