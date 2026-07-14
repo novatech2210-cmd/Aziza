@@ -97,3 +97,16 @@ model_cache/
 # Virtual environments
 venv/
 venv312/
+
+# TensorBoard events
+**/events.out.tfevents.*
+
+# Training adapter checkpoints (plural)
+training/lora/**/checkpoints/
+
+# Symlinked adapter latest dirs
+training/lora/adapters/moshi_ru_v1/
+training/lora/adapters/moshi_uz_v1/
+
+# Junk files
+=*
