@@ -2,12 +2,13 @@ name: CI
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, develop, security/*]
   pull_request:
     branches: [main]
 
 jobs:
-  test:
+  api-gateway:
+    name: API Gateway (NestJS)
     runs-on: ubuntu-latest
 
     services:
@@ -27,6 +28,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: backend/services/api-gateway/package-lock.json
 
       - name: Install dependencies
         working-directory: backend/services/api-gateway
@@ -35,6 +38,11 @@ jobs:
       - name: TypeScript compilation
         working-directory: backend/services/api-gateway
         run: npx tsc --noEmit
+
+      - name: Lint
+        working-directory: backend/services/api-gateway
+        run: npx eslint "{src,apps,libs,test}/**/*.ts" --max-warnings 0
+        continue-on-error: true
 
       - name: Unit tests
         working-directory: backend/services/api-gateway
@@ -50,6 +58,102 @@ jobs:
           JWT_SECRET: test_ci_secret
           MONGODB_URI: mongodb://localhost:27017/aziza_ci
 
-      - name: NestJS build
+      - name: Build
         working-directory: backend/services/api-gateway
         run: npx nest build
+
+      - name: Security audit
+        working-directory: backend/services/api-gateway
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+  frontend:
+    name: Frontend (Vue 3)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+      - name: Unit tests
+        working-directory: frontend
+        run: npm test
+
+      - name: Security audit
+        working-directory: frontend
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+  python-services:
+    name: Python Services
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        service:
+          - name: orchestrator
+            path: backend/services/orchestrator
+          - name: moshi-worker
+            path: backend/services/moshi-worker
+          - name: persona-plex
+            path: backend/persona-plex
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.service.path }}
+        run: pip install -r requirements.txt pytest
+
+      - name: Run tests
+        working-directory: ${{ matrix.service.path }}
+        run: python -m pytest tests/ -v --tb=short
+        env:
+          PYTHONPATH: /root/aziza-build/backend:/root/aziza-build/backend/services
+        continue-on-error: true
+
+  build-verification:
+    name: Build Verification
+    runs-on: ubuntu-latest
+    needs: [api-gateway, frontend]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify API Gateway build artifact
+        working-directory: backend/services/api-gateway
+        run: |
+          npm ci
+          npx nest build
+          test -d dist && echo "Build artifact exists" || exit 1
+
+      - name: Verify Frontend build artifact
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+          test -d dist && echo "Build artifact exists" || exit 1
