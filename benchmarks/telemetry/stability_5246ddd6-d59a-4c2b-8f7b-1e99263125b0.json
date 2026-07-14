@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-13T18:52:32.972054+00:00",
+    "session_id": "d3627e96-b2d7-404c-8bee-d4cd401301e5",
+    "event_type": "session_started",
+    "persona": "aziza_ru"
+  },
+  {
+    "timestamp": "2026-07-13T18:52:33.075821+00:00",
+    "session_id": "5246ddd6-d59a-4c2b-8f7b-1e99263125b0",
+    "event_type": "system_stats",
+    "cpu_percent": 54.5,
+    "memory_percent": 21.4,
+    "memory_used_gb": 10.641838073730469,
+    "memory_available_gb": 39.14084243774414,
+    "disk_usage_percent": 91.9,
+    "network_io": {
+      "bytes_sent": 13119860241,
+      "bytes_recv": 29484804867,
+      "packets_sent": 12388269,
+      "packets_recv": 14521483,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 17178.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 31497.0,
+      "temperature": 46.0
+    }
+  },
+  {
+    "timestamp": "2026-07-13T18:52:33.976293+00:00",
+    "session_id": "d3627e96-b2d7-404c-8bee-d4cd401301e5",
+    "event_type": "session_crash",
+    "error": "received 4002 (private use) Invalid token; then sent 4002 (private use) Invalid token",
+    "duration_s": 1.0198590755462646
+  }
+]

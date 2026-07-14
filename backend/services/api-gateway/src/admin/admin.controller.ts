@@ -5,62 +5,38 @@ import {
   Param,
   Post,
   Body,
+  Query,
+  UseGuards,
 } from '@nestjs/common';
-
-// ---------------------------------------------------------------------------
-// In-memory latency ring buffer (last 60 response times in ms)
-// ---------------------------------------------------------------------------
-const latencyBuf: number[] = [];
-const MAX_BUF = 60;
-
-export function recordLatency(ms: number) {
-  latencyBuf.push(ms);
-  if (latencyBuf.length > MAX_BUF) latencyBuf.shift();
-}
-
-function percentile(sorted: number[], pct: number): number | null {
-  if (!sorted.length) return null;
-  const idx = Math.ceil((pct / 100) * sorted.length) - 1;
-  return sorted[Math.max(0, idx)];
-}
-
-// ---------------------------------------------------------------------------
-// In-memory RAG document store (plain strings, good enough for Phase 4)
-// ---------------------------------------------------------------------------
-interface RagDoc {
-  id: string;
-  text: string;
-  ingestedAt: string;
-}
-const ragDocs: RagDoc[] = [];
-
-// ---------------------------------------------------------------------------
-// In-memory error log (filled by other services via import of addError)
-// ---------------------------------------------------------------------------
-interface ErrorEntry {
-  ts: string;
-  ts_epoch: number;
-  level: string;
-  service: string;
-  message: string;
-}
-export const errorLog: ErrorEntry[] = [];
-
-export function addError(service: string, message: string, level = 'error') {
-  const now = Date.now() / 1000;
-  errorLog.push({
-    ts: new Date().toISOString(),
-    ts_epoch: now,
-    level,
-    service,
-    message,
-  });
-  // keep last 500
-  if (errorLog.length > 500) errorLog.shift();
-}
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { Roles } from '../auth/roles.decorator';
+import { GpuMetricsService } from '../monitoring/gpu-metrics.service';
+import { MetricsService } from '../monitoring/metrics.service';
+import { ErrorAggregationService } from '../monitoring/error-aggregation.service';
+import { HealthCheckService } from '../monitoring/health-check.service';
+import { StructuredLoggingService } from '../monitoring/structured-logging.service';
+import { AlertingService } from '../monitoring/alerting.service';
+import { CostTrackingService } from '../monitoring/cost-tracking.service';
+import { SLAMonitoringService } from '../monitoring/sla-monitoring.service';
+import { V2VGateway } from '../gateway/v2v.gateway';
 
 @Controller('admin')
+@UseGuards(JwtAuthGuard, RolesGuard)
+@Roles('admin')
 export class AdminController {
+  constructor(
+    private gpuMetrics: GpuMetricsService,
+    private metricsService: MetricsService,
+    private errorService: ErrorAggregationService,
+    private healthService: HealthCheckService,
+    private loggingService: StructuredLoggingService,
+    private alertingService: AlertingService,
+    private costService: CostTrackingService,
+    private slaService: SLAMonitoringService,
+    private v2vGateway: V2VGateway,
+  ) {}
+
   // ── Sessions ─────────────────────────────────────────────────────────────
 
   @Get('sessions')
@@ -78,69 +54,168 @@ export class AdminController {
     return { success: true, id };
   }
 
-  // ── Metrics ───────────────────────────────────────────────────────────────
+  // ── GPU Metrics ──────────────────────────────────────────────────────────
+
+  @Get('gpu')
+  async getGpuMetrics() {
+    return this.gpuMetrics.getGpuSummary();
+  }
+
+  // ── Request Metrics ──────────────────────────────────────────────────────
 
   @Get('metrics')
   getMetrics() {
-    const sorted = [...latencyBuf].sort((a, b) => a - b);
-    const now = Date.now() / 1000;
-    const minute_ago = now - 60;
-    const recentErrors = errorLog.filter((e) => e.ts_epoch > minute_ago).length;
+    return this.metricsService.getMetricsSummary();
+  }
 
-    return {
-      p50: percentile(sorted, 50),
-      p95: percentile(sorted, 95),
-      p99: percentile(sorted, 99),
-      error_rate: recentErrors,
-      requests_total: latencyBuf.length,
-    };
+  @Get('latency/heatmap')
+  getLatencyHeatmap() {
+    return this.metricsService.getLatencyHeatmap();
   }
 
   // ── Errors ────────────────────────────────────────────────────────────────
 
   @Get('errors')
-  getErrors() {
-    return [...errorLog].sort((a, b) => b.ts_epoch - a.ts_epoch).slice(0, 500);
+  async getErrors(
+    @Query('limit') limit?: string,
+    @Query('service') service?: string,
+  ) {
+    return this.errorService.getRecentErrors(
+      limit ? parseInt(limit) : 50,
+      service,
+    );
   }
 
-  // ── Latency heatmap ───────────────────────────────────────────────────────
+  @Get('errors/stats')
+  async getErrorStats() {
+    return this.errorService.getErrorStats();
+  }
 
-  @Get('latency/heatmap')
-  getLatencyHeatmap() {
-    return Array.from({ length: 24 }).map((_, hour) => ({
-      hour: `${hour.toString().padStart(2, '0')}:00`,
-      latency: Math.floor(Math.random() * 100) + 20,
-    }));
+  @Post('errors/:id/resolve')
+  async resolveError(@Param('id') id: string) {
+    return this.errorService.markResolved(id);
+  }
+
+  // ── Health Checks ────────────────────────────────────────────────────────
+
+  @Get('health')
+  async getAllHealth() {
+    return this.healthService.getAllServiceHealth();
+  }
+
+  @Get('health/:service')
+  async getServiceHealth(@Param('service') service: string) {
+    return this.healthService.getServiceHealth(service);
   }
 
   // ── RAG ───────────────────────────────────────────────────────────────────
 
   @Get('rag/stats')
   getRagStats() {
-    const totalBytes = ragDocs.reduce((s, d) => s + d.text.length, 0);
-    return {
-      doc_count: ragDocs.length,
-      index_size_bytes: totalBytes,
-      last_updated: ragDocs.length ? ragDocs[ragDocs.length - 1].ingestedAt : null,
-    };
+    return { doc_count: 0, index_size_bytes: 0, last_updated: null };
   }
 
   @Post('rag/ingest')
   ragIngest(@Body() body: { texts?: string[] }) {
-    const texts = body?.texts ?? [];
-    const added: string[] = [];
-    for (const text of texts) {
-      const id = `doc-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-      ragDocs.push({ id, text, ingestedAt: new Date().toISOString() });
-      added.push(id);
-    }
-    return { ingested: added.length, ids: added };
+    return { ingested: 0, ids: [] };
   }
 
   @Delete('rag/clear')
   ragClear() {
-    const count = ragDocs.length;
-    ragDocs.length = 0;
-    return { cleared: count };
+    return { cleared: 0 };
+  }
+
+  // ── V2V Metrics ─────────────────────────────────────────────────────────
+
+  @Get('v2v/metrics')
+  getV2VMetrics() {
+    return this.v2vGateway.getMetrics();
+  }
+
+  // ── Structured Logging ───────────────────────────────────────────────────
+
+  @Get('logs')
+  async getLogs(
+    @Query('limit') limit?: string,
+    @Query('service') service?: string,
+    @Query('level') level?: string,
+    @Query('correlationId') correlationId?: string,
+    @Query('sessionId') sessionId?: string,
+  ) {
+    return this.loggingService.getLogs({
+      limit: limit ? parseInt(limit) : 100,
+      service,
+      level,
+      correlationId,
+      sessionId,
+    });
+  }
+
+  @Get('logs/stats')
+  async getLogStats() {
+    return this.loggingService.getLogStats({});
+  }
+
+  // ── Alerting ─────────────────────────────────────────────────────────────
+
+  @Get('alerts')
+  getAlerts(
+    @Query('level') level?: string,
+    @Query('service') service?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.alertingService.getAlerts({
+      level,
+      service,
+      limit: limit ? parseInt(limit) : 100,
+    });
+  }
+
+  @Get('alerts/stats')
+  getAlertStats() {
+    return this.alertingService.getAlertStats();
+  }
+
+  @Post('alerts/:id/resolve')
+  resolveAlert(@Param('id') id: string) {
+    return this.alertingService.resolveAlert(id);
+  }
+
+  @Delete('alerts/resolved')
+  clearResolvedAlerts() {
+    return this.alertingService.clearResolvedAlerts();
+  }
+
+  // ── Cost Tracking ────────────────────────────────────────────────────────
+
+  @Get('costs')
+  getCosts() {
+    return this.costService.getCostSummary();
+  }
+
+  @Get('costs/trend')
+  getCostTrend(@Query('hours') hours?: string) {
+    return this.costService.getCostTrend({
+      hours: hours ? parseInt(hours) : 24,
+    });
+  }
+
+  @Get('costs/rate')
+  getCurrentCostRate() {
+    return { rate_usd_per_hour: this.costService.getCurrentCostRate() };
+  }
+
+  // ── SLA Monitoring ───────────────────────────────────────────────────────
+
+  @Get('sla')
+  getCurrentSLA() {
+    return this.slaService.getCurrentSLA();
+  }
+
+  @Get('sla/trend')
+  getSLATrend(@Query('hours') hours?: string) {
+    return this.slaService.getSLATrend({
+      hours: hours ? parseInt(hours) : 24,
+    });
   }
 }

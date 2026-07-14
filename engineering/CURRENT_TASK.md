@@ -1,133 +1,121 @@
 # Current Task
 
-**Task**: PI-4 — Moshi Uzbek Voice Specialization
-**Status**: Training Complete, Evaluation In Progress
+**Task**: Security Blockers Phase 1 — Hardening, Monitoring, Resilience, Testing
+**Branch**: `security/blockers-phase1`
+**Status**: IN PROGRESS (13 commits ahead of origin, 51 modified + 70 untracked files unstaged)
 
-## Workstreams
+## Summary
 
-- **Phase 1**: Architecture Validation — COMPLETED ✅
-- **Phase 2**: Training Dataset Audit — COMPLETED ✅
-- **Phase 3**: Tokenizer Validation — COMPLETED ✅
-- **Phase 4**: LoRA Configuration — COMPLETED ✅
-- **Phase 5**: Training — COMPLETED ✅
-- **Phase 6**: Voice Evaluation — COMPLETED ✅
-- **Phase 7**: Persona Evaluation — COMPLETED ✅
-- **Phase 8**: LiveKit Integration — COMPLETED ✅
-- **Phase 9**: Stress Testing — COMPLETED ✅
-- **Phase 10**: Certification — COMPLETED ✅
+Comprehensive security hardening and production readiness work across all services. Builds on PI-1 (10 Epics complete) and PI-4 (Uzbek adapter trained and deployed). Addresses findings from security audits and operational gaps identified in PI-1 certification.
 
-## Phase 1: Architecture Validation — COMPLETED ✅
-- Verified exact Moshi checkpoint: `kyutai/moshika-pytorch-bf16` @ `a49141e28b3d9c947cf9aa5314431e1b11cbd2f5`
-- Verified tokenizer: SentencePiece 32000 → 32016 (extended)
-- Verified codec: Mimi, 24kHz, 16 audio codebooks + 1 text codebook = 17 total
-- Verified hidden size: 4096, attention heads: 32, depformer hidden: 1024
-- Verified adapter injection points: `in_projs.0`, `out_projs.0`, `linear_in`, `linear_out`
-- Documented in `engineering/MOSHI_ARCHITECTURE.md`
+## Implementation Status (Unstaged — Exists in Working Tree)
 
-## Phase 2: Training Dataset Audit — COMPLETED ✅
-- Primary dataset: `aziza-uzbek.jsonl` (3,000 conversations, 528,928 chars)
-- Scripts: 50% Latin, 50% Cyrillic
-- Registers: Professional, Colloquial, Academic
-- External datasets: FLEURS available, Common Voice CV17 error, MLS no Uzbek, OpenSLR deprecated
-- Documented in `engineering/UZBEK_DATASET_REPORT.md`
+### Auth & Security Hardening
+- **Auth DTOs**: `create-user.dto.ts`, `login-user.dto.ts` (validated input schemas)
+- **Roles guard**: `roles.guard.ts` (RBAC enforcement)
+- **User schema**: `user.schema.ts` (typed user model)
+- **Auth service expansion**: +106 lines (login hardening, validation)
+- **Admin controller refactor**: +255 lines (admin API expansion)
 
-## Phase 3: Tokenizer Validation — COMPLETED ✅
-- Base tokenizer fragments Uzbek characters into 2-3 tokens each
-- Extended tokenizer implemented: `extended_tokenizer_v2.py`
-- Measured token reduction: 342,334 → 331,258 tokens (−3.2%)
-- All 15 target graphemes verified single-token (2 tokens with space prefix)
-- Documented in `engineering/UZBEK_TOKENIZER_REPORT.md`
+### Monitoring Module (New)
+- `monitoring.module.ts` — NestJS module integrating all monitoring services
+- `alerting.service.ts` — In-process rule-based alerting with cooldowns
+- `cost-tracking.service.ts` — API cost tracking per user/session
+- `gpu-metrics.service.ts` — GPU utilization and VRAM monitoring
+- `health-check.service.ts` — Service health endpoint aggregation
+- `metrics.service.ts` — Request/latency/error metrics
+- `sla-monitoring.service.ts` — SLA compliance tracking
+- `structured-logging.service.ts` — Correlation ID propagation, JSON logging
+- **Specs**: alerting, cost-tracking, gpu-metrics, metrics, sla-monitoring (5 spec files)
 
-## Phase 4: LoRA Configuration — COMPLETED ✅
-- Verified PEFT regex pattern: `r".*\.(in_projs|out_projs)\.\d+$|.*(linear_in|linear_out)$"`
-- Confirmed 160 target modules (~23.4M trainable params, 0.30% of 7.71B)
-- Config matches production `moshi_ru_v1` settings
-- Documented in `engineering/MOSHI_LORA_CONFIG.md`
+### Structured Logging (Python)
+- `backend/services/moshi-worker/structured_logging.py`
+- `backend/services/orchestrator/structured_logging.py`
+- `backend/persona-plex/structured_logging.py`
 
-## Phase 5: Training — COMPLETED ✅
+### Resilience & Error Handling
+- `all-exceptions.filter.ts` — Global NestJS exception filter
+- All exception filter spec file
+- Expanded error handling in moshi-worker (engine +359 lines, service +121 lines, VAD +109 lines, GPU scheduler +60 lines, LLM routing +50 lines)
 
-### Training Results
+### LiveKit Integration
+- `livekit.controller.ts` — LiveKit API endpoints (room creation, tokens)
+- `livekit-bot/livekit_bot.py` — PM2-managed LiveKit bot process
+- `useLiveKitVoiceChat.js` — Frontend LiveKit voice composable
 
-| Metric | Value |
-|--------|-------|
-| Date | 2026-07-13 |
-| Total steps | 504 |
-| Epochs | 3.0 |
-| Train time | 53.5 min |
-| Throughput | 2.525 samples/sec |
-| Final train loss | 4.597 (avg), 2.651 (last step) |
-| Best eval loss | 2.556 (step 500) |
-| Eval losses | 5.127 → 4.624 → 3.731 → 2.856 → 2.556 |
-| Trainable parameters | 23,429,120 (0.30% of 7.71B) |
-| Target modules | ~160 attention layers |
-| Base model | `kyutai/moshika-pytorch-bf16` (extended to 32016 vocab) |
-| Tokenizer | Extended Moshi tokenizer (32016 vocab) |
-| Optimizer | `paged_adamw_32bit` |
-| LR scheduler | `cosine` |
-| Mixed precision | `bf16` |
-| GPU | NVIDIA RTX A6000 (49GB VRAM) |
-| Status | PASS |
+### Voice Gateway Expansion
+- `voice.gateway.ts` — +214 lines (audio keep-alive, language switching)
 
-### Convergence Evidence
-- Training loss decreased from 18.99 (step 10) to 2.65 (step 500)
-- Validation loss decreased from 5.13 (step 100) to 2.56 (step 500)
-- No overfitting: val loss < train loss throughout
-- Gradient norms stable: 7-133 range, no divergence
-- No NaNs or crashes
+### Frontend Improvements
+- `RequestMetrics.vue`, `ServiceHealth.vue` — Admin dashboard components
+- Auth store expansion (+54 lines)
+- VoicePanel simplification (-72 lines, cleaner API)
 
-### Adapter Output
-- Path: `/root/aziza-build/training/lora/adapters/moshi_uz_v1/final/`
-- Adapter config: `r=8, alpha=16, target_modules=regex`
-- Adapter weights: `adapter_model.safetensors` (~90 MB)
-- Tokenizer: Included in adapter directory
+### Testing Infrastructure
+- **NestJS e2e tests**: `admin.e2e-spec.ts`, `auth.e2e-spec.ts`, `chat.e2e-spec.ts` + helpers
+- **NestJS unit tests**: auth.service.spec.ts, alerting.spec, cost-tracking.spec, gpu-metrics.spec, metrics.spec, sla-monitoring.spec, all-exceptions.filter.spec, app.controller.spec, app.service.spec
+- **Python tests**: `test_gpu_scheduler.py`, `test_vad.py`, `test_state_machine.py`, `run_tests.sh`
+- **Frontend tests**: `auth.test.js`, `chat.test.js`, `uuid.test.js`
+- **Load tests**: `backend/tests/load/load_test.py`, `quick_check.py`
+- **Jest config**: `jest.config.js`, `tsconfig.test.json`
 
-### Validation
-- Adapter loads successfully into Moshi wrapper
-- Forward pass works: loss computed for Uzbek text samples
-- No Llama dependencies in adapter
+### Deployment Automation
+- `deployment/rollback.sh` — Rollback script
+- `deployment/start_services.sh` — Service startup script
+- `deployment/validate_env.py` — Environment validation
+- `deployment/cleanup_logs.py` — Log rotation/cleanup
+- Deleted: `deployment/get_vast.py`, `deployment/get_vast_ssh.py` (superseded)
 
-## Phase 6: Voice Evaluation — COMPLETED ✅
-- Uzbek adapter `moshi_uz_v1` deployed and active in moshi-worker
-- Russian adapter `moshi_ru_v1` loaded for runtime language switching
-- WebSocket voice gateway (`/api/chat`) validated for UZ, RU, EN
-- Voice roundtrip benchmark: 9/9 successful, median first-token 3.4ms
-- ASR evaluation infrastructure created (`benchmarks/scripts/uzbek_wer_evaluation.py`)
-- WER/CER pending actual audio recordings from assistant
+### Docker & Infrastructure
+- `configs/docker/docker-compose.yml` — Expanded (+15 lines, infrastructure services)
+- `configs/docker/infrastructure/` — New infrastructure config directory
 
-## Phase 7: Persona Evaluation — COMPLETED ✅
-- PersonaPlex emotion detection: 26/26 PASS
-- Languages validated: EN, RU, UZ
-- No regressions in emotion adaptation or state tracking
+### PM2 & Process Management
+- `ecosystem.config.js` — +26 lines (LiveKit bot, new service entries)
 
-## Phase 8: LiveKit Integration — COMPLETED ✅
-- LiveKit bot running under PM2, registered with server
-- Capacity monitoring active
-- LiveKit API validated: room creation, participant tokens
-- Bot entrypoint bug fixed (`JobContext.session` → `primary_session` / room disconnect)
-- Audio track bridging architecture verified
+### Training Artifacts (PI-4 — Committed)
+- `training/datasets/uzbek/train.jsonl` (1.1MB), `val.jsonl` (125KB)
+- `training/lora/adapters/` — 9 adapter directories including `moshi_uz_v1`
+- `training/scripts/train_moshi_lora.py` — Production LoRA training script
+- `training/scripts/extend_moshi_tokenizer.py` — Tokenizer extension
+- `training/scripts/retrain_moshi_tokenizer.py` — Tokenizer retraining
+- `training/scripts/smoke_test_moshi_uz.py` — Adapter smoke test
+- `training/scripts/train_moshi_uz_lora.sh` — Training launch script
 
-## Phase 9: Stress Testing — COMPLETED ✅
-- 10-minute stability test: PASS
-- 0 crashes, 0 deadlocks, 0 memory leaks, 0 hung connections
-- 8/8 successful persona switches (RU → UZ → EN → RU → UZ → EN → RU → UZ)
-- 0 audio stalls, 0 dropped packets, 0 reconnects
-- Fix applied: audio keep-alive (100ms silence chunks every 5s) instead of pings
-- GPU/VRAM stable: 17.2GB allocated, 31.5GB free
+### Benchmark Telemetry
+- 5 stability test JSON files in `benchmarks/telemetry/`
+- `benchmarks/reports/stability.md` — Updated stability report
+- `benchmarks/scripts/uzbek_wer_evaluation.py` — WER/CER evaluation script (committed)
 
-## Phase 10: Certification — COMPLETED ✅
-- Full test matrix documented in `engineering/PI4_EVALUATION_PLAN.md`
-- 96/96 automated tests PASS
-- All critical acceptance criteria met
-- Remaining: WER/CER measurement requires recorded assistant audio (infrastructure ready)
+### Engineering Documentation (PI-4 — Committed)
+- `PI4_EVALUATION_PLAN.md`, `PI4_DEPLOYMENT_GUIDE.md`, `PI4_ROLLBACK_GUIDE.md`, `PI4_TRAINING_METRICS.md`
+- `MOSHI_ARCHITECTURE.md`, `MOSHI_LORA_CONFIG.md`, `RUNBOOK.md`
+- `UZBEK_DATASET_REPORT.md`, `UZBEK_TOKENIZER_REPORT.md`, `UZBEK_ADAPTER_ANALYSIS.md`
+- `CERTIFICATION_REPORT.md`
+
+### CI/CD (Scaffolded)
+- `.github/workflows/` — Directory created (contents TBD)
+- `.config/` — OpenCode configuration directory
+
+## What Remains for This Branch
+
+1. **Stage and commit** the 51 modified + 70 untracked files
+2. **Push** the 13 unpushed commits to origin
+3. **Run full test suite** after staging (50 NestJS + 7 Python + 13 frontend)
+4. **Verify** monitoring module integrates with app.module.ts
+5. **Verify** auth guards are wired into routes
+6. **Verify** structured logging modules are imported by services
+7. **Update** deployment scripts for current service topology
+
+## PI-4 Status (Committed)
+
+All 10 phases documented COMPLETE. Remaining measurable gaps:
+- WER/CER measurement requires recorded assistant audio (script ready)
+- Barge-in / interruption handling requires dedicated test
+- 30-min and 60-min stress tests not yet run (10-min passed)
 
 ## Governance
-- Repository Guardian v2: PASS (task authorized, alignment validated)
-- Architecture Freeze: Enforced (no new frameworks, databases, or languages)
-- Services: vllm-english STOPPED, vllm-uzbek ERRORED (pre-existing, unrelated to PI-4)
-- Automated tests: 7 Python tests PASS
 
-## Next Steps
-1. Update benchmark config to port 8080 and run stability test (Phase 9)
-2. Run voice roundtrip benchmark against live gateway (Phase 6)
-3. Complete Phase 10 certification matrix with measured values
-4. Production deployment verification
+- Architecture Freeze: Enforced (no new frameworks, databases, or languages)
+- Services: vllm-english STOPPED, vllm-uzbek ERRORED (pre-existing)
+- Active branch: `security/blockers-phase1` (13 commits ahead, 0 pushed)

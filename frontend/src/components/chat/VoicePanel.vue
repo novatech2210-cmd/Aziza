@@ -1,17 +1,18 @@
 <script setup>
 import { ref, onUnmounted } from 'vue'
+import { useVoiceChat } from '../../composables/useVoiceChat.js'
+import { useLiveKitVoiceChat } from '../../composables/useLiveKitVoiceChat.js'
 
 const props = defineProps({
   mode: { type: String, default: 'voice-text' },
   language: { type: String, default: 'en' },
+  transport: { type: String, default: 'websocket' }, // 'websocket' | 'livekit'
 })
 
 const emit = defineEmits(['transcription'])
 
-const CHAT_API = import.meta.env.VITE_CHAT_API_URL || '/chat-api'
-
 const isRecording = ref(false)
-const status = ref('idle') // idle | recording | transcribing | speaking
+const status = ref('idle')
 const audioLevel = ref(0)
 const canvasRef = ref(null)
 let mediaRecorder = null
@@ -20,72 +21,26 @@ let analyser = null
 let animationId = null
 let audioStream = null
 
+// Use appropriate voice chat composable based on transport
+const voiceChat = props.transport === 'livekit' 
+  ? useLiveKitVoiceChat() 
+  : useVoiceChat()
+
 async function startRecording() {
   try {
-    audioStream = await navigator.mediaDevices.getUserMedia({ audio: true })
-    mediaRecorder = new MediaRecorder(audioStream)
-    audioChunks = []
-
-    // Set up analyser for waveform
-    const audioCtx = new AudioContext()
-    const source = audioCtx.createMediaStreamSource(audioStream)
-    analyser = audioCtx.createAnalyser()
-    analyser.fftSize = 256
-    source.connect(analyser)
-
-    mediaRecorder.ondataavailable = (e) => {
-      audioChunks.push(e.data)
-    }
-
-    mediaRecorder.onstop = async () => {
-      cancelAnimationFrame(animationId)
-      const audioBlob = new Blob(audioChunks, { type: 'audio/webm' })
-      await transcribe(audioBlob)
-    }
-
-    mediaRecorder.start()
+    await voiceChat.connect(undefined, props.language)
     isRecording.value = true
     status.value = 'recording'
-    drawWaveform()
   } catch (err) {
     status.value = 'idle'
-    alert('Microphone access denied')
+    alert('Microphone access denied: ' + err.message)
   }
 }
 
 function stopRecording() {
-  if (mediaRecorder?.state === 'recording') {
-    mediaRecorder.stop()
-  }
-  if (audioStream) {
-    audioStream.getTracks().forEach((t) => t.stop())
-    audioStream = null
-  }
+  voiceChat.disconnect()
   isRecording.value = false
-  status.value = 'transcribing'
-}
-
-async function transcribe(audioBlob) {
-  try {
-    const formData = new FormData()
-    formData.append('file', audioBlob, 'recording.webm')
-    formData.append('language', props.language)
-
-    const token = localStorage.getItem('aziza_token')
-    const response = await fetch(`${CHAT_API}/transcribe`, {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${token}` },
-      body: formData,
-    })
-
-    if (!response.ok) throw new Error('Transcription failed')
-    const data = await response.json()
-    emit('transcription', data.text || data.transcription || '')
-    status.value = 'idle'
-  } catch (err) {
-    console.error('Transcription error:', err)
-    status.value = 'idle'
-  }
+  status.value = 'idle'
 }
 
 function drawWaveform() {
@@ -118,7 +73,6 @@ function drawWaveform() {
     ctx.lineTo(canvas.width, canvas.height / 2)
     ctx.stroke()
 
-    // Calculate audio level
     let sum = 0
     for (let i = 0; i < bufferLength; i++) {
       const v = (dataArray[i] - 128) / 128

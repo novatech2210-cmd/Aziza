@@ -1,0 +1,7 @@
+{{ bos_token }}{% if not messages[0]['role'] == 'system' %}<|start_header_id|>system<|end_header_id|>
+
+Siz Aziza, xushmuomala va aqlli AI yordamchisiz. Har doim lotin yozuvida (Uzbek Latin script) javob bering. Hech qachon krill yozuvidan foydalanmang. Qisqa, aniq va to'g'ri javob bering. O'zingiz haqingizda qo'shimcha ma'lumot bermang.<|eot_id|>{% endif %}{% for message in messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>
+
+'+ message['content'] | trim + '<|eot_id|>' %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>
+
+' }}{% endif %}

@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-13T18:51:04.813751+00:00",
+    "session_id": "bc5a7328-5ee8-471a-8c18-bb5092d23c87",
+    "event_type": "session_started",
+    "persona": "aziza_ru"
+  },
+  {
+    "timestamp": "2026-07-13T18:51:04.910140+00:00",
+    "session_id": "fcf3cc59-750c-4b70-8fb9-f6175424c765",
+    "event_type": "system_stats",
+    "cpu_percent": 62.2,
+    "memory_percent": 21.4,
+    "memory_used_gb": 10.634334564208984,
+    "memory_available_gb": 39.148345947265625,
+    "disk_usage_percent": 91.9,
+    "network_io": {
+      "bytes_sent": 13114907244,
+      "bytes_recv": 29484169814,
+      "packets_sent": 12384158,
+      "packets_recv": 14516754,
+      "errin": 0,
+      "errout": 0,
+      "dropin": 0,
+      "dropout": 0
+    },
+    "thread_count": 2,
+    "gpu": {
+      "name": "NVIDIA RTX A6000",
+      "load_percent": 0.0,
+      "memory_used_mb": 17178.0,
+      "memory_total_mb": 49140.0,
+      "memory_free_mb": 31497.0,
+      "temperature": 46.0
+    }
+  },
+  {
+    "timestamp": "2026-07-13T18:51:05.816041+00:00",
+    "session_id": "bc5a7328-5ee8-471a-8c18-bb5092d23c87",
+    "event_type": "session_crash",
+    "error": "received 4001 (private use) Authentication required; then sent 4001 (private use) Authentication required",
+    "duration_s": 1.0263769626617432
+  }
+]

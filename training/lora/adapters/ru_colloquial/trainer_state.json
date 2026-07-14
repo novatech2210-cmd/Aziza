@@ -1,0 +1,64 @@
+{
+  "best_global_step": 18,
+  "best_metric": 2.042837619781494,
+  "best_model_checkpoint": "/root/aziza/adapters/ru_colloquial/checkpoints/checkpoint-18",
+  "epoch": 3.0,
+  "eval_steps": 50,
+  "global_step": 18,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "entropy": 1.0787849515676498,
+      "epoch": 1.6666666666666665,
+      "grad_norm": 1.1171875,
+      "learning_rate": 1.8e-05,
+      "loss": 1.9209590911865235,
+      "mean_token_accuracy": 0.6617125406861305,
+      "num_tokens": 15182.0,
+      "step": 10
+    },
+    {
+      "epoch": 3.0,
+      "eval_entropy": 1.4597172339757283,
+      "eval_loss": 2.042837619781494,
+      "eval_mean_token_accuracy": 0.5981794397036234,
+      "eval_num_tokens": 27162.0,
+      "eval_runtime": 0.305,
+      "eval_samples_per_second": 16.391,
+      "eval_steps_per_second": 9.835,
+      "step": 18
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 18,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 50,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 3,
+        "early_stopping_threshold": 0.0
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 0
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 1360626059326464.0,
+  "train_batch_size": 4,
+  "trial_name": null,
+  "trial_params": null
+}

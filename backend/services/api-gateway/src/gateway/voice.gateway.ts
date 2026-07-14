@@ -5,6 +5,7 @@ import {
   OnGatewayDisconnect,
 } from '@nestjs/websockets';
 import { Server } from 'ws';
+import WebSocket from 'ws';
 import { Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { v4 as uuidv4 } from 'uuid';
@@ -29,6 +30,7 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
   private redis: Redis;
   private subscriber: Redis;
   private clients: Map<string, any> = new Map();
+  private workerConnections: Map<string, any> = new Map();
 
   // Per-client heartbeat timers so we can cancel on disconnect
   private heartbeatTimers: Map<string, NodeJS.Timeout> = new Map();
@@ -152,6 +154,7 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
         // Binary audio frames: first byte is NOT '{' (0x7B)
         if (raw[0] !== 0x7b) {
+          this.logger.debug(`Audio frame from ${sessionId}: ${raw.length} bytes`);
           await this.redis.publish(`session:${sessionId}:audio_in`, raw);
           return;
         }
@@ -319,14 +322,202 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
       `Assigned worker ${assignedWorker} to session ${sessionId}`,
     );
 
-    // Inform the client of the direct Moshi worker URL
-    client.send(
-      JSON.stringify({
-        type: 'worker_assigned',
-        ws_url: `${assignedWsUrl}?session_id=${sessionId}`,
-        sessionId,
-      }),
-    );
+    // Connect api-gateway -> Moshi worker and proxy all traffic so the
+    // browser never needs to reach the worker's localhost WebSocket.
+    const workerUrl = `${assignedWsUrl}?session_id=${sessionId}`;
+    this.logger.log(`Proxying voice WS to Moshi worker: ${workerUrl}`);
+    const workerWs = new WebSocket(workerUrl);
+    this.workerConnections.set(sessionId, workerWs);
+
+    workerWs.on('open', () => {
+      this.logger.log(`Voice proxy connected to worker for ${sessionId}`);
+      if (client.readyState === 1 /* OPEN */) {
+        client.send(
+          JSON.stringify({
+            type: 'worker_connected',
+            sessionId,
+            workerId: assignedWorker,
+          }),
+        );
+      }
+    });
+
+    workerWs.on('message', (data: WebSocket.Data) => {
+      if (Buffer.isBuffer(data)) {
+        this.logger.debug(`Worker response for ${sessionId}: ${data.length} bytes`);
+      } else {
+        this.logger.debug(`Worker response for ${sessionId}: text`);
+      }
+      if (client.readyState === 1 /* OPEN */) {
+        client.send(data);
+      }
+    });
+
+    workerWs.on('error', (err: Error) => {
+      this.logger.error(
+        `Moshi Worker WS Error for session ${sessionId}: ${err.message}`,
+      );
+      if (client.readyState === 1 /* OPEN */) {
+        client.send(
+          JSON.stringify({
+            type: 'error',
+            message: 'Voice worker connection lost. Please try again.',
+          }),
+        );
+        client.close(1011, 'Worker connection lost');
+      }
+    });
+
+    workerWs.on('close', () => {
+      this.logger.log(`Moshi Worker WS closed for session ${sessionId}`);
+      this.workerConnections.delete(sessionId);
+      if (client.readyState === 1 /* OPEN */) {
+        client.close(1011, 'Worker connection closed');
+      }
+    });
+
+    // Forward client messages to the worker after it is connected.
+    const forwardToWorker = (payload: Buffer | string) => {
+      if (workerWs.readyState === WebSocket.OPEN) {
+        workerWs.send(payload);
+      }
+    };
+
+    // Replace the existing client message handler with one that also
+    // forwards to the worker. We attach this AFTER the existing handler
+    // so control messages still flow through Redis as before.
+    client.on('message', async (payload: Buffer | string) => {
+      try {
+        const raw = Buffer.isBuffer(payload) ? payload : Buffer.from(payload);
+
+        // Binary audio frames: first byte is NOT '{' (0x7B)
+        if (raw[0] !== 0x7b) {
+          this.logger.debug(`Audio frame from ${sessionId} (proxy): ${raw.length} bytes`);
+          await this.redis.publish(`session:${sessionId}:audio_in`, raw);
+          forwardToWorker(raw);
+          return;
+        }
+
+        // JSON control messages
+        const msg: Record<string, any> = JSON.parse(raw.toString());
+
+        switch (msg.type) {
+          case 'ping':
+            client.send(
+              JSON.stringify({ type: 'pong', session_id: sessionId }),
+            );
+            client.isAlive = true;
+            break;
+
+          case 'start_session': {
+            const sessionStartMs = Date.now();
+            await this.redis.publish(
+              `session:${sessionId}:control`,
+              JSON.stringify({
+                type: 'session_update',
+                language: msg.language || 'ru',
+                persona: msg.persona || `aziza_${msg.language || 'ru'}`,
+              }),
+            );
+            client.send(
+              JSON.stringify({
+                type: 'first_token',
+                session_id: sessionId,
+                language: msg.language || 'ru',
+                gateway_dispatch_ms: Date.now() - sessionStartMs,
+                measure_ttft: msg.measure_ttft || false,
+              }),
+            );
+            forwardToWorker(raw);
+            break;
+          }
+
+          case 'session_update':
+            await this.redis.publish(
+              `session:${sessionId}:control`,
+              JSON.stringify({ type: 'session_update', language: msg.language }),
+            );
+            forwardToWorker(raw);
+            break;
+
+          case 'text_request':
+            await this.redis.rpush(
+              'aziza:text_in:queue',
+              JSON.stringify({
+                session_id: sessionId,
+                text: msg.text || '',
+                language: msg.language || 'ru',
+              }),
+            );
+            forwardToWorker(raw);
+            break;
+
+          case 'switch_persona':
+            await this.redis.publish(
+              `session:${sessionId}:control`,
+              JSON.stringify({
+                type: 'session_update',
+                language: msg.language || msg.persona,
+              }),
+            );
+            client.send(
+              JSON.stringify({
+                type: 'persona_switched',
+                persona: msg.persona || msg.language,
+                session_id: sessionId,
+              }),
+            );
+            forwardToWorker(raw);
+            break;
+
+          case 'end_session':
+            await this.redis.publish(
+              `session:${sessionId}:control`,
+              JSON.stringify({ action: 'stop_audio' }),
+            );
+            forwardToWorker(raw);
+            break;
+
+          case 'resume_session': {
+            const existingMeta = await this.redis.hgetall(`session:${sessionId}:meta`);
+            const historyKey = `session:${sessionId}:history`;
+            const historyLen = await this.redis.llen(historyKey);
+
+            client.send(JSON.stringify({
+              type: 'session_resumed',
+              session_id: sessionId,
+              language: existingMeta.language || 'ru',
+              message_count: historyLen,
+              metadata: {
+                language: existingMeta.language,
+                persona: existingMeta.persona,
+                created_at: existingMeta.created_at,
+              },
+            }));
+
+            await this.redis.publish(
+              'session:start',
+              JSON.stringify({
+                sessionId,
+                text_prompt: existingMeta.text_prompt || '',
+                voice_prompt: existingMeta.voice_prompt || '',
+              }),
+            );
+            this.logger.log(`Session resumed: ${sessionId} (history: ${historyLen} messages)`);
+            forwardToWorker(raw);
+            break;
+          }
+
+          default:
+            this.logger.debug(
+              `Unknown message type '${msg.type}' from ${sessionId}`,
+            );
+            forwardToWorker(raw);
+        }
+      } catch {
+        this.logger.warn(`Failed to parse message from ${sessionId}`);
+      }
+    });
 
     // Notify the Moshi worker to initialise the session
     await this.redis.publish(
@@ -374,6 +565,13 @@ export class VoiceGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
     this.clients.delete(sessionId);
     this.logger.log(`Client disconnected: ${sessionId} (session preserved for resume)`);
+
+    // Close proxied worker WebSocket if open
+    const workerWs = this.workerConnections.get(sessionId);
+    if (workerWs && workerWs.readyState === WebSocket.OPEN) {
+      workerWs.close(1000, 'Client disconnected');
+    }
+    this.workerConnections.delete(sessionId);
 
     if (workerId) {
       await this.redis.hset(`moshi:workers:${workerId}`, 'status', 'idle');

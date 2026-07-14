@@ -5,7 +5,7 @@ import {
   OnGatewayDisconnect,
 } from '@nestjs/websockets';
 import { Server } from 'ws';
-import * as WebSocket from 'ws';
+import WebSocket from 'ws';
 import { Logger } from '@nestjs/common';
 import Redis from 'ioredis';
 import { v4 as uuidv4 } from 'uuid';

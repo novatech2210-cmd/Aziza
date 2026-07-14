@@ -49,6 +49,21 @@ services:
     environment:
       - REDIS_URL=${REDIS_URL}
 
+  livekit:
+    image: livekit/livekit-server:latest
+    command:
+      - --config
+      - /etc/livekit/config.yaml
+      - --keys
+      - "devkey: devsecret"
+    ports:
+      - "7880:7880"
+      - "7881:7881"
+      - "7882:7882/udp"
+    volumes:
+      - ./infrastructure/livekit/config.yaml:/etc/livekit/config.yaml
+    restart: unless-stopped
+
 volumes:
   redis-data:
   mongo-data:

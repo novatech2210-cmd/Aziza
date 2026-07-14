@@ -6,6 +6,7 @@ import { useChatStore } from '../stores/chat'
 import { useThemeStore } from '../stores/theme'
 import { useVoiceRecorder } from '../composables/useVoiceRecorder'
 import { useVoiceChat } from '../composables/useVoiceChat'
+import { useLiveKitVoiceChat } from '../composables/useLiveKitVoiceChat'
 import { useAudioDevices } from '../composables/useAudioDevices'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -154,7 +155,7 @@ async function toggleRecording() {
     if (voiceFullDuplex.isConnected.value) {
       voiceFullDuplex.disconnect()
     } else {
-      await voiceFullDuplex.connect(audioDevices.selectedDeviceId.value)
+      await voiceFullDuplex.connect(audioDevices.selectedDeviceId.value, chat.selectedLanguage)
     }
     return
   }
@@ -342,9 +343,9 @@ function getInitials(name) {
         <div class="sidebar-footer">
           <div class="user-menu-wrapper">
             <button @click="userMenuOpen = !userMenuOpen" class="user-row-btn">
-              <div class="user-avatar">{{ getInitials(auth.user?.username) }}</div>
+              <div class="user-avatar">{{ getInitials(auth.user?.email) }}</div>
               <div class="user-info">
-                <span class="username">{{ auth.user?.username }}</span>
+                <span class="username">{{ auth.user?.email }}</span>
                 <span :class="['tier-badge', userTier]">{{ userTier.toUpperCase() }}</span>
               </div>
               <svg class="chevron" :class="{ open: userMenuOpen }" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
@@ -450,13 +451,13 @@ function getInitials(name) {
                 </svg>
               </template>
               <template v-else>
-                {{ getInitials(auth.user?.username) }}
+                 {{ getInitials(auth.user?.email) }}
               </template>
             </div>
 
             <div :class="['msg-bubble', msg.role, { error: msg.isError }]">
               <div class="msg-header">
-                <span class="msg-author">{{ msg.role === 'assistant' ? 'AZIZA' : auth.user?.username }}</span>
+                <span class="msg-author">{{ msg.role === 'assistant' ? 'AZIZA' : auth.user?.email }}</span>
                 <span class="msg-time">{{ formatTime(msg.timestamp) }}</span>
               </div>
               <div v-if="msg.role === 'assistant'" class="msg-content markdown-body" v-html="renderMarkdown(msg.content)" @click="copyCode"></div>

@@ -177,5 +177,31 @@ module.exports = {
       log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
       merge_logs: true,
     },
+
+    // ── LiveKit Bot ──────────────────────────────────────────────────────
+    {
+      name: "livekit-bot",
+      script: "/root/aziza-build/venv312/bin/python3",
+      args: "livekit_bot.py",
+      cwd: "/root/aziza-build/backend/services/livekit-bot",
+      instances: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "2G",
+      restart_delay: 5000,
+      max_restarts: 5,
+      min_uptime: "30s",
+      env: {
+        REDIS_URL: "redis://localhost:6379",
+        MOSHI_WS_URL: "http://localhost:8001/ws",
+        LIVEKIT_URL: process.env.LIVEKIT_URL || "ws://localhost:7880",
+        LIVEKIT_API_KEY: process.env.LIVEKIT_API_KEY || "devkey",
+        LIVEKIT_API_SECRET: process.env.LIVEKIT_API_SECRET || "devsecret",
+      },
+      error_file: "/root/aziza-build/logs/livekit-bot-error.log",
+      out_file: "/root/aziza-build/logs/livekit-bot-out.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss.SSS",
+      merge_logs: true,
+    },
   ],
 };

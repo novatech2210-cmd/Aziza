@@ -1,9 +1,13 @@
 """Moshi Inference Engine — streaming token generation and audio synthesis.
-Phase 11 Update: LoRA adapter integrated for bilingual (en-ru) fine-tuned inference.
+
+Phase PI-4: native Uzbek Moshi LoRA (moshi_uz_v1) deployed as the primary
+adapter. The Russian LoRA (moshi_ru_v1) remains loaded for runtime language
+switching (Phase 7) without restarting Moshi.
 """
 
 import asyncio
 import os
+import json
 # pyrefly: ignore [missing-import]
 import torch
 import numpy as np
@@ -16,8 +20,17 @@ from huggingface_hub import hf_hub_download
 from moshi.models import loaders
 # pyrefly: ignore [missing-import]
 from moshi.models.lm import LMGen
+# pyrefly: ignore [missing-import]
+from moshi.modules.lora import LoRALinear
 
 logger = logging.getLogger("MoshiEngine")
+
+# ── Adapter deployment configuration (Phase PI-4) ──────────────────────────
+ADAPTER_NAME = "moshi_uz_v1"
+ADAPTER_VERSION = "1.0"
+DEFAULT_ADAPTER = "uz"
+UZ_ADAPTER_PATH = "/root/aziza-build/training/lora/adapters/moshi_uz_v1/final"
+RU_ADAPTER_PATH = "/root/aziza-build/training/lora/adapters/moshi_ru_v1/final"
 
 class MoshiEngine:
     """Wraps Moshi's Mimi codec and LM for per-session streaming inference.
@@ -31,21 +44,32 @@ class MoshiEngine:
         self.device = torch.device(device)
         torch.set_grad_enabled(False)
         self.dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
-        logger.info(f"Loading Moshi models on {device} with {self.dtype}...")
+        self._banner("Loading Moshi...")
 
-        # 4-bit quantization config for VRAM efficiency
-        # pyrefly: ignore [missing-import]
-        from transformers import BitsAndBytesConfig
+        # Full-precision bf16 load. 4-bit quantization replaces nn.Linear with
+        # BNB layers that cannot be wrapped by Moshi's native LoRALinear, so the
+        # adapter could not be attached. The RTX A6000 (49 GB) comfortably holds
+        # the 7.7 B model in bf16 (~15 GB), leaving ample headroom for inference.
+        self.inference_precision = f"{self.dtype} (full precision, bf16)"
+        bnb_config = None
+
+        # Report GPU allocation
         if torch.cuda.is_available():
-            bnb_config = BitsAndBytesConfig(
-                load_in_4bit=True,
-                bnb_4bit_use_double_quant=True,
-                bnb_4bit_quant_type="nf4",
-                bnb_4bit_compute_dtype=self.dtype
+            gpu_idx = torch.cuda.current_device()
+            cuda_visible = os.environ.get("CUDA_VISIBLE_DEVICES", "all")
+            self.gpu_allocation = (
+                f"cuda:{gpu_idx} — {torch.cuda.get_device_name(gpu_idx)} "
+                f"(CUDA_VISIBLE_DEVICES={cuda_visible})"
             )
+            free_b, total_b = torch.cuda.mem_get_info(gpu_idx)
+            logger.info("GPU allocation", extra={"extra_data": {
+                "gpu": self.gpu_allocation,
+                "total_vram_gb": round(total_b / 1e9, 2),
+                "free_vram_gb": round(free_b / 1e9, 2),
+                "inference_precision": self.inference_precision,
+            }})
         else:
-            bnb_config = None
-            logger.info(f"Loading Moshi models on {device} with {self.dtype}...")
+            self.gpu_allocation = "cpu (no GPU detected)"
 
         mimi_path = hf_hub_download('kyutai/moshika-pytorch-bf16', loaders.MIMI_NAME)
         self.mimi = loaders.get_mimi(mimi_path, device=device)
@@ -55,45 +79,27 @@ class MoshiEngine:
         
         try:
             moshi_path = hf_hub_download('kyutai/moshika-pytorch-bf16', 'model.safetensors', local_files_only=True)
-            try:
-                self.moshi_lm = loaders.get_moshi_lm(moshi_path, device=device, quantization_config=bnb_config)
-                logger.info("Loaded Moshi LM in 4-bit precision.")
-            except TypeError:
-                logger.warning("Moshi loader doesn't accept quantization_config directly. Loading normally...")
-                self.moshi_lm = loaders.get_moshi_lm(moshi_path, device=device)
+            self.moshi_lm = loaders.get_moshi_lm(moshi_path, device=device)
+            logger.info("Loaded Moshi LM in full bf16 precision.")
 
-            self.adapter_loaded = False
-            self.adapter_path = None
+            # ── Text tokenizer (loaded before adapters for startup ordering) ─
+            self._banner("Loading tokenizer...")
+            tokenizer_path = None
             try:
-                from peft import PeftModel
-                ru_adapter_path = "/root/aziza-build/adapters/moshi_ru_v1/final"
-                multilingual_adapter_path = "/root/aziza-build/aziza-multilingual-adapter/final"
-                
-                # Monkey-patch Moshi LM for PEFT compatibility
-                class DummyConfig:
-                    is_encoder_decoder = False
-                    model_type = "moshi"
-                    
-                if not hasattr(self.moshi_lm, "prepare_inputs_for_generation"):
-                    self.moshi_lm.prepare_inputs_for_generation = lambda *args, **kwargs: {}
-                if not hasattr(self.moshi_lm, "config"):
-                    self.moshi_lm.config = DummyConfig()
+                tokenizer_path = hf_hub_download('kyutai/moshika-pytorch-bf16', loaders.TEXT_TOKENIZER_NAME, local_files_only=True)
+            except Exception:
+                tokenizer_path = None
+            if tokenizer_path and os.path.exists(tokenizer_path):
+                self.text_tokenizer = sentencepiece.SentencePieceProcessor(tokenizer_path)
+                self.tokenizer_version = f"base_moshi_v1 (vocab={self.text_tokenizer.get_piece_size()})"
+                logger.info(f"Loaded base Moshi tokenizer: vocab_size={self.text_tokenizer.get_piece_size()}")
+            else:
+                logger.warning("Could not load tokenizer. Text inputs will be limited.")
+                self.text_tokenizer = None
+                self.tokenizer_version = "unavailable"
 
-                logger.info(f"Loading base multilingual adapter from {multilingual_adapter_path}...")
-                self.moshi_lm = PeftModel.from_pretrained(self.moshi_lm, multilingual_adapter_path, adapter_name="multilingual")
-                
-                if os.path.exists(ru_adapter_path):
-                    logger.info(f"Loading RU adapter from {ru_adapter_path}...")
-                    self.moshi_lm.load_adapter(ru_adapter_path, adapter_name="ru")
-                
-                self.moshi_lm.set_adapter("multilingual")
-                self.adapter_loaded = True
-                self.adapter_path = multilingual_adapter_path
-                logger.info("Successfully loaded PEFT adapters into Moshi LM.")
-            except ImportError:
-                logger.warning("peft not installed, skipping adapter loading.")
-            except Exception as adapter_err:
-                logger.error(f"Failed to load PEFT adapters: {adapter_err}")
+            # ── PEFT adapters: Uzbek primary, Russian for runtime switching ─
+            self._load_adapters()
 
             # Ensure no parameters require gradients to prevent uint8/int8 parameter loading errors
             for param in self.moshi_lm.parameters():
@@ -107,13 +113,15 @@ class MoshiEngine:
         for param in self.mimi.parameters():
             param.requires_grad = False
 
-        # Setup Text Tokenizer
-        try:
-            tokenizer_path = hf_hub_download('kyutai/moshika-pytorch-bf16', loaders.TEXT_TOKENIZER_NAME, local_files_only=True)
-            self.text_tokenizer = sentencepiece.SentencePieceProcessor(tokenizer_path)
-        except Exception:
-            logger.warning("Could not load tokenizer. Text inputs will be limited.")
-            self.text_tokenizer = None
+        # Fallback tokenizer load for MOCK/ECHO (no LM) mode
+        if getattr(self, "text_tokenizer", None) is None:
+            try:
+                tokenizer_path = hf_hub_download('kyutai/moshika-pytorch-bf16', loaders.TEXT_TOKENIZER_NAME, local_files_only=True)
+                self.text_tokenizer = sentencepiece.SentencePieceProcessor(tokenizer_path)
+                self.tokenizer_version = f"base_moshi_v1 (vocab={self.text_tokenizer.get_piece_size()})"
+            except Exception:
+                self.text_tokenizer = None
+                self.tokenizer_version = "unavailable"
 
         self.mimi.eval()
 
@@ -138,10 +146,191 @@ class MoshiEngine:
             self.empty_lm_gen_state = {}
 
         logger.info("Moshi engine ready (running strictly as audio engine).")
+        self._banner("Inference ready", final=True)
 
     # -----------------------------------------------------------------------
-    # Session state helpers
+    # Startup banner + adapter loading
     # -----------------------------------------------------------------------
+
+    @staticmethod
+    def _banner(message: str, final: bool = False):
+        """Print a clear human-readable startup banner to stdout."""
+        rule = "=" * 60 if final else "-" * 60
+        print(rule, flush=True)
+        print(f"  {message}", flush=True)
+        if final:
+            print(rule, flush=True)
+        logger.info(message)
+
+    def _load_adapters(self):
+        """Load the trained PEFT LoRA adapters and fuse them into Moshi's
+        native ``LoRALinear`` layers.
+
+        The Moshi streaming runtime only recognises its own ``LoRALinear``
+        module type (PEFT's wrapped ``Linear`` raises ``RuntimeError`` inside
+        ``_init_streaming_state``). PEFT and Moshi store ``lora_A``/``lora_B``
+        with identical orientation (``(rank, in)`` / ``(out, rank)``), so we
+        convert the PEFT checkpoint directly into native ``LoRALinear`` layers.
+        All targeted linears start zero-initialised (== base model) and the
+        active language's weights are copied in via :meth:`_activate_adapter`,
+        which enables runtime language switching without restarting Moshi.
+
+        Phase PI-4: the native Uzbek Moshi LoRA (moshi_uz_v1) is the primary
+        adapter deployed into production. The Russian LoRA (moshi_ru_v1) is also
+        fused so the worker can switch languages at runtime (Phase 7).
+        """
+        self.adapter_loaded = False
+        self.adapter_path = None
+        self.loaded_adapters: list = []
+        self.adapter_metadata: dict = {}
+        self._lora_layers: dict = {}
+        self._adapter_weights: dict = {}
+        self._active_lang: str = DEFAULT_ADAPTER
+
+        self._banner("Loading Uzbek adapter...")
+
+        # ── Primary: native Uzbek Moshi LoRA ──────────────────────────────
+        if not os.path.exists(UZ_ADAPTER_PATH):
+            logger.error(
+                "Uzbek adapter missing — deployment cannot proceed without it",
+                extra={"extra_data": {"adapter_path": UZ_ADAPTER_PATH}},
+            )
+            logger.warning("Running base Moshi model WITHOUT Uzbek adapter (degraded mode).")
+            return
+
+        try:
+            uz_map, uz_scaling = self._build_lora_map(UZ_ADAPTER_PATH)
+            self._adapter_weights["uz"] = uz_map
+            self.loaded_adapters.append("uz")
+        except Exception as uz_err:
+            logger.error(f"Failed to load Uzbek adapter: {uz_err}")
+            return
+
+        # Replace the targeted nn.Linear layers with native LoRALinear (zero-init).
+        try:
+            self._lora_layers = self._apply_native_lora(uz_map)
+        except Exception as apply_err:
+            logger.error(f"Failed to fuse Uzbek adapter into Moshi: {apply_err}")
+            return
+
+        # ── Secondary: Russian LoRA for runtime language switching ─────────
+        if os.path.exists(RU_ADAPTER_PATH):
+            try:
+                ru_map, _ = self._build_lora_map(RU_ADAPTER_PATH)
+                self._adapter_weights["ru"] = ru_map
+                self.loaded_adapters.append("ru")
+            except Exception as ru_err:
+                logger.warning(f"Failed to load RU adapter (switching disabled): {ru_err}")
+
+        # ── Activate Uzbek as the default adapter ─────────────────────────
+        if self.loaded_adapters:
+            self._activate_adapter(DEFAULT_ADAPTER)
+            self.adapter_loaded = True
+            self.adapter_path = UZ_ADAPTER_PATH
+            self.adapter_metadata = {
+                "name": ADAPTER_NAME,
+                "version": ADAPTER_VERSION,
+                "path": UZ_ADAPTER_PATH,
+                "loaded_adapters": self.loaded_adapters,
+                "active_adapter": DEFAULT_ADAPTER,
+            }
+            self._banner("PEFT adapter loaded successfully")
+            logger.info(
+                "PEFT adapter loaded successfully",
+                extra={"extra_data": {
+                    "adapter_name": ADAPTER_NAME,
+                    "adapter_version": ADAPTER_VERSION,
+                    "adapter_path": UZ_ADAPTER_PATH,
+                    "fused_layers": len(self._lora_layers),
+                    "loaded_adapters": self.loaded_adapters,
+                    "active_adapter": DEFAULT_ADAPTER,
+                    "tokenizer_version": getattr(self, "tokenizer_version", None),
+                    "gpu_allocation": self.gpu_allocation,
+                    "inference_precision": self.inference_precision,
+                }},
+            )
+        else:
+            logger.warning("No native Moshi adapters loaded, running base model only.")
+
+    # -----------------------------------------------------------------------
+    # Native LoRA (Moshi LoRALinear) helpers
+    # -----------------------------------------------------------------------
+
+    def _build_lora_map(self, adapter_dir: str):
+        """Read a PEFT safetensors checkpoint into {module_path: {A, B, scaling}}."""
+        from safetensors import safe_open
+
+        sd_path = os.path.join(adapter_dir, "adapter_model.safetensors")
+        lora_map: dict = {}
+        with safe_open(sd_path, framework="pt") as f:
+            for key in f.keys():
+                if key.endswith(".lora_A.weight"):
+                    rel = key[: -len("lora_A.weight")].replace("base_model.model.moshi_lm.", "").rstrip(".")
+                    lora_map.setdefault(rel, {})["A"] = f.get_tensor(key)
+                elif key.endswith(".lora_B.weight"):
+                    rel = key[: -len("lora_B.weight")].replace("base_model.model.moshi_lm.", "").rstrip(".")
+                    lora_map.setdefault(rel, {})["B"] = f.get_tensor(key)
+
+        with open(os.path.join(adapter_dir, "adapter_config.json")) as cfg_f:
+            cfg = json.load(cfg_f)
+        scaling = float(cfg["lora_alpha"]) / float(cfg["r"])
+        for v in lora_map.values():
+            v["scaling"] = scaling
+        return lora_map, scaling
+
+    def _apply_native_lora(self, lora_map: dict) -> dict:
+        """Replace each targeted ``nn.Linear`` with a zero-initialised native
+        ``LoRALinear`` (== base model until activated). Returns {path: layer}."""
+        named = dict(self.moshi_lm.named_modules())
+        layers: dict = {}
+        skipped = 0
+        for rel, data in lora_map.items():
+            if rel not in named:
+                skipped += 1
+                continue
+            child = named[rel]
+            if not isinstance(child, torch.nn.Linear):
+                skipped += 1
+                continue
+            parent_path, attr = rel.rsplit(".", 1)
+            parent = self.moshi_lm if parent_path == "" else named[parent_path]
+            rank = data["A"].shape[0]
+            lora = LoRALinear(
+                child.in_features, child.out_features,
+                rank=rank, scaling=data["scaling"],
+                device=self.device, dtype=self.dtype,
+            )
+            lora.frozen_W = child  # keep the original (now frozen) weights
+            with torch.no_grad():
+                lora.lora_A.weight.zero_()
+                lora.lora_B.weight.zero_()
+            setattr(parent, attr, lora)
+            layers[rel] = lora
+        if skipped:
+            logger.warning(f"Skipped {skipped} LoRA targets not present as nn.Linear")
+        return layers
+
+    def _activate_adapter(self, lang: str):
+        """Copy the selected language's LoRA weights into the live layers.
+
+        ``en`` zeroes the LoRA branches, restoring the exact base-model behaviour
+        (architecture separation — text generation is routed to the vLLM/LLM
+        services per language, Moshi acts as the audio engine).
+        """
+        if lang not in self._adapter_weights:
+            # Unknown language → fall back to base model.
+            lang = "en"
+        target_map = self._adapter_weights.get(lang)
+        for rel, lora in self._lora_layers.items():
+            with torch.no_grad():
+                if target_map is None or rel not in target_map:
+                    lora.lora_A.weight.zero_()
+                    lora.lora_B.weight.zero_()
+                else:
+                    lora.lora_A.weight.copy_(target_map[rel]["A"].to(device=self.device, dtype=self.dtype))
+                    lora.lora_B.weight.copy_(target_map[rel]["B"].to(device=self.device, dtype=self.dtype))
+        self._active_lang = lang
+
 
     def _get_model_state(self, model):
         states = {}
@@ -186,12 +375,15 @@ class MoshiEngine:
             if session_id in self.session_states:
                 lang = self.session_states[session_id].get("language", "en")
             
-            adapter_name = "ru" if lang == "ru" else "multilingual"
-            try:
-                self.moshi_lm.set_adapter(adapter_name)
-                logger.info(f"Switched adapter to {adapter_name} for session {session_id} (lang: {lang})")
-            except Exception as e:
-                logger.warning(f"Failed to switch adapter to {adapter_name}: {e}")
+            # Runtime language switch via native LoRA weight swapping.
+            # Only re-copy weights when the language actually changes, to avoid
+            # disturbing the live streaming state on every audio step.
+            if lang != getattr(self, "_active_lang", DEFAULT_ADAPTER):
+                try:
+                    self._activate_adapter(lang)
+                    logger.info(f"Switched LoRA adapter to {lang} for session {session_id}")
+                except Exception as e:
+                    logger.warning(f"Failed to switch adapter to {lang}: {e}")
 
         self.current_session_id = session_id
 
@@ -224,53 +416,37 @@ class MoshiEngine:
 
     async def step(self, session_id: str, audio_chunk):
         """Run one inference step: encode audio → LM step → decode audio."""
-        logger.info(f"Step for {session_id}, chunk size: {len(audio_chunk)}")
         async with self._session_lock:
             self._switch_to_session(session_id)
         
         lm_gen = self.lm_gen
 
-        logger.info(
-            f"type(audio_chunk)={type(audio_chunk)} "
-            f"len={len(audio_chunk)}"
-        )
+        logger.debug(f"Step for {session_id}, chunk size: {len(audio_chunk)}")
 
         # Normalize audio to [-1.0, 1.0] float32 — Mimi expects this range
-        # audio_chunk arrives as np.int16 from np.frombuffer() in moshi_service.py
         if isinstance(audio_chunk, np.ndarray) and audio_chunk.dtype == np.int16:
             audio_np = audio_chunk.astype(np.float32) / 32768.0
         elif isinstance(audio_chunk, np.ndarray) and audio_chunk.dtype in (np.float32, np.float64):
-            audio_np = audio_chunk.astype(np.float32)  # already normalized
+            audio_np = audio_chunk.astype(np.float32)
         else:
-            # Fallback: assume raw int16 values in an array-like, normalize
             audio_np = np.array(audio_chunk, dtype=np.float32) / 32768.0
-
-        logger.info(
-            f"audio_np shape={audio_np.shape} "
-            f"min={audio_np.min():.4f} "
-            f"max={audio_np.max():.4f} "
-            f"mean_abs={np.abs(audio_np).mean():.6f}"
-        )
 
         # Encode audio with Mimi: expects [B, C, T] float32 in [-1, 1] at 24kHz
         audio_tensor = (
             torch.from_numpy(audio_np)
             .to(device=self.device, dtype=self.dtype)
             .view(1, 1, -1)
-            # NOTE: NO / 32768.0 here — normalization is done above
         )
-
 
         with torch.no_grad():
             codes = self.mimi.encode(audio_tensor)
 
-        logger.info(f"Mimi encoded into codes shape: {codes.shape}")
+        logger.debug(f"Mimi encoded into codes shape: {codes.shape}")
 
         all_out_audio = []
         all_text_tokens = []
 
         if lm_gen is None:
-            # MOCK mode
             logger.warning("LM generator is None. Skipping LM step (mock mode).")
         else:
             for s in range(codes.shape[-1]):
@@ -285,7 +461,6 @@ class MoshiEngine:
                     all_text_tokens.append(tokens[:, 0])
 
         if not all_out_audio:
-            logger.info("No output audio tokens generated in this step.")
             return {"audio": None, "text": ""}
 
         out_pcm = torch.cat(all_out_audio, dim=-1)
@@ -294,7 +469,7 @@ class MoshiEngine:
         if all_text_tokens:
             text_ids = torch.cat(all_text_tokens, dim=-1).tolist()
             text = self.text_tokenizer.decode(text_ids)
-            logger.info(f"Generated text: {text}")
+            logger.debug(f"Generated text: {text[:100]}")
 
         # Mark session as audio-warmed-up so TTS synthesis is safe on next step_text()
         if session_id in self.session_states:
@@ -305,13 +480,13 @@ class MoshiEngine:
 
     async def step_text(self, session_id: str, text: str):
         """Run one inference step: encode text → LM step → decode audio."""
-        logger.info(f"Step text for {session_id}, text: {text}")
+        logger.debug(f"Step text for {session_id}: {text[:100]}")
         async with self._session_lock:
             self._switch_to_session(session_id)
 
-        text_ids = self.text_tokenizer.encode(text)
+        text_ids = self.text_tokenizer.encode(text) if self.text_tokenizer else []
         if not text_ids:
-            return {"audio": None, "text": ""}
+            text_ids = [0]
 
         # Text-to-text path via local test API (serve_russian_test.py) or vLLM
         import json
@@ -423,10 +598,18 @@ class MoshiEngine:
         """Return adapter metadata for health-check endpoints."""
         adapter_loaded = getattr(self, "adapter_loaded", False)
         adapter_path = getattr(self, "adapter_path", None)
+        loaded = getattr(self, "loaded_adapters", [])
         mode_str = "LoRA Adapted Moshi Model" if adapter_loaded else "Architecture Separation (Base Moshi Model only)"
         return {
             "adapter_loaded": adapter_loaded,
+            "adapter_name": ADAPTER_NAME if adapter_loaded else None,
+            "adapter_version": ADAPTER_VERSION if adapter_loaded else None,
             "adapter_path": adapter_path,
+            "active_adapter": getattr(self, "_active_lang", DEFAULT_ADAPTER) if adapter_loaded else None,
+            "loaded_adapters": loaded,
             "languages": ["en", "ru", "uz"],
+            "tokenizer_version": getattr(self, "tokenizer_version", None),
+            "inference_precision": getattr(self, "inference_precision", None),
+            "gpu_allocation": getattr(self, "gpu_allocation", None),
             "mode": mode_str
         }

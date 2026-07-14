@@ -38,6 +38,21 @@ class VADSession:
     total_silence_ms: float = 0.0
     utterance_count: int = 0
     noise_floor: float = 0.01  # Adaptive noise floor
+    peak_energy: float = 0.0   # Track peak energy during speech for adaptation
+    speech_count: int = 0      # Total speech frames in current utterance
+    silence_count: int = 0     # Total silence frames in current trailing silence
+
+
+@dataclass
+class VADStats:
+    """Aggregate VAD statistics for monitoring."""
+    total_utterances: int = 0
+    total_speech_ms: float = 0.0
+    total_silence_ms: float = 0.0
+    avg_utterance_ms: float = 0.0
+    avg_silence_ms: float = 0.0
+    noise_floor_db: float = -60.0
+    active_sessions: int = 0
 
 
 class EnergyVAD:
@@ -48,6 +63,7 @@ class EnergyVAD:
     - Hysteresis (separate thresholds for speech start/stop)
     - Minimum speech duration filter
     - Minimum silence duration for end-of-turn detection
+    - Adaptive thresholds based on noise floor
     
     Parameters
     ----------
@@ -57,48 +73,51 @@ class EnergyVAD:
         Energy threshold (dB above noise floor) to detect speech stop. Default -25.
         Must be lower than speech_threshold_db for hysteresis.
     min_speech_ms : int
-        Minimum speech duration to trigger speaking state (ms). Default 250.
+        Minimum speech duration to trigger speaking state (ms). Default 200.
     min_silence_ms : int
-        Minimum silence duration after speech to trigger end-of-turn (ms). Default 500.
+        Minimum silence duration after speech to trigger end-of-turn (ms). Default 350.
     sample_rate : int
         Input audio sample rate. Default 24000.
     frame_ms : int
         Analysis frame size (ms). Default 30.
     noise_adapt_rate : float
-        Noise floor adaptation rate (0-1). Lower = slower adaptation. Default 0.02.
+        Noise floor adaptation rate (0-1). Lower = slower adaptation. Default 0.03.
     max_buffer_ms : int
         Maximum audio buffer size (ms). Prevents memory issues. Default 30000.
     """
     
     def __init__(
         self,
-        speech_threshold_db: float = -20.0,
-        silence_threshold_db: float = -25.0,
-        min_speech_ms: int = 250,
-        min_silence_ms: int = 500,
+        speech_threshold_db: float = None,
+        silence_threshold_db: float = None,
+        min_speech_ms: int = None,
+        min_silence_ms: int = None,
         sample_rate: int = 24000,
         frame_ms: int = 30,
-        noise_adapt_rate: float = 0.02,
+        noise_adapt_rate: float = None,
         max_buffer_ms: int = 30000,
     ):
-        self.speech_threshold_db = speech_threshold_db
-        self.silence_threshold_db = silence_threshold_db
-        self.min_speech_ms = min_speech_ms
-        self.min_silence_ms = min_silence_ms
+        self.speech_threshold_db = speech_threshold_db if speech_threshold_db is not None else float(os.getenv("VAD_SPEECH_THRESHOLD_DB", "-18"))
+        self.silence_threshold_db = silence_threshold_db if silence_threshold_db is not None else float(os.getenv("VAD_SILENCE_THRESHOLD_DB", "-23"))
+        self.min_speech_ms = min_speech_ms if min_speech_ms is not None else int(os.getenv("VAD_MIN_SPEECH_MS", "200"))
+        self.min_silence_ms = min_silence_ms if min_silence_ms is not None else int(os.getenv("VAD_MIN_SILENCE_MS", "350"))
         self.sample_rate = sample_rate
         self.frame_size = int(sample_rate * frame_ms / 1000)
-        self.noise_adapt_rate = noise_adapt_rate
+        self.noise_adapt_rate = noise_adapt_rate if noise_adapt_rate is not None else float(os.getenv("VAD_NOISE_ADAPT_RATE", "0.03"))
         self.max_buffer_samples = int(sample_rate * max_buffer_ms / 1000)
         
         # Convert dB thresholds to linear energy
-        # These are relative to noise floor
-        self.speech_energy_threshold = 10 ** (speech_threshold_db / 10)
-        self.silence_energy_threshold = 10 ** (silence_threshold_db / 10)
+        self.speech_energy_threshold = 10 ** (self.speech_threshold_db / 10)
+        self.silence_energy_threshold = 10 ** (self.silence_threshold_db / 10)
+        
+        # Stats tracking
+        self.stats = VADStats()
+        self._session_stats: dict[str, dict] = {}
         
         logger.info(
-            f"Energy VAD initialized: speech_th={speech_threshold_db}dB, "
-            f"silence_th={silence_threshold_db}dB, min_speech={min_speech_ms}ms, "
-            f"min_silence={min_silence_ms}ms"
+            f"Energy VAD initialized: speech_th={self.speech_threshold_db}dB, "
+            f"silence_th={self.silence_threshold_db}dB, min_speech={self.min_speech_ms}ms, "
+            f"min_silence={self.min_silence_ms}ms, noise_adapt={self.noise_adapt_rate}"
         )
     
     def _compute_frame_energy(self, frame: np.ndarray) -> float:
@@ -153,6 +172,7 @@ class EnergyVAD:
         is_speech_detected = False
         avg_energy = 0.0
         frame_count = 0
+        peak_energy = 0.0
         
         for i in range(0, len(audio_chunk), self.frame_size):
             frame = audio_chunk[i:i + self.frame_size]
@@ -161,6 +181,7 @@ class EnergyVAD:
                 
             energy = self._compute_frame_energy(frame)
             avg_energy += energy
+            peak_energy = max(peak_energy, energy)
             frame_count += 1
             
             # Adaptive noise floor estimation (only during silence)
@@ -197,6 +218,9 @@ class EnergyVAD:
                 session.last_speech_time = now
                 session.total_speech_ms = 0.0
                 session.total_silence_ms = 0.0
+                session.peak_energy = peak_energy
+                session.speech_count = 1
+                session.silence_count = 0
                 result["state"] = VADState.SPEAKING.value
                 logger.debug(f"Speech started (energy: {energy_db:.1f}dB, noise: {noise_floor_db:.1f}dB)")
         
@@ -205,12 +229,16 @@ class EnergyVAD:
                 session.last_speech_time = now
                 session.total_speech_ms = (now - session.speech_start_time) * 1000
                 session.total_silence_ms = 0.0
+                session.peak_energy = max(session.peak_energy, peak_energy)
+                session.speech_count += 1
+                session.silence_count = 0
                 result["state"] = VADState.SPEAKING.value
             else:
                 # Speech stopped, enter trailing silence
                 session.state = VADState.TRAILING_SILENCE
                 session.silence_start_time = now
                 session.total_silence_ms = 0.0
+                session.silence_count = 1
                 result["state"] = VADState.TRAILING_SILENCE.value
                 logger.debug(f"Speech stopped, monitoring silence")
         
@@ -221,10 +249,14 @@ class EnergyVAD:
                 session.last_speech_time = now
                 session.total_speech_ms = (now - session.speech_start_time) * 1000
                 session.total_silence_ms = 0.0
+                session.peak_energy = max(session.peak_energy, peak_energy)
+                session.speech_count += 1
+                session.silence_count = 0
                 result["state"] = VADState.SPEAKING.value
                 logger.debug(f"Speech resumed")
             else:
                 session.total_silence_ms = (now - session.silence_start_time) * 1000
+                session.silence_count += 1
                 speech_duration = (now - session.speech_start_time) * 1000
                 
                 if (
@@ -239,11 +271,29 @@ class EnergyVAD:
                     result["is_speech"] = False
                     result["state"] = VADState.IDLE.value
                     result["speech_duration_ms"] = speech_duration
+                    
+                    # Update aggregate stats
+                    self.stats.total_utterances += 1
+                    self.stats.total_speech_ms += speech_duration
+                    self.stats.total_silence_ms += session.total_silence_ms
+                    self.stats.avg_utterance_ms = (
+                        self.stats.total_speech_ms / self.stats.total_utterances
+                    )
+                    self.stats.avg_silence_ms = (
+                        self.stats.total_silence_ms / self.stats.total_utterances
+                    )
+                    
                     logger.info(
                         f"End of turn #{session.utterance_count}: "
                         f"speech={speech_duration:.0f}ms, "
-                        f"silence={session.total_silence_ms:.0f}ms"
+                        f"silence={session.total_silence_ms:.0f}ms, "
+                        f"peak={self._energy_to_db(session.peak_energy):.1f}dB"
                     )
+                    
+                    # Reset peak tracking for next utterance
+                    session.peak_energy = 0.0
+                    session.speech_count = 0
+                    session.silence_count = 0
                 else:
                     result["state"] = VADState.TRAILING_SILENCE.value
         
@@ -259,3 +309,22 @@ class EnergyVAD:
         session.energy_history.clear()
         session.total_speech_ms = 0.0
         session.total_silence_ms = 0.0
+        session.peak_energy = 0.0
+        session.speech_count = 0
+        session.silence_count = 0
+    
+    def get_stats(self, active_sessions: int = 0) -> dict:
+        """Return VAD statistics for monitoring."""
+        return {
+            "total_utterances": self.stats.total_utterances,
+            "avg_utterance_ms": round(self.stats.avg_utterance_ms, 1),
+            "avg_silence_ms": round(self.stats.avg_silence_ms, 1),
+            "active_sessions": active_sessions,
+            "config": {
+                "speech_threshold_db": self.speech_threshold_db,
+                "silence_threshold_db": self.silence_threshold_db,
+                "min_speech_ms": self.min_speech_ms,
+                "min_silence_ms": self.min_silence_ms,
+                "noise_adapt_rate": self.noise_adapt_rate,
+            },
+        }

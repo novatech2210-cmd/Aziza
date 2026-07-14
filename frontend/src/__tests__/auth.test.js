@@ -38,11 +38,11 @@ describe('auth store', () => {
     auth._saveAuth({
       access_token: 'test-token-123',
       refresh_token: 'refresh-123',
-      user: { username: 'alice', role: 'admin' },
+      user: { email: 'alice@example.com', role: 'admin' },
     })
     expect(auth.token).toBe('test-token-123')
     expect(auth.refreshToken).toBe('refresh-123')
-    expect(auth.user.username).toBe('alice')
+    expect(auth.user.email).toBe('alice@example.com')
     expect(auth.isAuthenticated).toBe(true)
     expect(auth.isAdmin).toBe(true)
   })

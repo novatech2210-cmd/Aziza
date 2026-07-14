@@ -18,26 +18,26 @@ axios.interceptors.request.use((config) => {
 })
 
 // On 401, try refresh; on refresh failure, logout
+let _refreshing = false
+
 axios.interceptors.response.use(
   (res) => res,
   async (error) => {
     const originalRequest = error.config
-    if (error.response?.status === 401 && !originalRequest._retry) {
+    if (error.response?.status === 401 && !originalRequest._retry && !_refreshing) {
       originalRequest._retry = true
-      const refreshToken = localStorage.getItem('aziza_refresh_token')
-      if (refreshToken) {
-        try {
-          const { data } = await authApi.post('/refresh', { refresh_token: refreshToken })
-          localStorage.setItem('aziza_token', data.access_token)
-          localStorage.setItem('aziza_refresh_token', data.refresh_token)
-          originalRequest.headers.Authorization = `Bearer ${data.access_token}`
-          return axios(originalRequest)
-        } catch {
-          // Refresh failed — logout
-        }
+      _refreshing = true
+      try {
+        const { data } = await authApi.post('/refresh')
+        localStorage.setItem('aziza_token', data.access_token)
+        originalRequest.headers.Authorization = `Bearer ${data.access_token}`
+        return axios(originalRequest)
+      } catch {
+        const auth = useAuthStore()
+        auth.logout()
+      } finally {
+        _refreshing = false
       }
-      const auth = useAuthStore()
-      auth.logout()
     }
     return Promise.reject(error)
   }
@@ -55,19 +55,19 @@ export async function authFetch(url, options = {}) {
   let res = await fetch(url, { ...options, headers })
 
   if (res.status === 401) {
-    const refreshToken = localStorage.getItem('aziza_refresh_token')
-    if (refreshToken) {
+    if (!_refreshing) {
+      _refreshing = true
       try {
-        const refreshRes = await authApi.post('/refresh', { refresh_token: refreshToken })
+        const refreshRes = await authApi.post('/refresh')
         localStorage.setItem('aziza_token', refreshRes.data.access_token)
-        localStorage.setItem('aziza_refresh_token', refreshRes.data.refresh_token)
         headers.Authorization = `Bearer ${refreshRes.data.access_token}`
         res = await fetch(url, { ...options, headers })
       } catch {
-        // Refresh failed — logout
         const auth = useAuthStore()
         auth.logout()
         return res
+      } finally {
+        _refreshing = false
       }
     } else {
       const auth = useAuthStore()
@@ -94,27 +94,27 @@ export const useAuthStore = defineStore('auth', {
     _saveAuth(data) {
       this.token = data.access_token
       this.refreshToken = data.refresh_token || 'mock-refresh-token'
-      this.user = data.user || { role: 'admin', username: 'testuser' }
+      this.user = data.user || { role: 'admin', email: 'test@example.com' }
       localStorage.setItem('aziza_token', this.token)
       localStorage.setItem('aziza_refresh_token', this.refreshToken)
       localStorage.setItem('aziza_user', JSON.stringify(this.user))
     },
 
-    async login(username, password) {
+    async login(email, password) {
       if (import.meta.env.VITE_DEV_SKIP_AUTH === 'true') {
-        this._saveAuth({ access_token: 'mock-token', user: { username, role: 'admin' } })
+        this._saveAuth({ access_token: 'mock-token', user: { email, role: 'admin' } })
         return
       }
-      const { data } = await authApi.post('/login', { username, password })
+      const { data } = await authApi.post('/login', { email, password })
       this._saveAuth(data)
     },
 
-    async register(username, password) {
+    async register(email, password) {
       if (import.meta.env.VITE_DEV_SKIP_AUTH === 'true') {
-        this._saveAuth({ access_token: 'mock-token', user: { username, role: 'admin' } })
+        this._saveAuth({ access_token: 'mock-token', user: { email, role: 'admin' } })
         return
       }
-      const { data } = await authApi.post('/register', { username, password })
+      const { data } = await authApi.post('/register', { email, password })
       this._saveAuth(data)
     },
 
@@ -130,7 +130,7 @@ export const useAuthStore = defineStore('auth', {
 
     async fetchMe() {
       if (import.meta.env.VITE_DEV_SKIP_AUTH === 'true') {
-        this.user = { username: 'testuser', role: 'admin' }
+        this.user = { email: 'test@example.com', role: 'admin' }
         return
       }
       try {

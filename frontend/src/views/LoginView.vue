@@ -9,7 +9,7 @@ const router = useRouter()
 const theme = useThemeStore()
 
 const isRegister = ref(false)
-const username = ref('')
+const email = ref('')
 const password = ref('')
 const error = ref('')
 const loading = ref(false)
@@ -21,17 +21,17 @@ onMounted(() => {
 
 async function handleSubmit() {
   error.value = ''
-  if (!username.value || !password.value) {
+  if (!email.value || !password.value) {
     error.value = 'Please fill in all fields'
     return
   }
   loading.value = true
   try {
-    if (isRegister.value) {
-      await auth.register(username.value, password.value)
-    } else {
-      await auth.login(username.value, password.value)
-    }
+      if (isRegister.value) {
+        await auth.register(email.value, password.value)
+      } else {
+        await auth.login(email.value, password.value)
+      }
     router.push(auth.isAdmin ? '/admin' : '/chat')
   } catch (e) {
     console.error('Login error:', e)
@@ -133,18 +133,18 @@ async function handleSubmit() {
 
           <form @submit.prevent="handleSubmit" class="login-form">
             <div class="form-group anim-field" style="animation-delay: 0.3s">
-              <label class="form-label">Username</label>
+              <label class="form-label">Email</label>
               <div class="input-wrapper">
                 <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                   <circle cx="12" cy="7" r="4" />
                 </svg>
                 <input
-                  v-model="username"
+                  v-model="email"
                   type="text"
                   class="form-input"
-                  placeholder="Enter username"
-                  autocomplete="username"
+                  placeholder="Enter email"
+                  autocomplete="email"
                 />
                 <div class="input-glow"></div>
               </div>

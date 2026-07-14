@@ -1,0 +1,130 @@
+{
+  "adapter": "/root/aziza-build/adapters/uz_latin",
+  "model_id": "Vikhrmodels/Vikhr-Llama3.1-8B-Instruct-R-21-09-24",
+  "evaluated_at": "2026-06-25T17:40:44Z",
+  "all_gates_passed": false,
+  "gates": [
+    {
+      "name": "adapter_loads",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 1.0,
+      "unit": "bool",
+      "detail": "PeftModel.from_pretrained() succeeded"
+    },
+    {
+      "name": "pass_rate",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 0.8,
+      "unit": "ratio",
+      "detail": "10/10 prompts returned Uzbek"
+    },
+    {
+      "name": "uz_prompts_uzbek_pct",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 0.8,
+      "unit": "ratio",
+      "detail": "Average Uzbek word ratio across Uzbek-containing responses"
+    },
+    {
+      "name": "ttft_estimate_ms",
+      "passed": false,
+      "value": 18870.4,
+      "threshold": 540.0,
+      "unit": "ms (batch proxy)",
+      "detail": "Batch avg latency 18870ms. Real TTFT on H100 at batch_size=1 is typically 50–120ms. Verify under serve_multilingual.py /test/uzbek."
+    },
+    {
+      "name": "no_english_regression",
+      "passed": true,
+      "value": 0.5,
+      "threshold": 0.5,
+      "unit": "ratio",
+      "detail": "1/2 English prompts still returned some Uzbek"
+    }
+  ],
+  "responses": [
+    {
+      "prompt": "Salom! Isming nima va nimalar qila olasan?",
+      "description": "Greeting + persona identity",
+      "response": "Salom! Men sun'iy intellekt tili modeliman, shuning uchun men insho, maqolalar, blog postlari, xabarlar va boshqa turli xil matnlar uchun qayta ishlash, tahrirlash va yaratish uchun ishlatilishi mumkin bo'lgan matn tahlillari, mashinani o'rganish va boshqa texnik vositalardan foydalangan holda tushunarli va aniq matnlar yaratish imkoniyatiga ega. Men sizga ushbu matnlar yordamida qandaydir vazifani bajarishda yordam berishim mumkin, lekin qo'shimcha ma'lumot yoki ko'rsatmalarni xohlaysizmi?",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 21047.6
+    },
+    {
+      "prompt": "O'zing haqingda gapirib ber. Kimsan?",
+      "description": "Self-description — persona awareness",
+      "response": "Men OpenAI tomonidan ishlab chiqilgan o'z-o'zini o'rganadigan sun'iy intellekt modeliman. Men sun'iy intellekt va tabiiy tilni qayta ishlashning turli sohalarida odamlar uchun yordam berish uchun mo'ljallanganman. Men o'zimni o'z-o'zini o'rganish orqali o'rganish va takomillashtirish imkoniyatiga ega bo'lgan tilni qayta ishlash va bashorat qilish bo'yicha sun'iy intellekt modeliman. Men o'zimni foydali va javob beruvchi bo'lish uchun takroriy mashg'ulotlardan o'tkazilaman.",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 19483.2
+    },
+    {
+      "prompt": "Mashinali o'rganish va neyron tarmoqlarning tamoyillarini tushuntirib ber.",
+      "description": "Academic register — ML concepts",
+      "response": "Mashinani o'rganish (ML) - bu algoritmlar va ularning tabiiy tilga tatbiq etilishi orqali ma'lumotlardan o'rganishni anglatadi. Ushbu algoritmlar ma'lumotlardan o'rganish uchun qoidalarni yaratish uchun ishlatiladi va keyinchalik ma'lumotlar yangi ma'lumotlardan bashorat qilish yoki qaror qabul qilish uchun ishlatiladi. Mashinani o'rganishning asosiy tamoyillaridan biri bu ma'lumotlarni qayta ishlash va uning asosiy tamoyillarini tushunishdir. Bunga matematika va statistika, masalan, regressiya, diskriminant analizi va klyaster",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 21303.0
+    },
+    {
+      "prompt": "Mijoz bilan restoranda uchrashuvni qanday qilib eng yaxshi tarzda tashkil qilish mumkin?",
+      "description": "Professional register — hospitality domain",
+      "response": "Mijoz bilan restoranda uchrashuvni tashkil qilish odatda, ularning talablariga moslashtirilgan shaxsiy va shaxsiy tafsilotlar bilan birga bo'lishi kerak. Bu sizga qo'shimcha qiziqishlarni olishga va mijozni qiziqtiradigan muhitni yaratishga yordam beradi. Mana qanday qilish kerakli bo'lgan ba'zi maslahatlar:\n\n1. Qo'shimcha ma'lumot oling: Mijozlar bilan birgalikda ularning tashrif qilmoqchi bo'lgan restoranning shaxsiy ehtiyojlarini va afzalliklarini o'rganishdan boshlang. Bu sizga ularning sevimli ta",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 20701.5
+    },
+    {
+      "prompt": "O'zbek madaniyati va an'analari haqida nimalarni bilasan?",
+      "description": "Cultural knowledge + context",
+      "response": "O'zbek madaniyati turli asrlar davomida rivojlangan va shu bilan bir qatorda o'ziga xos xususiyatlar va an'analarga ega. O'zbek madaniyati o'zbek xalqining tarixi, ma'daniyati, xususiyatlariga asoslanadi. O'zbek madaniyati turli xil san'at, musiqa, adabiyot va boshqa ko'plab sanoat sohalarida namoyon bo'lgan.\n\nO'zbek madaniyatida qadimiy musiqiy asboblar, nasroniy charchaf, milliy kiyim-kechak, o'rta Osiyoning boshqa madaniyatlari bilan birgalikdagi ta'sir va o'ziga xos o'zbek madani",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 20737.0
+    },
+    {
+      "prompt": "Hamkorga rasmiy biznes xati yozishda menga yordam ber.",
+      "description": "Professional — business writing",
+      "response": "Iltimos, men sizning biznes xatingiz uchun quyidagi kirishni taklif qilaman:\n\nHurmatli [Menejer ismi],\n\nMen [Ismingiz] [Lavozimingiz] sifatida ishlayman va [Company Name] [Company Name] [Company] bo'lgan [Ismingiz] [Lavozimingiz] bilan xabarlashuv oldingizga javob berish uchun sizga murojaat qilaman.\n\nSizga [Maqsad] [Company Name] bilan [Company Name] [Company] bilan [vaqt] [vaqt] [tugun] [vaqtda] [yoki havo] [tugun] [vaqtda] [joy] [joy] [vaqt] [vaqt] [yoki] [vaqt] [vaqtda",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 21099.4
+    },
+    {
+      "prompt": "Ingliz tilidan o'zbek tiliga tarjima qil: 'The weather is beautiful today.'",
+      "description": "Translation task",
+      "response": "\"Hozir havo go'zal.'",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 1164.0
+    },
+    {
+      "prompt": "Sun'iy intellekt nima ekanligini oddiy so'zlar bilan tushuntirib ber.",
+      "description": "Colloquial explanation of AI",
+      "response": "Sun'iy intellekt (AI) - bu kompyuterdan aql va aqliy faoliyatni namoyish qilish uchun mo'ljallangan dasturiy ta'minot turi. Ushbu dasturlar odamlar kabi fikrlash, fikrlash va harakat qilish uchun mo'ljallangan va ularga qarorlar qabul qilish, tilni tushunish, tabiiy tilni qayta ishlash, muammolarni hal qilish va hatto his-tuyg'ularni tushunishni o'z ichiga olishi mumkin. AI dasturlari odatda katta hajmdagi ma'lumotlarni qayta ishlash, o'rganish va qaror qabul qilish orqali o'z faoli",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 20722.9
+    },
+    {
+      "prompt": "Choyni qanday qilib to'g'ri damlash kerak?",
+      "description": "Everyday colloquial task",
+      "response": "Choyni to'g'ri dam olish uchun bir nechta maslahatlar mavjud:\n\n1. Choyni o'tish vaqtini belgilang: Har bir kuni bir vaqtning o'ziga xosida choyni to'g'ri o'tkazish uchun qat'iyatli bo'ling. Bu sizni ishingiz yoki ishingizdan tanaffus qilish va o'zingizni yangi vaqtga tayyorlash uchun vaqt ajratishga imkon beradi.\n\n2. O'zingizni xotirjam qiling: choyni o'tkazishda sabr-toqatga bo'lgan ehtiyoj mavjud. Ehtiyot bo'ling va o'zingizga etarlicha vaqt bering. O'zingizni xotirjam qilish uchun qo",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 20688.5
+    },
+    {
+      "prompt": "O'zbek tilida o'z maqsading va imkoniyatlaringni ta'riflab ber.",
+      "description": "Capability description in Uzbek",
+      "response": "O'zbek tilida maqsad - bu nima qilishni xohlayotgan yoki qilmoqchi bo'lgan narsa yoki harakatni bildiruvchi so'z birikmasi. Maqsadlarni yozib olish va ularga erishish uslubiga qarab, maqsadlar qat'iy, amaliy, amaliy, strategik, umumiy, yagona, umumiy, maqsadli, umumiy, qisqacha, o'z-o'zini qamrab oluvchi, muvaffaqiyatli, noaniq va boshqalar bo'lishi mumkin. Maqsadlar bir nechta maqsadlarni bir-biriga bog'lash uchun qator yoki jadval yordamida birlashtirilishi mumkin.\n\nU",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 21757.1
+    }
+  ]
+}

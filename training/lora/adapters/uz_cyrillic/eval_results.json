@@ -1,0 +1,130 @@
+{
+  "adapter": "/root/aziza-build/adapters/uz_cyrillic",
+  "model_id": "Vikhrmodels/Vikhr-Llama3.1-8B-Instruct-R-21-09-24",
+  "evaluated_at": "2026-06-26T00:04:36Z",
+  "all_gates_passed": false,
+  "gates": [
+    {
+      "name": "adapter_loads",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 1.0,
+      "unit": "bool",
+      "detail": "PeftModel.from_pretrained() succeeded"
+    },
+    {
+      "name": "pass_rate",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 0.8,
+      "unit": "ratio",
+      "detail": "10/10 prompts returned Uzbek"
+    },
+    {
+      "name": "uz_prompts_uzbek_pct",
+      "passed": false,
+      "value": 0.116,
+      "threshold": 0.8,
+      "unit": "ratio",
+      "detail": "Average Uzbek word ratio across Uzbek-containing responses"
+    },
+    {
+      "name": "ttft_estimate_ms",
+      "passed": false,
+      "value": 19671.2,
+      "threshold": 540.0,
+      "unit": "ms (batch proxy)",
+      "detail": "Batch avg latency 19671ms. Real TTFT on H100 at batch_size=1 is typically 50–120ms. Verify under serve_multilingual.py /test/uzbek."
+    },
+    {
+      "name": "no_english_regression",
+      "passed": true,
+      "value": 1.0,
+      "threshold": 0.5,
+      "unit": "ratio",
+      "detail": "2/2 English prompts still returned some Uzbek"
+    }
+  ],
+  "responses": [
+    {
+      "prompt": "Salom! Isming nima va nimalar qila olasan?",
+      "description": "Greeting + persona identity",
+      "response": "«ЎЗБЕКИСТОН РЕСПУБЛИКАСИ \nОЛИЙ ВА ЎРТА МАХСУС ТАЪЛИМ ВАЗИРЛИГИ \nМИРЗО УЛУҒБЕК НОМИДАГИ \nЎЗБЕКИСТОН МИЛЛИЙ УНИВЕРСИТЕТИ \nИ. Р. МАМАЖОНОВ \nЭКОЛОГИЯ \nЎзбекистон Республикаси Олий ва ўрта махсус \nтаълим вазирлиги томонидан олий ўқув юртлари учун \nдарслик сифатида тавсия этилган \n\"ЎЗБЕКИСТОН\" \nНАШРИЁТ-МАТБАА \nАКЦИЯ",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.0,
+      "elapsed_ms": 20885.3
+    },
+    {
+      "prompt": "O'zing haqingda gapirib ber. Kimsan?",
+      "description": "Self-description — persona awareness",
+      "response": "АҲМАДБЕК ҚУЛМАСОВ \nАСАРЛАР ТЎПЛАМИ \nОйлар \nҚисса \nТошкент \nЎзбекистон ЛКСМ Марказий Комитети \n«Ёш гвардия» нашриёти \n1993\n\n«Аҳмадбек Қулмасовнинг \n«Ойлар» \nқиссаси \nқаламга \nкўра \nўзбек \nадабиёти \nтуҳфифаси \nҳисобланади. \nШеърлар \nва \nқиссалар \nқўлингизда \nтупланган \nасарларининг \nқатъий \nмундарижаси \nҳисобланади.",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.029,
+      "elapsed_ms": 20374.6
+    },
+    {
+      "prompt": "Mashinali o'rganish va neyron tarmoqlarning tamoyillarini tushuntirib ber.",
+      "description": "Academic register — ML concepts",
+      "response": "Машинавий олиб ўтириш ва \nнейрон тармоқларни \nтушунтириш \nУзбекистон Республикаси Олий ва ўрта махсус таълим вазирлиги \nТошкент Давлат техника университети \nМашинавий олиб ўтириш ва нейрон тармоқларни тушунтириш \n(дарслик) \nУзбекистон Республикаси Олий ва ўрта махсус таълим вазирлиги \nтомонидан ўқув қўлланма сифатида тавсия этилган \nТошкент \n—2001\n\nТузувчилар: \nМ. \nА. Қодиров, \nТ. \nА. �",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.04,
+      "elapsed_ms": 19133.2
+    },
+    {
+      "prompt": "Mijoz bilan restoranda uchrashuvni qanday qilib eng yaxshi tarzda tashkil qilish mumkin?",
+      "description": "Professional register — hospitality domain",
+      "response": "Ушбу саволни ўтказувчи фойдаланиш, кеча ўтказишга келиб чиқиш мумкин. Бундан қатъиқланганин ўйлаб, кечада ўзининг ишлабчиқаришидан бўлган фойдаланишни қўйлаб, ўзининг ҳаётига кеча уйлаш талаби қайта бир фойдаланишга кўтарилади. Бунда унинг ўзини сўзлашини ва ўзи ўзни билмоқни ҳам қўллайди. Шундан бўлмаса, у ўзини сўзлашини билмасликдани бўли",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.0,
+      "elapsed_ms": 19284.0
+    },
+    {
+      "prompt": "O'zbek madaniyati va an'analari haqida nimalarni bilasan?",
+      "description": "Cultural knowledge + context",
+      "response": "Ўзбекистон Республикаси Президенти ҳузуридаги \nДавлат ва жамият қурилиши академияси \nЎзбекистон Республикаси Фанлар академияси \n«Фан ва таълим» \nжурналиги \nУДК 008.5 (575.1) \nЎЗБЕКИСТОН МИЛЛИЙ ТАРИХИДА АБДУЛЛО ҚОДИРИЙНИНГ \nРОЛИ \nБ. А. АЗИМОВ \nБухоро давлат университети \nАбдулло Қодирий (1404–1459) ўзбек халқ шоири, тарихий \nва адабий таржимон, амирлар давлатидаги давлат э",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.065,
+      "elapsed_ms": 19125.3
+    },
+    {
+      "prompt": "Hamkorga rasmiy biznes xati yozishda menga yordam ber.",
+      "description": "Professional — business writing",
+      "response": "ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ФАНЛАР АКАДЕМИЯСИ \nАЛИШЕР НАВОИЙ НОМИДАГИ ТИЛ ВА АДАБИЁТ ИНСТИТУТИ \nЎЗБЕК ТИЛИНИНГ ПРОБЛЕМАТИК СОҲАЛАРИ \nОБЪЕКТИВИДАГИ ИЛМИЙ ЭРК \nМатбуот ва электрон кенгашларда публикация қилинган илмий \nмақолаларнинг илмий маъноси, маълумотларини тўплаб бериш, \nмуҳокамалаштириш ва кўринишини ошириш",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.0,
+      "elapsed_ms": 19115.2
+    },
+    {
+      "prompt": "Ingliz tilidan o'zbek tiliga tarjima qil: 'The weather is beautiful today.'",
+      "description": "Translation task",
+      "response": "Ўзбекистон Республикаси Фанлар академияси \nА. С. Пушкин номидаги Тил ва адабиёт институти \nЎзбекистон миллий энциклопедияси \nБош муҳаррир: А. М. Усмонхўжаев \nБуюк халқ айрим тарихий ва миллий жараёнларнинг ўрни ва аҳамиятини ҳисобга олиб, уларда \nжой олган шахс ва воқеаларнинг ўзига хослиги, ҳозирги замон ҳаётда уларга беришган аҳамиятнинг \nтаркиби, уларда қатор ишлар бўлиб олишн",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.0,
+      "elapsed_ms": 19951.3
+    },
+    {
+      "prompt": "Sun'iy intellekt nima ekanligini oddiy so'zlar bilan tushuntirib ber.",
+      "description": "Colloquial explanation of AI",
+      "response": "\"Sun'iy intellekt\" — bu \"intellekt\" so'zining sun'iy shakli. Intellekt — \nodamning tushunish qobiliyati, u yoki shu yoki shu yondashuvga ega bo'lish qobiliyati. \nSun'iy intellekt — \nodamga yondashuv va tushunish qobiliyatini beruvchi o'ziga xos harakterli, ya'ni o'ziga xos harakterli kompyuter tizimlari orqali amalga oshiriladigan tizimdir. \nO'ziga xos harakterli kompyuter tizimlari — \nodamning tushunish qobiliyati, ya'ni intellektini ta'kidlab beruvchi, \nodam tushunishi, odam t",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 1.0,
+      "elapsed_ms": 19523.9
+    },
+    {
+      "prompt": "Choyni qanday qilib to'g'ri damlash kerak?",
+      "description": "Everyday colloquial task",
+      "response": "Дам олишида кеча ва тўлқинли кунларда қайса \nёк, тунда қайса дам олиш керак \nдеб хабардорлигини сизларга беришни туйғуларимдан ўрин берман. \nДам олишда азали бир-икки \nсаатлик тунди қисқа қилмоқ, \nқўлга бир кўплик сув қилиб \nқўйиш, шундан соҳибқиронлигимизни \nқилиб, тунди қайта қўйиш ҳақида \nмавжуд бўлмас кўрсатмаларни \nбил",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.0,
+      "elapsed_ms": 19379.3
+    },
+    {
+      "prompt": "O'zbek tilida o'z maqsading va imkoniyatlaringni ta'riflab ber.",
+      "description": "Capability description in Uzbek",
+      "response": "Ўзбекистон Республикаси Олий ва Ўрта махсус таълим \nвазирлиги\nА. С. Пушкин номидаги Тошкент давлат педагогика университети\nС. О. Қўчқорова, М. Х. Мирзақулов, М. Б. Қўчқорова\nЎЗБЕК ТИЛИ ВА АДАБИЁТИ \nЎҚИТУНИНГ \nБАЖАРИЙ МЕТОДИКАСИ\nЎқув қўлланма\n(Ўқув дастурлари ва қўлланмалар учун)\nТошкент\nЎзбекистон Республикаси Фанлар академияси «Фан» нашриёти\n2009",
+      "has_uzbek_script": true,
+      "uzbek_script_ratio": 0.021,
+      "elapsed_ms": 19940.0
+    }
+  ]
+}

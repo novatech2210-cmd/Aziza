@@ -320,6 +320,15 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       this.history.set(sessionId, history);
     }
 
+    // Keep only the last 4 messages to stay within the 1024-token context
+    // window of the vLLM models. Without this, history grows unbounded and
+    // vLLM returns HTTP 400 once the prompt exceeds max_model_len.
+    const MAX_HISTORY = 4;
+    const trimmedHistory =
+      history.length > MAX_HISTORY
+        ? history.slice(history.length - MAX_HISTORY)
+        : history;
+
     const systemPromptText =
       this.SYSTEM_PROMPTS[lang as keyof typeof this.SYSTEM_PROMPTS] ||
       this.SYSTEM_PROMPTS.en;
@@ -331,7 +340,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
         role: 'system',
         content: `${systemPromptText} IMPORTANT: You must reply in ${langName} only.`,
       },
-      ...history,
+      ...trimmedHistory,
     ];
 
     this.logger.log(

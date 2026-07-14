@@ -11,9 +11,11 @@ from aiohttp import web
 from dotenv import load_dotenv
 from moshi_inference import MoshiInferenceService
 from vad import EnergyVAD, VADSession
+from structured_logging import setup_structured_logging, set_session_id, set_worker_id
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO)
+# Setup structured JSON logging
+setup_structured_logging("moshi-worker", level=os.getenv("LOG_LEVEL", "INFO"))
 logger = logging.getLogger("MoshiService")
 
 class MoshiService:
@@ -23,7 +25,9 @@ class MoshiService:
         self.redis_url = redis_url
         self.inference = MoshiInferenceService()
         self.redis_conn = None
-        self.active_sessions = set()
+        self.worker_id = os.getenv("WORKER_ID", "worker_01")
+        self.active_sessions: set[str] = set()
+        self.max_concurrent_sessions = int(os.getenv("MAX_CONCURRENT_SESSIONS", "10"))
         self.vad = EnergyVAD(
             speech_threshold_db=float(os.getenv("VAD_SPEECH_THRESHOLD_DB", "-20")),
             silence_threshold_db=float(os.getenv("VAD_SILENCE_THRESHOLD_DB", "-25")),
@@ -32,14 +36,17 @@ class MoshiService:
         )
         self.vad_sessions: dict[str, VADSession] = {}
         self.vad_audio_buffers: dict[str, list[np.ndarray]] = {}
-        
+        self.session_queue: asyncio.Queue[str] = asyncio.Queue()
+        self.ws_clients: dict[str, web.WebSocketResponse] = {}
+
     async def _heartbeat(self):
         while True:
             if self.redis_conn:
                 try:
                     await self.redis_conn.publish("orchestrator:worker:heartbeat", json.dumps({
                         "worker_id": self.worker_id,
-                        "active_sessions": list(self.active_sessions)
+                        "active_sessions": list(self.active_sessions),
+                        "max_sessions": self.max_concurrent_sessions,
                     }))
                 except Exception as e:
                     logger.error(f"Heartbeat error: {e}")
@@ -57,10 +64,12 @@ class MoshiService:
             gpu["device"]        = torch.cuda.get_device_name(0)
         payload = {
             "status": "ok",
-            "worker_id": getattr(self, "worker_id", "unregistered"),
-            "active_sessions": list(self.active_sessions),
+            "worker_id": self.worker_id,
+            "active_sessions": len(self.active_sessions),
+            "max_sessions": self.max_concurrent_sessions,
             "adapter": adapter_status,
             "gpu": gpu,
+            "vad": self.vad.get_stats(active_sessions=len(self.vad_sessions)),
         }
         return web.json_response(payload)
 
@@ -70,18 +79,35 @@ class MoshiService:
         await ws.prepare(request)
         session_id = request.query.get("session_id", "unknown")
 
+        # Enforce max concurrent session limit
+        if len(self.active_sessions) >= self.max_concurrent_sessions:
+            await ws.send_str(json.dumps({
+                "type": "error",
+                "code": "capacity_exceeded",
+                "message": f"Worker at capacity ({len(self.active_sessions)}/{self.max_concurrent_sessions})"
+            }))
+            await ws.close()
+            logger.warning(f"Session {session_id} rejected: capacity exceeded")
+            return ws
+
         self.active_sessions.add(session_id)
-        if not hasattr(self, 'ws_clients'):
-            self.ws_clients = {}
         self.ws_clients[session_id] = ws
 
-        logger.info(f"WebSocket connection opened for session {session_id}")
+        # Update Redis worker status
+        if self.redis_conn:
+            await self.redis_conn.hset(f"moshi:workers:{self.worker_id}", mapping={
+                "status": "busy" if self.active_sessions else "idle",
+                "sessions": len(self.active_sessions),
+            })
+
+        logger.info(f"WebSocket connection opened for session {session_id} ({len(self.active_sessions)}/{self.max_concurrent_sessions})")
 
         # Send session_ready handshake so the client knows Moshi is ready for audio
         await ws.send_str(json.dumps({
             "type": "session_ready",
             "session_id": session_id,
-            "worker_id": getattr(self, "worker_id", "unregistered")
+            "worker_id": self.worker_id,
+            "slots_remaining": self.max_concurrent_sessions - len(self.active_sessions),
         }))
 
         try:
@@ -115,11 +141,14 @@ class MoshiService:
             # Clean up VAD state
             self.vad_sessions.pop(session_id, None)
             self.vad_audio_buffers.pop(session_id, None)
-            logger.info(f"WebSocket closed for session {session_id}")
-            # Release the GPU worker slot so the pool can accept new connections
+            logger.info(f"WebSocket closed for session {session_id} ({len(self.active_sessions)}/{self.max_concurrent_sessions})")
+            # Update Redis worker status
             if self.redis_conn:
                 try:
-                    await self.redis_conn.hset(f"moshi:workers:{self.worker_id}", "status", "idle")
+                    await self.redis_conn.hset(f"moshi:workers:{self.worker_id}", mapping={
+                        "status": "idle" if not self.active_sessions else "busy",
+                        "sessions": len(self.active_sessions),
+                    })
                     await self.redis_conn.publish("orchestrator:session:release", self.worker_id)
                 except Exception as redis_err:
                     logger.error(f"Redis release error for session {session_id}: {redis_err}")
@@ -141,7 +170,7 @@ class MoshiService:
 
     async def run(self):
         self.redis_conn = redis.from_url(self.redis_url, health_check_interval=30)
-        self.worker_id = os.getenv("WORKER_ID", "worker_01")
+        # worker_id is already set in __init__ from env var
 
         # Start health-check and WS HTTP server
         await self._start_health_server()
@@ -150,11 +179,11 @@ class MoshiService:
         await self.redis_conn.hset(f"moshi:workers:{self.worker_id}", mapping={
             "status": "idle",
             "sessions": 0,
-            "max_sessions": 1,
+            "max_sessions": self.max_concurrent_sessions,
             "worker_id": self.worker_id,
-            "ws_url": self.ws_url
+            "ws_url": self.ws_url,
         })
-        logger.info(f"Registered GPU Worker: {self.worker_id}")
+        logger.info(f"Registered GPU Worker: {self.worker_id} (max={self.max_concurrent_sessions})")
 
         asyncio.create_task(self._heartbeat())
 
@@ -258,9 +287,27 @@ class MoshiService:
 
     async def process_audio(self, session_id: str, audio_bytes: bytes):
         """Convert bytes → numpy → run VAD → inference → publish results."""
+        if len(audio_bytes) < 2:
+            return
+        
+        # Check VRAM before processing to prevent OOM errors
+        import torch
+        if torch.cuda.is_available() and torch.cuda.memory_reserved() > torch.cuda.get_device_properties(0).total_memory * 0.90:
+            logger.error(f"GPU memory exceeded 90% for session {session_id}, skipping inference")
+            ws = (self.ws_clients or {}).get(session_id)
+            if ws and not ws.closed:
+                await ws.send_str(json.dumps({"type": "error", "code": "gpu_oom", "message": "GPU memory exceeded 90%"}))
+            return
+             
+        # Strip the 0x01 (TAG_AUDIO) or 0x03 (TAG_CTRL) prefix if present.
+        # Frontend and Redis pubsub both prefix binary frames with a 1-byte tag.
+        tag = audio_bytes[0]
+        if tag in (0x01, 0x03):
+            audio_bytes = audio_bytes[1:]
+        
         # Convert bytes to numpy array (16-bit PCM)
         if len(audio_bytes) % 2 != 0:
-            logger.warning(f"Odd number of bytes received: {len(audio_bytes)}")
+            logger.warning(f"Odd number of bytes received after tag strip: {len(audio_bytes)}")
             audio_bytes = audio_bytes[:-1]
             
         audio_np = np.frombuffer(audio_bytes, dtype=np.int16)
@@ -270,7 +317,7 @@ class MoshiService:
         # Get or create VAD session
         if session_id not in self.vad_sessions:
             self.vad_sessions[session_id] = VADSession()
-            self.vad_audio_buffers[session_id] = []
+        self.vad_audio_buffers.setdefault(session_id, [])
         
         vad_session = self.vad_sessions[session_id]
         
@@ -406,24 +453,46 @@ class MoshiService:
                 return
             elif msg_type == "session_update":
                 language = msg.get("language")
-                logger.info(f"Session {session_id} changing language to {language}")
+                old_language = state.get("language", "en") if (state := self.inference.engine.get_session_state(session_id)) else "en"
+                logger.info(f"Session {session_id} changing language: {old_language} -> {language}")
+                
+                # Reset VAD state to avoid stale detection from previous language
+                if session_id in self.vad_sessions:
+                    self.vad.reset(self.vad_sessions[session_id])
+                    self.vad_audio_buffers.pop(session_id, None)
+                    logger.debug(f"Reset VAD state for session {session_id} after language change")
                 
                 context_map = {
-                    "ru": "Пожалуйста, говорите по-русски.",
-                    "ru_colloquial": "Пожалуйста, говорите по-русски в разговорном стиле.",
-                    "ru_professional": "Пожалуйста, говорите по-русски в профессиональном стиле.",
-                    "uz": "Iltimos, o'zbek tilida gapiring.",
-                    "en": "Please speak in English."
+                    "ru": "Please speak in Russian.",
+                    "ru_colloquial": "Please speak in colloquial Russian.",
+                    "ru_professional": "Please speak in professional Russian.",
+                    "uz": "Please speak in Uzbek.",
+                    "uz_latin": "Please speak in Uzbek Latin script.",
+                    "uz_cyrillic": "Please speak in Uzbek Cyrillic script.",
+                    "en": "Please speak in English.",
                 }
                 context_str = context_map.get(language, "Please speak in English.")
 
-                # Update context dynamically without dropping existing connection
+                # Update session language and context
                 state = self.inference.engine.get_session_state(session_id)
                 if state:
                     state["text_prompt"] = context_str
+                    state["language"] = language
                 
                 # Also save to redis so it persists for this session if reloaded
                 await self.redis_conn.set(f"persona:context:{session_id}", context_str)
+                
+                # Notify client of language change confirmation
+                ws = self.ws_clients.get(session_id)
+                if ws and not ws.closed:
+                    try:
+                        await ws.send_bytes(b'\x03' + json.dumps({
+                            "type": "language_changed",
+                            "language": language,
+                            "previous_language": old_language,
+                        }).encode('utf-8'))
+                    except (ConnectionResetError, asyncio.CancelledError):
+                        pass
                 return
                 
             action = msg.get("action")

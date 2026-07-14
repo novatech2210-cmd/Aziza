@@ -41,10 +41,10 @@ export const useChatStore = defineStore('chat', {
       this.connectionState = this.reconnectAttempt > 0 ? 'reconnecting' : 'connecting'
 
       const token = localStorage.getItem('aziza_token')
-      const url = `${CHAT_WS_BASE}/api/chat-text?sessionId=${this.sessionId}`
+      const url = `${CHAT_WS_BASE}/api/chat-text?sessionId=${this.sessionId}&token=${token}`
 
       try {
-        const ws = new WebSocket(url, ["token", token])
+        const ws = new WebSocket(url)
 
         ws.onopen = () => {
           this.connectionState = 'connected'

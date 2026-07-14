@@ -11,7 +11,9 @@ import { AdminGateway } from './gateway/admin.gateway';
 import { V2VGateway } from './gateway/v2v.gateway';
 import { AdminController } from './admin/admin.controller';
 import { ChatController } from './chat.controller';
+import { LiveKitController } from './livekit.controller';
 import { AuthModule } from './auth/auth.module';
+import { MonitoringModule } from './monitoring/monitoring.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
@@ -24,16 +26,17 @@ import { join } from 'path';
       ttl: 60000,
       limit: 100,
     }]),
-    // MongooseModule.forRoot(process.env.MONGODB_URI || 'mongodb://localhost:27017/aziza'),
+    MongooseModule.forRoot(process.env.MONGODB_URI || 'mongodb://localhost:27017/aziza'),
     TerminusModule,
     AuthModule,
+    MonitoringModule,
     MulterModule.register({ storage: memoryStorage() }),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
       exclude: ['/api/(.*)'],
     }),
   ],
-  controllers: [AppController, AdminController, ChatController],
+  controllers: [AppController, AdminController, ChatController, LiveKitController],
   providers: [AppService, VoiceGateway, ChatGateway, AdminGateway, V2VGateway],
 })
 export class AppModule {}

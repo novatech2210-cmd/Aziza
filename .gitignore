@@ -93,3 +93,7 @@ backend/services/personaplex/models/*.onnx
 
 # vLLM model cache
 model_cache/
+
+# Virtual environments
+venv/
+venv312/

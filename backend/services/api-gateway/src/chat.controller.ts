@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { Response } from 'express';
-import * as FormData from 'form-data';
+import FormData from 'form-data';
 import * as http from 'http';
 
 const ASR_HOST = process.env.ASR_HOST || '127.0.0.1';

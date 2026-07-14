@@ -70,6 +70,7 @@ export function useVoiceChat() {
   let gainNode = null                           // For volume ducking
   let playbackNode = null
   let voiceCaptureNode = null
+  let currentLanguage = ref('ru')
 
   // Reconnect state
   let reconnectTimer = null
@@ -348,7 +349,7 @@ export function useVoiceChat() {
 
   // ---- WebSocket ----
 
-  async function connect(deviceId) {
+  async function connect(deviceId, language = 'ru') {
     if (isConnected.value || isConnecting.value) return
     reconnectAttempt = 0
     isConnecting.value = true
@@ -356,6 +357,7 @@ export function useVoiceChat() {
     completedSentences.value = []
     pendingSentence.value = ''
     transcript.value = ''
+    currentLanguage.value = language
     if (deviceId) activeDeviceId.value = deviceId
 
     try {
@@ -396,11 +398,23 @@ export function useVoiceChat() {
                 try {
                   ws.send(JSON.stringify({ type: 'pong' }))
                 } catch {}
-              } else if (data.type === 'worker_assigned') {
-                console.log('[Aziza] Worker assigned, redirecting to', data.ws_url)
-                ws.onclose = null // Prevent teardown
-                ws.close()
-                connectTo(data.ws_url)
+              } else if (data.type === 'worker_connected') {
+                console.log('[Aziza] Worker connected via gateway proxy')
+                isConnecting.value = false
+                shouldReconnect = true
+                reconnectAttempt = 0
+                cancelReconnect()
+                try {
+                  ws.send(JSON.stringify({
+                    type: 'start_session',
+                    language: currentLanguage.value || 'ru'
+                  }))
+                  await startRecording(activeDeviceId.value || undefined)
+                  isConnected.value = true
+                } catch (recErr) {
+                  errorMessage.value = recErr.message || 'Failed to start microphone'
+                  ws?.close()
+                }
               } else {
                 handleControlMessage(data)
               }

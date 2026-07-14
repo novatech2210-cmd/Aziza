@@ -1,0 +1,12 @@
+main:
+  oxygen-diffusion-scheduler:
+    num-ords: 3
+    tlim: 18
+  enable-id-control: true
+  null-ratio: 0.1
+  ddpm:
+    num-timesteps: 1000
+    noise-schedule:
+      tstar: 0.3
+      tinit: 0.01
+  precision: "fp16"
