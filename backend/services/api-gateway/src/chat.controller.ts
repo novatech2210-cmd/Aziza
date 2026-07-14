@@ -10,6 +10,7 @@ import {
   Res,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { Throttle } from '@nestjs/throttler';
 import { Response } from 'express';
 import FormData from 'form-data';
 import * as http from 'http';
@@ -130,6 +131,7 @@ export class ChatController {
    *   { transcription, response, detected_language, transcription_ms, inference_ms }
    */
   @Post('voice')
+  @Throttle({ api: { limit: 10, ttl: 60000 } })
   @UseInterceptors(FileInterceptor('audio'))
   async voiceChat(
     @UploadedFile() file: Express.Multer.File,
@@ -239,6 +241,7 @@ export class ChatController {
    *   data: {"message": "..."}
    */
   @Post('stream')
+  @Throttle({ api: { limit: 20, ttl: 60000 } })
   async streamChat(
     @Body('message') message: string,
     @Body('language') language: string,

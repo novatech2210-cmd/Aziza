@@ -13,6 +13,7 @@ import { AdminController } from './admin/admin.controller';
 import { ChatController } from './chat.controller';
 import { LiveKitController } from './livekit.controller';
 import { AuthModule } from './auth/auth.module';
+import { ApiKeysModule } from './api-keys/api-keys.module';
 import { MonitoringModule } from './monitoring/monitoring.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -22,13 +23,27 @@ import { join } from 'path';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    ThrottlerModule.forRoot([{
-      ttl: 60000,
-      limit: 100,
-    }]),
+    ThrottlerModule.forRoot([
+      {
+        name: 'global',
+        ttl: 60000,
+        limit: 100,
+      },
+      {
+        name: 'auth',
+        ttl: 60000,
+        limit: 5,
+      },
+      {
+        name: 'api',
+        ttl: 60000,
+        limit: 60,
+      },
+    ]),
     MongooseModule.forRoot(process.env.MONGODB_URI || 'mongodb://localhost:27017/aziza'),
     TerminusModule,
     AuthModule,
+    ApiKeysModule,
     MonitoringModule,
     MulterModule.register({ storage: memoryStorage() }),
     ServeStaticModule.forRoot({

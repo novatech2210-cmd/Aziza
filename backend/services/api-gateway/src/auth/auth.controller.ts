@@ -10,13 +10,13 @@ export class AuthController {
   constructor(private authService: AuthService) {}
 
   @Post('register')
-  @Throttle({ default: { limit: 3, ttl: 60000 } })
+  @Throttle({ auth: { limit: 3, ttl: 60000 } })
   async register(@Body() dto: CreateUserDto) {
     return this.authService.createUser(dto);
   }
 
   @Post('login')
-  @Throttle({ default: { limit: 5, ttl: 60000 } })
+  @Throttle({ auth: { limit: 5, ttl: 60000 } })
   async login(@Body() dto: LoginUserDto) {
     return this.authService.login(dto);
   }
