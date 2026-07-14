@@ -13,7 +13,8 @@
 - ~~Verify monitoring module integrates with app.module.ts.~~ **VERIFIED** (imported in app.module.ts)
 - ~~Verify auth guards are wired into route definitions.~~ **VERIFIED** (@UseGuards on admin controller)
 - **NEW**: Verify structured logging modules are imported by Python services
-- ~~Run full test suite after staging.~~ **DONE** (57 NestJS PASS, 13 frontend PASS, 6/7 Python PASS)
+- ~~Run full test suite after staging.~~ **DONE** (72 NestJS PASS, 13 frontend PASS, 6/7 Python PASS)
+- ~~Centralize log aggregation from all services.~~ **DONE** (Epic 5, LogCollectorService + LogViewer.vue)
 
 ## Medium
 - ~~Set up automated CI/CD for the repository.~~ **DONE** (.github/workflows/ci.yml)
@@ -23,6 +24,7 @@
 - ~~Wire rate limiting into NestJS gateway.~~ **DONE** (Named throttlers: global/auth/api + Nginx edge)
 - ~~Add Nginx reverse proxy with TLS/HTTPS.~~ **DONE** (Epic 2, commit `47ac6c9`)
 - ~~Add API key management for external consumers.~~ **DONE** (Epic 3, commit `36f1497`)
+- ~~Centralized log aggregation.~~ **DONE** (Epic 5, LogCollectorService + admin API + LogViewer.vue)
 - **NEW**: Run 30-min and 60-min stress tests (10-min passed)
 - **NEW**: Complete WER/CER measurement (script ready, needs audio recordings)
 - **NEW**: Obtain valid TLS certificates for production (self-signed for dev only)

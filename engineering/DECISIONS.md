@@ -79,3 +79,10 @@
 **Context**: `.github/workflows/ci.yml` only tested the API Gateway. No automated testing for frontend or Python services. No security audit steps. No build verification gate.
 **Decision**: Expand CI to 4 parallel jobs: API Gateway (NestJS), Frontend (Vue 3), Python Services (matrix: orchestrator/moshi-worker/persona-plex), and Build Verification gate. Each job includes install, test, and audit steps. Python services use `continue-on-error` since they lack full test coverage. Build Verification gates on both API Gateway and Frontend passing.
 **Consequences**: All three service tiers tested on every push/PR. Security audits surface known vulnerabilities. Build verification prevents broken artifacts from merging. Python tests continue-on-error until full coverage achieved.
+
+## Decision: Centralized Log Aggregation via PM2 File Watching
+**Date**: 2026-07-14
+**Status**: Accepted → **Implemented** (Epic 5)
+**Context**: Python services output structured JSON logs to stdout, captured by PM2 to individual log files. No centralized view across services. Admin dashboard only showed NestJS gateway errors. No way to correlate logs across services by correlation ID or time range.
+**Decision**: Create `LogCollectorService` that watches PM2 log files via `fs.watch`, parses both structured JSON and plain text entries, and stores them in MongoDB using the existing `StructuredLog` schema. Admin API exposes `/admin/logs/aggregated` with filters (service, level, time range, correlation ID, search). Frontend `LogViewer.vue` provides monospace log viewer with level filtering, service filtering, search, auto-refresh, and hourly stats.
+**Consequences**: All service logs aggregated in MongoDB with 7-day retention. Real-time ingestion via file watching (no polling). Two-layer log storage: PM2 files for raw logs, MongoDB for queryable aggregation. Admin dashboard now has full observability across all services.
