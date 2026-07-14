@@ -57,3 +57,18 @@
 **Decision**: Deploy Nginx as a reverse proxy in front of the API Gateway. TLS termination on port 443 (TLSv1.2/1.3). HTTP→HTTPS redirect. Security headers added at the Nginx layer (HSTS, CSP, X-Frame-Options, etc.). Rate limiting: 60 req/min general API, 10 req/min auth endpoints. WebSocket upgrade support for /api/chat and /api/v2v. Internal network restriction for Orchestrator and PersonaPlex.
 **Consequences**: All external traffic encrypted. Security headers enforced before reaching NestJS. Rate limiting reduces abuse surface. Nginx becomes a required dependency for production deployment. Self-signed certificates used for development; production must use valid certificates (Let's Encrypt or commercial).
 **Implementation**: `configs/docker/infrastructure/nginx/nginx.conf`, `configs/docker/docker-compose.yml`, `backend/services/api-gateway/src/main.ts` (trust proxy + CORS update).
+
+## Decision: API Key Management for External Consumers
+**Date**: 2026-07-14
+**Status**: Accepted → **Implemented** (Epic 3)
+**Context**: No mechanism for external consumers to authenticate. JWT tokens are session-based and require user accounts. Need a persistent, revocable credential for programmatic API access.
+**Decision**: Implement API key system with SHA-256 hashed keys (prefix `aziza_`). Keys stored in MongoDB with tier (free/pro/enterprise), scopes, expiry, and usage tracking. `@RequiresApiKey()` decorator for opt-in endpoint protection. `ApiKeyGuard` validates `X-Api-Key` header against stored hashes.
+**Consequences**: External consumers can authenticate via API keys. Keys are one-way hashed (never stored plaintext). Tier system enables usage-based access control. Keys can be revoked instantly. Requires MongoDB collection for key storage.
+**Implementation**: `backend/services/api-gateway/src/api-keys/` (8 files, 7 unit tests).
+
+## Decision: Named Throttler Tiers for Rate Limiting
+**Date**: 2026-07-14
+**Status**: Accepted → **Implemented** (Epic 3)
+**Context**: Global rate limit of 100 req/min was too coarse. Auth endpoints need stricter limits (5/min login, 3/min register). Chat endpoints need separate limits (20/min stream, 10/min voice). Single throttle configuration couldn't differentiate.
+**Decision**: Configure three named throttler tiers: `global` (100 req/min), `auth` (5 req/min), `api` (60 req/min). Auth controller uses `@Throttle({ auth: ... })`. Chat controller uses `@Throttle({ api: ... })`. Nginx provides first layer of rate limiting at the edge; NestJS ThrottlerModule provides application-level enforcement.
+**Consequences**: Two-layer rate limiting (Nginx + NestJS). Auth endpoints protected against brute force. Chat endpoints protected against abuse. Named tiers allow per-endpoint tuning without global config changes.

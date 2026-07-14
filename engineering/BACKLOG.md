@@ -13,16 +13,16 @@
 - ~~Verify monitoring module integrates with app.module.ts.~~ **VERIFIED** (imported in app.module.ts)
 - ~~Verify auth guards are wired into route definitions.~~ **VERIFIED** (@UseGuards on admin controller)
 - **NEW**: Verify structured logging modules are imported by Python services
-- ~~Run full test suite after staging.~~ **DONE** (50 NestJS PASS, 13 frontend PASS, 6/7 Python PASS)
+- ~~Run full test suite after staging.~~ **DONE** (57 NestJS PASS, 13 frontend PASS, 6/7 Python PASS)
 
 ## Medium
 - ~~Set up automated CI/CD for the repository.~~ **DONE** (.github/workflows/ci.yml)
 - Migrate `mcp/` logic into the standard backend architecture if still needed.
 - ~~Add emotion detection to PersonaPlex.~~ **COMPLETED** (26/26 tests pass, PI-4)
 - Implement context window management for long conversations.
-- ~~Wire rate limiting into NestJS gateway.~~ **DONE** (Nginx rate limiting: 60 req/min API, 10 req/min auth)
+- ~~Wire rate limiting into NestJS gateway.~~ **DONE** (Named throttlers: global/auth/api + Nginx edge)
 - ~~Add Nginx reverse proxy with TLS/HTTPS.~~ **DONE** (Epic 2, commit `47ac6c9`)
-- **NEW**: Add API key management for external consumers
+- ~~Add API key management for external consumers.~~ **DONE** (Epic 3, commit `36f1497`)
 - **NEW**: Run 30-min and 60-min stress tests (10-min passed)
 - **NEW**: Complete WER/CER measurement (script ready, needs audio recordings)
 - **NEW**: Obtain valid TLS certificates for production (self-signed for dev only)
