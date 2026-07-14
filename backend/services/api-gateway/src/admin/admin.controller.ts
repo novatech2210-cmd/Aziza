@@ -19,6 +19,7 @@ import { StructuredLoggingService } from '../monitoring/structured-logging.servi
 import { AlertingService } from '../monitoring/alerting.service';
 import { CostTrackingService } from '../monitoring/cost-tracking.service';
 import { SLAMonitoringService } from '../monitoring/sla-monitoring.service';
+import { LogCollectorService } from '../monitoring/log-collector.service';
 import { V2VGateway } from '../gateway/v2v.gateway';
 
 @Controller('admin')
@@ -34,6 +35,7 @@ export class AdminController {
     private alertingService: AlertingService,
     private costService: CostTrackingService,
     private slaService: SLAMonitoringService,
+    private logCollector: LogCollectorService,
     private v2vGateway: V2VGateway,
   ) {}
 
@@ -154,6 +156,34 @@ export class AdminController {
   @Get('logs/stats')
   async getLogStats() {
     return this.loggingService.getLogStats({});
+  }
+
+  // ── Aggregated Logs (PM2 + Services) ─────────────────────────────────────
+
+  @Get('logs/aggregated')
+  async getAggregatedLogs(
+    @Query('limit') limit?: string,
+    @Query('service') service?: string,
+    @Query('level') level?: string,
+    @Query('search') search?: string,
+    @Query('startTime') startTime?: string,
+    @Query('endTime') endTime?: string,
+    @Query('correlationId') correlationId?: string,
+  ) {
+    return this.logCollector.getAggregatedLogs({
+      limit: limit ? parseInt(limit) : 200,
+      service,
+      level,
+      search,
+      correlationId,
+      startTime: startTime ? new Date(startTime) : undefined,
+      endTime: endTime ? new Date(endTime) : undefined,
+    });
+  }
+
+  @Get('logs/aggregated/stats')
+  async getAggregatedLogStats() {
+    return this.logCollector.getLogStats();
   }
 
   // ── Alerting ─────────────────────────────────────────────────────────────

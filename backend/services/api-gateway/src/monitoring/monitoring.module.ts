@@ -9,6 +9,7 @@ import { StructuredLoggingService } from './structured-logging.service';
 import { AlertingService } from './alerting.service';
 import { CostTrackingService } from './cost-tracking.service';
 import { SLAMonitoringService } from './sla-monitoring.service';
+import { LogCollectorService } from './log-collector.service';
 import { ErrorLog, ErrorLogSchema } from './error-aggregation.service';
 import { HealthCheck, HealthCheckSchema } from './health-check.service';
 import { StructuredLog, StructuredLogSchema } from './structured-logging.service';
@@ -31,6 +32,7 @@ import { StructuredLog, StructuredLogSchema } from './structured-logging.service
     AlertingService,
     CostTrackingService,
     SLAMonitoringService,
+    LogCollectorService,
   ],
   exports: [
     GpuMetricsService,
@@ -41,6 +43,7 @@ import { StructuredLog, StructuredLogSchema } from './structured-logging.service
     AlertingService,
     CostTrackingService,
     SLAMonitoringService,
+    LogCollectorService,
   ],
 })
 export class MonitoringModule {}

@@ -10,6 +10,7 @@ import RagViewer from '../components/admin/RagViewer.vue'
 import ErrorLog from '../components/admin/ErrorLog.vue'
 import ServiceHealth from '../components/admin/ServiceHealth.vue'
 import RequestMetrics from '../components/admin/RequestMetrics.vue'
+import LogViewer from '../components/admin/LogViewer.vue'
 
 const auth = useAuthStore()
 const router = useRouter()
@@ -35,6 +36,8 @@ const heatmapData = ref(null)
 const sessions = ref([])
 const errors = ref([])
 const requestMetrics = ref({})
+const aggregatedLogs = ref([])
+const logStats = ref({})
 
 let ws = null
 
@@ -108,6 +111,20 @@ async function fetchRequestMetrics() {
   } catch {}
 }
 
+async function fetchAggregatedLogs() {
+  try {
+    const res = await authFetch(`${ADMIN_API}/admin/logs/aggregated?limit=200`)
+    if (res.ok) aggregatedLogs.value = await res.json()
+  } catch {}
+}
+
+async function fetchLogStats() {
+  try {
+    const res = await authFetch(`${ADMIN_API}/admin/logs/aggregated/stats`)
+    if (res.ok) logStats.value = await res.json()
+  } catch {}
+}
+
 async function terminateSession(sessionId) {
   try {
     await authFetch(`${ADMIN_API}/admin/sessions/${sessionId}`, { method: 'DELETE' })
@@ -162,7 +179,9 @@ onMounted(() => {
   fetchErrors()
   fetchHeatmap()
   fetchRequestMetrics()
-  const interval = setInterval(() => { fetchSessions(); fetchErrors(); fetchHeatmap(); fetchRequestMetrics() }, 10000)
+  fetchAggregatedLogs()
+  fetchLogStats()
+  const interval = setInterval(() => { fetchSessions(); fetchErrors(); fetchHeatmap(); fetchRequestMetrics(); fetchAggregatedLogs(); fetchLogStats() }, 15000)
   onUnmounted(() => clearInterval(interval))
 })
 
@@ -349,6 +368,15 @@ onUnmounted(() => { if (ws) ws.close() })
         Error Log
       </h3>
       <ErrorLog :errors="errors" />
+    </div>
+
+    <!-- Aggregated Logs -->
+    <div class="panel">
+      <h3 class="panel-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Aggregated Logs (All Services)
+      </h3>
+      <LogViewer :logs="aggregatedLogs" :stats="logStats" @refresh="fetchAggregatedLogs(); fetchLogStats()" />
     </div>
 
     <!-- Disconnect All Modal -->
