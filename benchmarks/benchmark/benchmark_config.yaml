@@ -4,7 +4,7 @@ environment:
   worker_host: "aziza-worker-01"
   api_gateway_url: "http://localhost:8080"
   personaplex_url: "http://localhost:8000"
-  websocket_url: "ws://localhost:8080/api/chat"
+  websocket_url: "ws://localhost:8080/api/chat?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTU1MzM1YmI4MmIyNThlYjhjMWUyNzIiLCJlbWFpbCI6ImJlbmNobWFya0Bheml6YS5haSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgzOTY4Nzk1LCJleHAiOjE3ODQwNTUxOTV9.h3x8NZ5x8kfqObMwW8Df6F6fGKzOJQRWuwHV2mLce-k"
   
 targets:
   ttft_median_ms: 300
