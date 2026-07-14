@@ -45,7 +45,15 @@
 
 ## Decision: RBAC Guards for Admin Endpoints
 **Date**: 2026-07-11
-**Status**: Accepted → **Implemented** (security blockers phase 1, untracked)
+**Status**: Accepted → **Implemented** (security blockers phase 1)
 **Context**: Admin endpoints had no role-based access control. Any authenticated user could access admin functionality.
 **Decision**: Add `@Roles('admin')` decorator + `RolesGuard` guard to admin routes. JWT token carries `role` claim. Guard validates role against route requirements.
 **Consequences**: Admin endpoints require `role=admin` in JWT. Frontend admin UI must request and store role in auth flow. Breaking change for existing admin users (must re-authenticate with role-bearing tokens).
+
+## Decision: Nginx Reverse Proxy with TLS Termination
+**Date**: 2026-07-14
+**Status**: Accepted → **Implemented** (Epic 2)
+**Context**: All traffic was plaintext HTTP. No TLS/HTTPS. No security headers at the edge. No rate limiting at the gateway level.
+**Decision**: Deploy Nginx as a reverse proxy in front of the API Gateway. TLS termination on port 443 (TLSv1.2/1.3). HTTP→HTTPS redirect. Security headers added at the Nginx layer (HSTS, CSP, X-Frame-Options, etc.). Rate limiting: 60 req/min general API, 10 req/min auth endpoints. WebSocket upgrade support for /api/chat and /api/v2v. Internal network restriction for Orchestrator and PersonaPlex.
+**Consequences**: All external traffic encrypted. Security headers enforced before reaching NestJS. Rate limiting reduces abuse surface. Nginx becomes a required dependency for production deployment. Self-signed certificates used for development; production must use valid certificates (Let's Encrypt or commercial).
+**Implementation**: `configs/docker/infrastructure/nginx/nginx.conf`, `configs/docker/docker-compose.yml`, `backend/services/api-gateway/src/main.ts` (trust proxy + CORS update).
