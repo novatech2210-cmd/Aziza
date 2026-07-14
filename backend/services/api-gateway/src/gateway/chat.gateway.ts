@@ -204,84 +204,9 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   private readonly LANGUAGE_NAMES = LANGUAGE_NAMES as Record<string, string>;
 
   private async detectLanguage(text: string): Promise<string> {
-    // 1. Try franc-min for language identification
-    try {
-      const franc = require('franc-min').franc;
-      const code = franc(text, { minLength: 3 });
-      const map: Record<string, string> = {
-        rus: 'ru', uzb: 'uz', eng: 'en',
-      };
-      const detected = map[code];
-      if (detected) {
-        // For Uzbek, determine script variant
-        if (detected === 'uz') {
-          return this.detectUzbekScript(text);
-        }
-        return detected;
-      }
-    } catch {
-      // franc-min not available — fall through to heuristic detection
-    }
-
-    // 2. Heuristic detection: count characters by script
-    let cyrillic = 0;
-    let latin = 0;
-    let hasOkina = false;
-    let hasUzbekCyrillic = false;
-
-    // Uzbek-specific Cyrillic chars (Қ, Ғ, Ҳ, Ў and their lowercase)
-    const uzbekCyrillicChars = new Set([
-      0x049A, 0x049B, // Қ/қ
-      0x0492, 0x0493, // Ғ/ғ
-      0x04BA, 0x04BB, // Һ/һ
-      0x040E, 0x045E, // Ў/ў
-      0x04B6, 0x04B7, // Ҷ/ҷ
-    ]);
-
-    for (const ch of text) {
-      const cp = ch.charCodeAt(0);
-      if (cp === 0x02BB) {
-        hasOkina = true;
-        latin++;
-      } else if ((cp >= 0x0400 && cp <= 0x04FF) || (cp >= 0x0500 && cp <= 0x052F)) {
-        cyrillic++;
-        if (uzbekCyrillicChars.has(cp)) {
-          hasUzbekCyrillic = true;
-        }
-      } else if (cp >= 0x0041 && cp <= 0x007A) {
-        latin++;
-      }
-    }
-
-    // 3. Uzbek detection: okina (ʻ) or Uzbek-specific Cyrillic chars
-    if (hasOkina || hasUzbekCyrillic) {
-      return this.detectUzbekScript(text);
-    }
-
-    // 4. Script-based fallback
-    if (cyrillic > latin && cyrillic > 0) {
-      return 'ru';
-    }
-    if (latin > 0) return 'en';
-    return 'ru';
-  }
-
-  /**
-   * Determine Uzbek script variant (Latin vs Cyrillic) from text.
-   */
-  private detectUzbekScript(text: string): string {
-    let cyrillic = 0;
-    let latin = 0;
-    for (const ch of text) {
-      const cp = ch.charCodeAt(0);
-      if (cp === 0x02BB) { latin++; continue; } // okina counts as Latin
-      if ((cp >= 0x0400 && cp <= 0x04FF) || (cp >= 0x0500 && cp <= 0x052F)) {
-        cyrillic++;
-      } else if (cp >= 0x0041 && cp <= 0x007A) {
-        latin++;
-      }
-    }
-    return cyrillic > latin ? 'uz_cyrillic' : 'uz_latin';
+    const { detectLanguage: detect } = require('./language-detection');
+    const result = detect(text);
+    return result.script || result.language;
   }
 
   /**

@@ -187,21 +187,76 @@ def _count_script_chars(text: str) -> dict[str, int]:
     return counts
 
 # Uzbek-specific words (common greetings, pronouns, particles) for disambiguation
+# Expanded with transliterated forms users commonly type in Latin script
 _UZBEK_LATIN_INDICATORS = {
+    # Pronouns & determiners
     "siz", "biz", "men", "sen", "uning", "ular", "bizning",
-    "va", "lekin", "yoki", "ham", "da", "dan", "ga", "ni",
-    "ench", "ish", "lish", "mish", "dir", "kan", "mikan",
+    "mening", "sening", "sizning", "ularning", "shu", "bu",
+    # Conjunctions & particles
+    "va", "lekin", "yoki", "ham", "garchi", "shuningdek",
+    "balki", "yoqsa", "agarda", "agar",
+    # Postpositions
+    "da", "dan", "ga", "ni", "uchtun", "ustida", "ostida",
+    "oldida", "keyinida", "yonida", "orasida",
+    # Question words
+    "qanday", "nima", "qachon", "qaerda", "nega", "qanaqa",
+    "necha", "qaysi", "nimani", "qayerdan",
+    # Common verbs & adjectives
     "yaxshi", "yomon", "katta", "kichik", "yangi", "eski",
-    "qanday", "nima", "qachon", "qaerda", "nega",
-    "iltimos", "rahmat", "kechirasiz",
+    "chiroyli", "tez", "sekin", "kerak", "mumkin",
+    # Greetings & politeness
+    "salom", "assalomu", "alaykum", "rahmat", "kechirasiz",
+    "iltimos", "xush", "kelibsiz", "hayr",
+    # Numbers
+    "bir", "ikki", "uch", "besh", "olti", "yetti",
+    # Common nouns
+    "odam", "joy", "vaqt", "kun", "oy", "yil", "soat",
+    "mamlakat", "shahar", "maktab", "ish",
+    # Affixes that are strong Uzbek signals
+    "lish", "mish", "dir", "kan", "mikan", "echan", "uvchi",
+    # Transliterated forms users often type
+    "qalesiz", "qalaysiz", "yaxshimisiz", "menga", "senga",
+    "unga", "bizga", "ulgarga", "meni", "seni", "sizni",
+    # Uzbek-specific Latin letters as strong signal
+    "o'g", "o'z",
 }
 
 _UZBEK_CYRILLIC_INDICATORS = {
+    # Pronouns
     "сиз", "биз", "мен", "сен", "уния", "улар",
-    "ва", "лекин", "ёки", "ҳам", "да", "дан", "га", "ни",
-    "яхши", "ёмон", "кatta", "kichik", "янги", "эски",
-    "қандай", "нима", "қачон", "қаерда", "нега",
-    "илтимос", "раҳмат", "кечирингиз",
+    "менинг", "сенинг", "сизнинг", "бизнинг", "уларнинг",
+    # Conjunctions
+    "ва", "лекин", "ёки", "ҳам", "гарчи", "шунингдек",
+    "агар", "агарда",
+    # Question words
+    "қандай", "нима", "қачон", "қаерда", "нега", "қанақа",
+    "неча", "қайси", "нимани", "қаердан",
+    # Common words
+    "яхши", "ёмон", "бор", "йўқ", "қилиш", "бўлиш",
+    "керак", "мумкин", "тушунди",
+    # Greetings
+    "салом", "ассалому", "алайкум", "раҳмат", "кечирингиз",
+    "илтимос", "ҳайр",
+    # Numbers
+    "бир", "икки", "уч", "тўрт", "беш",
+    # Common nouns
+    "одам", "жой", "вақт", "кун", "ой", "йил",
+    "шаҳар", "мактаб", "иш",
+    # Affixes
+    "лиш", "миш", "дир", "кан", "микан",
+}
+
+# Transliterated Uzbek words that users commonly type in Latin script
+# These overlap with English characters but signal Uzbek intent
+_TRANSLITERATED_UZ_INDICATORS = {
+    "assalomu", "alaykum", "rahmat", "kechirasiz", "iltimos",
+    "yaxshimisiz", "qalaysiz", "qalesiz",
+    "yaxshi", "yomon", "katta", "kichik", "yangi", "eski",
+    "qanday", "qachon", "qaerda", "nega", "qanaqa",
+    "salom", "hayr", "xush", "kelibsiz",
+    "menga", "senga", "unga", "bizga", "ulgarga",
+    "meni", "seni", "sizni", "uni", "bizni", "уларни",
+    "shuning", "uning", "bizning",
 }
 
 @app.post("/lang/detect")
@@ -223,8 +278,13 @@ async def detect_lang(req: LangDetectRequest):
     if latin_ratio > 0.8 and cyrillic_ratio < 0.05:
         words = set(req.text.lower().split())
         uz_overlap = words & _UZBEK_LATIN_INDICATORS
-        if len(uz_overlap) >= 2:
+        transliterated_overlap = words & _TRANSLITERATED_UZ_INDICATORS
+        total_uz = len(uz_overlap) + len(transliterated_overlap)
+        if total_uz >= 2:
             return {"language": "uz", "script": "latin", "confidence": 0.9}
+        if total_uz >= 1 and latin_ratio > 0.9:
+            # Single transliterated word in otherwise Latin text → likely Uzbek
+            return {"language": "uz", "script": "latin", "confidence": 0.75}
         return {"language": "en", "confidence": 0.8}
 
     # Strong Cyrillic → check for Uzbek Cyrillic vs Russian
@@ -239,7 +299,9 @@ async def detect_lang(req: LangDetectRequest):
     if cyrillic_ratio > 0.2 and latin_ratio > 0.2:
         words = set(req.text.lower().split())
         uz_overlap = (words & _UZBEK_LATIN_INDICATORS) | (words & _UZBEK_CYRILLIC_INDICATORS)
-        if len(uz_overlap) >= 2:
+        transliterated_overlap = words & _TRANSLITERATED_UZ_INDICATORS
+        total_uz = len(uz_overlap) + len(transliterated_overlap)
+        if total_uz >= 2:
             return {"language": "uz", "script": "mixed", "confidence": 0.7}
 
     # Default: Cyrillic → Russian, Latin → English
